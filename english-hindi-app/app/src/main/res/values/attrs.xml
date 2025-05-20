@@ -94,4 +94,13 @@
         <attr name="progressColor" format="color" />
         <attr name="autoResetDelayMs" format="integer" />
     </declare-styleable>
+    
+    <!-- ProgressAnimationView Attributes -->
+    <declare-styleable name="ProgressAnimationView">
+        <attr name="progressColor" format="color" />
+        <attr name="backgroundColor" format="color" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="indeterminate" format="boolean" />
+        <attr name="animationDuration" format="integer" />
+    </declare-styleable>
 </resources>

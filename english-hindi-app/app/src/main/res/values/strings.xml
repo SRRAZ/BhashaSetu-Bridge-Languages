@@ -260,6 +260,9 @@
     <string name="wifi">WiFi</string>
     <string name="cellular">Cellular</string>
     <string name="metered">Metered</string>
+    <string name="network_settings">Network Settings</string>
+    <string name="disable_data_usage">Disable Data Usage</string>
+    <string name="metered_connection_message">You are on a metered connection. To avoid extra charges, you might want to limit data usage.</string>
     
     <!-- Error Messages -->
     <string name="error_loading">Error loading data</string>
@@ -274,7 +277,15 @@
     <string name="error_connection_timeout">Connection timed out</string>
     <string name="error_server">Server error. Please try again later.</string>
     <string name="error_data_load">Could not load data</string>
+    <string name="error_unauthorized">You are not authorized to access this content</string>
     <string name="error_image_description">Error icon</string>
+    <string name="network_settings">Network Settings</string>
+    <string name="check_internet_connection">Check your internet connection</string>
+    <string name="try_again_later">Try again later</string>
+    <string name="use_offline_mode">Switch to offline mode</string>
+    <string name="check_for_app_updates">Check for app updates</string>
+    <string name="restart_app">Restart the app</string>
+    <string name="slide_in_bottom">Slide in from bottom</string>
     
     <!-- Navigation -->
     <string name="lessons">Lessons</string>
@@ -296,6 +307,7 @@
     <string name="retry_button_text">Retry</string>
     <string name="loading_indicator_description">Loading indicator</string>
     <string name="network_status_icon_description">Network status icon</string>
+    <string name="toast_icon_description">Toast message icon</string>
     
     <!-- Dialog Messages -->
     <string name="dialog_title_error">Error</string>

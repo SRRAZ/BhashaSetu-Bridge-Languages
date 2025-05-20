@@ -40,4 +40,28 @@
     <color name="achievement_points_color">#FFC107</color>
     <color name="achievement_dialog_background">#FFFFFF</color>
     <color name="achievement_title_color">#FF5722</color>
+    
+    <!-- Text colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_tertiary">#9E9E9E</color>
+    <color name="text_disabled">#BDBDBD</color>
+    <color name="text_on_primary">#FFFFFF</color>
+    <color name="text_on_accent">#000000</color>
+
+    <!-- Error handling colors -->
+    <color name="error_background">#F44336</color>
+    <color name="error_text">#FFFFFF</color>
+    <color name="error_action_text">#FFEB3B</color>
+    <color name="warning_background">#FFC107</color>
+    <color name="warning_text">#000000</color>
+    <color name="success_background">#4CAF50</color>
+    <color name="success_text">#FFFFFF</color>
+
+    <!-- Network status colors -->
+    <color name="online_status">#4CAF50</color>
+    <color name="offline_status">#F44336</color>
+    <color name="wifi_status">#2196F3</color>
+    <color name="cellular_status">#FF9800</color>
+    <color name="metered_status">#FFC107</color>
 </resources>
