@@ -9,6 +9,7 @@ import android.os.Build;
 import com.example.englishhindi.cache.CacheManager;
 import com.example.englishhindi.di.AppDependencies;
 import com.example.englishhindi.manager.SyncManager;
+import com.example.englishhindi.monitoring.PerformanceMonitoringManager;
 import com.example.englishhindi.receiver.NetworkStateReceiver;
 import com.example.englishhindi.util.AppExecutors;
 import com.example.englishhindi.util.ImageLoader;
@@ -21,6 +22,9 @@ import android.util.Log;
 import com.example.englishhindi.database.RepositoryFactory;
 import com.example.englishhindi.repository.OfflineQueueHelper;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Main Application class responsible for initializing app-wide components
  * and managing their lifecycle.
@@ -31,6 +35,7 @@ import com.example.englishhindi.repository.OfflineQueueHelper;
  * 3. Handles memory pressure with onTrimMemory and onLowMemory implementations
  * 4. Monitors network state changes for offline capabilities
  * 5. Uses StrictMode for detecting performance issues in debug builds
+ * 6. Integrates comprehensive performance monitoring tools
  */
 public class EnglishHindiApplication extends Application {
     
@@ -38,9 +43,13 @@ public class EnglishHindiApplication extends Application {
     
     private NetworkStateReceiver networkStateReceiver;
     private AppDependencies appDependencies;
+    private PerformanceMonitoringManager performanceMonitoringManager;
     
     @Override
     public void onCreate() {
+        // Start performance monitoring as early as possible
+        initializePerformanceMonitoring();
+        
         super.onCreate();
         
         // Enable strict mode in debug builds to detect performance issues early
@@ -68,6 +77,28 @@ public class EnglishHindiApplication extends Application {
     }
     
     /**
+     * Initialize performance monitoring tools
+     * This should be called as early as possible in the application lifecycle
+     */
+    private void initializePerformanceMonitoring() {
+        performanceMonitoringManager = PerformanceMonitoringManager.getInstance(this);
+        
+        // Record application start time for accurate startup metrics
+        performanceMonitoringManager.recordAppStart();
+        
+        // Enable appropriate level of monitoring based on build type
+        if (BuildConfig.DEBUG) {
+            // Detailed monitoring for debug builds
+            performanceMonitoringManager.enable(PerformanceMonitoringManager.MonitoringLevel.DETAILED);
+        } else {
+            // Standard monitoring for release builds
+            performanceMonitoringManager.enable(PerformanceMonitoringManager.MonitoringLevel.STANDARD);
+        }
+        
+        Log.d(TAG, "Performance monitoring initialized");
+    }
+    
+    /**
      * Get the application dependencies container
      * This provides centralized access to app components
      * 
@@ -75,6 +106,16 @@ public class EnglishHindiApplication extends Application {
      */
     public AppDependencies getDependencies() {
         return appDependencies;
+    }
+    
+    /**
+     * Get the performance monitoring manager
+     * This provides access to performance monitoring tools
+     * 
+     * @return PerformanceMonitoringManager instance
+     */
+    public PerformanceMonitoringManager getPerformanceMonitoringManager() {
+        return performanceMonitoringManager;
     }
     
     /**
@@ -86,6 +127,9 @@ public class EnglishHindiApplication extends Application {
      * - Lazy initialization of less critical components
      */
     private void initializeCoreComponents() {
+        // Track this operation
+        String traceId = performanceMonitoringManager.startTrace("initializeCoreComponents");
+        
         // Initialize AppExecutors first for background operations
         AppExecutors.getInstance();
         
@@ -107,11 +151,17 @@ public class EnglishHindiApplication extends Application {
                 // Initialize SyncManager last as it depends on other components
                 SyncManager.getInstance(this);
                 
+                // Stop the trace
+                performanceMonitoringManager.stopTrace(traceId);
+                
                 Log.d(TAG, "Core components initialized");
             } catch (Exception e) {
                 // Log errors but prevent app crash
                 // Consider implementing more specific exception handling in production
                 Log.e(TAG, "Error initializing core components", e);
+                
+                // Report error to crash reporter
+                performanceMonitoringManager.reportError(e);
             }
         });
     }
@@ -149,9 +199,16 @@ public class EnglishHindiApplication extends Application {
             if (syncManager.getLastSyncTime() == 0) {
                 // Check network before attempting sync
                 if (NetworkUtils.getInstance(this).isNetworkAvailable()) {
+                    // Track sync performance
+                    String traceId = performanceMonitoringManager.startTrace("initialSync");
+                    
                     // Only sync essential data on first run
                     // The number parameter likely represents priority or limit
                     syncManager.startEssentialSync(100);
+                    
+                    // Stop the trace
+                    performanceMonitoringManager.stopTrace(traceId);
+                    
                     Log.d(TAG, "Started initial essential sync");
                 } else {
                     Log.d(TAG, "Skipping initial sync due to no network");
@@ -192,6 +249,13 @@ public class EnglishHindiApplication extends Application {
     public void onTrimMemory(int level) {
         super.onTrimMemory(level);
         
+        // Track memory trim event
+        if (performanceMonitoringManager != null) {
+            Map<String, Object> trimData = new HashMap<>();
+            trimData.put("level", level);
+            performanceMonitoringManager.getAnalyticsManager().logPerformanceEvent("memory_trim", trimData);
+        }
+        
         // Free up memory when the app goes to background or system is low on memory
         if (level >= TRIM_MEMORY_MODERATE) {
             // Clear image caches and non-essential resources
@@ -199,10 +263,10 @@ public class EnglishHindiApplication extends Application {
             // Parameters likely represent percentage and priority thresholds
             cacheManager.clearLowPriorityCache(30, 50);
             
-            // Suggest garbage collection
-            // Note: System.gc() is generally discouraged but can help in extreme cases
-            // Consider removing this in production or ensuring it runs on background thread
-            System.gc();
+            // Use our memory monitor to assist with cleanup
+            if (performanceMonitoringManager != null) {
+                performanceMonitoringManager.getMemoryMonitor().forceGarbageCollection();
+            }
             
             Log.d(TAG, "Trimmed memory due to level: " + level);
         }
@@ -216,13 +280,20 @@ public class EnglishHindiApplication extends Application {
     public void onLowMemory() {
         super.onLowMemory();
         
+        // Track low memory event
+        if (performanceMonitoringManager != null) {
+            performanceMonitoringManager.getAnalyticsManager().logPerformanceEvent("low_memory", null);
+        }
+        
         // More aggressive cleanup when system is very low on memory
         CacheManager cacheManager = CacheManager.getInstance(this);
         // More aggressive clearing with higher thresholds
         cacheManager.clearLowPriorityCache(50, 100);
         
-        // Suggest garbage collection
-        System.gc();
+        // Use our memory monitor to assist with cleanup
+        if (performanceMonitoringManager != null) {
+            performanceMonitoringManager.getMemoryMonitor().forceGarbageCollection();
+        }
         
         Log.d(TAG, "Cleared caches due to low memory");
     }
@@ -244,6 +315,11 @@ public class EnglishHindiApplication extends Application {
         
         // Release resources
         NetworkUtils.getInstance(this).release();
+        
+        // Release performance monitoring resources
+        if (performanceMonitoringManager != null) {
+            performanceMonitoringManager.release();
+        }
         
         Log.d(TAG, "Application terminated");
     }
