@@ -1,138 +1,191 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  AndroidManifest.xml for English-Hindi Learning App
+  
+  Main changes from GitHub version:
+  - Updated permissions for Android 13+ (granular media access, notifications)
+  - Added network state monitoring for offline capabilities
+  - Enhanced security with encrypted traffic requirement
+  - Improved performance with hardware acceleration and memory settings
+  - Standardized orientation for consistent user experience
+  - Added new activities, services, and receivers for enhanced functionality
+-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.englishhindi">
+    xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Internet Permission - Required for network operations -->
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- Network state monitoring - Essential for offline mode detection -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    <!-- Storage Permissions - Using platform-specific approach -->
+    <!-- Legacy storage permission with maxSdkVersion to limit scope on newer platforms 
+         Increased from 28 to 32 to support Android 12 while maintaining compatibility -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" 
+        android:maxSdkVersion="32" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" 
         android:maxSdkVersion="28" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" 
-        android:maxSdkVersion="28" />
-
+    <!-- Modern granular media permissions for Android 13+ replacing broad storage access -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    
+    <!-- Notification Permission - Required explicitly for Android 13+ (API 33+) -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    
+    <!-- Vibration for haptic feedback in interactive learning exercises -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    
+    <!-- Record Audio - Required for pronunciation practice feature -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
         android:name=".EnglishHindiApplication"
         android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/Theme.EnglishHindi"
+        android:hardwareAccelerated="true"
+        android:usesCleartextTraffic="false"
+        android:largeHeap="true"
+        tools:targetApi="31">
         
+        <!-- Splash Activity (Entry Point) - Using dedicated splash theme -->
         <activity
             android:name=".SplashActivity"
             android:exported="true"
-            android:theme="@style/SplashTheme">
+            android:theme="@style/Theme.EnglishHindi.Splash"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         
+        <!-- Main Activity - Central hub for app navigation -->
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="false"
+            android:screenOrientation="portrait" />
         
-        <activity
-            android:name=".AddWordActivity"
-            android:label="@string/add_new_word"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-        
-        <activity
-            android:name=".WordDetailActivity"
-            android:label="Word Details"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-        
+        <!-- Lessons Activity - Shows available learning lessons -->
         <activity
             android:name=".LessonsActivity"
-            android:label="@string/lessons_title"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
+            android:exported="false"
+            android:screenOrientation="portrait" />
         
+        <!-- Lesson Detail Activity - Shows individual lesson content -->
         <activity
             android:name=".LessonDetailActivity"
-            android:label="Lesson"
-            android:parentActivityName=".LessonsActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".LessonsActivity" />
-        </activity>
+            android:exported="false"
+            android:screenOrientation="portrait" />
         
-        <activity
-            android:name=".PracticeActivity"
-            android:label="@string/practice_title"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-        
-        <activity
-            android:name=".SettingsActivity"
-            android:label="@string/settings_title"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-        
-        <activity
-            android:name=".LanguageSettingsActivity"
-            android:label="@string/language_preference"
-            android:parentActivityName=".SettingsActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".SettingsActivity" />
-        </activity>
-        
+        <!-- Flashcard Activity - For vocabulary practice -->
         <activity
             android:name=".FlashcardActivity"
-            android:label="@string/flashcards"
-            android:parentActivityName=".PracticeActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PracticeActivity" />
-        </activity>
+            android:exported="false"
+            android:screenOrientation="portrait" />
         
+        <!-- Games Menu Activity - New feature for gamified learning -->
         <activity
-            android:name=".QuizActivity"
-            android:label="@string/multiple_choice"
-            android:parentActivityName=".PracticeActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PracticeActivity" />
-        </activity>
+            android:name=".GamesMenuActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         
+        <!-- Games Activity - Interactive learning games -->
         <activity
-            android:name=".SpellingPracticeActivity"
-            android:label="@string/spelling"
-            android:parentActivityName=".PracticeActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PracticeActivity" />
-        </activity>
+            android:name=".GamesActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         
+        <!-- Practice Activity - Hub for different practice methods -->
+        <activity
+            android:name=".PracticeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        
+        <!-- Pronunciation Practice Activity - Speech practice -->
         <activity
             android:name=".PronunciationPracticeActivity"
-            android:label="@string/pronunciation"
-            android:parentActivityName=".PracticeActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PracticeActivity" />
-        </activity>
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        
+        <!-- Pronunciation Comparison Activity - New feature to compare user's pronunciation with correct one -->
+        <activity
+            android:name=".PronunciationComparisonActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        
+        <!-- Spelling Practice Activity - For spelling exercises -->
+        <activity
+            android:name=".SpellingPracticeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        
+        <!-- Quiz Activity - Multiple choice questions -->
+        <activity
+            android:name=".QuizActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        
+        <!-- Word Detail Activity - Shows detailed word information -->
+        <activity
+            android:name=".WordDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        
+        <!-- Add Word Activity - For user to add custom vocabulary -->
+        <activity
+            android:name=".AddWordActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        
+        <!-- Achievements Activity - New gamification feature for tracking progress -->
+        <activity
+            android:name=".AchievementsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        
+        <!-- Settings Activity - App configuration -->
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        
+        <!-- Language Settings Activity - For language preferences -->
+        <activity
+            android:name=".LanguageSettingsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        
+        <!-- Offline Settings Activity - New feature for configuring offline behavior -->
+        <activity
+            android:name=".OfflineSettingsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+            
+        <!-- Services -->
+        <!-- SyncService - Handles background synchronization of content -->
+        <service
+            android:name=".service.SyncService"
+            android:exported="false" />
+            
+        <!-- AudioPreloadService - Preloads audio files for better performance -->
+        <service
+            android:name=".service.AudioPreloadService"
+            android:exported="false" />
+            
+        <!-- Receivers -->
+        <!-- NetworkStateReceiver - Monitors connectivity changes for offline mode -->
+        <receiver android:name=".receiver.NetworkStateReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
         
     </application>
 
