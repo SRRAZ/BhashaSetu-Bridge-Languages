@@ -70,21 +70,6 @@ public class NetworkUtils {
     private List<NetworkStateListener> networkStateListeners = new ArrayList<>();
     private List<String> serverEndpoints = new ArrayList<>();
     
-    // Singleton instance
-    private static NetworkUtils instance;
-    
-    /**
-     * Get the singleton instance of NetworkUtils
-     * @param context Application context
-     * @return NetworkUtils instance
-     */
-    public static synchronized NetworkUtils getInstance(Context context) {
-        if (instance == null) {
-            instance = new NetworkUtils(context);
-        }
-        return instance;
-    }
-    
     private NetworkUtils(Context context) {
         this.context = context.getApplicationContext();
         this.prefs = context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
@@ -103,6 +88,21 @@ public class NetworkUtils {
         
         // Set up default server endpoints
         setupDefaultServerEndpoints();
+    }
+    
+    // Singleton instance
+    private static NetworkUtils instance;
+    
+    /**
+     * Get the singleton instance of NetworkUtils
+     * @param context Application context
+     * @return NetworkUtils instance
+     */
+    public static synchronized NetworkUtils getInstance(Context context) {
+        if (instance == null) {
+            instance = new NetworkUtils(context);
+        }
+        return instance;
     }
     
     /**

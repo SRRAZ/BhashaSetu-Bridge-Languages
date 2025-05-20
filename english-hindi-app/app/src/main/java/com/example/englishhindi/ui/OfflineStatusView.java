@@ -5,14 +5,10 @@ import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.RectF;
-import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
-import android.util.TypedValue;
+import android.view.MotionEvent;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 
 import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
@@ -21,226 +17,365 @@ import com.example.englishhindi.R;
 import com.example.englishhindi.util.NetworkUtils;
 
 /**
- * Custom view to display the current offline/online status.
- * Shows status indicator and provides controls for offline mode.
+ * Custom view that shows the offline status and allows toggling offline mode
+ * with a simple tap. Provides visual feedback about the current network state.
  */
-public class OfflineStatusView extends View {
+public class OfflineStatusView extends View implements NetworkUtils.NetworkStateListener {
     
-    private static final int ONLINE_COLOR = Color.parseColor("#4CAF50");
-    private static final int OFFLINE_COLOR = Color.parseColor("#F44336");
-    private static final int WIFI_ONLY_COLOR = Color.parseColor("#2196F3");
+    private static final int STATE_ONLINE = 0;
+    private static final int STATE_OFFLINE = 1;
+    private static final int STATE_ONLINE_WIFI = 2;
+    private static final int STATE_ONLINE_CELLULAR = 3;
+    private static final int STATE_METERED = 4;
     
-    private Paint backgroundPaint;
     private Paint textPaint;
+    private Paint backgroundPaint;
     private Paint iconBackgroundPaint;
-    
-    private RectF backgroundRect;
-    private RectF iconRect;
     
     private Drawable onlineIcon;
     private Drawable offlineIcon;
     private Drawable wifiIcon;
-    
-    private String statusText;
-    private int statusColor;
+    private Drawable cellularIcon;
+    private Drawable meteredIcon;
     
     private NetworkUtils networkUtils;
-    private boolean isAnimating = false;
+    private int currentState = STATE_ONLINE;
+    private boolean isPressed = false;
+
+    private int textColor;
+    private int backgroundColor;
+    private int iconBackgroundColor;
+    private int iconSize;
+    private int iconPadding;
+    private float cornerRadius;
+    private String onlineText;
+    private String offlineText;
+    private String wifiText;
+    private String cellularText;
+    private String meteredText;
+    
+    private OnClickListener clickListener;
     
     public OfflineStatusView(Context context) {
         super(context);
-        init(null);
+        init(context, null);
     }
     
     public OfflineStatusView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
-        init(attrs);
+        init(context, attrs);
     }
     
     public OfflineStatusView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        init(attrs);
+        init(context, attrs);
     }
     
-    private void init(@Nullable AttributeSet attrs) {
-        // Initialize NetworkUtils
-        networkUtils = new NetworkUtils(getContext());
+    private void init(Context context, AttributeSet attrs) {
+        // Default values
+        textColor = Color.WHITE;
+        backgroundColor = 0xFF4CAF50; // Green
+        iconBackgroundColor = 0xFF388E3C; // Darker green
+        iconSize = dpToPx(24);
+        iconPadding = dpToPx(8);
+        cornerRadius = dpToPx(4);
+        onlineText = "Online";
+        offlineText = "Offline";
+        wifiText = "WiFi";
+        cellularText = "Cellular";
+        meteredText = "Metered";
+        
+        // Load attributes from XML if available
+        if (attrs != null) {
+            TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.OfflineStatusView);
+            
+            textColor = a.getColor(R.styleable.OfflineStatusView_textColor, textColor);
+            backgroundColor = a.getColor(R.styleable.OfflineStatusView_backgroundColor, backgroundColor);
+            iconBackgroundColor = a.getColor(R.styleable.OfflineStatusView_iconBackgroundColor, iconBackgroundColor);
+            iconSize = a.getDimensionPixelSize(R.styleable.OfflineStatusView_iconSize, iconSize);
+            iconPadding = a.getDimensionPixelSize(R.styleable.OfflineStatusView_iconPadding, iconPadding);
+            cornerRadius = a.getDimension(R.styleable.OfflineStatusView_cornerRadius, cornerRadius);
+            
+            if (a.hasValue(R.styleable.OfflineStatusView_onlineText)) {
+                onlineText = a.getString(R.styleable.OfflineStatusView_onlineText);
+            }
+            if (a.hasValue(R.styleable.OfflineStatusView_offlineText)) {
+                offlineText = a.getString(R.styleable.OfflineStatusView_offlineText);
+            }
+            if (a.hasValue(R.styleable.OfflineStatusView_wifiText)) {
+                wifiText = a.getString(R.styleable.OfflineStatusView_wifiText);
+            }
+            if (a.hasValue(R.styleable.OfflineStatusView_cellularText)) {
+                cellularText = a.getString(R.styleable.OfflineStatusView_cellularText);
+            }
+            if (a.hasValue(R.styleable.OfflineStatusView_meteredText)) {
+                meteredText = a.getString(R.styleable.OfflineStatusView_meteredText);
+            }
+            
+            a.recycle();
+        }
         
         // Initialize paints
-        backgroundPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        textPaint = new Paint();
+        textPaint.setColor(textColor);
+        textPaint.setTextSize(dpToPx(14));
+        textPaint.setAntiAlias(true);
+        textPaint.setTextAlign(Paint.Align.LEFT);
+        
+        backgroundPaint = new Paint();
+        backgroundPaint.setColor(backgroundColor);
         backgroundPaint.setStyle(Paint.Style.FILL);
+        backgroundPaint.setAntiAlias(true);
         
-        textPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        textPaint.setColor(Color.WHITE);
-        textPaint.setTextSize(spToPx(14));
-        textPaint.setTypeface(Typeface.create(Typeface.DEFAULT, Typeface.BOLD));
-        
-        iconBackgroundPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        iconBackgroundPaint = new Paint();
+        iconBackgroundPaint.setColor(iconBackgroundColor);
         iconBackgroundPaint.setStyle(Paint.Style.FILL);
-        iconBackgroundPaint.setColor(Color.WHITE);
+        iconBackgroundPaint.setAntiAlias(true);
         
-        // Initialize rects
-        backgroundRect = new RectF();
-        iconRect = new RectF();
+        // Load icons
+        onlineIcon = ContextCompat.getDrawable(context, R.drawable.ic_online);
+        offlineIcon = ContextCompat.getDrawable(context, R.drawable.ic_offline);
+        wifiIcon = ContextCompat.getDrawable(context, R.drawable.ic_wifi);
+        cellularIcon = ContextCompat.getDrawable(context, R.drawable.ic_cellular);
+        meteredIcon = ContextCompat.getDrawable(context, R.drawable.ic_data_usage);
         
-        // Load drawables
-        onlineIcon = ContextCompat.getDrawable(getContext(), R.drawable.ic_online);
-        offlineIcon = ContextCompat.getDrawable(getContext(), R.drawable.ic_offline);
-        wifiIcon = ContextCompat.getDrawable(getContext(), R.drawable.ic_wifi);
+        // Get the NetworkUtils instance
+        networkUtils = NetworkUtils.getInstance(context);
+        networkUtils.addNetworkStateListener(this);
         
-        // Set initial status
+        // Set initial state
         updateStatus();
     }
     
     @Override
-    protected void onSizeChanged(int w, int h, int oldw, int oldh) {
-        super.onSizeChanged(w, h, oldw, oldh);
+    protected void onAttachedToWindow() {
+        super.onAttachedToWindow();
+        if (networkUtils != null) {
+            networkUtils.addNetworkStateListener(this);
+        }
+    }
+    
+    @Override
+    protected void onDetachedFromWindow() {
+        super.onDetachedFromWindow();
+        if (networkUtils != null) {
+            networkUtils.removeNetworkStateListener(this);
+        }
+    }
+    
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        int desiredWidth = calculateDesiredWidth();
+        int desiredHeight = dpToPx(40); // Fixed height
         
-        // Set background rect
-        backgroundRect.set(0, 0, w, h);
+        int width = resolveSize(desiredWidth, widthMeasureSpec);
+        int height = resolveSize(desiredHeight, heightMeasureSpec);
         
-        // Set icon rect
-        float iconSize = h * 0.6f;
-        float iconMargin = (h - iconSize) / 2;
-        iconRect.set(iconMargin, iconMargin, iconMargin + iconSize, iconMargin + iconSize);
+        setMeasuredDimension(width, height);
+    }
+    
+    private int calculateDesiredWidth() {
+        // Calculate width based on the text and icon
+        String text = getTextForCurrentState();
+        float textWidth = textPaint.measureText(text);
+        return (int) (iconSize + textWidth + iconPadding * 4);
     }
     
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         
+        int width = getWidth();
+        int height = getHeight();
+        
         // Draw background
-        backgroundPaint.setColor(statusColor);
-        canvas.drawRoundRect(backgroundRect, backgroundRect.height() / 2, 
-                backgroundRect.height() / 2, backgroundPaint);
+        int bgColor = isPressed ? darkenColor(backgroundColor) : backgroundColor;
+        backgroundPaint.setColor(bgColor);
+        canvas.drawRoundRect(0, 0, width, height, cornerRadius, cornerRadius, backgroundPaint);
         
         // Draw icon background
-        canvas.drawCircle(iconRect.centerX(), iconRect.centerY(), iconRect.width() / 2, 
-                iconBackgroundPaint);
+        int iconBgColor = isPressed ? darkenColor(iconBackgroundColor) : iconBackgroundColor;
+        iconBackgroundPaint.setColor(iconBgColor);
+        canvas.drawRoundRect(0, 0, iconSize + iconPadding * 2, height, cornerRadius, cornerRadius, iconBackgroundPaint);
         
-        // Draw appropriate icon
-        Drawable icon;
-        if (networkUtils.isOfflineModeEnabled()) {
-            icon = offlineIcon;
-        } else if (networkUtils.isWifiOnlyModeEnabled() && networkUtils.isWifiConnected()) {
-            icon = wifiIcon;
-        } else if (networkUtils.isNetworkAvailable()) {
-            icon = onlineIcon;
-        } else {
-            icon = offlineIcon;
-        }
-        
+        // Draw icon
+        Drawable icon = getIconForCurrentState();
         if (icon != null) {
-            icon.setBounds((int) iconRect.left, (int) iconRect.top, 
-                    (int) iconRect.right, (int) iconRect.bottom);
+            int iconLeft = iconPadding;
+            int iconTop = (height - iconSize) / 2;
+            icon.setBounds(iconLeft, iconTop, iconLeft + iconSize, iconTop + iconSize);
             icon.draw(canvas);
         }
         
-        // Draw status text
-        float textX = iconRect.right + dpToPx(12);
-        float textY = backgroundRect.centerY() - ((textPaint.descent() + textPaint.ascent()) / 2);
-        canvas.drawText(statusText, textX, textY, textPaint);
+        // Draw text
+        String text = getTextForCurrentState();
+        float textX = iconSize + iconPadding * 3;
+        float textY = (height / 2) - ((textPaint.descent() + textPaint.ascent()) / 2);
+        canvas.drawText(text, textX, textY, textPaint);
     }
     
-    /**
-     * Update the status display based on current network state
-     */
-    public void updateStatus() {
-        if (networkUtils.isOfflineModeEnabled()) {
-            statusText = getContext().getString(R.string.offline_mode);
-            statusColor = OFFLINE_COLOR;
-        } else if (networkUtils.isWifiOnlyModeEnabled()) {
-            if (networkUtils.isWifiConnected()) {
-                statusText = getContext().getString(R.string.wifi_connected);
-                statusColor = WIFI_ONLY_COLOR;
-            } else if (networkUtils.isCellularConnected()) {
-                statusText = getContext().getString(R.string.waiting_for_wifi);
-                statusColor = OFFLINE_COLOR;
-            } else {
-                statusText = getContext().getString(R.string.no_connection);
-                statusColor = OFFLINE_COLOR;
-            }
-        } else if (networkUtils.isNetworkAvailable()) {
-            statusText = getContext().getString(R.string.online);
-            statusColor = ONLINE_COLOR;
-        } else {
-            statusText = getContext().getString(R.string.no_connection);
-            statusColor = OFFLINE_COLOR;
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        switch (event.getAction()) {
+            case MotionEvent.ACTION_DOWN:
+                isPressed = true;
+                invalidate();
+                return true;
+            case MotionEvent.ACTION_UP:
+                isPressed = false;
+                performClick();
+                invalidate();
+                return true;
+            case MotionEvent.ACTION_CANCEL:
+                isPressed = false;
+                invalidate();
+                return true;
+        }
+        return super.onTouchEvent(event);
+    }
+    
+    @Override
+    public boolean performClick() {
+        boolean result = super.performClick();
+        
+        // Toggle offline mode if clicked
+        toggleOfflineMode();
+        
+        // Call any additional click listener
+        if (clickListener != null) {
+            clickListener.onClick(this);
         }
         
-        invalidate();
+        return result;
+    }
+    
+    @Override
+    public void setOnClickListener(@Nullable OnClickListener l) {
+        // Store the listener separately so we can call it after our internal handling
+        this.clickListener = l;
+        // Always set the internal listener to ensure we handle the click
+        super.setOnClickListener(v -> {
+            // Internal handling is done in performClick()
+        });
     }
     
     /**
-     * Toggle offline mode
-     * @return New offline mode state
+     * Update the view based on current network status
      */
-    public boolean toggleOfflineMode() {
-        boolean newState = !networkUtils.isOfflineModeEnabled();
-        networkUtils.setOfflineModeEnabled(newState);
-        updateStatus();
-        animateStatusChange();
-        return newState;
-    }
-    
-    /**
-     * Toggle WiFi-only mode
-     * @return New WiFi-only mode state
-     */
-    public boolean toggleWifiOnlyMode() {
-        boolean newState = !networkUtils.isWifiOnlyModeEnabled();
-        networkUtils.setWifiOnlyModeEnabled(newState);
-        updateStatus();
-        animateStatusChange();
-        return newState;
-    }
-    
-    /**
-     * Animate the status change
-     */
-    private void animateStatusChange() {
-        if (isAnimating) {
+    public void updateStatus() {
+        if (networkUtils == null) {
             return;
         }
         
-        isAnimating = true;
+        if (networkUtils.isOfflineModeEnabled()) {
+            currentState = STATE_OFFLINE;
+            backgroundPaint.setColor(Color.parseColor("#F44336")); // Red
+            iconBackgroundPaint.setColor(Color.parseColor("#D32F2F")); // Dark red
+        } else if (networkUtils.isNetworkAvailable()) {
+            if (networkUtils.isWifiConnected()) {
+                currentState = STATE_ONLINE_WIFI;
+                backgroundPaint.setColor(Color.parseColor("#4CAF50")); // Green
+                iconBackgroundPaint.setColor(Color.parseColor("#388E3C")); // Dark green
+            } else if (networkUtils.isCellularConnected() && networkUtils.isMeteredConnection()) {
+                currentState = STATE_METERED;
+                backgroundPaint.setColor(Color.parseColor("#FF9800")); // Orange
+                iconBackgroundPaint.setColor(Color.parseColor("#F57C00")); // Dark orange
+            } else if (networkUtils.isCellularConnected()) {
+                currentState = STATE_ONLINE_CELLULAR;
+                backgroundPaint.setColor(Color.parseColor("#2196F3")); // Blue
+                iconBackgroundPaint.setColor(Color.parseColor("#1976D2")); // Dark blue
+            } else {
+                currentState = STATE_ONLINE;
+                backgroundPaint.setColor(Color.parseColor("#4CAF50")); // Green
+                iconBackgroundPaint.setColor(Color.parseColor("#388E3C")); // Dark green
+            }
+        } else {
+            currentState = STATE_OFFLINE;
+            backgroundPaint.setColor(Color.parseColor("#F44336")); // Red
+            iconBackgroundPaint.setColor(Color.parseColor("#D32F2F")); // Dark red
+        }
         
-        Animation pulseAnimation = AnimationUtils.loadAnimation(getContext(), R.anim.pulse);
-        pulseAnimation.setAnimationListener(new Animation.AnimationListener() {
-            @Override
-            public void onAnimationStart(Animation animation) {
-            }
-            
-            @Override
-            public void onAnimationEnd(Animation animation) {
-                isAnimating = false;
-            }
-            
-            @Override
-            public void onAnimationRepeat(Animation animation) {
-            }
-        });
-        
-        startAnimation(pulseAnimation);
+        invalidate();
+        requestLayout(); // Since the text might change width
     }
     
     /**
-     * Convert SP to pixels
-     * @param sp Value in SP
-     * @return Value in pixels
+     * Toggle the offline mode
+     * @return new offline mode state
      */
-    private float spToPx(float sp) {
-        return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, sp, 
-                getResources().getDisplayMetrics());
+    public boolean toggleOfflineMode() {
+        if (networkUtils != null) {
+            boolean newState = networkUtils.toggleOfflineMode();
+            updateStatus();
+            return newState;
+        }
+        return false;
     }
     
     /**
-     * Convert DP to pixels
-     * @param dp Value in DP
-     * @return Value in pixels
+     * Get the appropriate icon for the current state
+     * @return Drawable for the current state
      */
-    private float dpToPx(float dp) {
-        return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, 
-                getResources().getDisplayMetrics());
+    private Drawable getIconForCurrentState() {
+        switch (currentState) {
+            case STATE_OFFLINE:
+                return offlineIcon;
+            case STATE_ONLINE_WIFI:
+                return wifiIcon;
+            case STATE_ONLINE_CELLULAR:
+                return cellularIcon;
+            case STATE_METERED:
+                return meteredIcon;
+            case STATE_ONLINE:
+            default:
+                return onlineIcon;
+        }
+    }
+    
+    /**
+     * Get the appropriate text for the current state
+     * @return Text for the current state
+     */
+    private String getTextForCurrentState() {
+        switch (currentState) {
+            case STATE_OFFLINE:
+                return offlineText;
+            case STATE_ONLINE_WIFI:
+                return wifiText;
+            case STATE_ONLINE_CELLULAR:
+                return cellularText;
+            case STATE_METERED:
+                return meteredText;
+            case STATE_ONLINE:
+            default:
+                return onlineText;
+        }
+    }
+    
+    /**
+     * Helper method to convert dp to pixels
+     * @param dp DP value
+     * @return Pixel value
+     */
+    private int dpToPx(float dp) {
+        return (int) (dp * getResources().getDisplayMetrics().density);
+    }
+    
+    /**
+     * Darken a color for the pressed state
+     * @param color Original color
+     * @return Darkened color
+     */
+    private int darkenColor(int color) {
+        float[] hsv = new float[3];
+        Color.colorToHSV(color, hsv);
+        hsv[2] *= 0.8f; // Reduce brightness to 80%
+        return Color.HSVToColor(hsv);
+    }
+    
+    @Override
+    public void onNetworkStateChanged(boolean isConnected, boolean isWifi, boolean isMetered, int connectionQuality) {
+        // Update the view when network state changes
+        updateStatus();
     }
 }

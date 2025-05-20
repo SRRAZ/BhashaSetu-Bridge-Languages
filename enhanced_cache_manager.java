@@ -67,7 +67,7 @@ public class CacheManager {
         this.downloadExecutor = Executors.newFixedThreadPool(MAX_CONCURRENT_DOWNLOADS);
         this.maintenanceExecutor = Executors.newScheduledThreadPool(1);
         this.dbHelper = new CacheDatabaseHelper(context);
-        this.networkUtils = NetworkUtils.getInstance(context);
+        this.networkUtils = new NetworkUtils(context);
         this.prefs = context.getSharedPreferences(PREF_CACHE, Context.MODE_PRIVATE);
         
         // Ensure cache directories exist
