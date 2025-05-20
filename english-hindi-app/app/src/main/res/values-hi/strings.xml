@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">अंग्रेजी हिंदी लर्निंग</string>
+    <string name="welcome_message">अंग्रेजी-हिंदी सीखने के ऐप में आपका स्वागत है</string>
+    <string name="welcome_message_hindi">Welcome to English-Hindi Learning App</string>
+    
+    <!-- Main Activity -->
+    <string name="action_search">खोज</string>
+    <string name="action_categories">श्रेणियाँ</string>
+    <string name="action_favorites">पसंदीदा</string>
+    <string name="action_settings">सेटिंग्स</string>
+    <string name="add_new_word">नया शब्द जोड़ें</string>
+    
+    <!-- Words -->
+    <string name="english_word">अंग्रेजी शब्द</string>
+    <string name="hindi_word">हिंदी शब्द</string>
+    <string name="english_pronunciation">अंग्रेजी उच्चारण</string>
+    <string name="hindi_pronunciation">हिंदी उच्चारण</string>
+    <string name="category">श्रेणी</string>
+    <string name="add_to_favorites">पसंदीदा में जोड़ें</string>
+    <string name="remove_from_favorites">पसंदीदा से हटाएँ</string>
+    <string name="word_saved">शब्द सहेजा गया</string>
+    <string name="word_deleted">शब्द हटा दिया गया</string>
+    <string name="example_sentence">उदाहरण वाक्य</string>
+    <string name="notes">नोट्स</string>
+    <string name="mastery_level">प्रवीणता स्तर</string>
+    
+    <!-- Lessons -->
+    <string name="lessons_title">अंग्रेजी सीखने के पाठ</string>
+    <string name="lessons_title_hindi">English Learning Lessons</string>
+    <string name="all_categories">सभी</string>
+    <string name="beginner">शुरुआती</string>
+    <string name="intermediate">मध्यवर्ती</string>
+    <string name="advanced">उन्नत</string>
+    <string name="no_incomplete_lessons">आपने सभी उपलब्ध पाठ पूरे कर लिए हैं!</string>
+    <string name="lesson_completed">पाठ पूरा हुआ मार्क किया गया!</string>
+    <string name="take_quiz">क्विज करें</string>
+    <string name="continue_learning">सीखना जारी रखें</string>
+    <string name="start_first_lesson">पहला पाठ शुरू करें</string>
+    <string name="next_lesson">अगला पाठ</string>
+    <string name="no_vocabulary_words">इस पाठ के लिए कोई शब्दावली शब्द नहीं हैं</string>
+    
+    <!-- Tabs -->
+    <string name="tab_english">अंग्रेजी</string>
+    <string name="tab_hindi">हिंदी</string>
+    <string name="tab_vocabulary">शब्दावली</string>
+    <string name="tab_practice">अभ्यास</string>
+    
+    <!-- Practice -->
+    <string name="practice_title">शब्दों का अभ्यास करें</string>
+    <string name="practice_title_hindi">Practice Words</string>
+    <string name="flashcards">फ्लैशकार्ड</string>
+    <string name="multiple_choice">बहुविकल्पी</string>
+    <string name="matching">मिलान</string>
+    <string name="spelling">वर्तनी</string>
+    <string name="pronunciation">उच्चारण</string>
+    <string name="correct">सही!</string>
+    <string name="incorrect">गलत। फिर से प्रयास करें!</string>
+    <string name="show_answer">उत्तर दिखाएँ</string>
+    <string name="next">अगला</string>
+    <string name="practice_complete">अभ्यास पूरा हुआ!</string>
+    <string name="review_due">समीक्षा देय</string>
+    <string name="review_soon">जल्द ही समीक्षा करें</string>
+    <string name="well_known">अच्छी तरह से जाना जाता है</string>
+    
+    <!-- Learning Activities -->
+    <string name="word_of_total">शब्द %1$d / %2$d</string>
+    <string name="question_of_total">प्रश्न %1$d / %2$d</string>
+    <string name="card_of_total">कार्ड %1$d / %2$d</string>
+    <string name="enter_english_spelling">अंग्रेजी वर्तनी दर्ज करें</string>
+    <string name="check_spelling">वर्तनी जाँचें</string>
+    <string name="next_word">अगला शब्द</string>
+    <string name="spell_instruction">इस हिंदी शब्द के लिए अंग्रेजी शब्द की वर्तनी लिखें:</string>
+    <string name="hindi_word_label">हिंदी शब्द:</string>
+    <string name="incorrect_answer">गलत। सही उत्तर है: %s</string>
+    <string name="play_pronunciation">उच्चारण सुनें</string>
+    <string name="play_slow">धीमा उच्चारण</string>
+    <string name="play_normal">सामान्य उच्चारण</string>
+    <string name="pronunciation_instruction">सुनें और उच्चारण का अभ्यास करें:</string>
+    <string name="current_word">वर्तमान शब्द:</string>
+    <string name="difficulty_question">इस शब्द का उच्चारण आपके लिए कैसा था?</string>
+    <string name="easy">आसान</string>
+    <string name="hard">कठिन</string>
+    <string name="repeat">दोहराएँ</string>
+    <string name="deck_title">डेक शीर्षक</string>
+    <string name="flip_card">कार्ड पलटें</string>
+    <string name="know_it">जानता हूँ</string>
+    <string name="dont_know">नहीं जानता</string>
+    <string name="previous">पिछला</string>
+    <string name="choose_practice">अभ्यास का प्रकार चुनें</string>
+    <string name="score_label">आपका स्कोर</string>
+    <string name="try_again_button">फिर से प्रयास करें</string>
+    <string name="close_button">बंद करें</string>
+    <string name="excellent_feedback">उत्कृष्ट! आप बहुत अच्छा कर रहे हैं।</string>
+    <string name="very_good_feedback">बहुत अच्छा! थोड़ा और अभ्यास करें।</string>
+    <string name="good_effort_feedback">अच्छा प्रयास! और अभ्यास करें।</string>
+    <string name="keep_practicing_feedback">चिंता न करें, अभ्यास से सुधार होगा।</string>
+    <string name="flashcard_complete">फ्लैशकार्ड पूरा हुआ!</string>
+    <string name="quiz_complete">क्विज़ पूरा हुआ!</string>
+    <string name="spelling_complete">वर्तनी अभ्यास पूरा हुआ!</string>
+    <string name="pronunciation_complete">उच्चारण अभ्यास पूरा हुआ!</string>
+    <string name="check_answer">उत्तर जाँचें</string>
+    <string name="select_answer">कृपया एक उत्तर चुनें</string>
+    <string name="words_mastered">शब्द मास्टर किए: %1$d/%2$d</string>
+    <string name="daily_streak">दैनिक स्ट्रीक: %d</string>
+    <string name="words_due_review">समीक्षा के लिए देय शब्द: %d</string>
+    <string name="no_words_category">इस श्रेणी में कोई शब्द नहीं</string>
+    <string name="no_words_criteria">कोई शब्द मापदंड से मेल नहीं खाते</string>
+    <string name="tts_not_ready">टेक्स्ट-टू-स्पीच तैयार नहीं है</string>
+    <string name="playing_pronunciation">उच्चारण चल रहा है...</string>
+    
+    <!-- Settings -->
+    <string name="settings_title">सेटिंग्स</string>
+    <string name="settings_title_hindi">Settings</string>
+    <string name="language_preference">इंटरफेस भाषा</string>
+    <string name="use_hindi_interface">हिंदी इंटरफेस का उपयोग करें</string>
+    <string name="daily_reminder">दैनिक रिमाइंडर</string>
+    <string name="reminder_time">रिमाइंडर समय</string>
+    <string name="audio_enabled">ऑडियो सक्षम करें</string>
+    <string name="clear_progress">प्रगति साफ़ करें</string>
+    <string name="clear_progress_confirmation">क्या आप वाकई अपनी सारी प्रगति साफ़ करना चाहते हैं?</string>
+    <string name="about">के बारे में</string>
+    <string name="version">संस्करण</string>
+    
+    <!-- Misc -->
+    <string name="loading">लोड हो रहा है...</string>
+    <string name="error_loading">डेटा लोड करने में त्रुटि</string>
+    <string name="try_again">पुनः प्रयास करें</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="save">सहेजें</string>
+    <string name="delete">हटाएँ</string>
+
+    <!--  Bottom Navigation  -->
+    <string name="home_tab">होम</string>
+    <string name="lessons_tab">पाठ</string>
+    <string name="practice_tab">अभ्यास</string>
+    <string name="profile_tab">प्रोफाइल</string>
+    <string name="favorites_tab">पसंदीदा</string>
+
+</resources>

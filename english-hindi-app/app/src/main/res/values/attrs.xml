@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Custom attributes for the HindiTextView -->
+    <declare-styleable name="HindiTextView">
+        <attr name="hindiTextSize" format="enum">
+            <enum name="small" value="0" />
+            <enum name="medium" value="1" />
+            <enum name="large" value="2" />
+            <enum name="header" value="3" />
+            <enum name="title" value="4" />
+        </attr>
+    </declare-styleable>
+    
+    <!-- Custom attributes for the BilingualTextView -->
+    <declare-styleable name="BilingualTextView">
+        <attr name="englishText" format="string" />
+        <attr name="hindiText" format="string" />
+        <attr name="textStyle" format="enum">
+            <enum name="small" value="0" />
+            <enum name="medium" value="1" />
+            <enum name="large" value="2" />
+            <enum name="header" value="3" />
+            <enum name="title" value="4" />
+        </attr>
+    </declare-styleable>
+    
+    <!-- Custom attributes for the AudioPronunciationView -->
+    <declare-styleable name="AudioPronunciationView">
+        <attr name="pronunciationLabel" format="string" />
+        <attr name="wordText" format="string" />
+        <attr name="wordId" format="integer" />
+        <attr name="language" format="string" />
+    </declare-styleable>
+    
+    <!--  Custom attributes for WordImageView  -->
+    <declare-styleable name="WordImageView">
+        <attr name="imageUrl" format="string"/>
+        <attr name="captionText" format="string"/>
+    </declare-styleable>
+    
+    <!--  Attributes for XpTrackerView  -->
+    <declare-styleable name="XpTrackerView">
+        <attr name="progressColor" format="color"/>
+        <attr name="backgroundColor" format="color"/>
+        <attr name="textColor" format="color"/>
+        <attr name="levelBackgroundColor" format="color"/>
+    </declare-styleable>
+    
+    <!--  Attributes for SkillProgressView  -->
+    <declare-styleable name="SkillProgressView">
+        <attr name="skillProgressColor" format="color"/>
+        <attr name="skillBackgroundColor" format="color"/>
+        <attr name="skillTextColor" format="color"/>
+        <attr name="skillName" format="string"/>
+        <attr name="strokeWidth" format="dimension"/>
+    </declare-styleable>
+    
+    <!--  Attributes for StarburstView  -->
+    <declare-styleable name="StarburstView">
+        <attr name="rayCount" format="integer"/>
+        <attr name="rayColor" format="color"/>
+    </declare-styleable>
+</resources>

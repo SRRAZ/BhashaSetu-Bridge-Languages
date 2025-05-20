@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#757575</color>
+    <color name="colorDivider">#BDBDBD</color>
+    
+    <!-- Category colors -->
+    <color name="colorBeginner">#4CAF50</color>
+    <color name="colorIntermediate">#FFC107</color>
+    <color name="colorAdvanced">#F44336</color>
+    
+    <!-- Progress colors -->
+    <color name="colorMasteryLow">#F44336</color>
+    <color name="colorMasteryMedium">#FFC107</color>
+    <color name="colorMasteryHigh">#4CAF50</color>
+    
+    <!-- Quiz result colors -->
+    <color name="colorCorrect">#4CAF50</color>
+    <color name="colorIncorrect">#F44336</color>
+    
+    <!-- Game Colors -->
+    <color name="colorSuccessBackground">#2E7D32</color>
+    <color name="colorErrorBackground">#C62828</color>
+    <color name="colorGameBackground">#F5F5F5</color>
+    <color name="colorTileBackground">#5C6BC0</color>
+    <color name="colorTileText">#FFFFFF</color>
+    <color name="colorTileShadow">#29000000</color>
+    <color name="colorTimerNormal">#303F9F</color>
+    <color name="colorTimerWarning">#FFA000</color>
+    <color name="colorTimerCritical">#D32F2F</color>
+    
+    <!--  Achievement Colors  -->
+    <color name="achievement_unlocked_color">#4CAF50</color>
+    <color name="achievement_locked_color">#757575</color>
+    <color name="achievement_progress_color">#2196F3</color>
+    <color name="achievement_points_color">#FFC107</color>
+    <color name="achievement_dialog_background">#FFFFFF</color>
+    <color name="achievement_title_color">#FF5722</color>
+</resources>

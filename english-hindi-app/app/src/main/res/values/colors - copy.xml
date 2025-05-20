@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Theme Colors -->
+    <color name="primary">#3F51B5</color>
+    <color name="primary_dark">#303F9F</color>
+    <color name="primary_light">#C5CAE9</color>
+    <color name="accent">#FF4081</color>
+    <color name="accent_light">#FF80AB</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_button_secondary">#616161</color>
+    <color name="text_hint">#BDBDBD</color>
+    
+    <!-- Background Colors -->
+    <color name="background_light">#F5F5F5</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="card_background_secondary">#FAFAFA</color>
+    <color name="divider">#EEEEEE</color>
+    
+    <!-- Status Indicators -->
+    <color name="success">#4CAF50</color>
+    <color name="warning">#FFC107</color>
+    <color name="error">#F44336</color>
+    <color name="info">#2196F3</color>
+    
+    <!-- Difficulty Levels -->
+    <color name="difficulty_beginner">#4CAF50</color>
+    <color name="difficulty_elementary">#2196F3</color>
+    <color name="difficulty_intermediate">#FF9800</color>
+    <color name="difficulty_advanced">#9C27B0</color>
+    <color name="difficulty_expert">#F44336</color>
+    
+    <!-- Importance Levels -->
+    <color name="importance_high">#F44336</color>
+    <color name="importance_medium">#FF9800</color>
+    <color name="importance_low">#4CAF50</color>
+    
+    <!-- Skill Areas -->
+    <color name="skill_vocabulary">#673AB7</color>
+    <color name="skill_pronunciation">#2196F3</color>
+    <color name="skill_grammar">#009688</color>
+    <color name="skill_listening">#FF9800</color>
+    <color name="skill_reading">#9C27B0</color>
+    <color name="skill_writing">#795548</color>
+</resources>

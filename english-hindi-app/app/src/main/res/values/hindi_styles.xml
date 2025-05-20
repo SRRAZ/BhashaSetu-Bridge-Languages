@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Hindi text styling -->
+    <style name="HindiTextAppearance">
+        <item name="android:fontFamily">@font/noto_sans_devanagari</item>
+        <item name="android:textDirection">locale</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+    </style>
+
+    <style name="HindiTextAppearance.Small">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="HindiTextAppearance.Medium">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="HindiTextAppearance.Large">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="HindiTextAppearance.Header">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="HindiTextAppearance.Title">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Hindi button styling -->
+    <style name="HindiButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:fontFamily">@font/noto_sans_devanagari</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+    </style>
+
+    <!-- Hindi EditText styling -->
+    <style name="HindiEditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:fontFamily">@font/noto_sans_devanagari</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+    </style>
+</resources>

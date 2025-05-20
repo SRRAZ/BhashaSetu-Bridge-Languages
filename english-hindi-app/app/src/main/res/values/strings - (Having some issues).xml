@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">English Hindi Learning</string>
+    <string name="welcome_message">Welcome to English-Hindi Learning App</string>
+    <string name="welcome_message_hindi">अंग्रेजी-हिंदी सीखने के ऐप में आपका स्वागत है</string>
+    
+    <!-- Main Activity -->
+    <string name="action_search">Search</string>
+    <string name="action_categories">Categories</string>
+    <string name="action_favorites">Favorites</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_new_word">Add New Word</string>
+    
+    <!-- Words -->
+    <string name="english_word">English Word</string>
+    <string name="hindi_word">Hindi Word</string>
+    <string name="english_pronunciation">English Pronunciation</string>
+    <string name="hindi_pronunciation">Hindi Pronunciation</string>
+    <string name="category">Category</string>
+    <string name="add_to_favorites">Add to Favorites</string>
+    <string name="remove_from_favorites">Remove from Favorites</string>
+    <string name="word_saved">Word saved</string>
+    <string name="word_deleted">Word deleted</string>
+    <string name="example_sentence">Example Sentence</string>
+    <string name="notes">Notes</string>
+    <string name="mastery_level">Mastery Level</string>
+    
+    <!-- Lessons -->
+    <string name="lessons_title">English Learning Lessons</string>
+    <string name="lessons_title_hindi">अंग्रेजी सीखने के पाठ</string>
+    <string name="beginner">Beginner</string>
+    <string name="intermediate">Intermediate</string>
+    <string name="advanced">Advanced</string>
+    <string name="beginner_hindi">नौसिखिया</string>
+    <string name="intermediate_hindi">मध्यवर्ती</string>
+    <string name="advanced_hindi">उन्नत</string>
+    <string name="lesson">Lesson</string>
+    <string name="lesson_hindi">पाठ</string>
+    <string name="start_lesson">Start Lesson</string>
+    <string name="start_lesson_hindi">पाठ शुरू करें</string>
+    <string name="continue_lesson">Continue Lesson</string>
+    <string name="continue_lesson_hindi">पाठ जारी रखें</string>
+    <string name="complete_lesson">Complete Lesson</string>
+    <string name="practice">Practice</string>
+    <string name="practice_hindi">अभ्यास</string>
+    <string name="next">Next</string>
+    <string name="prev">Previous</string>
+    <string name="complete">Complete</string>
+    
+    <!-- Pronunciation -->
+    <string name="playing_pronunciation">Playing pronunciation...</string>
+    <string name="playing_slow">Playing slow pronunciation...</string>
+    <string name="playing_fast">Playing fast pronunciation...</string>
+    <string name="audio_normal">Normal</string>
+    <string name="audio_slow">Slow</string>
+    <string name="audio_fast">Fast</string>
+    <string name="playback_speed">Playback Speed:</string>
+    <string name="speed_slow">Slow</string>
+    <string name="speed_normal">Normal</string>
+    <string name="speed_fast">Fast</string>
+    <string name="comparing">Comparing…</string>
+    <string name="tap_record">Tap to record</string>
+    <string name="recording">Recording…</string>
+    <string name="tap_stop">Tap to stop</string>
+    <string name="replay_recording">Replay</string>
+    <string name="compare_pronunciation">Compare</string>
+    <string name="continue_practice">Continue</string>
+    <string name="great_job">Great job!</string>
+    <string name="keep_practicing">Keep practicing</string>
+    <string name="achievement_unlocked">Achievement Unlocked!</string>
+    <string name="pronunciation_master">Pronunciation Master</string>
+    <string name="pronunciation_improver">Pronunciation Improver</string>
+    <string name="first_try">First try!</string>
+    <string name="perfect_score">Perfect Score!</string>
+    <string name="pronunciation_label">Pronunciation</string>
+    <string name="english_pronunciation_label">English Pronunciation</string>
+    <string name="hindi_pronunciation_label">Hindi Pronunciation</string>
+    <string name="recording_permission_granted">Recording permission granted</string>
+    <string name="recording_permission_denied">Recording permission denied</string>
+    <string name="record_pronunciation">Record Pronunciation</string>
+    <string name="play_pronunciation">Play Pronunciation</string>
+    
+    <plurals name="pronunciation_attempts">
+        <item quantity="one">%d attempt</item>
+        <item quantity="other">%d attempts</item>
+    </plurals>
+    <string name="pronunciation_mastery">Mastery: %s%%</string>
+    
+    <!-- Practice Types -->
+    <string name="spelling_practice">Spelling Practice</string>
+    <string name="pronunciation_practice">Pronunciation Practice</string>
+    <string name="quiz_practice">Quiz Practice</string>
+    <string name="choose_practice_type">Choose Practice Type</string>
+    <string name="practice_complete">Practice Complete!</string>
+    <string name="practice_score">Score: %1$d / %2$d</string>
+    <string name="practice_accuracy">Accuracy: %d%%</string>
+    <string name="tip_general_pronunciation">Pay attention to the stress pattern in this word.</string>
+    <string name="tip_th_sound">The \"th\" sound is made by placing your tongue between your teeth.</string>
+    <string name="tip_r_sound">The English \"r\" sound is different from the Hindi \"र\" sound.</string>
+    <string name="tip_l_sound">Make sure to pronounce the \"l\" sound clearly, different from \"र\".</string>
+    <string name="tip_w_sound">For the \"w\" sound, round your lips more than for the Hindi \"व\".</string>
+    <string name="tip_v_sound">For the \"v\" sound, touch your bottom lip to your upper teeth.</string>
+    <string name="tip_sh_sound">The \"sh\" sound is similar to Hindi \"श\".</string>
+    <string name="tip_ch_sound">The \"ch\" sound is similar to Hindi \"च\".</string>
+    <string name="tip_j_sound">The \"j\" sound is similar to Hindi \"ज\".</string>
+    <string name="tip_a_sound">The \"a\" vowel in English is often pronounced differently than in Hindi.</string>
+    <string name="tip_e_sound">The \"e\" vowel in English is often pronounced as \"ए\" or \"इ\" in Hindi.</string>
+    <string name="tip_i_sound">The \"i\" vowel in English can be short like \"इ\" or long like \"ई\".</string>
+    <string name="tip_o_sound">The \"o\" vowel in English is often pronounced as \"ओ\" or \"आ\" in Hindi.</string>
+    <string name="tip_u_sound">The \"u\" vowel in English can be short like \"उ\" or long like \"ऊ\".</string>
+    <string name="tip_listen_carefully">Listen carefully to the pronunciation and try to mimic it exactly.</string>
+    
+    <!-- Games -->
+    <string name="word_scramble">Word Scramble</string>
+    <string name="picture_word_match">Picture Word Match</string>
+    <string name="word_association">Word Association</string>
+    <string name="flashcards">Flashcards</string>
+    <string name="study_flashcards">Study Flashcards</string>
+    <string name="flashcard_quiz">Flashcard Quiz</string>
+    <string name="spelling_challenge">Spelling Challenge</string>
+    <string name="exit_game_title">Exit Game?</string>
+    <string name="exit_game_message">Are you sure you want to exit the game? Your progress will be lost.</string>
+    <string name="exit">Exit</string>
+    <string name="cancel">Cancel</string>
+    <string name="score">Score:</string>
+    <string name="time">Time:</string>
+    <string name="check">Check</string>
+    <string name="flip">Flip</string>
+    <string name="i_know">I Know</string>
+    <string name="i_dont_know">I Don\'t Know</string>
+    <string name="correct">Correct!</string>
+    <string name="incorrect">Incorrect!</string>
+    <string name="hint_not_available">No more hints available</string>
+    <string name="no_words_criteria">No words matching the selected criteria</string>
+    <string name="no_words_available">No words available</string>
+    <string name="not_enough_words">Not enough words to play this game</string>
+    <string name="not_enough_words_with_images">Not enough words with images</string>
+    <string name="not_enough_related_words">Not enough related words</string>
+    <string name="question_number">Question %1$d of %2$d</string>
+    <string name="play_again">Play Again</string>
+    <string name="your_score">Your Score:</string>
+    <string name="game_over">Game Over</string>
+    <string name="game_complete">Game Complete!</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="excellent_job">Excellent Job!</string>
+    <string name="well_done">Well Done!</string>
+    <string name="good_effort">Good Effort!</string>
+    <string name="matches_made">Matches Made:</string>
+    <string name="whats_the_translation">What\'s the translation?</string>
+    <string name="what_is_hindi_for">What is the Hindi word for \"%s\"?</string>
+    <string name="what_is_english_for">What is the English word for \"%s\"?</string>
+    <string name="spell_the_word">Spell the word:</string>
+    <string name="spell_hindi_for">Spell the Hindi word for \"%s\":</string>
+    <string name="spell_english_for">Spell the English word for \"%s\":</string>
+    <string name="enter_spelling">Enter spelling…</string>
+    <string name="correct_answers_format">Correct: %1$d/%2$d (%3$d%%)</string>
+</resources>

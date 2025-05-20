@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Pronunciation Practice Activity -->
+    <string name="pronunciation_practice">Pronunciation Practice</string>
+    <string name="select_words_to_practice">Select words you want to practice pronouncing</string>
+    <string name="start_practice_session">Start Practice Session</string>
+    <string name="next_word">Next Word</string>
+    <string name="pronunciation_instruction">Pronounce: \"%1$s\"</string>
+    <string name="pronunciation_progress_default">0/0 words</string>
+    <string name="pronunciation_progress">%1$d/%2$d words</string>
+    <string name="select_words_for_practice">Please select at least one word to practice</string>
+    <string name="play_pronunciation">Play pronunciation</string>
+    
+    <!-- Difficulty Labels -->
+    <string name="difficulty_easy">Easy</string>
+    <string name="difficulty_medium">Medium</string>
+    <string name="difficulty_hard">Hard</string>
+    
+    <!-- Feedback Messages -->
+    <string name="pronunciation_feedback_title">Feedback</string>
+    <string name="pronunciation_feedback">Accuracy: %1$d%%\n\n%2$s\n\n%3$s</string>
+    <string name="feedback_excellent">Excellent pronunciation! Keep up the great work.</string>
+    <string name="feedback_good">Good job! Your pronunciation is clear but could use a bit more practice.</string>
+    <string name="feedback_needs_practice">Your pronunciation needs more practice. Try listening to the reference again.</string>
+    
+    <!-- Session Summary Dialog -->
+    <string name="session_complete">Session Complete!</string>
+    <string name="completion_label">Completion Rate</string>
+    <string name="completion_rate">%1$d%%</string>
+    <string name="accuracy_label">Average Accuracy</string>
+    <string name="average_accuracy">%1$d%%</string>
+    <string name="duration_label">Session Duration</string>
+    <string name="session_duration">%1$s</string>
+    <string name="improvement_positive">%1$d%% improvement from your last session!</string>
+    <string name="improvement_negative">%1$d%% below your last session. Keep practicing!</string>
+    <string name="achievement_unlocked">Achievement Unlocked</string>
+    <string name="practice_more">Practice More</string>
+    <string name="done">Done</string>
+    
+    <!-- Feedback Summary Messages -->
+    <string name="feedback_excellent_summary">Outstanding work! Your pronunciation is excellent. You have mastered the sounds and rhythm of the words you practiced.</string>
+    <string name="feedback_very_good_summary">Very good job! Your pronunciation is very clear. With a bit more practice, you\'ll achieve perfect pronunciation.</string>
+    <string name="feedback_good_summary">Good effort! Your pronunciation is generally clear. Focus on the feedback for individual words to improve further.</string>
+    <string name="feedback_fair_summary">You\'re making progress! Some pronunciations were good, but others need more practice. Listen carefully to the reference sounds.</string>
+    <string name="feedback_needs_practice_summary">You\'re on the right track, but need more practice. Focus on one word at a time and listen carefully to the reference sounds.</string>
+    <string name="feedback_keep_practicing_summary">Don\'t give up! Pronunciation takes time to master. Try practicing with fewer words and focus on listening carefully.</string>
+    
+    <!-- Progress Dashboard -->
+    <string name="pronunciation_progress_title">Pronunciation Progress</string>
+    <string name="words_practiced">Words Practiced</string>
+    <string name="unique_words_practiced">Unique Words</string>
+    <string name="total_sessions">Total Sessions</string>
+    <string name="average_session_duration">Avg. Session</string>
+    <string name="best_score">Best Score</string>
+</resources>

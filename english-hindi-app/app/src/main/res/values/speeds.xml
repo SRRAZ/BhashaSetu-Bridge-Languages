@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Speech rate constants -->
+    <item name="speech_rate_slow" format="float" type="string">0.5</item>
+    <item name="speech_rate_normal" format="float" type="string">1.0</item>
+    <item name="speech_rate_fast" format="float" type="string">1.5</item>
+</resources>

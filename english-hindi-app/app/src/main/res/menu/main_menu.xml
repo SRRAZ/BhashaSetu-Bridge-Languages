@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <item
+        android:id="@+id/action_filter"
+        android:title="Filter"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/filter_all"
+                android:title="All Words" />
+            <item
+                android:id="@+id/filter_greetings"
+                android:title="Greetings" />
+            <item
+                android:id="@+id/filter_basic"
+                android:title="Basic Words" />
+            <item
+                android:id="@+id/filter_food"
+                android:title="Food &amp; Drinks" />
+            <item
+                android:id="@+id/filter_education"
+                android:title="Education" />
+            <item
+                android:id="@+id/filter_people"
+                android:title="People" />
+            <item
+                android:id="@+id/filter_favorites"
+                android:title="Favorites" />
+        </menu>
+    </item>
+    
+    <item
+        android:id="@+id/action_search"
+        android:title="Search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+        
+</menu>

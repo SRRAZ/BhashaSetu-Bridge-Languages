@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Games Hindi translations -->
+    <string name="word_scramble">शब्द पहेली</string>
+    <string name="picture_word_match">चित्र शब्द मिलान</string>
+    <string name="word_association">शब्द संबंध</string>
+    <string name="flashcards">फ्लैशकार्ड</string>
+    <string name="study_flashcards">फ्लैशकार्ड अध्ययन</string>
+    <string name="flashcard_quiz">फ्लैशकार्ड क्विज</string>
+    <string name="spelling_challenge">वर्तनी चुनौती</string>
+    <string name="exit_game_title">गेम से बाहर निकलें?</string>
+    <string name="exit_game_message">क्या आप वाकई गेम से बाहर निकलना चाहते हैं? आपकी प्रगति खो जाएगी।</string>
+    <string name="exit">बाहर निकलें</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="score">अंक:</string>
+    <string name="time">समय:</string>
+    <string name="check">जांचें</string>
+    <string name="flip">पलटें</string>
+    <string name="next">अगला</string>
+    <string name="i_know">मुझे पता है</string>
+    <string name="i_dont_know">मुझे नहीं पता</string>
+    <string name="correct">सही!</string>
+    <string name="incorrect">गलत!</string>
+    <string name="hint_not_available">कोई और संकेत उपलब्ध नहीं है</string>
+    <string name="no_words_criteria">चयनित मानदंडों से मिलते शब्द नहीं हैं</string>
+    <string name="no_words_available">कोई शब्द उपलब्ध नहीं है</string>
+    <string name="not_enough_words">इस गेम को खेलने के लिए पर्याप्त शब्द नहीं हैं</string>
+    <string name="not_enough_words_with_images">पर्याप्त चित्रों वाले शब्द नहीं हैं</string>
+    <string name="not_enough_related_words">पर्याप्त संबंधित शब्द नहीं हैं</string>
+    <string name="question_number">प्रश्न %1$d / %2$d</string>
+    <string name="play_again">फिर से खेलें</string>
+    <string name="your_score">आपके अंक:</string>
+    <string name="game_over">खेल समाप्त</string>
+    <string name="game_complete">खेल पूरा हुआ!</string>
+    <string name="congratulations">बधाई हो!</string>
+    <string name="excellent_job">उत्कृष्ट काम!</string>
+    <string name="well_done">शाबाश!</string>
+    <string name="good_effort">अच्छा प्रयास!</string>
+    <string name="matches_made">मिलान किए गए:</string>
+    <string name="whats_the_translation">अनुवाद क्या है?</string>
+    <string name="what_is_hindi_for">\"%s\" के लिए हिंदी शब्द क्या है?</string>
+    <string name="what_is_english_for">\"%s\" के लिए अंग्रेजी शब्द क्या है?</string>
+    <string name="spell_the_word">शब्द की वर्तनी लिखें:</string>
+    <string name="spell_hindi_for">\"%s\" के लिए हिंदी शब्द की वर्तनी लिखें:</string>
+    <string name="spell_english_for">\"%s\" के लिए अंग्रेजी शब्द की वर्तनी लिखें:</string>
+    <string name="enter_spelling">वर्तनी दर्ज करें…</string>
+    <string name="correct_answers_format">सही: %1$d/%2$d (%3$d%%)</string>
+</resources>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">English Hindi Learning</string>
+    <string name="welcome_message">Welcome to English-Hindi Learning App</string>
+    <string name="welcome_message_hindi">अंग्रेजी-हिंदी सीखने के ऐप में आपका स्वागत है</string>
+    
+    <!-- Main Activity -->
+    <string name="action_search">Search</string>
+    <string name="action_categories">Categories</string>
+    <string name="action_favorites">Favorites</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_new_word">Add New Word</string>
+    
+    <!-- Words -->
+    <string name="english_word">English Word</string>
+    <string name="hindi_word">Hindi Word</string>
+    <string name="english_pronunciation">English Pronunciation</string>
+    <string name="hindi_pronunciation">Hindi Pronunciation</string>
+    <string name="category">Category</string>
+    <string name="add_to_favorites">Add to Favorites</string>
+    <string name="remove_from_favorites">Remove from Favorites</string>
+    <string name="word_saved">Word saved</string>
+    <string name="word_deleted">Word deleted</string>
+    <string name="example_sentence">Example Sentence</string>
+    <string name="notes">Notes</string>
+    <string name="mastery_level">Mastery Level</string>
+    
+    <!-- Lessons -->
+    <string name="lessons_title">English Learning Lessons</string>
+    <string name="lessons_title_hindi">अंग्रेजी सीखने के पाठ</string>
+    <string name="all_categories">All</string>
+    <string name="beginner">Beginner</string>
+    <string name="intermediate">Intermediate</string>
+    <string name="advanced">Advanced</string>
+    <string name="beginner_hindi">नौसिखिया</string>
+    <string name="intermediate_hindi">मध्यवर्ती</string>
+    <string name="advanced_hindi">उन्नत</string>
+    <string name="no_incomplete_lessons">You have completed all available lessons!</string>
+    <string name="lesson_completed">Lesson marked as completed!</string>
+    <string name="take_quiz">Take Quiz</string>
+    <string name="continue_learning">Continue Learning</string>
+    <string name="start_first_lesson">Start First Lesson</string>
+    <string name="next_lesson">Next Lesson</string>
+    <string name="no_vocabulary_words">No vocabulary words for this lesson</string>
+    
+    <!-- Tabs -->
+    <string name="tab_english">English</string>
+    <string name="tab_hindi">हिंदी</string>
+    <string name="tab_vocabulary">Vocabulary</string>
+    <string name="tab_practice">Practice</string>
+    
+    <!-- Practice -->
+    <string name="practice_title">Practice Words</string>
+    <string name="practice_title_hindi">शब्दों का अभ्यास करें</string>
+    <string name="flashcards">Flashcards</string>
+    <string name="multiple_choice">Multiple Choice</string>
+    <string name="matching">Matching</string>
+    <string name="spelling">Spelling</string>
+    <string name="pronunciation">Pronunciation</string>
+    <string name="correct">Correct!</string>
+    <string name="incorrect">Incorrect. Try again!</string>
+    <string name="show_answer">Show Answer</string>
+    <string name="next">Next</string>
+    <string name="practice_complete">Practice Complete!</string>
+    <string name="review_due">Review Due</string>
+    <string name="review_soon">Review soon</string>
+    <string name="well_known">Well known</string>
+    
+    <!-- Achievement System Strings -->
+    <string name="achievements_title">Achievements</string>
+    <string name="achievement_unlocked">Achievement Unlocked!</string>
+    <string name="achievement_icon_description">Achievement icon</string>
+    <string name="achievement_unlocked_on">Unlocked on %1$s</string>
+    <string name="achievement_completed">Completed!</string>
+    <string name="achievement_progress_format">%1$d/%2$d</string>
+    <string name="achievement_points_format">%1$d pts</string>
+    <string name="hidden_achievement">Hidden Achievement</string>
+    <string name="hidden_achievement_description">Continue learning to discover this achievement</string>
+    <string name="achievement_locked">Locked</string>
+    <string name="your_progress">Your Progress</string>
+    <string name="achievements_progress_format">%1$d/%2$d achievements unlocked</string>
+    <string name="achievements_total_points_format">Total Points: %1$d</string>
+    <string name="filter_by">Filter by:</string>
+    <string name="achievement_category_all">All Categories</string>
+    <string name="achievement_category_learning">Learning</string>
+    <string name="achievement_category_vocabulary">Vocabulary</string>
+    <string name="achievement_category_pronunciation">Pronunciation</string>
+    <string name="achievement_category_games">Games</string>
+    <string name="progress">Progress:</string>
+    <string name="category">Category:</string>
+    <string name="points">Points:</string>
+    <string name="awesome">Awesome!</string>
+    <string name="close">Close</string>
+    
+    <!-- Learning Activities -->
+    <string name="word_of_total">Word %1$d of %2$d</string>
+    <string name="question_of_total">Question %1$d of %2$d</string>
+    <string name="card_of_total">Card %1$d of %2$d</string>
+    <string name="enter_english_spelling">Enter English spelling</string>
+    <string name="check_spelling">Check Spelling</string>
+    <string name="next_word">Next Word</string>
+    <string name="spell_instruction">Spell the English word for this Hindi word:</string>
+    <string name="hindi_word_label">Hindi Word:</string>
+    <string name="incorrect_answer">Incorrect. The correct answer is: %s</string>
+    <string name="play_pronunciation">Play pronunciation</string>
+    <string name="play_slow">Slow Pronunciation</string>
+    <string name="play_normal">Normal Pronunciation</string>
+    <string name="pronunciation_instruction">Listen and practice the pronunciation:</string>
+    <string name="current_word">Current Word:</string>
+    <string name="difficulty_question">How was pronouncing this word for you?</string>
+    <string name="easy">Easy</string>
+    <string name="hard">Hard</string>
+    <string name="repeat">Repeat</string>
+    <string name="deck_title">Deck Title</string>
+    <string name="flip_card">Flip Card</string>
+    <string name="know_it">I Know It</string>
+    <string name="dont_know">Don\'t Know</string>
+    <string name="previous">Previous</string>
+    <string name="choose_practice">Choose Practice Type</string>
+    <string name="score_label">Your Score</string>
+    <string name="try_again_button">Try Again</string>
+    <string name="close_button">Close</string>
+    <string name="excellent_feedback">Excellent! You\'re doing very well.</string>
+    <string name="very_good_feedback">Very good! Keep practicing a bit more.</string>
+    <string name="good_effort_feedback">Good effort! Keep practicing.</string>
+    <string name="keep_practicing_feedback">Don\'t worry, practice will improve your skills.</string>
+    <string name="flashcard_complete">Flashcard Complete!</string>
+    <string name="quiz_complete">Quiz Complete!</string>
+    <string name="spelling_complete">Spelling Practice Complete!</string>
+    <string name="pronunciation_complete">Pronunciation Practice Complete!</string>
+    <string name="check_answer">Check Answer</string>
+    <string name="select_answer">Please select an answer</string>
+    <string name="words_mastered">Words Mastered: %1$d/%2$d</string>
+    <string name="daily_streak">Daily Streak: %d</string>
+    <string name="words_due_review">Words Due for Review: %d</string>
+    <string name="no_words_category">No words in this category</string>
+    <string name="no_words_criteria">No words match the criteria</string>
+    <string name="tts_not_ready">Text-to-speech is not ready yet</string>
+    <string name="playing_pronunciation">Playing pronunciation...</string>
+    <string name="playing_slow">Playing slow pronunciation...</string>
+    <string name="playing_fast">Playing fast pronunciation...</string>
+    <string name="audio_normal">Normal</string>
+    <string name="audio_slow">Slow</string>
+    <string name="audio_fast">Fast</string>
+    <string name="playback_speed">Playback Speed:</string>
+    <string name="speed_slow">Slow</string>
+    <string name="speed_normal">Normal</string>
+    <string name="speed_fast">Fast</string>
+    <string name="comparing">Comparing…</string>
+    <string name="tap_record">Tap to record</string>
+    <string name="recording">Recording…</string>
+    <string name="tap_stop">Tap to stop</string>
+    <string name="replay_recording">Replay</string>
+    <string name="compare_pronunciation">Compare</string>
+    <string name="continue_practice">Continue</string>
+    <string name="great_job">Great job!</string>
+    <string name="keep_practicing">Keep practicing</string>
+    <string name="achievement_unlocked">Achievement Unlocked!</string>
+    <string name="pronunciation_master">Pronunciation Master</string>
+    <string name="pronunciation_improver">Pronunciation Improver</string>
+    <string name="first_try">First try!</string>
+    <string name="perfect_score">Perfect Score!</string>
+    <string name="pronunciation_label">Pronunciation</string>
+    <string name="english_pronunciation_label">English Pronunciation</string>
+    <string name="hindi_pronunciation_label">Hindi Pronunciation</string>
+    <string name="tap_to_play">Tap to play</string>
+    <string name="tap_to_stop">Tap to stop</string>
+    
+    <!-- Word Scramble Game -->
+    <string name="word_scramble">Word Scramble</string>
+    <string name="score">Score:</string>
+    <string name="unscramble_instructions">Tap letters to form the English word for the Hindi word shown above.</string>
+    <string name="your_answer">Your Answer:</string>
+    <string name="available_letters">Available Letters:</string>
+    <string name="hint">Hint</string>
+    <string name="clear">Clear</string>
+    <string name="check">Check</string>
+    <string name="success_title">Great Job!</string>
+    <string name="success_message">You successfully completed all the words!</string>
+    <string name="final_score">Your Final Score:</string>
+    <string name="play_again">Play Again</string>
+    <string name="exit">Exit</string>
+    <string name="time_up_title">Time\'s Up!</string>
+    <string name="time_up_message">You\'ve run out of time, but don\'t worry! Keep practicing to improve.</string>
+    <string name="your_score">Your Score:</string>
+    <string name="try_again">Try Again</string>
+    <string name="exit_game_title">Exit Game?</string>
+    <string name="exit_game_message">Are you sure you want to exit? Your progress will be lost.</string>
+    <string name="hint_not_available">Hint not available for this position.</string>
+    
+    <!-- Picture Match Game -->
+    <string name="picture_word_match">Picture Word Match</string>
+    <string name="select_matching_word">Select the word that matches this picture</string>
+    <string name="excellent_job">Excellent Job!</string>
+    <string name="well_done">Well Done!</string>
+    <string name="good_effort">Good Effort!</string>
+    <string name="total_score">Total Score</string>
+    <string name="accuracy">Accuracy</string>
+    <string name="question_number">Question %1$d of %2$d</string>
+    <string name="no_words_available">No words available</string>
+    <string name="not_enough_words_with_images">Not enough words with images</string>
+    
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_title_hindi">सेटिंग्स</string>
+    <string name="language_preference">Interface Language</string>
+    <string name="use_hindi_interface">Use Hindi Interface</string>
+    <string name="daily_reminder">Daily Reminder</string>
+    <string name="reminder_time">Reminder Time</string>
+    <string name="audio_enabled">Enable Audio</string>
+    <string name="clear_progress">Clear Progress</string>
+    <string name="clear_progress_confirmation">Are you sure you want to clear all your progress?</string>
+    <string name="about">About</string>
+    <string name="version">Version</string>
+    
+    <!-- Misc -->
+    <string name="loading">Loading...</string>
+    <string name="error_loading">Error loading data</string>
+    <string name="try_again">Try Again</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Level Up Dialog -->
+    <string name="level_reached">Level %1$d Reached!</string>
+    <string name="congratulations">Congratulations on your progress!</string>
+    <string name="level_icon">Level icon</string>
+    <string name="unlocked_content">You\'ve unlocked: %1$s</string>
+    <string name="continue_learning">Continue Learning</string>
+    <string name="confetti">Celebration confetti</string>
+    
+    <!-- User Progress Fragment -->
+    <string name="your_progress">Your Progress</string>
+    <string name="day_streak">Day Streak</string>
+    <string name="words_mastered">Words Mastered</string>
+    <string name="weekly_goal">Weekly Goal</string>
+    <string name="skill_progress">Skill Progress</string>
+    <string name="recommended_skills">Recommended Skills</string>
+    <string name="recommended_skills_description">Focus on these skills to improve your English</string>
+    <string name="recommended_words">Recommended Words</string>
+    <string name="recommended_words_description">Practice these words to enhance your vocabulary</string>
+    <string name="see_more_recommendations">See More Recommendations</string>
+    <string name="difficulty_settings">Difficulty Settings</string>
+    <string name="difficulty_settings_description">Customize the difficulty of different learning activities</string>
+    <string name="customize_difficulty">Customize Difficulty</string>
+    <string name="skill_icon">Skill icon</string>
+    <string name="high_priority">HIGH</string>
+    <string name="medium_priority">MEDIUM</string>
+    <string name="low_priority">LOW</string>
+    <string name="practice">Practice</string>
+    
+    <!-- Skill Descriptions -->
+    <string name="skill_general_description">Work on this skill to improve your English</string>
+    
+    <string name="vocabulary_high_importance">Focus on building your core vocabulary</string>
+    <string name="vocabulary_medium_importance">Continue expanding your vocabulary range</string>
+    <string name="vocabulary_low_importance">Refine your vocabulary with advanced words</string>
+    
+    <string name="pronunciation_high_importance">Work on mastering basic sounds and words</string>
+    <string name="pronunciation_medium_importance">Focus on rhythm and intonation patterns</string>
+    <string name="pronunciation_low_importance">Polish your accent and difficult sounds</string>
+    
+    <string name="grammar_high_importance">Learn essential grammar patterns</string>
+    <string name="grammar_medium_importance">Practice more complex sentence structures</string>
+    <string name="grammar_low_importance">Refine advanced grammar usage</string>
+    
+    <string name="listening_high_importance">Train your ear with basic conversations</string>
+    <string name="listening_medium_importance">Practice understanding natural speech</string>
+    <string name="listening_low_importance">Challenge yourself with complex audio content</string>
+    
+    <string name="reading_high_importance">Build reading skills with simple texts</string>
+    <string name="reading_medium_importance">Try more varied reading materials</string>
+    <string name="reading_low_importance">Tackle advanced reading passages</string>
+    
+    <string name="writing_high_importance">Practice forming basic sentences</string>
+    <string name="writing_medium_importance">Work on more complex writing structures</string>
+    <string name="writing_low_importance">Polish your advanced writing style</string>
+    
+    <!-- Word Recommendation Reasons -->
+    <string name="recommendation_high_frequency">This is a high-frequency word used in everyday conversations</string>
+    <string name="recommendation_beginner_friendly">A beginner-friendly word to build your foundation</string>
+    <string name="recommendation_challenge">Challenge yourself with this more advanced word</string>
+    <string name="recommendation_builds_vocabulary">This word will help build your vocabulary</string>
+    
+    <!-- Difficulty Dialog -->
+    <string name="customize_difficulty_description">Adjust difficulty levels for different learning activities. Higher levels unlock more advanced content but increase challenge.</string>
+    <string name="difficulty_level_format">%1$s (Level %2$d)</string>
+    <string name="difficulty_note">Note: You can set individual activities below your current level for targeted practice, or above your level for an extra challenge.</string>
+    <string name="reset">Reset to Default</string>
+    <string name="save">Save Settings</string>
+    
+    <!-- Skill Names (also defined in other string files) -->
+    <string name="vocabulary">Vocabulary</string>
+    <string name="pronunciation">Pronunciation</string>
+    <string name="grammar">Grammar</string>
+    <string name="listening">Listening</string>
+    <string name="reading">Reading</string>
+    <string name="writing">Writing</string>
+    <string name="games">Games</string>
+    
+    <!-- Difficulty Descriptors -->
+    <string name="difficulty_beginner_desc">Basic vocabulary and simple phrases</string>
+    <string name="difficulty_elementary_desc">Common vocabulary and everyday phrases</string>
+    <string name="difficulty_intermediate_desc">Expanded vocabulary and conversational phrases</string>
+    <string name="difficulty_advanced_desc">Advanced vocabulary and complex expressions</string>
+    <string name="difficulty_expert_desc">Native-level vocabulary and expressions</string>
+    
+    <!-- Overall Progress Screen -->
+    <string name="overall_progress">Overall Progress</string>
+    <string name="pronunciation_trend">Pronunciation Progress Trend</string>
+    <string name="recent_sessions">Recent sessions</string>
+    <string name="recent_sessions_detail">Recent Practice Sessions</string>
+    <string name="improvement_suggestions">Improvement Suggestions</string>
+    <string name="words_to_practice">Words that need more practice</string>
+    <string name="no_data">No Data</string>
+    <string name="no_pronunciation_data">No Pronunciation Data</string>
+    <string name="start_practicing_pronunciation">Start practicing to see your progress</string>
+    <string name="start_practicing">Start Practicing</string>
+    <string name="start_new_practice">Start New Practice</string>
+</resources>
