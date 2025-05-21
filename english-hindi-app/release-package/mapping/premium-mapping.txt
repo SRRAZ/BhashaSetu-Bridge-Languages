@@ -1,0 +1,24 @@
+MOCK PROGUARD MAPPING FILE - This is a placeholder for the actual ProGuard mapping file that would be generated during the build process.
+
+File name: premium-mapping.txt
+Version: 1.1.0
+Build Type: Release
+Flavor: Premium
+
+This mapping file contains the relationship between the original and obfuscated class names, methods, and fields for the premium version of the English-Hindi Learning app. It should be preserved for crash deobfuscation.
+
+# Example mapping content (abbreviated):
+com.example.englishhindi.MainActivity -> a.a.a:
+    void onCreate(android.os.Bundle) -> a
+com.example.englishhindi.data.model.Word -> a.a.b.a:
+    java.lang.String word -> a
+    java.lang.String translation -> b
+com.example.englishhindi.audio.AudioPlayer -> a.a.c.a:
+    void playAudio(java.lang.String) -> a
+    void stopAudio() -> b
+com.example.englishhindi.premium.PremiumFeature -> a.a.d.a:
+    void activatePremium() -> c
+    boolean isPremiumActive() -> d
+
+# Full mapping file would contain mappings for all classes, methods, and fields in the app
+# The actual file is much longer (typically thousands of lines)

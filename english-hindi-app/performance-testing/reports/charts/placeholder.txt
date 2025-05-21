@@ -1,0 +1,10 @@
+This directory contains performance comparison charts for the English-Hindi Learning App.
+
+Charts include:
+- startup_time_comparison.png
+- memory_usage_comparison.png
+- frame_rate_comparison.png
+- battery_usage_comparison.png
+- storage_growth_projection.png
+
+Note: In a real environment, these would be actual chart images generated from the performance data.

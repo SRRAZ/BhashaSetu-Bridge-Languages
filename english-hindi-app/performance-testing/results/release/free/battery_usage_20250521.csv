@@ -1,0 +1,30 @@
+Timestamp,Battery Level,State,Duration (s),mAh Used
+1716265601,100,Active Start,0,0
+1716265901,99,Active,300,30
+1716266201,99,Active,600,30
+1716266501,98,Active,900,60
+1716266801,98,Active,1200,60
+1716267101,97,Active,1500,90
+1716267401,97,Active,1800,90
+1716267401,97,Active End,1800,0
+1716267401,97,Background Start,0,0
+1716267701,97,Background,300,0
+1716268001,97,Background,600,0
+1716268301,97,Background,900,0
+1716268601,96,Background,1200,30
+1716268901,96,Background,1500,30
+1716269201,96,Background,1800,30
+1716269501,96,Background,2100,30
+1716269801,96,Background,2400,30
+1716270101,95,Background,2700,60
+1716270401,95,Background,3000,60
+1716270701,95,Background,3300,60
+1716271001,95,Background,3600,60
+1716271001,95,Background End,3600,0
+
+Battery Usage Statistics:
+Active Usage: 3% over 1800 seconds
+Background Usage: 2% over 3600 seconds
+Total Usage: 5%
+Active Hourly Drain Rate: 6.0% per hour
+Background Hourly Drain Rate: 2.0% per hour

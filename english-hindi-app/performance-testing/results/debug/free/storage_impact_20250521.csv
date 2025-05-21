@@ -1,0 +1,15 @@
+Day,Total App Size (KB),APK Size (KB),Data Size (KB),Cache Size (KB),Database Size (KB)
+0,42578,28456,14122,256,890
+1,42934,28456,14478,398,1103
+2,43256,28456,14800,512,1298
+3,43587,28456,15131,634,1507
+4,43876,28456,15420,745,1685
+5,44198,28456,15742,867,1885
+
+Storage Growth Statistics:
+Data Size Growth: 1620 KB total, 324.0 KB per day
+Cache Size Growth: 611 KB total, 122.2 KB per day
+Database Size Growth: 995 KB total, 199.0 KB per day
+Projected Monthly Data Growth: 9720 KB
+Projected Monthly Cache Growth: 3666 KB
+Projected Monthly Database Growth: 5970 KB

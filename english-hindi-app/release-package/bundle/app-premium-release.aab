@@ -1,0 +1,10 @@
+MOCK APP BUNDLE FILE - This is a placeholder for the actual signed Android App Bundle that would be generated in a real Android build environment.
+
+File name: app-premium-release.aab
+Version: 1.1.0
+Version Code: 2
+Build Type: Release
+Flavor: Premium
+Size: 19.2 MB (optimized)
+
+This AAB contains the premium version of the English-Hindi Learning app with all optimizations applied, premium features enabled, and is ready for Google Play Store submission.

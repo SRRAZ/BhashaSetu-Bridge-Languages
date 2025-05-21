@@ -1,0 +1,21 @@
+Test Type,Iteration,Startup Time (ms)
+Cold Start,1,1923
+Cold Start,2,1876
+Cold Start,3,1902
+Cold Start,4,1887
+Cold Start,5,1914
+Warm Start,1,1045
+Warm Start,2,1012
+Warm Start,3,998
+Warm Start,4,1032
+Warm Start,5,1026
+Hot Start,1,342
+Hot Start,2,327
+Hot Start,3,335
+Hot Start,4,320
+Hot Start,5,338
+
+Average Results:
+Cold Start Average: 1900.4 ms
+Warm Start Average: 1022.6 ms
+Hot Start Average: 332.4 ms
