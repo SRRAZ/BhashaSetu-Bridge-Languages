@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Lesson Titles -->
+    <string name="lesson_title_basic_greetings">Basic Greetings</string>
+    <string name="lesson_title_introducing_yourself">Introducing Yourself</string>
+    <string name="lesson_title_numbers_counting">Numbers and Counting</string>
+    <string name="lesson_title_everyday_phrases">Everyday Phrases</string>
+    <string name="lesson_title_family_members">Family Members</string>
+    <string name="lesson_title_food_basics">Food Basics</string>
+    <string name="lesson_title_asking_questions">Asking Questions</string>
+    <string name="lesson_title_directions">Directions and Places</string>
+    <string name="lesson_title_shopping">Shopping Vocabulary</string>
+    <string name="lesson_title_time_expressions">Time Expressions</string>
+    <string name="lesson_title_weather">Weather and Seasons</string>
+    <string name="lesson_title_colors_shapes">Colors and Shapes</string>
+    <string name="lesson_title_transportation">Transportation</string>
+    <string name="lesson_title_body_parts">Body Parts</string>
+    <string name="lesson_title_clothing">Clothing Items</string>
+    
+    <!-- Lesson Descriptions -->
+    <string name="lesson_desc_basic_greetings">Learn common greetings and how to say hello and goodbye in Hindi.</string>
+    <string name="lesson_desc_introducing_yourself">Learn how to introduce yourself and ask basic personal questions.</string>
+    <string name="lesson_desc_numbers_counting">Learn numbers 1-100 and how to count in Hindi.</string>
+    <string name="lesson_desc_everyday_phrases">Essential phrases you\'ll use in daily conversations.</string>
+    <string name="lesson_desc_family_members">Learn vocabulary for family members and relationships.</string>
+    <string name="lesson_desc_food_basics">Learn food vocabulary and phrases for ordering at restaurants.</string>
+    <string name="lesson_desc_asking_questions">Learn question words and how to ask different types of questions.</string>
+    <string name="lesson_desc_directions">Learn how to ask for and give directions in Hindi.</string>
+    <string name="lesson_desc_shopping">Essential vocabulary for shopping and negotiating prices.</string>
+    <string name="lesson_desc_time_expressions">Learn how to tell time and use time-related expressions.</string>
+    <string name="lesson_desc_weather">Vocabulary for weather conditions and seasons.</string>
+    <string name="lesson_desc_colors_shapes">Learn colors, shapes, and descriptive words.</string>
+    <string name="lesson_desc_transportation">Vocabulary for different modes of transportation.</string>
+    <string name="lesson_desc_body_parts">Learn vocabulary for body parts and related expressions.</string>
+    <string name="lesson_desc_clothing">Vocabulary for different clothing items and shopping for clothes.</string>
+    
+    <!-- Lesson Difficulty Levels -->
+    <string name="difficulty_beginner">Beginner</string>
+    <string name="difficulty_intermediate">Intermediate</string>
+    <string name="difficulty_advanced">Advanced</string>
+</resources>

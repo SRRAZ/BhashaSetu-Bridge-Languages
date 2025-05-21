@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Basic Grammar Rules -->
+    <string name="grammar_title_sentence_structure">हिंदी वाक्य संरचना</string>
+    <string name="grammar_content_sentence_structure">हिंदी में वाक्य संरचना subject-object-verb (कर्ता-कर्म-क्रिया) क्रम का अनुसरण करती है, अंग्रेजी के विपरीत जो subject-verb-object (कर्ता-क्रिया-कर्म) का उपयोग करती है। उदाहरण के लिए:\n\nअंग्रेजी: I eat food. (SVO)\nहिंदी: मैं खाना खाता हूँ। (SOV) (Main khana khata hoon)\n\nहिंदी में क्रिया हमेशा वाक्य के अंत में आती है। हिंदी वाक्य बनाते समय यह याद रखने वाला सबसे महत्वपूर्ण अंतर है।</string>
+    
+    <string name="grammar_title_gender">हिंदी में लिंग</string>
+    <string name="grammar_content_gender">हिंदी संज्ञाओं का व्याकरणिक लिंग (पुल्लिंग या स्त्रीलिंग) होता है जो संबंधित विशेषणों और क्रियाओं के रूप को प्रभावित करता है। किसी संज्ञा के लिंग निर्धारित करने के पैटर्न हैं, लेकिन अक्सर उन्हें याद रखना पड़ता है।\n\n1. पुल्लिंग संज्ञाएँ अक्सर आ (aa) में समाप्त होती हैं\nउदाहरण: लड़का (ladka) - boy\n\n2. स्त्रीलिंग संज्ञाएँ अक्सर ई (ee) या इ (i) में समाप्त होती हैं\nउदाहरण: लड़की (ladki) - girl\n\nहालांकि, कई अपवाद मौजूद हैं, इसलिए लिंग को संज्ञा के साथ सीखना आवश्यक है।</string>
+    
+    <string name="grammar_title_verb_agreement">क्रिया सहमति</string>
+    <string name="grammar_content_verb_agreement">हिंदी क्रियाएँ अपना रूप बदलकर विषय के लिंग और संख्या के अनुसार सहमत होती हैं। उदाहरण के लिए:\n\n1. पुल्लिंग एकवचन: वह खाता है (vah khata hai) - He eats\n2. स्त्रीलिंग एकवचन: वह खाती है (vah khati hai) - She eats\n3. पुल्लिंग बहुवचन: वे खाते हैं (ve khate hain) - They (males) eat\n4. स्त्रीलिंग बहुवचन: वे खाती हैं (ve khati hain) - They (females) eat\n\nइन पैटर्न को सीखना व्याकरणिक रूप से सही हिंदी बोलने के लिए आवश्यक है।</string>
+    
+    <string name="grammar_title_postpositions">परसर्ग</string>
+    <string name="grammar_content_postpositions">हिंदी परसर्गों का उपयोग करती है जबकि अंग्रेजी पूर्वसर्गों का। अंग्रेजी में पूर्वसर्ग संज्ञाओं से पहले आते हैं (in the house), हिंदी में परसर्ग संज्ञाओं के बाद आते हैं (घर में - house in)।\n\nसामान्य परसर्ग:\n1. में (mein) - in, inside\n2. पर (par) - on, upon\n3. से (se) - from, with, by\n4. को (ko) - to\n5. का/की/के (ka/ki/ke) - of (संबंधित संज्ञा के लिंग के आधार पर रूप बदलता है)</string>
+    
+    <string name="grammar_title_pronouns">हिंदी में सर्वनाम</string>
+    <string name="grammar_content_pronouns">हिंदी में इसके सर्वनामों में औपचारिकता के विभिन्न स्तर हैं:\n\n1. प्रथम पुरुष: मैं (main) - I, हम (ham) - we\n\n2. द्वितीय पुरुष: \n   - तू (tu) - you (अनौपचारिक/आत्मीय, अत्यंत सावधानी से उपयोग करें)\n   - तुम (tum) - you (अनौपचारिक, दोस्तों और परिवार के लिए)\n   - आप (aap) - you (औपचारिक, बड़ों, अजनबियों, सम्मानित व्यक्तियों के लिए)\n\n3. तृतीय पुरुष:\n   - यह (yah) - this, he, she (नजदीक)\n   - वह (vah) - that, he, she (दूर)\n   - ये (ye) - these, they (नजदीक)\n   - वे (ve) - those, they (दूर)</string>
+    
+    <string name="grammar_title_tenses">मूल काल</string>
+    <string name="grammar_content_tenses">हिंदी में तीन मूल काल हैं, प्रत्येक के विभिन्न रूप:\n\n1. वर्तमान काल:\n   - मैं खाता हूँ (main khata hoon) - I eat/I am eating (पुरुष)\n   - मैं खाती हूँ (main khati hoon) - I eat/I am eating (स्त्री)\n\n2. भूतकाल:\n   - मैंने खाया (maine khaya) - I ate (पुरुष)\n   - मैंने खाई (maine khai) - I ate (स्त्री)\n\n3. भविष्य काल:\n   - मैं खाऊँगा (main khaunga) - I will eat (पुरुष)\n   - मैं खाऊँगी (main khaungi) - I will eat (स्त्री)\n\nध्यान दें कि विषय के लिंग के आधार पर क्रिया का रूप कैसे बदलता है।</string>
+    
+    <string name="grammar_title_adjectives">हिंदी में विशेषण</string>
+    <string name="grammar_content_adjectives">हिंदी विशेषण उन संज्ञाओं से पहले आते हैं जिन्हें वे संशोधित करते हैं। कई विशेषण संज्ञा के लिंग और संख्या के आधार पर अपना रूप बदलते हैं:\n\n1. आ (aa) में समाप्त होने वाले विशेषण बदलते हैं:\n   - अच्छा लड़का (accha ladka) - good boy (पुल्लिंग एकवचन)\n   - अच्छी लड़की (acchi ladki) - good girl (स्त्रीलिंग एकवचन)\n   - अच्छे लड़के (acche ladke) - good boys (पुल्लिंग बहुवचन)\n\n2. आ (aa) में समाप्त नहीं होने वाले विशेषण वही रहते हैं:\n   - लाल फूल (lal phool) - red flower (पुल्लिंग)\n   - लाल किताब (lal kitab) - red book (स्त्रीलिंग)</string>
+    
+    <string name="grammar_title_negation">हिंदी में नकारात्मकता</string>
+    <string name="grammar_content_negation">हिंदी में नकारात्मक वाक्य बनाने के कई तरीके हैं:\n\n1. नहीं (nahin) - not (सामान्य नकारात्मकता)\n   - मैं खाता हूँ (main khata hoon) - I eat\n   - मैं नहीं खाता हूँ (main nahin khata hoon) - I do not eat\n\n2. मत (mat) - don\'t (आदेशात्मक/आदेशों के लिए)\n   - खाओ (khao) - Eat!\n   - मत खाओ (mat khao) - Don\'t eat!\n\n3. ना (na) - no/not (अनौपचारिक नकारात्मकता)\n   - क्या तुम जा रहे हो? (kya tum ja rahe ho?) - Are you going?\n   - ना, मैं नहीं जा रहा हूँ (na, main nahin ja raha hoon) - No, I am not going</string>
+    
+    <string name="grammar_title_question_formation">प्रश्न निर्माण</string>
+    <string name="grammar_content_question_formation">हिंदी प्रश्न कई तरीकों से बनाए जा सकते हैं:\n\n1. शुरुआत में क्या (kya) का उपयोग करके:\n   - तुम स्कूल जाते हो (tum school jate ho) - You go to school\n   - क्या तुम स्कूल जाते हो? (kya tum school jate ho?) - Do you go to school?\n\n2. प्रश्नवाचक शब्दों का उपयोग करके (कौन, क्या, कब, आदि):\n   - कौन (kaun) - who\n   - क्या (kya) - what\n   - कब (kab) - when\n   - कहाँ (kahan) - where\n   - कैसे (kaise) - how\n   - क्यों (kyon) - why\n\nउदाहरण: तुम कहाँ जा रहे हो? (tum kahan ja rahe ho?) - Where are you going?</string>
+    
+    <string name="grammar_title_honorifics">सम्मानसूचक और सम्मान</string>
+    <string name="grammar_content_honorifics">भाषण में सम्मान दिखाने के लिए हिंदी में कई तरीके हैं:\n\n1. तुम (tum) या तू (tu) के बजाय आप (aap) का उपयोग करना\n\n2. नामों या शीर्षकों के बाद जी (ji) जोड़ना:\n   - राम जी (Ram ji) - आदरणीय राम\n   - सर जी (Sir ji) - आदरणीय सर\n\n3. एकवचन सम्मानित विषयों के लिए बहुवचन क्रियाओं का उपयोग करना:\n   - आप क्या करते हैं? (aap kya karte hain?) - What do you do? (सम्मानजनक)\n   बनाम\n   - तुम क्या करते हो? (tum kya karte ho?) - What do you do? (परिचित)</string>
+    
+    <!-- Advanced Grammar Rules -->
+    <string name="grammar_title_compound_verbs">संयुक्त क्रियाएँ</string>
+    <string name="grammar_content_compound_verbs">हिंदी अक्सर संयुक्त क्रियाओं का उपयोग करती है, जिसमें मुख्य क्रिया के बाद सहायक क्रिया आती है। मुख्य क्रिया अर्थ वहन करती है, जबकि सहायक क्रिया नुआंस जोड़ती है:\n\n1. जाना (jana) - to go (समापन को इंगित करता है):\n   - मैं खा गया (main kha gaya) - I ate up/finished eating (पुरुष)\n\n2. लेना (lena) - to take (किसी के अपने लाभ के लिए कार्रवाई को इंगित करता है):\n   - मैंने पढ़ लिया (maine padh liya) - I have read (अपने लिए)\n\n3. देना (dena) - to give (किसी और के लाभ के लिए कार्रवाई को इंगित करता है):\n   - मैंने लिख दिया (maine likh diya) - I wrote (किसी और के लिए)\n\nप्राकृतिक लगने वाली हिंदी के लिए संयुक्त क्रियाएँ आवश्यक हैं।</string>
+    
+    <string name="grammar_title_ergative_construction">कर्ता कारक निर्माण</string>
+    <string name="grammar_content_ergative_construction">हिंदी पूर्ण काल में संक्रमणकारी क्रियाओं के लिए कर्ता कारक निर्माण का उपयोग करती है। विषय कर्ता कारक चिह्नक ने (ne) लेता है:\n\n1. मैं खाता हूँ (main khata hoon) - I eat (वर्तमान काल, कोई कर्ता नहीं)\n\n2. मैंने खाया (maine khaya) - I ate (पूर्ण काल, कर्ता)\n\nकर्ता कारक निर्माण के साथ, क्रिया विषय के बजाय वस्तु से सहमत होती है:\n\n- रामने रोटी खाई (Ram-ne roti khai) - Ram ate bread\n  (क्रिया khai स्त्रीलिंग roti से सहमत है, पुल्लिंग Ram से नहीं)</string>
+    
+    <string name="grammar_title_participles">हिंदी में कृदंत</string>
+    <string name="grammar_content_participles">हिंदी क्रियाओं के विभिन्न पहलुओं को बनाने के लिए व्यापक रूप से कृदंत का उपयोग करती है:\n\n1. वर्तमान कृदंत: क्रिया के मूल में ता/ती/ते (ta/ti/te) जोड़कर बनाया गया\n   - खाता हूँ (khata hoon) - I am eating (पुरुष)\n\n2. भूतकाल कृदंत: क्रिया के मूल में या/ई/ए (ya/i/e) जोड़कर बनाया गया\n   - खाया है (khaya hai) - (वह) खाया है\n\n3. पूर्ण कृदंत: के/कर (ke/kar) के साथ निर्मित\n   - खाकर (kha-kar) - having eaten\n\nहिंदी में यौगिक काल और जटिल वाक्य बनाने के लिए कृदंत महत्वपूर्ण हैं।</string>
+</resources>

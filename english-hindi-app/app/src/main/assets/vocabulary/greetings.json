@@ -1,0 +1,192 @@
+{
+  "category": "Greetings",
+  "categoryHindi": "अभिवादन",
+  "description": "Basic greetings and introductions",
+  "descriptionHindi": "बुनियादी अभिवादन और परिचय",
+  "difficulty": 1,
+  "words": [
+    {
+      "id": 1,
+      "englishWord": "Hello",
+      "hindiWord": "नमस्ते",
+      "englishPronunciation": "huh-loh",
+      "hindiPronunciation": "nuh-muhs-tay",
+      "exampleSentenceEnglish": "Hello, how are you?",
+      "exampleSentenceHindi": "नमस्ते, आप कैसे हैं?",
+      "notes": "This is the most common greeting in Hindi, used throughout the day."
+    },
+    {
+      "id": 2,
+      "englishWord": "Good morning",
+      "hindiWord": "सुप्रभात",
+      "englishPronunciation": "good mor-ning",
+      "hindiPronunciation": "soo-pruh-bhaat",
+      "exampleSentenceEnglish": "Good morning, did you sleep well?",
+      "exampleSentenceHindi": "सुप्रभात, क्या आपने अच्छी नींद ली?"
+    },
+    {
+      "id": 3,
+      "englishWord": "Good afternoon",
+      "hindiWord": "नमस्कार",
+      "englishPronunciation": "good aaf-ter-noon",
+      "hindiPronunciation": "nuh-muhs-kaar",
+      "exampleSentenceEnglish": "Good afternoon, welcome to our home.",
+      "exampleSentenceHindi": "नमस्कार, हमारे घर में आपका स्वागत है।",
+      "notes": "Namaskaar is slightly more formal than Namaste."
+    },
+    {
+      "id": 4,
+      "englishWord": "Good evening",
+      "hindiWord": "शुभ संध्या",
+      "englishPronunciation": "good ee-vning",
+      "hindiPronunciation": "shoobh suhn-dhyaa",
+      "exampleSentenceEnglish": "Good evening, the weather is nice today.",
+      "exampleSentenceHindi": "शुभ संध्या, आज मौसम अच्छा है।"
+    },
+    {
+      "id": 5,
+      "englishWord": "Good night",
+      "hindiWord": "शुभ रात्रि",
+      "englishPronunciation": "good night",
+      "hindiPronunciation": "shoobh raa-tree",
+      "exampleSentenceEnglish": "Good night, sleep well.",
+      "exampleSentenceHindi": "शुभ रात्रि, अच्छी नींद लें।"
+    },
+    {
+      "id": 6,
+      "englishWord": "Goodbye",
+      "hindiWord": "अलविदा",
+      "englishPronunciation": "good-bye",
+      "hindiPronunciation": "uhl-vee-daa",
+      "exampleSentenceEnglish": "Goodbye, see you tomorrow.",
+      "exampleSentenceHindi": "अलविदा, कल मिलते हैं।"
+    },
+    {
+      "id": 7,
+      "englishWord": "See you later",
+      "hindiWord": "फिर मिलेंगे",
+      "englishPronunciation": "see you lay-ter",
+      "hindiPronunciation": "fir mi-layn-gay",
+      "exampleSentenceEnglish": "See you later at the meeting.",
+      "exampleSentenceHindi": "बैठक में फिर मिलेंगे।"
+    },
+    {
+      "id": 8,
+      "englishWord": "How are you?",
+      "hindiWord": "आप कैसे हैं?",
+      "englishPronunciation": "how are you",
+      "hindiPronunciation": "aap kai-say hain",
+      "exampleSentenceEnglish": "Hello, how are you today?",
+      "exampleSentenceHindi": "नमस्ते, आज आप कैसे हैं?",
+      "notes": "This is the formal way to ask someone how they are."
+    },
+    {
+      "id": 9,
+      "englishWord": "I am fine",
+      "hindiWord": "मैं ठीक हूँ",
+      "englishPronunciation": "eye am fine",
+      "hindiPronunciation": "main theek hoon",
+      "exampleSentenceEnglish": "I am fine, thank you for asking.",
+      "exampleSentenceHindi": "मैं ठीक हूँ, पूछने के लिए धन्यवाद।"
+    },
+    {
+      "id": 10,
+      "englishWord": "Thank you",
+      "hindiWord": "धन्यवाद",
+      "englishPronunciation": "thank you",
+      "hindiPronunciation": "dhun-yuh-vaad",
+      "exampleSentenceEnglish": "Thank you for your help.",
+      "exampleSentenceHindi": "आपकी मदद के लिए धन्यवाद।"
+    },
+    {
+      "id": 11,
+      "englishWord": "Please",
+      "hindiWord": "कृपया",
+      "englishPronunciation": "please",
+      "hindiPronunciation": "krip-yaa",
+      "exampleSentenceEnglish": "Please, have a seat.",
+      "exampleSentenceHindi": "कृपया, बैठिए।"
+    },
+    {
+      "id": 12,
+      "englishWord": "You're welcome",
+      "hindiWord": "आपका स्वागत है",
+      "englishPronunciation": "yor wel-come",
+      "hindiPronunciation": "aap-kaa svaa-gut hai",
+      "exampleSentenceEnglish": "You're welcome, it was my pleasure to help.",
+      "exampleSentenceHindi": "आपका स्वागत है, मदद करना मेरा सौभाग्य था।"
+    },
+    {
+      "id": 13,
+      "englishWord": "Excuse me",
+      "hindiWord": "क्षमा कीजिए",
+      "englishPronunciation": "ex-cuse me",
+      "hindiPronunciation": "kshuh-maa kee-jee-ay",
+      "exampleSentenceEnglish": "Excuse me, can you tell me the way to the station?",
+      "exampleSentenceHindi": "क्षमा कीजिए, क्या आप मुझे स्टेशन का रास्ता बता सकते हैं?"
+    },
+    {
+      "id": 14,
+      "englishWord": "Sorry",
+      "hindiWord": "माफ़ कीजिए",
+      "englishPronunciation": "sorry",
+      "hindiPronunciation": "maaf kee-jee-ay",
+      "exampleSentenceEnglish": "I'm sorry for being late.",
+      "exampleSentenceHindi": "देर के लिए माफ़ कीजिए।"
+    },
+    {
+      "id": 15,
+      "englishWord": "Welcome",
+      "hindiWord": "स्वागत है",
+      "englishPronunciation": "wel-come",
+      "hindiPronunciation": "svaa-gut hai",
+      "exampleSentenceEnglish": "Welcome to India!",
+      "exampleSentenceHindi": "भारत में आपका स्वागत है!"
+    },
+    {
+      "id": 16,
+      "englishWord": "Nice to meet you",
+      "hindiWord": "आपसे मिलकर अच्छा लगा",
+      "englishPronunciation": "nice to meet you",
+      "hindiPronunciation": "aap-say mil-kur uch-chaa luh-gaa",
+      "exampleSentenceEnglish": "Nice to meet you, I've heard a lot about you.",
+      "exampleSentenceHindi": "आपसे मिलकर अच्छा लगा, मैंने आपके बारे में बहुत कुछ सुना है।"
+    },
+    {
+      "id": 17,
+      "englishWord": "My name is",
+      "hindiWord": "मेरा नाम है",
+      "englishPronunciation": "my name is",
+      "hindiPronunciation": "may-raa naam hai",
+      "exampleSentenceEnglish": "My name is John.",
+      "exampleSentenceHindi": "मेरा नाम जॉन है।"
+    },
+    {
+      "id": 18,
+      "englishWord": "What is your name?",
+      "hindiWord": "आपका नाम क्या है?",
+      "englishPronunciation": "what is your name",
+      "hindiPronunciation": "aap-kaa naam kyaa hai",
+      "exampleSentenceEnglish": "What is your name? I'd like to introduce you to my friends.",
+      "exampleSentenceHindi": "आपका नाम क्या है? मैं आपको अपने दोस्तों से मिलवाना चाहता हूँ।"
+    },
+    {
+      "id": 19,
+      "englishWord": "Have a good day",
+      "hindiWord": "आपका दिन शुभ हो",
+      "englishPronunciation": "have a good day",
+      "hindiPronunciation": "aap-kaa din shubh ho",
+      "exampleSentenceEnglish": "Have a good day, see you tomorrow!",
+      "exampleSentenceHindi": "आपका दिन शुभ हो, कल मिलते हैं!"
+    },
+    {
+      "id": 20,
+      "englishWord": "Pleased to meet you",
+      "hindiWord": "आपसे मिलकर प्रसन्नता हुई",
+      "englishPronunciation": "pleased to meet you",
+      "hindiPronunciation": "aap-say mil-kur pruh-sun-nuh-taa hu-ee",
+      "exampleSentenceEnglish": "Pleased to meet you, I've heard many good things about you.",
+      "exampleSentenceHindi": "आपसे मिलकर प्रसन्नता हुई, मैंने आपके बारे में कई अच्छी बातें सुनी हैं।"
+    }
+  ]
+}

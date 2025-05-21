@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Basic Grammar Rules -->
+    <string name="grammar_title_sentence_structure">Hindi Sentence Structure</string>
+    <string name="grammar_content_sentence_structure">Hindi follows a Subject-Object-Verb (SOV) word order, unlike English which uses Subject-Verb-Object (SVO). For example:\n\nEnglish: I eat food. (SVO)\nHindi: मैं खाना खाता हूँ। (SOV) (Main khana khata hoon)\n\nThe verb in Hindi always comes at the end of the sentence. This is one of the most important differences to remember when constructing Hindi sentences.</string>
+    
+    <string name="grammar_title_gender">Gender in Hindi</string>
+    <string name="grammar_content_gender">Hindi nouns have grammatical gender (masculine or feminine) that affects the form of related adjectives and verbs. There are patterns to determine a noun\'s gender, but they must often be memorized.\n\n1. Masculine nouns often end in आ (aa)\nExample: लड़का (ladka) - boy\n\n2. Feminine nouns often end in ई (ee) or इ (i)\nExample: लड़की (ladki) - girl\n\nHowever, many exceptions exist, so gender must be learned along with the noun.</string>
+    
+    <string name="grammar_title_verb_agreement">Verb Agreement</string>
+    <string name="grammar_content_verb_agreement">Hindi verbs change their form to agree with the gender and number of the subject. For example:\n\n1. Masculine singular: वह खाता है (vah khata hai) - He eats\n2. Feminine singular: वह खाती है (vah khati hai) - She eats\n3. Masculine plural: वे खाते हैं (ve khate hain) - They (males) eat\n4. Feminine plural: वे खाती हैं (ve khati hain) - They (females) eat\n\nLearning these patterns is essential for speaking grammatically correct Hindi.</string>
+    
+    <string name="grammar_title_postpositions">Postpositions</string>
+    <string name="grammar_content_postpositions">Hindi uses postpositions instead of prepositions. While English has prepositions that come before nouns (in the house), Hindi has postpositions that come after nouns (घर में - house in).\n\nCommon postpositions:\n1. में (mein) - in, inside\n2. पर (par) - on, upon\n3. से (se) - from, with, by\n4. को (ko) - to\n5. का/की/के (ka/ki/ke) - of (changes form based on the gender of the associated noun)</string>
+    
+    <string name="grammar_title_pronouns">Pronouns in Hindi</string>
+    <string name="grammar_content_pronouns">Hindi has different levels of formality in its pronouns:\n\n1. First person: मैं (main) - I, हम (ham) - we\n\n2. Second person: \n   - तू (tu) - you (informal/intimate, use with extreme caution)\n   - तुम (tum) - you (informal, for friends and family)\n   - आप (aap) - you (formal, for elders, strangers, respected figures)\n\n3. Third person:\n   - यह (yah) - this, he, she (close)\n   - वह (vah) - that, he, she (distant)\n   - ये (ye) - these, they (close)\n   - वे (ve) - those, they (distant)</string>
+    
+    <string name="grammar_title_tenses">Basic Tenses</string>
+    <string name="grammar_content_tenses">Hindi has three basic tenses, each with various forms:\n\n1. Present Tense:\n   - मैं खाता हूँ (main khata hoon) - I eat/I am eating (masculine)\n   - मैं खाती हूँ (main khati hoon) - I eat/I am eating (feminine)\n\n2. Past Tense:\n   - मैंने खाया (maine khaya) - I ate (masculine)\n   - मैंने खाई (maine khai) - I ate (feminine)\n\n3. Future Tense:\n   - मैं खाऊँगा (main khaunga) - I will eat (masculine)\n   - मैं खाऊँगी (main khaungi) - I will eat (feminine)\n\nNote how the verb form changes based on the gender of the subject.</string>
+    
+    <string name="grammar_title_adjectives">Adjectives in Hindi</string>
+    <string name="grammar_content_adjectives">Hindi adjectives come before the nouns they modify. Many adjectives change their form based on the gender and number of the noun:\n\n1. Adjectives ending in आ (aa) change:\n   - अच्छा लड़का (accha ladka) - good boy (masculine singular)\n   - अच्छी लड़की (acchi ladki) - good girl (feminine singular)\n   - अच्छे लड़के (acche ladke) - good boys (masculine plural)\n\n2. Adjectives not ending in आ (aa) remain the same:\n   - लाल फूल (lal phool) - red flower (masculine)\n   - लाल किताब (lal kitab) - red book (feminine)</string>
+    
+    <string name="grammar_title_negation">Negation in Hindi</string>
+    <string name="grammar_content_negation">There are several ways to form negative sentences in Hindi:\n\n1. नहीं (nahin) - not (general negation)\n   - मैं खाता हूँ (main khata hoon) - I eat\n   - मैं नहीं खाता हूँ (main nahin khata hoon) - I do not eat\n\n2. मत (mat) - don\'t (for imperatives/commands)\n   - खाओ (khao) - Eat!\n   - मत खाओ (mat khao) - Don\'t eat!\n\n3. ना (na) - no/not (informal negation)\n   - क्या तुम जा रहे हो? (kya tum ja rahe ho?) - Are you going?\n   - ना, मैं नहीं जा रहा हूँ (na, main nahin ja raha hoon) - No, I am not going</string>
+    
+    <string name="grammar_title_question_formation">Question Formation</string>
+    <string name="grammar_content_question_formation">Hindi questions can be formed in several ways:\n\n1. Using क्या (kya) at the beginning:\n   - तुम स्कूल जाते हो (tum school jate ho) - You go to school\n   - क्या तुम स्कूल जाते हो? (kya tum school jate ho?) - Do you go to school?\n\n2. Using question words (who, what, when, etc.):\n   - कौन (kaun) - who\n   - क्या (kya) - what\n   - कब (kab) - when\n   - कहाँ (kahan) - where\n   - कैसे (kaise) - how\n   - क्यों (kyon) - why\n\nExample: तुम कहाँ जा रहे हो? (tum kahan ja rahe ho?) - Where are you going?</string>
+    
+    <string name="grammar_title_honorifics">Honorifics and Respect</string>
+    <string name="grammar_content_honorifics">Hindi has several ways to show respect in speech:\n\n1. Using आप (aap) instead of तुम (tum) or तू (tu)\n\n2. Adding जी (ji) after names or titles:\n   - राम जी (Ram ji) - Respected Ram\n   - सर जी (Sir ji) - Respected Sir\n\n3. Using plural verbs for singular respected subjects:\n   - आप क्या करते हैं? (aap kya karte hain?) - What do you do? (respectful)\n   vs.\n   - तुम क्या करते हो? (tum kya karte ho?) - What do you do? (familiar)</string>
+    
+    <!-- Advanced Grammar Rules -->
+    <string name="grammar_title_compound_verbs">Compound Verbs</string>
+    <string name="grammar_content_compound_verbs">Hindi often uses compound verbs, which consist of a main verb followed by a helping verb. The main verb carries the meaning, while the helping verb adds nuance:\n\n1. जाना (jana) - to go (indicates completion):\n   - मैं खा गया (main kha gaya) - I ate up/finished eating (masculine)\n\n2. लेना (lena) - to take (indicates action for one\'s benefit):\n   - मैंने पढ़ लिया (maine padh liya) - I have read (for myself)\n\n3. देना (dena) - to give (indicates action for someone else\'s benefit):\n   - मैंने लिख दिया (maine likh diya) - I wrote (for someone else)\n\nCompound verbs are essential for natural-sounding Hindi.</string>
+    
+    <string name="grammar_title_ergative_construction">Ergative Construction</string>
+    <string name="grammar_content_ergative_construction">Hindi uses an ergative construction for transitive verbs in the perfect tense. The subject takes the ergative case marker ने (ne):\n\n1. मैं खाता हूँ (main khata hoon) - I eat (present tense, no ergative)\n\n2. मैंने खाया (maine khaya) - I ate (perfect tense, ergative)\n\nWith ergative construction, the verb agrees with the object, not the subject:\n\n- रामने रोटी खाई (Ram-ne roti khai) - Ram ate bread\n  (verb khai agrees with feminine roti, not with masculine Ram)</string>
+    
+    <string name="grammar_title_participles">Participles in Hindi</string>
+    <string name="grammar_content_participles">Hindi uses participles extensively to form different aspects of verbs:\n\n1. Present participle: formed by adding ता/ती/ते (ta/ti/te) to the verb root\n   - खाता हूँ (khata hoon) - I am eating (masculine)\n\n2. Past participle: formed by adding या/ई/ए (ya/i/e) to the verb root\n   - खाया है (khaya hai) - (He) has eaten\n\n3. Perfect participle: formed with के/कर (ke/kar)\n   - खाकर (kha-kar) - having eaten\n\nParticiples are crucial for forming compound tenses and complex sentences in Hindi.</string>
+</resources>

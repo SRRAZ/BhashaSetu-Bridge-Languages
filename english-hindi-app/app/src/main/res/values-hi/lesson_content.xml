@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Lesson Titles -->
+    <string name="lesson_title_basic_greetings">मूल अभिवादन</string>
+    <string name="lesson_title_introducing_yourself">अपना परिचय देना</string>
+    <string name="lesson_title_numbers_counting">संख्याएँ और गिनती</string>
+    <string name="lesson_title_everyday_phrases">रोज़मर्रा के वाक्यांश</string>
+    <string name="lesson_title_family_members">परिवार के सदस्य</string>
+    <string name="lesson_title_food_basics">खाना-पीना मूल बातें</string>
+    <string name="lesson_title_asking_questions">प्रश्न पूछना</string>
+    <string name="lesson_title_directions">दिशाएँ और स्थान</string>
+    <string name="lesson_title_shopping">खरीदारी शब्दावली</string>
+    <string name="lesson_title_time_expressions">समय अभिव्यक्तियाँ</string>
+    <string name="lesson_title_weather">मौसम और ऋतुएँ</string>
+    <string name="lesson_title_colors_shapes">रंग और आकार</string>
+    <string name="lesson_title_transportation">परिवहन</string>
+    <string name="lesson_title_body_parts">शरीर के अंग</string>
+    <string name="lesson_title_clothing">कपड़े</string>
+    
+    <!-- Lesson Descriptions -->
+    <string name="lesson_desc_basic_greetings">हिंदी में नमस्ते और अलविदा कहने के लिए सामान्य अभिवादन सीखें।</string>
+    <string name="lesson_desc_introducing_yourself">अपना परिचय कैसे दें और बुनियादी व्यक्तिगत प्रश्न कैसे पूछें, यह सीखें।</string>
+    <string name="lesson_desc_numbers_counting">हिंदी में 1-100 तक संख्याएँ और गिनती सीखें।</string>
+    <string name="lesson_desc_everyday_phrases">दैनिक बातचीत में उपयोग किए जाने वाले आवश्यक वाक्यांश।</string>
+    <string name="lesson_desc_family_members">परिवार के सदस्यों और रिश्तों के लिए शब्दावली सीखें।</string>
+    <string name="lesson_desc_food_basics">भोजन शब्दावली और रेस्तरां में ऑर्डर करने के लिए वाक्यांश सीखें।</string>
+    <string name="lesson_desc_asking_questions">प्रश्न शब्द और विभिन्न प्रकार के प्रश्न कैसे पूछें, यह सीखें।</string>
+    <string name="lesson_desc_directions">हिंदी में दिशाएँ कैसे पूछें और दें, यह सीखें।</string>
+    <string name="lesson_desc_shopping">खरीदारी और कीमतों पर बातचीत के लिए आवश्यक शब्दावली।</string>
+    <string name="lesson_desc_time_expressions">समय बताना और समय-संबंधित अभिव्यक्तियों का उपयोग करना सीखें।</string>
+    <string name="lesson_desc_weather">मौसम की स्थितियों और ऋतुओं के लिए शब्दावली।</string>
+    <string name="lesson_desc_colors_shapes">रंग, आकार और वर्णनात्मक शब्द सीखें।</string>
+    <string name="lesson_desc_transportation">विभिन्न प्रकार के परिवहन के लिए शब्दावली।</string>
+    <string name="lesson_desc_body_parts">शरीर के अंगों और संबंधित अभिव्यक्तियों के लिए शब्दावली सीखें।</string>
+    <string name="lesson_desc_clothing">विभिन्न कपड़ों और कपड़े खरीदने के लिए शब्दावली।</string>
+    
+    <!-- Lesson Difficulty Levels -->
+    <string name="difficulty_beginner">नौसिखिया</string>
+    <string name="difficulty_intermediate">मध्यवर्ती</string>
+    <string name="difficulty_advanced">उन्नत</string>
+</resources>

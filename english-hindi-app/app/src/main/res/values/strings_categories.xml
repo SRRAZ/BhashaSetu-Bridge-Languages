@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Category Names -->
+    <string name="category_greetings">Greetings</string>
+    <string name="category_food_drinks">Food &amp; Drinks</string>
+    <string name="category_numbers">Numbers</string>
+    <string name="category_family">Family</string>
+    <string name="category_colors">Colors</string>
+    <string name="category_animals">Animals</string>
+    <string name="category_daily_activities">Daily Activities</string>
+    <string name="category_travel">Travel</string>
+    <string name="category_emergency">Emergency</string>
+    <string name="category_time">Time</string>
+    <string name="category_weather">Weather</string>
+    <string name="category_body_parts">Body Parts</string>
+    <string name="category_clothing">Clothing</string>
+    <string name="category_home">Home</string>
+    <string name="category_shopping">Shopping</string>
+    <string name="category_work">Work</string>
+    <string name="category_emotions">Emotions</string>
+    <string name="category_directions">Directions</string>
+    <string name="category_grammar">Grammar</string>
+    <string name="category_phrases">Common Phrases</string>
+    
+    <!-- Category Descriptions -->
+    <string name="category_desc_greetings">Basic greetings and introductions</string>
+    <string name="category_desc_food_drinks">Food, drinks, and restaurant phrases</string>
+    <string name="category_desc_numbers">Numbers, counting, and basic math terms</string>
+    <string name="category_desc_family">Family members and relationship terms</string>
+    <string name="category_desc_colors">Colors and related descriptive terms</string>
+    <string name="category_desc_animals">Animals, pets, and wildlife</string>
+    <string name="category_desc_daily_activities">Common daily activities and routines</string>
+    <string name="category_desc_travel">Travel, transportation, and directions</string>
+    <string name="category_desc_emergency">Emergency terms and phrases for urgent situations</string>
+    <string name="category_desc_time">Time, dates, days of the week, and months</string>
+    <string name="category_desc_weather">Weather conditions and seasonal terms</string>
+    <string name="category_desc_body_parts">Human body parts and related terms</string>
+    <string name="category_desc_clothing">Clothing items and shopping for clothes</string>
+    <string name="category_desc_home">Household items and rooms in a home</string>
+    <string name="category_desc_shopping">Shopping and marketplace vocabulary</string>
+    <string name="category_desc_work">Work, office, and professional terms</string>
+    <string name="category_desc_emotions">Expressing feelings and emotions</string>
+    <string name="category_desc_directions">Directions and location-related phrases</string>
+    <string name="category_desc_grammar">Basic grammar rules and structures</string>
+    <string name="category_desc_phrases">Essential everyday phrases and expressions</string>
+</resources>

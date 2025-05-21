@@ -1,5 +1,7 @@
 plugins {
     id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
 }
 
 // Load keystore properties if available
@@ -104,9 +106,22 @@ android {
         }
     }
     
+    // Jetpack Compose configuration
+    buildFeatures {
+        compose true
+    }
+    
+    composeOptions {
+        kotlinCompilerExtensionVersion "1.4.3"
+    }
+    
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+    }
+    
+    kotlinOptions {
+        jvmTarget = '1.8'
     }
     
     // Resolve duplicate resources conflicts
@@ -135,22 +150,44 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.multidex:multidex:2.0.1'
     
-    // Room for database
+    // Kotlin Core
+    implementation 'androidx.core:core-ktx:1.10.1'
+    
+    // Jetpack Compose
+    implementation 'androidx.compose.ui:ui:1.4.3'
+    implementation 'androidx.compose.material3:material3:1.1.1'
+    implementation 'androidx.compose.material:material:1.4.3'
+    implementation 'androidx.compose.ui:ui-tooling-preview:1.4.3'
+    implementation 'androidx.compose.runtime:runtime-livedata:1.4.3'
+    implementation 'androidx.activity:activity-compose:1.7.2'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1'
+    implementation 'androidx.navigation:navigation-compose:2.6.0'
+    implementation 'io.coil-kt:coil-compose:2.4.0'
+    
+    // Jetpack Compose - Preview
+    debugImplementation 'androidx.compose.ui:ui-tooling:1.4.3'
+    
+    // Room for database with Kotlin
+    implementation 'androidx.room:room-ktx:2.5.2'
     implementation 'androidx.room:room-runtime:2.5.2'
-    annotationProcessor 'androidx.room:room-compiler:2.5.2'
+    kapt 'androidx.room:room-compiler:2.5.2'
+    
+    // Coroutines and Flow
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4'
     
     // Lifecycle and ViewModel
-    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.6.1'
-    implementation 'androidx.lifecycle:lifecycle-livedata:2.6.1'
-    implementation 'androidx.lifecycle:lifecycle-runtime:2.6.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.1'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.1'
     
     // Navigation components
-    implementation 'androidx.navigation:navigation-fragment:2.6.0'
-    implementation 'androidx.navigation:navigation-ui:2.6.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.6.0'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.6.0'
     
     // Image loading and caching
     implementation 'com.github.bumptech.glide:glide:4.15.1'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.15.1'
+    kapt 'com.github.bumptech.glide:compiler:4.15.1'
     
     // Unit testing
     testImplementation 'junit:junit:4.13.2'

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Category Names -->
+    <string name="category_greetings">अभिवादन</string>
+    <string name="category_food_drinks">खाना और पीना</string>
+    <string name="category_numbers">संख्याएँ</string>
+    <string name="category_family">परिवार</string>
+    <string name="category_colors">रंग</string>
+    <string name="category_animals">जानवर</string>
+    <string name="category_daily_activities">दैनिक गतिविधियाँ</string>
+    <string name="category_travel">यात्रा</string>
+    <string name="category_emergency">आपातकाल</string>
+    <string name="category_time">समय</string>
+    <string name="category_weather">मौसम</string>
+    <string name="category_body_parts">शरीर के अंग</string>
+    <string name="category_clothing">कपड़े</string>
+    <string name="category_home">घर</string>
+    <string name="category_shopping">खरीदारी</string>
+    <string name="category_work">काम</string>
+    <string name="category_emotions">भावनाएँ</string>
+    <string name="category_directions">दिशाएँ</string>
+    <string name="category_grammar">व्याकरण</string>
+    <string name="category_phrases">आम वाक्यांश</string>
+    
+    <!-- Category Descriptions -->
+    <string name="category_desc_greetings">बुनियादी अभिवादन और परिचय</string>
+    <string name="category_desc_food_drinks">भोजन, पेय और रेस्तरां वाक्यांश</string>
+    <string name="category_desc_numbers">संख्याएँ, गिनती, और बुनियादी गणित शब्द</string>
+    <string name="category_desc_family">परिवार के सदस्य और रिश्ते संबंधी शब्द</string>
+    <string name="category_desc_colors">रंग और संबंधित वर्णनात्मक शब्द</string>
+    <string name="category_desc_animals">जानवर, पालतू जानवर और वन्य जीवन</string>
+    <string name="category_desc_daily_activities">आम दैनिक गतिविधियाँ और दिनचर्या</string>
+    <string name="category_desc_travel">यात्रा, परिवहन और दिशाएँ</string>
+    <string name="category_desc_emergency">आपातकालीन स्थितियों के लिए शब्द और वाक्यांश</string>
+    <string name="category_desc_time">समय, तारीखें, सप्ताह के दिन और महीने</string>
+    <string name="category_desc_weather">मौसम की स्थिति और मौसमी शब्द</string>
+    <string name="category_desc_body_parts">मानव शरीर के अंग और संबंधित शब्द</string>
+    <string name="category_desc_clothing">कपड़े और वस्त्र खरीदारी</string>
+    <string name="category_desc_home">घरेलू वस्तुएं और घर के कमरे</string>
+    <string name="category_desc_shopping">खरीदारी और बाजार शब्दावली</string>
+    <string name="category_desc_work">काम, कार्यालय और पेशेवर शब्द</string>
+    <string name="category_desc_emotions">भावनाओं और अनुभूतियों को व्यक्त करना</string>
+    <string name="category_desc_directions">दिशाएँ और स्थान-संबंधित वाक्यांश</string>
+    <string name="category_desc_grammar">बुनियादी व्याकरण नियम और संरचनाएँ</string>
+    <string name="category_desc_phrases">अनिवार्य रोजमर्रा के वाक्यांश और अभिव्यक्तियां</string>
+</resources>
