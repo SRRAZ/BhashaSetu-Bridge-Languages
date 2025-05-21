@@ -5,6 +5,12 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:7.4.2'
+        
+        // Add the Google services Gradle plugin (if needed)
+        // classpath 'com.google.gms:google-services:4.3.15'
+        
+        // Add Crashlytics Gradle plugin (if needed)
+        // classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.5'
     }
 }
 
@@ -12,6 +18,8 @@ allprojects {
     repositories {
         google()
         mavenCentral()
+        // Add other repositories if needed
+        // maven { url 'https://jitpack.io' }
     }
 }
 

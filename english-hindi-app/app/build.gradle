@@ -2,6 +2,13 @@ plugins {
     id 'com.android.application'
 }
 
+// Load keystore properties if available
+def keystorePropertiesFile = rootProject.file("keystore.properties")
+def keystoreProperties = new Properties()
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
+
 android {
     compileSdk 33
     
@@ -9,16 +16,91 @@ android {
         applicationId "com.example.englishhindi"
         minSdk 21
         targetSdk 33
-        versionCode 1
-        versionName "1.0"
+        
+        // Updated for release
+        versionCode 2
+        versionName "1.1.0"
         
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        
+        // Set vectors for backward compatibility
+        vectorDrawables.useSupportLibrary = true
+        
+        // Multidex support
+        multiDexEnabled true
+    }
+    
+    // Signing configuration
+    signingConfigs {
+        release {
+            storeFile keystoreProperties.getProperty('storeFile') ? file(keystoreProperties.getProperty('storeFile')) : null
+            storePassword keystoreProperties.getProperty('keystorePassword')
+            keyAlias keystoreProperties.getProperty('keyAlias')
+            keyPassword keystoreProperties.getProperty('keyPassword')
+        }
     }
     
     buildTypes {
-        release {
+        debug {
+            applicationIdSuffix ".debug"
+            versionNameSuffix "-debug"
+            debuggable true
             minifyEnabled false
+        }
+        
+        beta {
+            applicationIdSuffix ".beta"
+            versionNameSuffix "-beta"
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        
+        release {
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    
+    // Product flavors for different app versions
+    flavorDimensions "version"
+    productFlavors {
+        free {
+            dimension "version"
+            applicationIdSuffix ".free"
+            versionNameSuffix "-free"
+            // Free version specific configurations
+            buildConfigField "boolean", "PREMIUM_FEATURES_ENABLED", "false"
+        }
+        
+        premium {
+            dimension "version"
+            applicationIdSuffix ".premium"
+            versionNameSuffix "-premium"
+            // Premium version specific configurations
+            buildConfigField "boolean", "PREMIUM_FEATURES_ENABLED", "true"
+        }
+    }
+    
+    // Bundle configuration
+    bundle {
+        language {
+            // Include only English and Hindi resources in the base APK
+            enableSplit = true
+            include = ['en', 'hi']
+        }
+        density {
+            // Enable density-based APK splitting
+            enableSplit = true
+        }
+        abi {
+            // Enable ABI-based APK splitting
+            enableSplit = true
         }
     }
     
@@ -26,14 +108,49 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    
+    // Resolve duplicate resources conflicts
+    packagingOptions {
+        resources {
+            excludes += [
+                'META-INF/LICENSE.txt',
+                'META-INF/NOTICE.txt',
+                'META-INF/DEPENDENCIES'
+            ]
+        }
+    }
+    
+    // Lint options
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds true
+        disable 'MissingTranslation'
+    }
 }
 
 dependencies {
+    // Core libraries
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    
+    // Room for database
     implementation 'androidx.room:room-runtime:2.5.2'
     annotationProcessor 'androidx.room:room-compiler:2.5.2'
+    
+    // Lifecycle and ViewModel
+    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.6.1'
+    implementation 'androidx.lifecycle:lifecycle-livedata:2.6.1'
+    implementation 'androidx.lifecycle:lifecycle-runtime:2.6.1'
+    
+    // Navigation components
+    implementation 'androidx.navigation:navigation-fragment:2.6.0'
+    implementation 'androidx.navigation:navigation-ui:2.6.0'
+    
+    // Image loading and caching
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.15.1'
     
     // Unit testing
     testImplementation 'junit:junit:4.13.2'
@@ -52,7 +169,9 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-intents:3.5.1'
     androidTestImplementation 'androidx.test.uiautomator:uiautomator:2.2.0'
     
-    // Performance testing
+    // Performance testing and monitoring
     androidTestImplementation 'androidx.benchmark:benchmark-junit4:1.1.1'
+    
+    // LeakCanary - only for debug builds
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.10'
 }
