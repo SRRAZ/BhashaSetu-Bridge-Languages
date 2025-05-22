@@ -30,7 +30,7 @@ plugins {
 //     }
 // }
 
-
-task clean(type: Delete) {
-    delete rootProject.buildDir
+// Use tasks.register instead of task to avoid unnecessary configuration
+tasks.register('clean', Delete) {
+    delete layout.buildDirectory
 }

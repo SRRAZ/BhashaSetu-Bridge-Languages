@@ -119,9 +119,11 @@ android {
         kotlinCompilerExtensionVersion "1.5.3"
     }
     
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
+    // Use Java toolchain API instead of sourceCompatibility/targetCompatibility
+    java {
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(17)
+        }
     }
     
     kotlinOptions {
@@ -131,7 +133,7 @@ android {
     // Resolve duplicate resources conflicts
     packaging {
         resources {
-            excludes += [
+            pickFirsts += [
                 'META-INF/LICENSE.txt',
                 'META-INF/NOTICE.txt',
                 'META-INF/DEPENDENCIES'
