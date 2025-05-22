@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "lastUpdated": "2025-05-21",
+  "version": 2,
+  "lastUpdated": "2025-05-22",
   "categories": [
     {
       "id": 1,
@@ -53,9 +53,9 @@
       "color": "#E91E63",
       "iconPath": "images/categories/family.png",
       "dataPath": "vocabulary/family.json",
-      "wordCount": 20,
+      "wordCount": 35,
       "difficulty": 1,
-      "unlocked": false,
+      "unlocked": true,
       "order": 4
     },
     {
@@ -123,9 +123,9 @@
       "color": "#673AB7",
       "iconPath": "images/categories/time.png",
       "dataPath": "vocabulary/time.json",
-      "wordCount": 30,
-      "difficulty": 2,
-      "unlocked": false,
+      "wordCount": 40,
+      "difficulty": 1,
+      "unlocked": true,
       "order": 9
     },
     {
@@ -211,6 +211,34 @@
       "difficulty": 3,
       "unlocked": false,
       "order": 15
+    },
+    {
+      "id": 16,
+      "name": "Everyday Objects",
+      "nameHindi": "रोज़मर्रा की वस्तुएँ",
+      "description": "Common objects you encounter in daily life",
+      "descriptionHindi": "दैनिक जीवन में मिलने वाली सामान्य वस्तुएँ",
+      "color": "#3F51B5",
+      "iconPath": "images/categories/everyday_objects.png",
+      "dataPath": "vocabulary/everyday_objects.json",
+      "wordCount": 30,
+      "difficulty": 1,
+      "unlocked": true,
+      "order": 16
+    },
+    {
+      "id": 17,
+      "name": "Basic Verbs",
+      "nameHindi": "मूल क्रियाएँ",
+      "description": "Essential verbs for expressing actions in Hindi",
+      "descriptionHindi": "हिंदी में क्रियाओं को व्यक्त करने के लिए आवश्यक क्रियाएँ",
+      "color": "#FF4081",
+      "iconPath": "images/categories/basic_verbs.png",
+      "dataPath": "vocabulary/basic_verbs.json",
+      "wordCount": 30,
+      "difficulty": 1,
+      "unlocked": true,
+      "order": 17
     }
   ]
 }

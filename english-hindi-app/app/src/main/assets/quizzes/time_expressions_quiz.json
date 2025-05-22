@@ -1,0 +1,127 @@
+{
+  "id": 8,
+  "title": "Time Expressions Quiz",
+  "titleHindi": "समय अभिव्यक्तियाँ क्विज़",
+  "description": "Test your knowledge of Hindi time expressions, days, and months",
+  "descriptionHindi": "हिंदी समय अभिव्यक्तियों, दिनों और महीनों के ज्ञान का परीक्षण करें",
+  "category": "Time",
+  "level": "beginner",
+  "passingScore": 70,
+  "timeLimit": 300,
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "question": "What is the Hindi word for 'Today'?",
+      "questionHindi": "हिंदी में 'Today' के लिए शब्द क्या है?",
+      "options": ["कल", "आज", "परसों", "अब"],
+      "correctAnswerIndex": 1,
+      "explanation": "The Hindi word for 'Today' is 'आज' (aaj).",
+      "explanationHindi": "'Today' के लिए हिंदी शब्द 'आज' है।",
+      "points": 10
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "question": "Which Hindi word can mean both 'Tomorrow' and 'Yesterday'?",
+      "questionHindi": "कौन सा हिंदी शब्द 'Tomorrow' और 'Yesterday' दोनों का अर्थ दे सकता है?",
+      "options": ["आज", "कल", "परसों", "अब"],
+      "correctAnswerIndex": 1,
+      "explanation": "The Hindi word 'कल' (kal) can mean both 'Tomorrow' and 'Yesterday' depending on the context and verb tense used.",
+      "explanationHindi": "हिंदी शब्द 'कल' संदर्भ और प्रयुक्त क्रिया काल के आधार पर 'Tomorrow' और 'Yesterday' दोनों का अर्थ दे सकता है।",
+      "points": 10
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "question": "What is the Hindi word for 'Monday'?",
+      "questionHindi": "हिंदी में 'Monday' के लिए शब्द क्या है?",
+      "options": ["सोमवार", "मंगलवार", "बुधवार", "गुरुवार"],
+      "correctAnswerIndex": 0,
+      "explanation": "The Hindi word for 'Monday' is 'सोमवार' (somvaar).",
+      "explanationHindi": "'Monday' के लिए हिंदी शब्द 'सोमवार' है।",
+      "points": 10
+    },
+    {
+      "id": 4,
+      "type": "multiple_choice",
+      "question": "Which day of the week is 'शुक्रवार' (shukravaar) in English?",
+      "questionHindi": "अंग्रेज़ी में सप्ताह का कौन सा दिन 'शुक्रवार' है?",
+      "options": ["Tuesday", "Thursday", "Friday", "Sunday"],
+      "correctAnswerIndex": 2,
+      "explanation": "The Hindi word 'शुक्रवार' (shukravaar) means 'Friday' in English.",
+      "explanationHindi": "हिंदी शब्द 'शुक्रवार' का अंग्रेज़ी में अर्थ 'Friday' है।",
+      "points": 10
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "question": "What does 'दोपहर' mean in English?",
+      "questionHindi": "अंग्रेज़ी में 'दोपहर' का क्या अर्थ है?",
+      "options": ["Morning", "Afternoon", "Evening", "Night"],
+      "correctAnswerIndex": 1,
+      "explanation": "The Hindi word 'दोपहर' (dopahar) means 'Afternoon' in English.",
+      "explanationHindi": "हिंदी शब्द 'दोपहर' का अंग्रेज़ी में अर्थ 'Afternoon' है।",
+      "points": 10
+    },
+    {
+      "id": 6,
+      "type": "fill_blank",
+      "question": "The Hindi word for 'Hour' is _______.",
+      "questionHindi": "हिंदी में 'Hour' के लिए शब्द _______ है।",
+      "correctAnswer": "घंटा",
+      "alternateAnswers": ["ghanta", "ghantaa"],
+      "caseSensitive": false,
+      "explanation": "The Hindi word for 'Hour' is 'घंटा' (ghantaa).",
+      "explanationHindi": "'Hour' के लिए हिंदी शब्द 'घंटा' है।",
+      "points": 15
+    },
+    {
+      "id": 7,
+      "type": "fill_blank",
+      "question": "In Hindi, 'Sunday' is called _______.",
+      "questionHindi": "हिंदी में, 'Sunday' को _______ कहा जाता है।",
+      "correctAnswer": "रविवार",
+      "alternateAnswers": ["ravivaar", "ravivar"],
+      "caseSensitive": false,
+      "explanation": "In Hindi, 'Sunday' is called 'रविवार' (ravivaar).",
+      "explanationHindi": "हिंदी में, 'Sunday' को 'रविवार' कहा जाता है।",
+      "points": 15
+    },
+    {
+      "id": 8,
+      "type": "true_false",
+      "question": "In Hindi, 'सवा' (savaa) is used to express 'quarter past' the hour.",
+      "questionHindi": "हिंदी में, घंटे के 'quarter past' को व्यक्त करने के लिए 'सवा' का उपयोग किया जाता है।",
+      "correctAnswer": true,
+      "explanation": "Yes, 'सवा' (savaa) is used to express 'quarter past' the hour in Hindi. For example, 'सवा चार' (savaa chaar) means 'quarter past four' or '4:15'.",
+      "explanationHindi": "हाँ, हिंदी में घंटे के 'quarter past' को व्यक्त करने के लिए 'सवा' का उपयोग किया जाता है। उदाहरण के लिए, 'सवा चार' का अर्थ है 'quarter past four' या '4:15'।",
+      "points": 10
+    },
+    {
+      "id": 9,
+      "type": "true_false",
+      "question": "In Hindi, 'गुरुवार' (guruvaar) is the word for Tuesday.",
+      "questionHindi": "हिंदी में, 'गुरुवार' मंगलवार के लिए शब्द है।",
+      "correctAnswer": false,
+      "explanation": "No, 'गुरुवार' (guruvaar) is the word for Thursday in Hindi. Tuesday is 'मंगलवार' (mangalvaar).",
+      "explanationHindi": "नहीं, हिंदी में 'गुरुवार' शब्द Thursday के लिए है। Tuesday 'मंगलवार' है।",
+      "points": 10
+    },
+    {
+      "id": 10,
+      "type": "match_pairs",
+      "question": "Match the Hindi time expressions with their English meanings:",
+      "questionHindi": "हिंदी समय अभिव्यक्तियों का उनके अंग्रेज़ी अर्थों से मिलान करें:",
+      "pairs": [
+        {"left": "सुबह", "right": "Morning"},
+        {"left": "शाम", "right": "Evening"},
+        {"left": "रात", "right": "Night"},
+        {"left": "मिनट", "right": "Minute"}
+      ],
+      "explanation": "सुबह = Morning, शाम = Evening, रात = Night, मिनट = Minute",
+      "explanationHindi": "सुबह = Morning, शाम = Evening, रात = Night, मिनट = Minute",
+      "points": 20
+    }
+  ]
+}
