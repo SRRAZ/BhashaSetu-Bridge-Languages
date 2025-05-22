@@ -100,3 +100,15 @@ A comprehensive mobile application for learning Hindi language, designed for Eng
 - Expanded vocabulary across more categories
 - Additional grammar lessons and exercises
 - Cloud synchronization for learning progress
+
+## Technical Details
+
+- Minimum SDK: API 21 (Android 5.0 Lollipop)
+- Target SDK: API 34 (Android 14)
+- Built with Java and Android SDK
+- Uses Room Database for local storage
+
+## Project Structure
+- `app/src/main/java/com/example/englishhindi` - Contains all Java code
+- `app/src/main/res` - Contains resources like layouts, strings, etc.
+- `app/src/main/AndroidManifest.xml` - App configuration file
