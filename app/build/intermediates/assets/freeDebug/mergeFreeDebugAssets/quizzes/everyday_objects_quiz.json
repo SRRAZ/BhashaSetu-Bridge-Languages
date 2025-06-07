@@ -1,0 +1,127 @@
+{
+  "id": 5,
+  "title": "Everyday Objects Quiz",
+  "titleHindi": "रोज़मर्रा की वस्तुएँ क्विज़",
+  "description": "Test your knowledge of common everyday objects in Hindi",
+  "descriptionHindi": "हिंदी में सामान्य रोज़मर्रा की वस्तुओं के ज्ञान का परीक्षण करें",
+  "category": "Objects",
+  "level": "beginner",
+  "passingScore": 70,
+  "timeLimit": 300,
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "question": "What is 'मेज़' in English?",
+      "questionHindi": "अंग्रेज़ी में 'मेज़' क्या है?",
+      "options": ["Chair", "Table", "Bed", "Sofa"],
+      "correctAnswerIndex": 1,
+      "explanation": "The Hindi word 'मेज़' (mez) means 'Table' in English.",
+      "explanationHindi": "हिंदी शब्द 'मेज़' का अंग्रेज़ी में अर्थ 'Table' है।",
+      "points": 10
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "question": "Which Hindi word means 'Book'?",
+      "questionHindi": "किस हिंदी शब्द का अर्थ 'Book' है?",
+      "options": ["किताब", "कलम", "कागज़", "कंप्यूटर"],
+      "correctAnswerIndex": 0,
+      "explanation": "The Hindi word for 'Book' is 'किताब' (kitaab).",
+      "explanationHindi": "'Book' के लिए हिंदी शब्द 'किताब' है।",
+      "points": 10
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "question": "What does 'खिड़की' mean in English?",
+      "questionHindi": "अंग्रेज़ी में 'खिड़की' का क्या अर्थ है?",
+      "options": ["Door", "Window", "Wall", "Floor"],
+      "correctAnswerIndex": 1,
+      "explanation": "The Hindi word 'खिड़की' (khidkee) means 'Window' in English.",
+      "explanationHindi": "हिंदी शब्द 'खिड़की' का अंग्रेज़ी में अर्थ 'Window' है।",
+      "points": 10
+    },
+    {
+      "id": 4,
+      "type": "multiple_choice",
+      "question": "Which of these is the Hindi word for 'Mobile phone'?",
+      "questionHindi": "इनमें से कौन सा 'Mobile phone' के लिए हिंदी शब्द है?",
+      "options": ["टेलीविज़न", "कंप्यूटर", "मोबाइल फोन", "घड़ी"],
+      "correctAnswerIndex": 2,
+      "explanation": "The Hindi word for 'Mobile phone' is 'मोबाइल फोन' (mobail fon).",
+      "explanationHindi": "'Mobile phone' के लिए हिंदी शब्द 'मोबाइल फोन' है।",
+      "points": 10
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "question": "What is 'चाबी' in English?",
+      "questionHindi": "अंग्रेज़ी में 'चाबी' क्या है?",
+      "options": ["Key", "Lock", "Door", "Chain"],
+      "correctAnswerIndex": 0,
+      "explanation": "The Hindi word 'चाबी' (chaabee) means 'Key' in English.",
+      "explanationHindi": "हिंदी शब्द 'चाबी' का अंग्रेज़ी में अर्थ 'Key' है।",
+      "points": 10
+    },
+    {
+      "id": 6,
+      "type": "fill_blank",
+      "question": "The Hindi word for 'Glass' is _______.",
+      "questionHindi": "हिंदी में 'Glass' शब्द _______ है।",
+      "correctAnswer": "गिलास",
+      "alternateAnswers": ["gilaas"],
+      "caseSensitive": false,
+      "explanation": "The Hindi word for 'Glass' is 'गिलास' (gilaas).",
+      "explanationHindi": "'Glass' के लिए हिंदी शब्द 'गिलास' है।",
+      "points": 15
+    },
+    {
+      "id": 7,
+      "type": "fill_blank",
+      "question": "In Hindi, 'Pen' is called _______.",
+      "questionHindi": "हिंदी में, 'Pen' को _______ कहा जाता है।",
+      "correctAnswer": "कलम",
+      "alternateAnswers": ["kalam"],
+      "caseSensitive": false,
+      "explanation": "In Hindi, 'Pen' is called 'कलम' (kalam).",
+      "explanationHindi": "हिंदी में, 'Pen' को 'कलम' कहा जाता है।",
+      "points": 15
+    },
+    {
+      "id": 8,
+      "type": "true_false",
+      "question": "'थाली' (thaalee) is used for eating food in India.",
+      "questionHindi": "'थाली' भारत में खाना खाने के लिए उपयोग की जाती है।",
+      "correctAnswer": true,
+      "explanation": "Yes, 'थाली' (thaalee) is a plate used for eating food in India.",
+      "explanationHindi": "हाँ, 'थाली' भारत में खाना खाने के लिए उपयोग की जाने वाली प्लेट है।",
+      "points": 10
+    },
+    {
+      "id": 9,
+      "type": "true_false",
+      "question": "In Hindi, 'दरवाज़ा' (darvaazaa) means 'Window'.",
+      "questionHindi": "हिंदी में, 'दरवाज़ा' का अर्थ 'Window' है।",
+      "correctAnswer": false,
+      "explanation": "No, 'दरवाज़ा' (darvaazaa) means 'Door' in Hindi, not 'Window'. 'Window' is 'खिड़की' (khidkee) in Hindi.",
+      "explanationHindi": "नहीं, हिंदी में 'दरवाज़ा' का अर्थ 'Door' है, 'Window' नहीं। हिंदी में 'Window' को 'खिड़की' कहा जाता है।",
+      "points": 10
+    },
+    {
+      "id": 10,
+      "type": "match_pairs",
+      "question": "Match the Hindi words with their English meanings:",
+      "questionHindi": "हिंदी शब्दों का उनके अंग्रेज़ी अर्थों से मिलान करें:",
+      "pairs": [
+        {"left": "कुर्सी", "right": "Chair"},
+        {"left": "बिस्तर", "right": "Bed"},
+        {"left": "घड़ी", "right": "Clock/Watch"},
+        {"left": "साबुन", "right": "Soap"}
+      ],
+      "explanation": "कुर्सी = Chair, बिस्तर = Bed, घड़ी = Clock/Watch, साबुन = Soap",
+      "explanationHindi": "कुर्सी = Chair, बिस्तर = Bed, घड़ी = Clock/Watch, साबुन = Soap",
+      "points": 20
+    }
+  ]
+}

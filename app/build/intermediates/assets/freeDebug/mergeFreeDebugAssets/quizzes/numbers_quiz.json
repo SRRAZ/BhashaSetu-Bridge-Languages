@@ -1,0 +1,106 @@
+{
+  "id": 2,
+  "title": "Numbers and Counting Quiz",
+  "titleHindi": "संख्याएँ और गिनती प्रश्नोत्तरी",
+  "description": "Test your knowledge of Hindi numbers and counting",
+  "descriptionHindi": "हिंदी संख्याओं और गिनती के बारे में अपने ज्ञान का परीक्षण करें",
+  "category": "Numbers",
+  "difficulty": 1,
+  "totalQuestions": 10,
+  "passingScore": 7,
+  "timeLimit": 300,
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "question": "What is the Hindi word for the number 'Five'?",
+      "questionHindi": "संख्या 'Five' के लिए हिंदी शब्द क्या है?",
+      "options": ["तीन", "चार", "पाँच", "छह"],
+      "correctOptionIndex": 2,
+      "explanation": "The Hindi word for 'Five' is पाँच (Paanch)."
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "question": "Which number is represented by the Hindi word 'दस' (Das)?",
+      "questionHindi": "हिंदी शब्द 'दस' किस संख्या का प्रतिनिधित्व करता है?",
+      "options": ["8", "9", "10", "12"],
+      "correctOptionIndex": 2,
+      "explanation": "दस (Das) represents the number 10 in Hindi."
+    },
+    {
+      "id": 3,
+      "type": "matching",
+      "question": "Match the Hindi numbers with their English equivalents:",
+      "questionHindi": "हिंदी संख्याओं का उनके अंग्रेजी समकक्षों से मिलान करें:",
+      "pairs": [
+        {"left": "एक", "right": "One"},
+        {"left": "तीन", "right": "Three"},
+        {"left": "सात", "right": "Seven"},
+        {"left": "नौ", "right": "Nine"}
+      ]
+    },
+    {
+      "id": 4,
+      "type": "multiple_choice",
+      "question": "How do you say '25' in Hindi?",
+      "questionHindi": "हिंदी में '25' कैसे कहते हैं?",
+      "options": ["बीस", "पच्चीस", "पंद्रह", "तीस"],
+      "correctOptionIndex": 1,
+      "explanation": "25 in Hindi is पच्चीस (Pacchees)."
+    },
+    {
+      "id": 5,
+      "type": "true_false",
+      "question": "The Hindi word for '50' is 'पचास' (Pachaas).",
+      "questionHindi": "'50' के लिए हिंदी शब्द 'पचास' है।",
+      "isTrue": true,
+      "explanation": "Yes, 50 in Hindi is पचास (Pachaas)."
+    },
+    {
+      "id": 6,
+      "type": "fill_blank",
+      "question": "The Hindi word for 'Twelve' is _____.",
+      "questionHindi": "'Twelve' के लिए हिंदी शब्द _____ है।",
+      "correctAnswer": "बारह",
+      "explanation": "The Hindi word for 'Twelve' is बारह (Baarah)."
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "question": "Which of these is the correct Hindi word for '40'?",
+      "questionHindi": "इनमें से कौन सा '40' के लिए सही हिंदी शब्द है?",
+      "options": ["चालीस", "चौदह", "चौंतीस", "चौरासी"],
+      "correctOptionIndex": 0,
+      "explanation": "40 in Hindi is चालीस (Chaalees)."
+    },
+    {
+      "id": 8,
+      "type": "multiple_choice",
+      "question": "How would you ask 'What time is it?' in Hindi?",
+      "questionHindi": "आप हिंदी में 'What time is it?' कैसे पूछेंगे?",
+      "options": ["आज क्या दिन है?", "कितने बजे हैं?", "आपकी उम्र क्या है?", "यह कितना है?"],
+      "correctOptionIndex": 1,
+      "explanation": "To ask 'What time is it?' in Hindi, you say 'Kitne baje hain?' (कितने बजे हैं?)"
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "question": "If it's 3:30, how would you say the time in Hindi?",
+      "questionHindi": "अगर 3:30 बजे हैं, तो आप हिंदी में समय कैसे बताएंगे?",
+      "options": ["तीन बजे", "साढ़े तीन बजे", "पौने चार बजे", "तीन बजकर पंद्रह मिनट"],
+      "correctOptionIndex": 1,
+      "explanation": "3:30 in Hindi is 'Saadhe teen baje' (साढ़े तीन बजे), which means 'Half past three'."
+    },
+    {
+      "id": 10,
+      "type": "sequencing",
+      "question": "Arrange these Hindi numbers in ascending order:",
+      "questionHindi": "इन हिंदी संख्याओं को आरोही क्रम में व्यवस्थित करें:",
+      "items": ["बीस", "पाँच", "नौ", "सत्रह"],
+      "correctOrder": [1, 2, 3, 0],
+      "explanation": "The correct order is: पाँच (5), नौ (9), सत्रह (17), बीस (20)."
+    }
+  ],
+  "relatedLessons": [3]
+}

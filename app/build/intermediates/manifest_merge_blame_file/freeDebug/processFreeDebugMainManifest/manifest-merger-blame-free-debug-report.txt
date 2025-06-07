@@ -1,0 +1,591 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  AndroidManifest.xml for English-Hindi Learning App
+4  
+5  Main changes from GitHub version:
+6  - Updated permissions for Android 13+ (granular media access, notifications)
+7  - Added network state monitoring for offline capabilities
+8  - Enhanced security with encrypted traffic requirement
+9  - Improved performance with hardware acceleration and memory settings
+10  - Standardized orientation for consistent user experience
+11  - Added new activities, services, and receivers for enhanced functionality
+12-->
+13<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+14    package="com.example.englishhindi.free.debug"
+15    android:versionCode="2"
+16    android:versionName="1.1.0-free-debug" >
+17
+18    <uses-sdk
+19        android:minSdkVersion="21"
+20        android:targetSdkVersion="34" />
+21
+22    <!-- Internet Permission - Required for network operations -->
+23    <uses-permission android:name="android.permission.INTERNET" />
+23-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:17:5-67
+23-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:17:22-64
+24    <!-- Network state monitoring - Essential for offline mode detection -->
+25    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+25-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:19:5-79
+25-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:19:22-76
+26
+27    <!-- Storage Permissions - Using platform-specific approach -->
+28    <!--
+29         Legacy storage permission with maxSdkVersion to limit scope on newer platforms 
+30         Increased from 28 to 32 to support Android 12 while maintaining compatibility
+31    -->
+32    <uses-permission
+32-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:24:5-25:38
+33        android:name="android.permission.READ_EXTERNAL_STORAGE"
+33-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:24:22-77
+34        android:maxSdkVersion="32" />
+34-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:25:9-35
+35    <uses-permission
+35-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:26:5-27:38
+36        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+36-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:26:22-78
+37        android:maxSdkVersion="28" />
+37-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:27:9-35
+38    <!-- Modern granular media permissions for Android 13+ replacing broad storage access -->
+39    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+39-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:29:5-76
+39-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:29:22-73
+40    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+40-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:30:5-75
+40-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:30:22-72
+41
+42    <!-- Notification Permission - Required explicitly for Android 13+ (API 33+) -->
+43    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+43-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:33:5-77
+43-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:33:22-74
+44
+45    <!-- Vibration for haptic feedback in interactive learning exercises -->
+46    <uses-permission android:name="android.permission.VIBRATE" />
+46-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:36:5-66
+46-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:36:22-63
+47
+48    <!-- Record Audio - Required for pronunciation practice feature -->
+49    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+49-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:39:5-71
+49-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:39:22-68
+50
+51    <permission
+51-->[androidx.core:core:1.16.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\a0fd158e9a42ba0f20ac1eea2182a9ef\transformed\core-1.16.0\AndroidManifest.xml:22:5-24:47
+52        android:name="com.example.englishhindi.free.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+52-->[androidx.core:core:1.16.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\a0fd158e9a42ba0f20ac1eea2182a9ef\transformed\core-1.16.0\AndroidManifest.xml:23:9-81
+53        android:protectionLevel="signature" />
+53-->[androidx.core:core:1.16.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\a0fd158e9a42ba0f20ac1eea2182a9ef\transformed\core-1.16.0\AndroidManifest.xml:24:9-44
+54
+55    <uses-permission android:name="com.example.englishhindi.free.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+55-->[androidx.core:core:1.16.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\a0fd158e9a42ba0f20ac1eea2182a9ef\transformed\core-1.16.0\AndroidManifest.xml:26:5-97
+55-->[androidx.core:core:1.16.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\a0fd158e9a42ba0f20ac1eea2182a9ef\transformed\core-1.16.0\AndroidManifest.xml:26:22-94
+56
+57    <application
+57-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:41:5-190:19
+58        android:name="com.example.englishhindi.EnglishHindiApplication"
+58-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:42:9-48
+59        android:allowBackup="true"
+59-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:43:9-35
+60        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+60-->[androidx.core:core:1.16.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\a0fd158e9a42ba0f20ac1eea2182a9ef\transformed\core-1.16.0\AndroidManifest.xml:28:18-86
+61        android:dataExtractionRules="@xml/data_extraction_rules"
+61-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:44:9-65
+62        android:debuggable="true"
+63        android:extractNativeLibs="true"
+64        android:fullBackupContent="@xml/backup_rules"
+64-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:45:9-54
+65        android:hardwareAccelerated="true"
+65-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:51:9-43
+66        android:icon="@mipmap/ic_launcher"
+66-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:46:9-43
+67        android:label="@string/app_name"
+67-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:47:9-41
+68        android:largeHeap="true"
+68-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:53:9-33
+69        android:roundIcon="@mipmap/ic_launcher_round"
+69-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:48:9-54
+70        android:supportsRtl="true"
+70-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:49:9-35
+71        android:testOnly="true"
+72        android:theme="@style/Theme.EnglishHindi"
+72-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:50:9-50
+73        android:usesCleartextTraffic="false" >
+73-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:52:9-45
+74
+75        <!-- Splash Activity (Entry Point) - Using dedicated splash theme -->
+76        <activity
+76-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:57:9-66:20
+77            android:name="com.example.englishhindi.SplashActivity"
+77-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:58:13-43
+78            android:exported="true"
+78-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:59:13-36
+79            android:screenOrientation="portrait"
+79-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:61:13-49
+80            android:theme="@style/Theme.EnglishHindi.Splash" >
+80-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:60:13-61
+81            <intent-filter>
+81-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:62:13-65:29
+82                <action android:name="android.intent.action.MAIN" />
+82-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:63:17-69
+82-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:63:25-66
+83
+84                <category android:name="android.intent.category.LAUNCHER" />
+84-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:64:17-77
+84-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:64:27-74
+85            </intent-filter>
+86        </activity>
+87
+88        <!-- Main Activity - Central hub for app navigation -->
+89        <activity
+89-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:69:9-72:52
+90            android:name="com.example.englishhindi.MainActivity"
+90-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:70:13-41
+91            android:exported="false"
+91-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:71:13-37
+92            android:screenOrientation="portrait" />
+92-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:72:13-49
+93
+94        <!-- Lessons Activity - Shows available learning lessons -->
+95        <activity
+95-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:75:9-78:52
+96            android:name="com.example.englishhindi.LessonsActivity"
+96-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:76:13-44
+97            android:exported="false"
+97-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:77:13-37
+98            android:screenOrientation="portrait" />
+98-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:78:13-49
+99
+100        <!-- Lesson Detail Activity - Shows individual lesson content -->
+101        <activity
+101-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:81:9-84:52
+102            android:name="com.example.englishhindi.LessonDetailActivity"
+102-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:82:13-49
+103            android:exported="false"
+103-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:83:13-37
+104            android:screenOrientation="portrait" />
+104-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:84:13-49
+105
+106        <!-- Flashcard Activity - For vocabulary practice -->
+107        <activity
+107-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:87:9-90:52
+108            android:name="com.example.englishhindi.FlashcardActivity"
+108-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:88:13-46
+109            android:exported="false"
+109-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:89:13-37
+110            android:screenOrientation="portrait" />
+110-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:90:13-49
+111
+112        <!-- Games Menu Activity - New feature for gamified learning -->
+113        <activity
+113-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:93:9-96:52
+114            android:name="com.example.englishhindi.GamesMenuActivity"
+114-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:94:13-46
+115            android:exported="false"
+115-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:95:13-37
+116            android:screenOrientation="portrait" />
+116-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:96:13-49
+117
+118        <!-- Games Activity - Interactive learning games -->
+119        <activity
+119-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:99:9-102:52
+120            android:name="com.example.englishhindi.GamesActivity"
+120-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:100:13-42
+121            android:exported="false"
+121-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:101:13-37
+122            android:screenOrientation="portrait" />
+122-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:102:13-49
+123
+124        <!-- Practice Activity - Hub for different practice methods -->
+125        <activity
+125-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:105:9-108:52
+126            android:name="com.example.englishhindi.PracticeActivity"
+126-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:106:13-45
+127            android:exported="false"
+127-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:107:13-37
+128            android:screenOrientation="portrait" />
+128-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:108:13-49
+129
+130        <!-- Pronunciation Practice Activity - Speech practice -->
+131        <activity
+131-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:111:9-114:52
+132            android:name="com.example.englishhindi.PronunciationPracticeActivity"
+132-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:112:13-58
+133            android:exported="false"
+133-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:113:13-37
+134            android:screenOrientation="portrait" />
+134-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:114:13-49
+135
+136        <!-- Pronunciation Comparison Activity - New feature to compare user's pronunciation with correct one -->
+137        <activity
+137-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:117:9-120:52
+138            android:name="com.example.englishhindi.PronunciationComparisonActivity"
+138-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:118:13-60
+139            android:exported="false"
+139-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:119:13-37
+140            android:screenOrientation="portrait" />
+140-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:120:13-49
+141
+142        <!-- Spelling Practice Activity - For spelling exercises -->
+143        <activity
+143-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:123:9-126:52
+144            android:name="com.example.englishhindi.SpellingPracticeActivity"
+144-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:124:13-53
+145            android:exported="false"
+145-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:125:13-37
+146            android:screenOrientation="portrait" />
+146-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:126:13-49
+147
+148        <!-- Quiz Activity - Multiple choice questions -->
+149        <activity
+149-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:129:9-132:52
+150            android:name="com.example.englishhindi.QuizActivity"
+150-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:130:13-41
+151            android:exported="false"
+151-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:131:13-37
+152            android:screenOrientation="portrait" />
+152-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:132:13-49
+153
+154        <!-- Word Detail Activity - Shows detailed word information -->
+155        <activity
+155-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:135:9-138:52
+156            android:name="com.example.englishhindi.WordDetailActivity"
+156-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:136:13-47
+157            android:exported="false"
+157-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:137:13-37
+158            android:screenOrientation="portrait" />
+158-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:138:13-49
+159
+160        <!-- Add Word Activity - For user to add custom vocabulary -->
+161        <activity
+161-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:141:9-144:52
+162            android:name="com.example.englishhindi.AddWordActivity"
+162-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:142:13-44
+163            android:exported="false"
+163-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:143:13-37
+164            android:screenOrientation="portrait" />
+164-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:144:13-49
+165
+166        <!-- Achievements Activity - New gamification feature for tracking progress -->
+167        <activity
+167-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:147:9-150:52
+168            android:name="com.example.englishhindi.AchievementsActivity"
+168-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:148:13-49
+169            android:exported="false"
+169-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:149:13-37
+170            android:screenOrientation="portrait" />
+170-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:150:13-49
+171
+172        <!-- Settings Activity - App configuration -->
+173        <activity
+173-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:153:9-156:52
+174            android:name="com.example.englishhindi.SettingsActivity"
+174-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:154:13-45
+175            android:exported="false"
+175-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:155:13-37
+176            android:screenOrientation="portrait" />
+176-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:156:13-49
+177
+178        <!-- Language Settings Activity - For language preferences -->
+179        <activity
+179-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:159:9-162:52
+180            android:name="com.example.englishhindi.LanguageSettingsActivity"
+180-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:160:13-53
+181            android:exported="false"
+181-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:161:13-37
+182            android:screenOrientation="portrait" />
+182-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:162:13-49
+183
+184        <!-- Offline Settings Activity - New feature for configuring offline behavior -->
+185        <activity
+185-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:165:9-168:52
+186            android:name="com.example.englishhindi.OfflineSettingsActivity"
+186-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:166:13-52
+187            android:exported="false"
+187-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:167:13-37
+188            android:screenOrientation="portrait" />
+188-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:168:13-49
+189
+190        <!-- Services -->
+191        <!-- SyncService - Handles background synchronization of content -->
+192        <service
+192-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:172:9-174:40
+193            android:name="com.example.englishhindi.service.SyncService"
+193-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:173:13-48
+194            android:exported="false" />
+194-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:174:13-37
+195
+196        <!-- AudioPreloadService - Preloads audio files for better performance -->
+197        <service
+197-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:177:9-179:40
+198            android:name="com.example.englishhindi.service.AudioPreloadService"
+198-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:178:13-56
+199            android:exported="false" />
+199-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:179:13-37
+200
+201        <!-- Receivers -->
+202        <!-- NetworkStateReceiver - Monitors connectivity changes for offline mode -->
+203        <receiver
+203-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:183:9-188:20
+204            android:name="com.example.englishhindi.receiver.NetworkStateReceiver"
+204-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:183:19-64
+205            android:exported="false" >
+205-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:184:13-37
+206            <intent-filter>
+206-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:185:13-187:29
+207                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+207-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:186:17-79
+207-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:186:25-76
+208            </intent-filter>
+209        </receiver>
+210
+211        <service
+211-->[androidx.room:room-runtime-android:2.7.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\45ebda3d89e4eb14158b295429ffd677\transformed\room-runtime-release\AndroidManifest.xml:24:9-28:63
+212            android:name="androidx.room.MultiInstanceInvalidationService"
+212-->[androidx.room:room-runtime-android:2.7.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\45ebda3d89e4eb14158b295429ffd677\transformed\room-runtime-release\AndroidManifest.xml:25:13-74
+213            android:directBootAware="true"
+213-->[androidx.room:room-runtime-android:2.7.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\45ebda3d89e4eb14158b295429ffd677\transformed\room-runtime-release\AndroidManifest.xml:26:13-43
+214            android:exported="false" />
+214-->[androidx.room:room-runtime-android:2.7.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\45ebda3d89e4eb14158b295429ffd677\transformed\room-runtime-release\AndroidManifest.xml:27:13-37
+215
+216        <activity
+216-->[androidx.compose.ui:ui-tooling-android:1.8.2] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\33fa3cb0a604591197655490fb9b5924\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+217            android:name="androidx.compose.ui.tooling.PreviewActivity"
+217-->[androidx.compose.ui:ui-tooling-android:1.8.2] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\33fa3cb0a604591197655490fb9b5924\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+218            android:exported="true" />
+218-->[androidx.compose.ui:ui-tooling-android:1.8.2] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\33fa3cb0a604591197655490fb9b5924\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+219
+220        <provider
+220-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\67761bb427b27f00eb35a734e6d1319d\transformed\emoji2-1.4.0\AndroidManifest.xml:24:9-32:20
+221            android:name="androidx.startup.InitializationProvider"
+221-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\67761bb427b27f00eb35a734e6d1319d\transformed\emoji2-1.4.0\AndroidManifest.xml:25:13-67
+222            android:authorities="com.example.englishhindi.free.debug.androidx-startup"
+222-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\67761bb427b27f00eb35a734e6d1319d\transformed\emoji2-1.4.0\AndroidManifest.xml:26:13-68
+223            android:exported="false" >
+223-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\67761bb427b27f00eb35a734e6d1319d\transformed\emoji2-1.4.0\AndroidManifest.xml:27:13-37
+224            <meta-data
+224-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\67761bb427b27f00eb35a734e6d1319d\transformed\emoji2-1.4.0\AndroidManifest.xml:29:13-31:52
+225                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+225-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\67761bb427b27f00eb35a734e6d1319d\transformed\emoji2-1.4.0\AndroidManifest.xml:30:17-75
+226                android:value="androidx.startup" />
+226-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\67761bb427b27f00eb35a734e6d1319d\transformed\emoji2-1.4.0\AndroidManifest.xml:31:17-49
+227            <meta-data
+227-->[androidx.lifecycle:lifecycle-process:2.9.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\a606beca20dd1750d87b7e693935541e\transformed\lifecycle-process-2.9.1\AndroidManifest.xml:29:13-31:52
+228                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+228-->[androidx.lifecycle:lifecycle-process:2.9.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\a606beca20dd1750d87b7e693935541e\transformed\lifecycle-process-2.9.1\AndroidManifest.xml:30:17-78
+229                android:value="androidx.startup" />
+229-->[androidx.lifecycle:lifecycle-process:2.9.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\a606beca20dd1750d87b7e693935541e\transformed\lifecycle-process-2.9.1\AndroidManifest.xml:31:17-49
+230            <meta-data
+230-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+231                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+231-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+232                android:value="androidx.startup" />
+232-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+233        </provider>
+234
+235        <uses-library
+235-->[androidx.window:window:1.0.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\79a8cfb1fcd7eee7bd7c23dc732f4524\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+236            android:name="androidx.window.extensions"
+236-->[androidx.window:window:1.0.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\79a8cfb1fcd7eee7bd7c23dc732f4524\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+237            android:required="false" />
+237-->[androidx.window:window:1.0.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\79a8cfb1fcd7eee7bd7c23dc732f4524\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+238        <uses-library
+238-->[androidx.window:window:1.0.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\79a8cfb1fcd7eee7bd7c23dc732f4524\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+239            android:name="androidx.window.sidecar"
+239-->[androidx.window:window:1.0.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\79a8cfb1fcd7eee7bd7c23dc732f4524\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+240            android:required="false" />
+240-->[androidx.window:window:1.0.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\79a8cfb1fcd7eee7bd7c23dc732f4524\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+241
+242        <provider
+242-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:32:9-40:20
+243            android:name="leakcanary.internal.LeakCanaryFileProvider"
+243-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:33:13-70
+244            android:authorities="com.squareup.leakcanary.fileprovider.com.example.englishhindi.free.debug"
+244-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:34:13-88
+245            android:exported="false"
+245-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:35:13-37
+246            android:grantUriPermissions="true" >
+246-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:36:13-47
+247            <meta-data
+247-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:37:13-39:66
+248                android:name="android.support.FILE_PROVIDER_PATHS"
+248-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:38:17-67
+249                android:resource="@xml/leak_canary_file_paths" />
+249-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:39:17-63
+250        </provider>
+251
+252        <activity
+252-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:42:9-73:20
+253            android:name="leakcanary.internal.activity.LeakActivity"
+253-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:43:13-69
+254            android:exported="true"
+254-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:44:13-36
+255            android:icon="@mipmap/leak_canary_icon"
+255-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:45:13-52
+256            android:label="@string/leak_canary_display_activity_label"
+256-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:46:13-71
+257            android:taskAffinity="com.squareup.leakcanary.com.example.englishhindi.free.debug"
+257-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:47:13-76
+258            android:theme="@style/leak_canary_LeakCanary.Base" >
+258-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:48:13-63
+259            <intent-filter android:label="@string/leak_canary_import_hprof_file" >
+259-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:49:13-72:29
+259-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:49:28-81
+260                <action android:name="android.intent.action.VIEW" />
+260-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:50:17-69
+260-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:50:25-66
+261
+262                <category android:name="android.intent.category.DEFAULT" />
+262-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:52:17-76
+262-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:52:27-73
+263                <category android:name="android.intent.category.BROWSABLE" />
+263-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:53:17-78
+263-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:53:27-75
+264
+265                <data android:scheme="file" />
+265-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:55:17-47
+265-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:55:23-44
+266                <data android:scheme="content" />
+266-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:55:17-47
+266-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:55:23-44
+267                <data android:mimeType="*/*" />
+267-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:55:17-47
+268                <data android:host="*" />
+268-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:55:17-47
+269                <data android:pathPattern=".*\\.hprof" />
+269-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:55:17-47
+270                <data android:pathPattern=".*\\..*\\.hprof" />
+270-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:55:17-47
+271                <data android:pathPattern=".*\\..*\\..*\\.hprof" />
+271-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:55:17-47
+272                <data android:pathPattern=".*\\..*\\..*\\..*\\.hprof" />
+272-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:55:17-47
+273                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.hprof" />
+273-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:55:17-47
+274                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\.hprof" />
+274-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:55:17-47
+275                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\.hprof" />
+275-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:55:17-47
+276                <!--
+277            Since hprof isn't a standard MIME type, we have to declare such patterns.
+278            Most file providers will generate URIs including their own package name,
+279            which contains `.` characters that must be explicitly escaped in pathPattern.
+280            @see https://stackoverflow.com/a/31028507/703646
+281                -->
+282            </intent-filter>
+283        </activity>
+284
+285        <activity-alias
+285-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:75:9-92:26
+286            android:name="leakcanary.internal.activity.LeakLauncherActivity"
+286-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:76:13-77
+287            android:banner="@drawable/leak_canary_tv_icon"
+287-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:77:13-59
+288            android:enabled="@bool/leak_canary_add_launcher_icon"
+288-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:78:13-66
+289            android:exported="true"
+289-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:79:13-36
+290            android:icon="@mipmap/leak_canary_icon"
+290-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:80:13-52
+291            android:label="@string/leak_canary_display_activity_label"
+291-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:81:13-71
+292            android:targetActivity="leakcanary.internal.activity.LeakActivity"
+292-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:82:13-79
+293            android:taskAffinity="com.squareup.leakcanary.com.example.englishhindi.free.debug"
+293-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:83:13-76
+294            android:theme="@style/leak_canary_LeakCanary.Base" >
+294-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:84:13-63
+295            <intent-filter>
+295-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:85:13-91:29
+296                <action android:name="android.intent.action.MAIN" />
+296-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:63:17-69
+296-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:63:25-66
+297
+298                <category android:name="android.intent.category.LAUNCHER" />
+298-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:64:17-77
+298-->C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\AndroidManifest.xml:64:27-74
+299                <!-- Android TV launcher intent -->
+300                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+300-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:90:17-86
+300-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:90:27-83
+301            </intent-filter>
+302        </activity-alias>
+303
+304        <activity
+304-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:94:9-100:68
+305            android:name="leakcanary.internal.RequestPermissionActivity"
+305-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:95:13-73
+306            android:excludeFromRecents="true"
+306-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:96:13-46
+307            android:icon="@mipmap/leak_canary_icon"
+307-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:97:13-52
+308            android:label="@string/leak_canary_storage_permission_activity_label"
+308-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:98:13-82
+309            android:taskAffinity="com.squareup.leakcanary.com.example.englishhindi.free.debug"
+309-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:99:13-76
+310            android:theme="@style/leak_canary_Theme.Transparent" />
+310-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:100:13-65
+311
+312        <receiver android:name="leakcanary.internal.NotificationReceiver" />
+312-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:102:9-77
+312-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:102:19-74
+313
+314        <provider
+314-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\283e345df67ff359f4c51e8c0b242b0a\transformed\leakcanary-object-watcher-android-2.12\AndroidManifest.xml:8:9-12:40
+315            android:name="leakcanary.internal.MainProcessAppWatcherInstaller"
+315-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\283e345df67ff359f4c51e8c0b242b0a\transformed\leakcanary-object-watcher-android-2.12\AndroidManifest.xml:9:13-78
+316            android:authorities="com.example.englishhindi.free.debug.leakcanary-installer"
+316-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\283e345df67ff359f4c51e8c0b242b0a\transformed\leakcanary-object-watcher-android-2.12\AndroidManifest.xml:10:13-72
+317            android:enabled="@bool/leak_canary_watcher_auto_install"
+317-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\283e345df67ff359f4c51e8c0b242b0a\transformed\leakcanary-object-watcher-android-2.12\AndroidManifest.xml:11:13-69
+318            android:exported="false" />
+318-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\283e345df67ff359f4c51e8c0b242b0a\transformed\leakcanary-object-watcher-android-2.12\AndroidManifest.xml:12:13-37
+319        <provider
+319-->[com.squareup.leakcanary:plumber-android:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\b5e58e9d43712139980db44891693c1b\transformed\plumber-android-2.12\AndroidManifest.xml:8:9-12:40
+320            android:name="leakcanary.internal.PlumberInstaller"
+320-->[com.squareup.leakcanary:plumber-android:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\b5e58e9d43712139980db44891693c1b\transformed\plumber-android-2.12\AndroidManifest.xml:9:13-64
+321            android:authorities="com.example.englishhindi.free.debug.plumber-installer"
+321-->[com.squareup.leakcanary:plumber-android:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\b5e58e9d43712139980db44891693c1b\transformed\plumber-android-2.12\AndroidManifest.xml:10:13-69
+322            android:enabled="@bool/leak_canary_plumber_auto_install"
+322-->[com.squareup.leakcanary:plumber-android:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\b5e58e9d43712139980db44891693c1b\transformed\plumber-android-2.12\AndroidManifest.xml:11:13-69
+323            android:exported="false" />
+323-->[com.squareup.leakcanary:plumber-android:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\b5e58e9d43712139980db44891693c1b\transformed\plumber-android-2.12\AndroidManifest.xml:12:13-37
+324
+325        <receiver
+325-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+326            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+326-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+327            android:directBootAware="false"
+327-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+328            android:enabled="true"
+328-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+329            android:exported="true"
+329-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+330            android:permission="android.permission.DUMP" >
+330-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+331            <intent-filter>
+331-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+332                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+332-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+332-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+333            </intent-filter>
+334            <intent-filter>
+334-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+335                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+335-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+335-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+336            </intent-filter>
+337            <intent-filter>
+337-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+338                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+338-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+338-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+339            </intent-filter>
+340            <intent-filter>
+340-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+341                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+341-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+341-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+342            </intent-filter>
+343        </receiver>
+344    </application>
+345
+346</manifest>

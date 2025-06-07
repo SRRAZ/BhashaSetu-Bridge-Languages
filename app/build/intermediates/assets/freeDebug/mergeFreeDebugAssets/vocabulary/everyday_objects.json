@@ -1,0 +1,251 @@
+{
+  "id": 16,
+  "title": "Everyday Objects",
+  "titleHindi": "रोज़मर्रा की वस्तुएँ",
+  "description": "Common objects you encounter in daily life",
+  "descriptionHindi": "दैनिक जीवन में मिलने वाली सामान्य वस्तुएँ",
+  "category": "Objects",
+  "level": "beginner",
+  "words": [
+    {
+      "english": "Table",
+      "hindi": "मेज़",
+      "transliteration": "mez",
+      "usage": "The book is on the table.",
+      "usageHindi": "किताब मेज़ पर है।",
+      "image": "images/vocabulary/objects/table.png"
+    },
+    {
+      "english": "Chair",
+      "hindi": "कुर्सी",
+      "transliteration": "kursee",
+      "usage": "Please sit on the chair.",
+      "usageHindi": "कृपया कुर्सी पर बैठिए।",
+      "image": "images/vocabulary/objects/chair.png"
+    },
+    {
+      "english": "Bed",
+      "hindi": "बिस्तर",
+      "transliteration": "bistar",
+      "usage": "I sleep on this bed.",
+      "usageHindi": "मैं इस बिस्तर पर सोता/सोती हूँ।",
+      "image": "images/vocabulary/objects/bed.png"
+    },
+    {
+      "english": "Door",
+      "hindi": "दरवाज़ा",
+      "transliteration": "darvaazaa",
+      "usage": "Please close the door.",
+      "usageHindi": "कृपया दरवाज़ा बंद करें।",
+      "image": "images/vocabulary/objects/door.png"
+    },
+    {
+      "english": "Window",
+      "hindi": "खिड़की",
+      "transliteration": "khidkee",
+      "usage": "Open the window for fresh air.",
+      "usageHindi": "ताज़ी हवा के लिए खिड़की खोलें।",
+      "image": "images/vocabulary/objects/window.png"
+    },
+    {
+      "english": "Book",
+      "hindi": "किताब",
+      "transliteration": "kitaab",
+      "usage": "This is an interesting book.",
+      "usageHindi": "यह एक दिलचस्प किताब है।",
+      "image": "images/vocabulary/objects/book.png"
+    },
+    {
+      "english": "Pen",
+      "hindi": "कलम",
+      "transliteration": "kalam",
+      "usage": "May I borrow your pen?",
+      "usageHindi": "क्या मैं आपका कलम उधार ले सकता/सकती हूँ?",
+      "image": "images/vocabulary/objects/pen.png"
+    },
+    {
+      "english": "Paper",
+      "hindi": "कागज़",
+      "transliteration": "kaagaz",
+      "usage": "Write on this paper.",
+      "usageHindi": "इस कागज़ पर लिखें।",
+      "image": "images/vocabulary/objects/paper.png"
+    },
+    {
+      "english": "Mobile phone",
+      "hindi": "मोबाइल फोन",
+      "transliteration": "mobail fon",
+      "usage": "Can you give me your mobile phone number?",
+      "usageHindi": "क्या आप मुझे अपना मोबाइल फोन नंबर दे सकते हैं?",
+      "image": "images/vocabulary/objects/mobile_phone.png"
+    },
+    {
+      "english": "Computer",
+      "hindi": "कंप्यूटर",
+      "transliteration": "kampyootar",
+      "usage": "I work on the computer every day.",
+      "usageHindi": "मैं हर दिन कंप्यूटर पर काम करता/करती हूँ।",
+      "image": "images/vocabulary/objects/computer.png"
+    },
+    {
+      "english": "Television",
+      "hindi": "टेलीविज़न",
+      "transliteration": "teleevizhan",
+      "usage": "Let's watch a movie on television.",
+      "usageHindi": "चलो टेलीविज़न पर एक फिल्म देखें।",
+      "image": "images/vocabulary/objects/television.png"
+    },
+    {
+      "english": "Clock",
+      "hindi": "घड़ी",
+      "transliteration": "ghadee",
+      "usage": "What time does the clock show?",
+      "usageHindi": "घड़ी में क्या समय हो रहा है?",
+      "image": "images/vocabulary/objects/clock.png"
+    },
+    {
+      "english": "Watch",
+      "hindi": "घड़ी",
+      "transliteration": "ghadee",
+      "usage": "This is my new watch.",
+      "usageHindi": "यह मेरी नई घड़ी है।",
+      "image": "images/vocabulary/objects/watch.png"
+    },
+    {
+      "english": "Plate",
+      "hindi": "थाली",
+      "transliteration": "thaalee",
+      "usage": "Put the food on the plate.",
+      "usageHindi": "खाना थाली में डालिए।",
+      "image": "images/vocabulary/objects/plate.png"
+    },
+    {
+      "english": "Glass",
+      "hindi": "गिलास",
+      "transliteration": "gilaas",
+      "usage": "Fill the glass with water.",
+      "usageHindi": "गिलास को पानी से भरिए।",
+      "image": "images/vocabulary/objects/glass.png"
+    },
+    {
+      "english": "Spoon",
+      "hindi": "चम्मच",
+      "transliteration": "chammach",
+      "usage": "Eat with a spoon.",
+      "usageHindi": "चम्मच से खाइये।",
+      "image": "images/vocabulary/objects/spoon.png"
+    },
+    {
+      "english": "Fork",
+      "hindi": "काँटा",
+      "transliteration": "kaantaa",
+      "usage": "Use the fork to eat pasta.",
+      "usageHindi": "पास्ता खाने के लिए काँटे का उपयोग करें।",
+      "image": "images/vocabulary/objects/fork.png"
+    },
+    {
+      "english": "Knife",
+      "hindi": "छुरी",
+      "transliteration": "chhuree",
+      "usage": "Cut the fruit with a knife.",
+      "usageHindi": "फल को छुरी से काटिए।",
+      "image": "images/vocabulary/objects/knife.png"
+    },
+    {
+      "english": "Bag",
+      "hindi": "बैग",
+      "transliteration": "baig",
+      "usage": "Put your books in the bag.",
+      "usageHindi": "अपनी किताबें बैग में रखें।",
+      "image": "images/vocabulary/objects/bag.png"
+    },
+    {
+      "english": "Wallet",
+      "hindi": "बटुआ",
+      "transliteration": "batuaa",
+      "usage": "I keep my money in my wallet.",
+      "usageHindi": "मैं अपने पैसे अपने बटुए में रखता/रखती हूँ।",
+      "image": "images/vocabulary/objects/wallet.png"
+    },
+    {
+      "english": "Keys",
+      "hindi": "चाबियाँ",
+      "transliteration": "chaabiyaan",
+      "usage": "Don't forget your keys.",
+      "usageHindi": "अपनी चाबियाँ मत भूलिए।",
+      "image": "images/vocabulary/objects/keys.png"
+    },
+    {
+      "english": "Mirror",
+      "hindi": "आईना",
+      "transliteration": "aaeenaa",
+      "usage": "Look in the mirror.",
+      "usageHindi": "आईने में देखिए।",
+      "image": "images/vocabulary/objects/mirror.png"
+    },
+    {
+      "english": "Lamp",
+      "hindi": "लैंप",
+      "transliteration": "laimp",
+      "usage": "Turn on the lamp.",
+      "usageHindi": "लैंप जलाइए।",
+      "image": "images/vocabulary/objects/lamp.png"
+    },
+    {
+      "english": "Umbrella",
+      "hindi": "छाता",
+      "transliteration": "chhaataa",
+      "usage": "Take an umbrella, it might rain.",
+      "usageHindi": "एक छाता ले लीजिए, बारिश हो सकती है।",
+      "image": "images/vocabulary/objects/umbrella.png"
+    },
+    {
+      "english": "Soap",
+      "hindi": "साबुन",
+      "transliteration": "saabun",
+      "usage": "Wash your hands with soap.",
+      "usageHindi": "अपने हाथ साबुन से धोइए।",
+      "image": "images/vocabulary/objects/soap.png"
+    },
+    {
+      "english": "Toothbrush",
+      "hindi": "टूथब्रश",
+      "transliteration": "toothbrush",
+      "usage": "Brush your teeth with a toothbrush.",
+      "usageHindi": "अपने दाँत टूथब्रश से साफ़ करें।",
+      "image": "images/vocabulary/objects/toothbrush.png"
+    },
+    {
+      "english": "Towel",
+      "hindi": "तौलिया",
+      "transliteration": "tauliyaa",
+      "usage": "Dry yourself with a towel.",
+      "usageHindi": "खुद को तौलिये से सुखाइए।",
+      "image": "images/vocabulary/objects/towel.png"
+    },
+    {
+      "english": "Pillow",
+      "hindi": "तकिया",
+      "transliteration": "takiyaa",
+      "usage": "Rest your head on the pillow.",
+      "usageHindi": "अपना सिर तकिये पर रखिए।",
+      "image": "images/vocabulary/objects/pillow.png"
+    },
+    {
+      "english": "Blanket",
+      "hindi": "कंबल",
+      "transliteration": "kambal",
+      "usage": "Cover yourself with a blanket.",
+      "usageHindi": "अपने आप को कंबल से ढकिए।",
+      "image": "images/vocabulary/objects/blanket.png"
+    },
+    {
+      "english": "Fan",
+      "hindi": "पंखा",
+      "transliteration": "pankhaa",
+      "usage": "Turn on the fan, it's hot.",
+      "usageHindi": "पंखा चालू करिए, गरमी है।",
+      "image": "images/vocabulary/objects/fan.png"
+    }
+  ]
+}

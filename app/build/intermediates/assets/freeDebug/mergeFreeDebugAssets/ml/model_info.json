@@ -1,0 +1,20 @@
+{
+  "yamnet": {
+    "name": "YAMNet",
+    "description": "YAMNet is an audio event classifier trained on the AudioSet dataset to predict audio events from the AudioSet ontology.",
+    "version": "1.0",
+    "input_shape": [15600, 1],
+    "input_format": "audio_waveform",
+    "input_sampling_rate": 16000,
+    "input_duration_ms": 975,
+    "output_classes": 521,
+    "class_map_file": "ml/yamnet_class_map.csv",
+    "human_speech_class_indices": [0, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+  },
+  "pronunciation_guide": {
+    "name": "English Pronunciation Guide",
+    "description": "Common English words with their phonetic pronunciation for reference.",
+    "version": "1.0",
+    "words_file": "ml/english_common_words.csv"
+  }
+}

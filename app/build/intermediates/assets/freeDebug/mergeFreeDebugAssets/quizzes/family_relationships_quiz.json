@@ -1,0 +1,127 @@
+{
+  "id": 7,
+  "title": "Family Relationships Quiz",
+  "titleHindi": "पारिवारिक संबंध क्विज़",
+  "description": "Test your knowledge of Hindi words for family relationships",
+  "descriptionHindi": "पारिवारिक संबंधों के लिए हिंदी शब्दों के ज्ञान का परीक्षण करें",
+  "category": "Family",
+  "level": "beginner",
+  "passingScore": 70,
+  "timeLimit": 300,
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "question": "What is the Hindi word for 'Father'?",
+      "questionHindi": "हिंदी में 'Father' के लिए शब्द क्या है?",
+      "options": ["माता", "पिता", "भाई", "बेटा"],
+      "correctAnswerIndex": 1,
+      "explanation": "The Hindi word for 'Father' is 'पिता' (pitaa).",
+      "explanationHindi": "'Father' के लिए हिंदी शब्द 'पिता' है।",
+      "points": 10
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "question": "Which Hindi word means 'Mother'?",
+      "questionHindi": "कौन सा हिंदी शब्द 'Mother' का अर्थ देता है?",
+      "options": ["माता", "बहन", "बेटी", "पत्नी"],
+      "correctAnswerIndex": 0,
+      "explanation": "The Hindi word for 'Mother' is 'माता' (maataa).",
+      "explanationHindi": "'Mother' के लिए हिंदी शब्द 'माता' है।",
+      "points": 10
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "question": "What does 'भाई' mean in English?",
+      "questionHindi": "अंग्रेज़ी में 'भाई' का क्या अर्थ है?",
+      "options": ["Sister", "Brother", "Son", "Father"],
+      "correctAnswerIndex": 1,
+      "explanation": "The Hindi word 'भाई' (bhaee) means 'Brother' in English.",
+      "explanationHindi": "हिंदी शब्द 'भाई' का अंग्रेज़ी में अर्थ 'Brother' है।",
+      "points": 10
+    },
+    {
+      "id": 4,
+      "type": "multiple_choice",
+      "question": "What is the Hindi word for a paternal grandfather?",
+      "questionHindi": "पितृ पक्ष के दादा के लिए हिंदी शब्द क्या है?",
+      "options": ["नाना", "दादा", "मामा", "चाचा"],
+      "correctAnswerIndex": 1,
+      "explanation": "The Hindi word for paternal grandfather (father's father) is 'दादा' (daadaa).",
+      "explanationHindi": "पितृ पक्ष के दादा (पिता के पिता) के लिए हिंदी शब्द 'दादा' है।",
+      "points": 10
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "question": "What is 'मामा' in English?",
+      "questionHindi": "अंग्रेज़ी में 'मामा' क्या है?",
+      "options": ["Father's brother", "Mother's brother", "Father's father", "Mother's father"],
+      "correctAnswerIndex": 1,
+      "explanation": "The Hindi word 'मामा' (maamaa) means 'Mother's brother' (maternal uncle) in English.",
+      "explanationHindi": "हिंदी शब्द 'मामा' का अंग्रेज़ी में अर्थ 'Mother's brother' (मातृ पक्ष का चाचा) है।",
+      "points": 10
+    },
+    {
+      "id": 6,
+      "type": "fill_blank",
+      "question": "The Hindi word for 'Wife' is _______.",
+      "questionHindi": "हिंदी में 'Wife' के लिए शब्द _______ है।",
+      "correctAnswer": "पत्नी",
+      "alternateAnswers": ["patni", "patnee"],
+      "caseSensitive": false,
+      "explanation": "The Hindi word for 'Wife' is 'पत्नी' (patnee).",
+      "explanationHindi": "'Wife' के लिए हिंदी शब्द 'पत्नी' है।",
+      "points": 15
+    },
+    {
+      "id": 7,
+      "type": "fill_blank",
+      "question": "In Hindi, 'Daughter' is called _______.",
+      "questionHindi": "हिंदी में, 'Daughter' को _______ कहा जाता है।",
+      "correctAnswer": "बेटी",
+      "alternateAnswers": ["beti", "betee"],
+      "caseSensitive": false,
+      "explanation": "In Hindi, 'Daughter' is called 'बेटी' (betee).",
+      "explanationHindi": "हिंदी में, 'Daughter' को 'बेटी' कहा जाता है।",
+      "points": 15
+    },
+    {
+      "id": 8,
+      "type": "true_false",
+      "question": "In Hindi, 'नानी' (naanee) refers to your mother's mother.",
+      "questionHindi": "हिंदी में, 'नानी' आपकी माँ की माँ को संदर्भित करती है।",
+      "correctAnswer": true,
+      "explanation": "Yes, 'नानी' (naanee) refers to your maternal grandmother (mother's mother) in Hindi.",
+      "explanationHindi": "हाँ, हिंदी में 'नानी' आपकी मातृ दादी (माँ की माँ) को संदर्भित करती है।",
+      "points": 10
+    },
+    {
+      "id": 9,
+      "type": "true_false",
+      "question": "In Hindi, 'चाचा' (chaachaa) refers to your mother's brother.",
+      "questionHindi": "हिंदी में, 'चाचा' आपके माँ के भाई को संदर्भित करता है।",
+      "correctAnswer": false,
+      "explanation": "No, 'चाचा' (chaachaa) refers to your father's younger brother in Hindi. Your mother's brother is called 'मामा' (maamaa).",
+      "explanationHindi": "नहीं, हिंदी में 'चाचा' आपके पिता के छोटे भाई को संदर्भित करता है। आपके माँ के भाई को 'मामा' कहा जाता है।",
+      "points": 10
+    },
+    {
+      "id": 10,
+      "type": "match_pairs",
+      "question": "Match the Hindi family relationship terms with their English meanings:",
+      "questionHindi": "हिंदी पारिवारिक संबंध शब्दों का उनके अंग्रेज़ी अर्थों से मिलान करें:",
+      "pairs": [
+        {"left": "बेटा", "right": "Son"},
+        {"left": "बहन", "right": "Sister"},
+        {"left": "पति", "right": "Husband"},
+        {"left": "दादी", "right": "Paternal grandmother"}
+      ],
+      "explanation": "बेटा = Son, बहन = Sister, पति = Husband, दादी = Paternal grandmother",
+      "explanationHindi": "बेटा = Son, बहन = Sister, पति = Husband, दादी = Paternal grandmother",
+      "points": 20
+    }
+  ]
+}
