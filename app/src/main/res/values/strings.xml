@@ -16,7 +16,7 @@
     <string name="hindi_word">Hindi Word</string>
     <string name="english_pronunciation">English Pronunciation</string>
     <string name="hindi_pronunciation">Hindi Pronunciation</string>
-    <string name="category">Category</string>
+    <string name="word_category">Category</string>
     <string name="add_to_favorites">Add to Favorites</string>
     <string name="remove_from_favorites">Remove from Favorites</string>
     <string name="word_saved">Word saved</string>
@@ -87,7 +87,7 @@
     <string name="achievement_category_pronunciation">Pronunciation</string>
     <string name="achievement_category_games">Games</string>
     <string name="progress">Progress:</string>
-    <string name="category">Category:</string>
+    <string name="achievement_category">Category:</string>
     <string name="points">Points:</string>
     <string name="awesome">Awesome!</string>
     <string name="close">Close</string>
@@ -155,7 +155,6 @@
     <string name="continue_practice">Continue</string>
     <string name="great_job">Great job!</string>
     <string name="keep_practicing">Keep practicing</string>
-    <string name="achievement_unlocked">Achievement Unlocked!</string>
     <string name="pronunciation_master">Pronunciation Master</string>
     <string name="pronunciation_improver">Pronunciation Improver</string>
     <string name="first_try">First try!</string>
@@ -183,7 +182,7 @@
     <string name="time_up_title">Time\'s Up!</string>
     <string name="time_up_message">You\'ve run out of time, but don\'t worry! Keep practicing to improve.</string>
     <string name="your_score">Your Score:</string>
-    <string name="try_again">Try Again</string>
+<!--    <string name="try_again">Try Again</string>-->
     <string name="exit_game_title">Exit Game?</string>
     <string name="exit_game_message">Are you sure you want to exit? Your progress will be lost.</string>
     <string name="hint_not_available">Hint not available for this position.</string>
@@ -265,7 +264,7 @@
     <string name="metered_connection_message">You are on a metered connection. To avoid extra charges, you might want to limit data usage.</string>
     
     <!-- Error Messages -->
-    <string name="error_loading">Error loading data</string>
+    <string name="error_loading_data">Error loading data</string>
     <string name="error_loading_image">Error loading image</string>
     <string name="error_syncing">Error syncing data</string>
     <string name="error_check_connection">Please check your internet connection</string>
@@ -279,7 +278,7 @@
     <string name="error_data_load">Could not load data</string>
     <string name="error_unauthorized">You are not authorized to access this content</string>
     <string name="error_image_description">Error icon</string>
-    <string name="network_settings">Network Settings</string>
+    <string name="error_network_settings">Network Settings</string>
     <string name="check_internet_connection">Check your internet connection</string>
     <string name="try_again_later">Try again later</string>
     <string name="use_offline_mode">Switch to offline mode</string>
@@ -295,7 +294,7 @@
     <string name="settings">Settings</string>
     
     <!-- Placeholders -->
-    <string name="loading">Loading…</string>
+    <string name="loading_place">Loading…</string>
     <string name="loading_message">Loading content, please wait…</string>
     <string name="no_data">No data available</string>
     <string name="no_items">No items available</string>
