@@ -2,8 +2,6 @@ package com.example.englishhindi.pronunciation;
 
 import android.content.Context;
 import android.content.res.AssetFileDescriptor;
-import android.media.AudioFormat;
-import android.media.AudioRecord;
 import android.media.MediaMetadataRetriever;
 import android.os.Handler;
 import android.os.Looper;
