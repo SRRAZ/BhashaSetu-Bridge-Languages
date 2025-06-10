@@ -78,11 +78,11 @@ com.example.englishhindi.app-savedstate-release-76 C:\Users\SUNIL KUMAR SHAH\.gr
 com.example.englishhindi.app-lifecycle-livedata-core-2.9.1-77 C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\f75fd64bf44323a9cd62c5daf79521b5\transformed\lifecycle-livedata-core-2.9.1\res
 com.example.englishhindi.app-room-ktx-2.7.1-78 C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\f97f69a229549310df3f7518a3e38ca7\transformed\room-ktx-2.7.1\res
 com.example.englishhindi.app-lifecycle-viewmodel-savedstate-release-79 C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\f991921142ce16f05645b32c2ab4b8c3\transformed\lifecycle-viewmodel-savedstate-release\res
-com.example.englishhindi.app-free-80 C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\build\generated\res\resValues\free\debug
-com.example.englishhindi.app-packageFreeDebugResources-81 C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\build\intermediates\incremental\freeDebug\packageFreeDebugResources\merged.dir
-com.example.englishhindi.app-packageFreeDebugResources-82 C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\build\intermediates\incremental\freeDebug\packageFreeDebugResources\stripped.dir
-com.example.englishhindi.app-freeDebug-83 C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\build\intermediates\merged_res\freeDebug\mergeFreeDebugResources
-com.example.englishhindi.app-debug-84 C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\debug\res
-com.example.englishhindi.app-free-85 C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\free\res
-com.example.englishhindi.app-freeDebug-86 C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\freeDebug\res
-com.example.englishhindi.app-main-87 C:\Users\SUNIL KUMAR SHAH\AndroidStudioProjects\en-hi-learning-park\app\src\main\res
+com.example.englishhindi.app-free-80 D:\Android APP\BhashaSetu\app\build\generated\res\resValues\free\debug
+com.example.englishhindi.app-packageFreeDebugResources-81 D:\Android APP\BhashaSetu\app\build\intermediates\incremental\freeDebug\packageFreeDebugResources\merged.dir
+com.example.englishhindi.app-packageFreeDebugResources-82 D:\Android APP\BhashaSetu\app\build\intermediates\incremental\freeDebug\packageFreeDebugResources\stripped.dir
+com.example.englishhindi.app-freeDebug-83 D:\Android APP\BhashaSetu\app\build\intermediates\merged_res\freeDebug\mergeFreeDebugResources
+com.example.englishhindi.app-debug-84 D:\Android APP\BhashaSetu\app\src\debug\res
+com.example.englishhindi.app-free-85 D:\Android APP\BhashaSetu\app\src\free\res
+com.example.englishhindi.app-freeDebug-86 D:\Android APP\BhashaSetu\app\src\freeDebug\res
+com.example.englishhindi.app-main-87 D:\Android APP\BhashaSetu\app\src\main\res
