@@ -1,4 +1,4 @@
-package com.example.englishhindi.database;
+package com.bhashasetu.app.database;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
@@ -8,8 +8,8 @@ import androidx.room.Query;
 import androidx.room.Transaction;
 import androidx.room.Update;
 
-import com.example.englishhindi.model.Lesson;
-import com.example.englishhindi.model.LessonWord;
+import com.bhashasetu.app.model.Lesson;
+import com.bhashasetu.app.model.LessonWord;
 
 import java.util.List;
 

@@ -1,8 +1,8 @@
-package com.example.englishhindi.model;
+package com.bhashasetu.app.model;
 
 import androidx.annotation.DrawableRes;
 
-import com.example.englishhindi.R;
+import com.bhashasetu.app.R;
 
 /**
  * Represents a difficulty level in the learning system.

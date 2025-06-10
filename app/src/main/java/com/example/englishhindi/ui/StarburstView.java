@@ -1,4 +1,4 @@
-package com.example.englishhindi.ui;
+package com.bhashasetu.app.ui;
 
 import android.animation.ValueAnimator;
 import android.content.Context;

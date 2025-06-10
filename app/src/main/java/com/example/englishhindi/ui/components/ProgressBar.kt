@@ -1,4 +1,4 @@
-package com.example.englishhindi.ui.components
+package com.bhashasetu.app.ui.components
 
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
@@ -14,7 +14,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.englishhindi.ui.theme.EnglishHindiTheme
+import com.bhashasetu.app.ui.theme.EnglishHindiTheme
 
 /**
  * A component that displays a progress bar with a label and percentage.

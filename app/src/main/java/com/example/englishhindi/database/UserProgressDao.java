@@ -1,4 +1,4 @@
-package com.example.englishhindi.database;
+package com.bhashasetu.app.database;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
@@ -6,7 +6,7 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
 
-import com.example.englishhindi.model.UserProgress;
+import com.bhashasetu.app.model.UserProgress;
 
 import java.util.List;
 

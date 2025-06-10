@@ -1,4 +1,4 @@
-package com.example.englishhindi.fragment;
+package com.bhashasetu.app.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,11 +15,11 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.englishhindi.R;
-import com.example.englishhindi.WordDetailActivity;
-import com.example.englishhindi.adapter.WordAdapter;
-import com.example.englishhindi.model.Word;
-import com.example.englishhindi.viewmodel.WordViewModel;
+import com.bhashasetu.app.R;
+import com.bhashasetu.app.WordDetailActivity;
+import com.bhashasetu.app.adapter.WordAdapter;
+import com.bhashasetu.app.model.Word;
+import com.bhashasetu.app.viewmodel.WordViewModel;
 
 import java.util.List;
 

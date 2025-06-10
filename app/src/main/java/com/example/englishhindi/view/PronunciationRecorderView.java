@@ -1,4 +1,4 @@
-package com.example.englishhindi.view;
+package com.bhashasetu.app.view;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
@@ -24,11 +24,11 @@ import androidx.cardview.widget.CardView;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
-import com.example.englishhindi.R;
-import com.example.englishhindi.audio.AudioAnalyzer;
-import com.example.englishhindi.audio.AudioManager;
-import com.example.englishhindi.audio.AudioRecorder;
-import com.example.englishhindi.audio.TtsRecorder;
+import com.bhashasetu.app.R;
+import com.bhashasetu.app.audio.AudioAnalyzer;
+import com.bhashasetu.app.audio.AudioManager;
+import com.bhashasetu.app.audio.AudioRecorder;
+import com.bhashasetu.app.audio.TtsRecorder;
 
 import java.io.File;
 import java.util.ArrayList;

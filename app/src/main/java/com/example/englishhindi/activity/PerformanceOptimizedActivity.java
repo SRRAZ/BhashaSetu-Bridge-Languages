@@ -1,4 +1,4 @@
-package com.example.englishhindi.activity;
+package com.bhashasetu.app.activity;
 
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -13,10 +13,9 @@ import android.view.Window;
 import androidx.annotation.LayoutRes;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.englishhindi.EnglishHindiApplication;
-import com.example.englishhindi.util.MemoryOptimizer;
-import com.example.englishhindi.util.UIPerformanceOptimizer;
+import com.bhashasetu.app.BhashaSetuApplication;
+import com.bhashasetu.app.util.MemoryOptimizer;
+import com.bhashasetu.app.util.UIPerformanceOptimizer;
 
 /**
  * Base activity class with built-in performance optimizations.
@@ -281,8 +280,8 @@ public abstract class PerformanceOptimizedActivity extends AppCompatActivity {
      *
      * @return AppDependencies instance
      */
-    protected com.example.englishhindi.di.AppDependencies getDependencies() {
-        return EnglishHindiApplication.from(this).getDependencies();
+    protected com.bhashasetu.app.di.AppDependencies getDependencies() {
+        return BhashaSetuApplication.from(this).getDependencies();
     }
     
     /**

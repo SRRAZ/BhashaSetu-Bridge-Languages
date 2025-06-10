@@ -1,4 +1,4 @@
-package com.example.englishhindi;
+package com.bhashasetu.app;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -18,10 +18,10 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.englishhindi.adapter.AchievementAdapter;
-import com.example.englishhindi.model.Achievement;
-import com.example.englishhindi.ui.AchievementDetailDialog;
-import com.example.englishhindi.viewmodel.AchievementViewModel;
+import com.bhashasetu.app.adapter.AchievementAdapter;
+import com.bhashasetu.app.model.Achievement;
+import com.bhashasetu.app.ui.AchievementDetailDialog;
+import com.bhashasetu.app.viewmodel.AchievementViewModel;
 
 import java.util.ArrayList;
 import java.util.List;

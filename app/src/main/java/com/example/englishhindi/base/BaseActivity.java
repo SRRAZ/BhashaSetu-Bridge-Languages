@@ -1,4 +1,4 @@
-package com.example.englishhindi.base;
+package com.bhashasetu.app.base;
 
 import android.content.Context;
 import android.content.res.Configuration;
@@ -7,8 +7,8 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.englishhindi.EnglishHindiApplication;
-import com.example.englishhindi.util.LanguageManager;
+import com.bhashasetu.app.BhashaSetuApplication;
+import com.bhashasetu.app.util.LanguageManager;
 
 import java.util.Locale;
 
@@ -41,10 +41,8 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         
-        // Initialize language manager if it hasn't been done yet
-        if (languageManager == null) {
-            languageManager = EnglishHindiApplication.getInstance().getLanguageManager();
-        }
+        languageManager = new LanguageManager(this);
+
     }
     
     /**

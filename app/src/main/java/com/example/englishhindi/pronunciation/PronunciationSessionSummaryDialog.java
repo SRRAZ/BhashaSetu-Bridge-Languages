@@ -1,21 +1,21 @@
-package com.example.englishhindi.pronunciation;
+package com.bhashasetu.app.pronunciation;
 
 import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
-import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.view.animation.Animation;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
-import com.example.englishhindi.R;
-import com.example.englishhindi.audio.AudioFeedbackManager;
+import com.bhashasetu.app.R;
+import com.bhashasetu.app.audio.AudioFeedbackManager;
 
 /**
  * Dialog that shows a summary of the pronunciation practice session.

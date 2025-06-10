@@ -1,4 +1,4 @@
-package com.example.englishhindi.util;
+package com.bhashasetu.app.util;
 
 import android.app.Activity;
 import android.content.Context;

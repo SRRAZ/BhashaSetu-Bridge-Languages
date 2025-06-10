@@ -1,8 +1,8 @@
-package com.example.englishhindi.data.repository
+package com.bhashasetu.app.data.repository
 
 import androidx.lifecycle.LiveData
-import com.example.englishhindi.data.dao.SettingsDao
-import com.example.englishhindi.data.model.AppSettings
+import com.bhashasetu.app.data.dao.SettingsDao
+import com.bhashasetu.app.data.model.AppSettings
 import kotlinx.coroutines.flow.Flow
 
 class AppSettingsRepository(private val settingsDao: SettingsDao) {

@@ -1,4 +1,4 @@
-package com.example.englishhindi.ui;
+package com.bhashasetu.app.ui;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -15,7 +15,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.example.englishhindi.R;
+import com.bhashasetu.app.R;
 
 /**
  * Custom view that handles different loading states with smooth transitions.

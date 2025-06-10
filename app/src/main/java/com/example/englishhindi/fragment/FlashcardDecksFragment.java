@@ -1,4 +1,4 @@
-package com.example.englishhindi.fragment;
+package com.bhashasetu.app.fragment;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -16,12 +16,12 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.preference.PreferenceManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import com.bhashasetu.app.FlashcardActivity;
+import com.bhashasetu.app.R;
 
-import com.example.englishhindi.FlashcardActivity;
-import com.example.englishhindi.R;
-import com.example.englishhindi.adapter.FlashcardDeckAdapter;
-import com.example.englishhindi.model.FlashcardDeck;
-import com.example.englishhindi.viewmodel.FlashcardDeckViewModel;
+import com.bhashasetu.app.adapter.FlashcardDeckAdapter;
+import com.bhashasetu.app.model.FlashcardDeck;
+import com.bhashasetu.app.viewmodel.FlashcardDeckViewModel;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.List;

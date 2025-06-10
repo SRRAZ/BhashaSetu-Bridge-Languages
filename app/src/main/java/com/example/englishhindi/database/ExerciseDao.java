@@ -1,4 +1,4 @@
-package com.example.englishhindi.database;
+package com.bhashasetu.app.database;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
@@ -7,8 +7,8 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
 
-import com.example.englishhindi.model.exercise.Exercise;
-import com.example.englishhindi.model.exercise.ExerciseType;
+import com.bhashasetu.app.model.exercise.Exercise;
+import com.bhashasetu.app.model.exercise.ExerciseType;
 
 import java.util.List;
 

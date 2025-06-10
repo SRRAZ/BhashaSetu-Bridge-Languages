@@ -1,4 +1,4 @@
-package com.example.englishhindi.ui;
+package com.bhashasetu.app.ui;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -17,7 +17,7 @@ import android.view.animation.Interpolator;
 import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 
-import com.example.englishhindi.R;
+import com.bhashasetu.app.R;
 
 /**
  * Custom progress animation view that shows a circular progress indicator

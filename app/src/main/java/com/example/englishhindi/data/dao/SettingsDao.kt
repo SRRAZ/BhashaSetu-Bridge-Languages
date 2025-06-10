@@ -1,8 +1,8 @@
-package com.example.englishhindi.data.dao
+package com.bhashasetu.app.data.dao
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.example.englishhindi.data.model.AppSettings
+import com.bhashasetu.app.data.model.AppSettings
 import kotlinx.coroutines.flow.Flow
 
 @Dao

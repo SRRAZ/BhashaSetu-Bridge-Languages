@@ -1,7 +1,7 @@
-package com.example.englishhindi.adapter;
+package com.bhashasetu.app.adapter;
 
 import android.content.Context;
-import android.view.LayoutInflater;
+import androidx.fragment.app.FragmentActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -12,8 +12,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.englishhindi.R;
-import com.example.englishhindi.model.Achievement;
-
+import com.bhashasetu.app.model.Achievement;
+import com.bhashasetu.app.ui.AchievementDetailDialog;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -167,7 +167,13 @@ public class AchievementAdapter extends RecyclerView.Adapter<AchievementAdapter.
         public void onClick(View v) {
             int position = getAdapterPosition();
             if (position != RecyclerView.NO_POSITION && listener != null) {
-                listener.onAchievementClick(achievements.get(position));
+                Achievement achievement = achievements.get(position);
+                listener.onAchievementClick(achievement);
+
+                // Show AchievementDetailDialog on click
+                if (context instanceof FragmentActivity) {
+                    AchievementDetailDialog.newInstance(achievement).show(((FragmentActivity) context).getSupportFragmentManager(), "achievement_detail");
+                }
             }
         }
     }

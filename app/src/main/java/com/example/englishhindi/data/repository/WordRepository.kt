@@ -1,9 +1,9 @@
-package com.example.englishhindi.data.repository
+package com.bhashasetu.app.data.repository
 
 import androidx.lifecycle.LiveData
-import com.example.englishhindi.data.dao.WordDao
-import com.example.englishhindi.data.model.Word
-import com.example.englishhindi.data.relation.WordWithCategories
+import com.bhashasetu.app.data.dao.WordDao
+import com.bhashasetu.app.data.model.Word
+import com.bhashasetu.app.data.relation.WordWithCategories
 import kotlinx.coroutines.flow.Flow
 import java.util.Date
 

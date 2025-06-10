@@ -1,4 +1,4 @@
-package com.example.englishhindi.model.exercise;
+package com.bhashasetu.app.model.exercise;
 
 /**
  * Enumeration of different exercise types available in the app

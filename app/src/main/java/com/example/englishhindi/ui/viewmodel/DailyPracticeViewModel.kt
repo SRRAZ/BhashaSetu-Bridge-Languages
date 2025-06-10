@@ -1,12 +1,12 @@
-package com.example.englishhindi.ui.viewmodel
+package com.bhashasetu.app.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.englishhindi.data.model.AppSettings
-import com.example.englishhindi.data.model.Word
-import com.example.englishhindi.data.repository.AppSettingsRepository
-import com.example.englishhindi.data.repository.WordRepository
-import com.example.englishhindi.util.SpacedRepetitionManager
+import com.bhashasetu.app.data.model.AppSettings
+import com.bhashasetu.app.data.model.Word
+import com.bhashasetu.app.data.repository.AppSettingsRepository
+import com.bhashasetu.app.data.repository.WordRepository
+import com.bhashasetu.app.util.SpacedRepetitionManager
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch

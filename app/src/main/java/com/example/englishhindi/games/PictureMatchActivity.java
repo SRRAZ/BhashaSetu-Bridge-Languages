@@ -1,4 +1,4 @@
-package com.example.englishhindi.games;
+package com.bhashasetu.app.games;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
@@ -25,17 +25,17 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.englishhindi.R;
-import com.example.englishhindi.audio.AudioFeedbackManager;
-import com.example.englishhindi.audio.AudioManager;
-import com.example.englishhindi.model.PracticeSession;
-import com.example.englishhindi.model.UserProgress;
-import com.example.englishhindi.model.Word;
-import com.example.englishhindi.view.AudioPronunciationView;
-import com.example.englishhindi.view.BilingualTextView;
-import com.example.englishhindi.viewmodel.PracticeSessionViewModel;
-import com.example.englishhindi.viewmodel.UserProgressViewModel;
-import com.example.englishhindi.viewmodel.WordViewModel;
+import com.bhashasetu.app.R;
+import com.bhashasetu.app.audio.AudioFeedbackManager;
+import com.bhashasetu.app.audio.AudioManager;
+import com.bhashasetu.app.model.PracticeSession;
+import com.bhashasetu.app.model.UserProgress;
+import com.bhashasetu.app.model.Word;
+import com.bhashasetu.app.view.AudioPronunciationView;
+import com.bhashasetu.app.view.BilingualTextView;
+import com.bhashasetu.app.viewmodel.PracticeSessionViewModel;
+import com.bhashasetu.app.viewmodel.UserProgressViewModel;
+import com.bhashasetu.app.viewmodel.WordViewModel;
 
 import java.io.File;
 import java.io.IOException;

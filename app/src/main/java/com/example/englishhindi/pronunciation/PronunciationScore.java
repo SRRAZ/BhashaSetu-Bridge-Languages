@@ -1,12 +1,12 @@
-package com.example.englishhindi.pronunciation;
+package com.bhashasetu.app.pronunciation;
 
 import androidx.room.Entity;
 import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 import androidx.room.TypeConverters;
 
-import com.example.englishhindi.database.Converters;
-import com.example.englishhindi.model.Word;
+import com.bhashasetu.app.database.Converters;
+import com.bhashasetu.app.model.Word;
 
 import java.util.Date;
 

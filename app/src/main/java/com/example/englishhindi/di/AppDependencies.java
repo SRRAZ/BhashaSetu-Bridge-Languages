@@ -1,15 +1,15 @@
-package com.example.englishhindi.di;
+package com.bhashasetu.app.di;
 
 import android.content.Context;
 
-import com.example.englishhindi.cache.CacheManager;
-import com.example.englishhindi.database.RepositoryFactory;
-import com.example.englishhindi.database.WordRepository;
-import com.example.englishhindi.manager.SyncManager;
-import com.example.englishhindi.repository.OfflineQueueHelper;
-import com.example.englishhindi.util.AppExecutors;
-import com.example.englishhindi.util.ImageLoader;
-import com.example.englishhindi.util.NetworkUtils;
+import com.bhashasetu.app.cache.CacheManager;
+import com.bhashasetu.app.database.RepositoryFactory;
+import com.bhashasetu.app.database.WordRepository;
+import com.bhashasetu.app.manager.SyncManager;
+import com.bhashasetu.app.repository.OfflineQueueHelper;
+import com.bhashasetu.app.util.AppExecutors;
+import com.bhashasetu.app.util.ImageLoader;
+import com.bhashasetu.app.util.NetworkUtils;
 
 /**
  * A lightweight dependency container for application-wide components.

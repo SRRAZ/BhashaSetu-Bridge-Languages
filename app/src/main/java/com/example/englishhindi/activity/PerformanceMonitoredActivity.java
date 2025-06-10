@@ -1,4 +1,4 @@
-package com.example.englishhindi.activity;
+package com.bhashasetu.app.activity;
 
 import android.os.Bundle;
 import android.os.SystemClock;
@@ -7,9 +7,9 @@ import android.util.Log;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.englishhindi.BuildConfig;
-import com.example.englishhindi.monitoring.ActivityPerformanceTracker;
-import com.example.englishhindi.monitoring.PerformanceMonitoringManager;
+import com.bhashasetu.app.BuildConfig;
+import com.bhashasetu.app.monitoring.ActivityPerformanceTracker;
+import com.bhashasetu.app.monitoring.PerformanceMonitoringManager;
 
 /**
  * Base activity class that integrates performance monitoring tools.

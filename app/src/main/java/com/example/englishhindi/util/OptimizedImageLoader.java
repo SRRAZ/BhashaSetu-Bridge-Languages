@@ -1,4 +1,4 @@
-package com.example.englishhindi.util;
+package com.bhashasetu.app.util;
 
 import android.app.ActivityManager;
 import android.content.Context;
@@ -15,7 +15,7 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.example.englishhindi.R;
+import com.bhashasetu.app.R;
 
 import java.io.File;
 import java.io.FileOutputStream;

@@ -1,12 +1,12 @@
-package com.example.englishhindi.model.exercise;
+package com.bhashasetu.app.model.exercise;
 
 import androidx.room.Entity;
 import androidx.room.Ignore;
 import androidx.room.TypeConverters;
 
-import com.example.englishhindi.database.converters.DateConverter;
-import com.example.englishhindi.database.converters.MatchingItemListConverter;
-import com.example.englishhindi.model.Word;
+import com.bhashasetu.app.database.converters.DateConverter;
+import com.bhashasetu.app.database.converters.MatchingItemListConverter;
+import com.bhashasetu.app.model.Word;
 
 import java.util.ArrayList;
 import java.util.Collections;

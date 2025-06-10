@@ -1,4 +1,4 @@
-package com.example.englishhindi.util;
+package com.bhashasetu.app.util;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

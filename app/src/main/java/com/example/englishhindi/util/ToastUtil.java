@@ -1,4 +1,4 @@
-package com.example.englishhindi.util;
+package com.bhashasetu.app.util;
 
 import android.content.Context;
 import android.graphics.PorterDuff;
@@ -19,7 +19,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.StringRes;
 import androidx.core.content.ContextCompat;
 
-import com.example.englishhindi.R;
+import com.bhashasetu.app.R;
 
 /**
  * Enhanced Toast utility for showing nicely styled toast messages with icons and animations.

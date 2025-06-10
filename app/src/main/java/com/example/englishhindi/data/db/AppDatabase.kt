@@ -1,4 +1,4 @@
-package com.example.englishhindi.data.db
+package com.bhashasetu.app.data.db
 
 import android.content.Context
 import androidx.room.Database
@@ -6,9 +6,9 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import androidx.sqlite.db.SupportSQLiteDatabase
-import com.example.englishhindi.data.dao.*
-import com.example.englishhindi.data.model.*
-import com.example.englishhindi.data.util.DateConverter
+import com.bhashasetu.app.data.dao.*
+import com.bhashasetu.app.data.model.*
+import com.bhashasetu.app.data.util.DateConverter
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

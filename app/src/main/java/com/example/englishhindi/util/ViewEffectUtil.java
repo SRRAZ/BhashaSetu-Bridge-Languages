@@ -1,4 +1,4 @@
-package com.example.englishhindi.util;
+package com.bhashasetu.app.util;
 
 import android.content.res.ColorStateList;
 import android.graphics.drawable.Drawable;
@@ -14,7 +14,7 @@ import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
 import androidx.core.view.ViewCompat;
 
-import com.example.englishhindi.R;
+import com.bhashasetu.app.R;
 
 /**
  * Utility class for adding visual effects to views.

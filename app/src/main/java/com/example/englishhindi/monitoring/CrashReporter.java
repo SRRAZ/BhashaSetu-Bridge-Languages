@@ -1,4 +1,4 @@
-package com.example.englishhindi.monitoring;
+package com.bhashasetu.app.monitoring;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -444,7 +444,7 @@ public class CrashReporter implements Thread.UncaughtExceptionHandler {
                 
                 // Notify AnalyticsManager about the crash
                 try {
-                    AnalyticsManager.getInstance(context).logError(
+                    com.bhashasetu.app.monitoring.AnalyticsManager.getInstance(context).logError(
                             throwable.getClass().getName(),
                             throwable.getMessage(),
                             getStackTraceString(throwable)

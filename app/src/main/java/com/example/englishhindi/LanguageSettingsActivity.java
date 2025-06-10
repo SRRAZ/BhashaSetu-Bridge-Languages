@@ -1,4 +1,4 @@
-package com.example.englishhindi;
+package com.bhashasetu.app;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -12,8 +12,8 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.preference.PreferenceManager;
 
-import com.example.englishhindi.util.LanguageUtils;
-import com.example.englishhindi.view.HindiTextView;
+import com.bhashasetu.app.util.LanguageUtils;
+import com.bhashasetu.app.view.HindiTextView;
 
 /**
  * Activity for language settings that allows users to choose between English and Hindi interfaces.

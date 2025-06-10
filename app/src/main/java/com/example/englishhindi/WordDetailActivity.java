@@ -1,28 +1,28 @@
-package com.example.englishhindi;
+package com.bhashasetu.app;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
+import android.widget.TextView;import android.widget.Toast;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.englishhindi.model.Word;
-import com.example.englishhindi.viewmodel.WordViewModel;
+import com.bhashasetu.app.model.Word;
+import com.bhashasetu.app.viewmodel.WordViewModel;
 
 public class WordDetailActivity extends AppCompatActivity {
     
-    public static final String EXTRA_WORD_ID = "com.example.englishhindi.EXTRA_WORD_ID";
-    public static final String EXTRA_ENGLISH_WORD = "com.example.englishhindi.EXTRA_ENGLISH_WORD";
-    public static final String EXTRA_HINDI_WORD = "com.example.englishhindi.EXTRA_HINDI_WORD";
-    public static final String EXTRA_ENGLISH_PRONUNCIATION = "com.example.englishhindi.EXTRA_ENGLISH_PRONUNCIATION";
-    public static final String EXTRA_HINDI_PRONUNCIATION = "com.example.englishhindi.EXTRA_HINDI_PRONUNCIATION";
-    public static final String EXTRA_CATEGORY = "com.example.englishhindi.EXTRA_CATEGORY";
-    public static final String EXTRA_IS_FAVORITE = "com.example.englishhindi.EXTRA_IS_FAVORITE";
+    public static final String EXTRA_WORD_ID = "com.bhashasetu.app.EXTRA_WORD_ID";
+    public static final String EXTRA_ENGLISH_WORD = "com.bhashasetu.app.EXTRA_ENGLISH_WORD";
+    public static final String EXTRA_HINDI_WORD = "com.bhashasetu.app.EXTRA_HINDI_WORD";
+    public static final String EXTRA_ENGLISH_PRONUNCIATION = "com.bhashasetu.app.EXTRA_ENGLISH_PRONUNCIATION";
+    public static final String EXTRA_HINDI_PRONUNCIATION = "com.bhashasetu.app.EXTRA_HINDI_PRONUNCIATION";
+    public static final String EXTRA_CATEGORY = "com.bhashasetu.app.EXTRA_CATEGORY";
+    public static final String EXTRA_IS_FAVORITE = "com.bhashasetu.app.EXTRA_IS_FAVORITE";
     
     private WordViewModel wordViewModel;
     private int wordId;

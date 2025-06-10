@@ -1,4 +1,4 @@
-package com.example.englishhindi.model;
+package com.bhashasetu.app.model;
 
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
@@ -9,12 +9,12 @@ import androidx.room.Index;
         foreignKeys = {
             @ForeignKey(entity = FlashcardDeck.class,
                         parentColumns = "id",
-                        childColumns = "deckId",
-                        onDelete = ForeignKey.CASCADE),
-            @ForeignKey(entity = Word.class,
-                        parentColumns = "id",
                         childColumns = "wordId",
                         onDelete = ForeignKey.CASCADE)
+ ,            @ForeignKey(entity = Word.class,
+ parentColumns = "id",
+ childColumns = "wordId",
+ onDelete = ForeignKey.CASCADE)
         },
         indices = {
             @Index("deckId"),

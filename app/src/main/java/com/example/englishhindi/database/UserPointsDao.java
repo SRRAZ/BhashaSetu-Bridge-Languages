@@ -1,12 +1,12 @@
-package com.example.englishhindi.database;
+package com.bhashasetu.app.database;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.Query;
 
-import com.example.englishhindi.model.gamification.PointsSource;
-import com.example.englishhindi.model.gamification.UserPoints;
+import com.bhashasetu.app.model.gamification.PointsSource;
+import com.bhashasetu.app.model.gamification.UserPoints;
 
 import java.util.List;
 

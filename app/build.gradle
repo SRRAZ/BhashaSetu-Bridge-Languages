@@ -12,11 +12,11 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace "com.example.englishhindi"
+    namespace "com.bhashasetu.app"
     compileSdk 35
     
     defaultConfig {
-        applicationId "com.example.englishhindi"
+        applicationId "com.bhashasetu.app"
         minSdk 21
         targetSdk 34
         

@@ -1,4 +1,4 @@
-package com.example.englishhindi.manager;
+package com.bhashasetu.app.manager;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -7,13 +7,13 @@ import android.util.Pair;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MediatorLiveData;
 
-import com.example.englishhindi.database.UserProgressDao;
-import com.example.englishhindi.database.UserProgressRepository;
-import com.example.englishhindi.database.WordRepository;
-import com.example.englishhindi.model.DifficultyLevel;
-import com.example.englishhindi.model.DifficultyManager;
-import com.example.englishhindi.model.UserProgress;
-import com.example.englishhindi.model.Word;
+import com.bhashasetu.app.database.UserProgressDao;
+import com.bhashasetu.app.database.UserProgressRepository;
+import com.bhashasetu.app.database.WordRepository;
+import com.bhashasetu.app.model.DifficultyLevel;
+import com.bhashasetu.app.model.DifficultyManager;
+import com.bhashasetu.app.model.UserProgress;
+import com.bhashasetu.app.model.Word;
 
 import java.util.Date;
 import java.util.List;

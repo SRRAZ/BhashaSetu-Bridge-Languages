@@ -1,9 +1,9 @@
-package com.example.englishhindi.di
+package com.bhashasetu.app.di
 
 import android.content.Context
-import com.example.englishhindi.data.dao.*
-import com.example.englishhindi.data.db.AppDatabase
-import com.example.englishhindi.data.repository.*
+import com.bhashasetu.app.data.dao.*
+import com.bhashasetu.app.data.db.AppDatabase
+import com.bhashasetu.app.data.repository.*
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

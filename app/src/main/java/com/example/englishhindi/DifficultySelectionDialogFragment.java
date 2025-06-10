@@ -1,4 +1,4 @@
-package com.example.englishhindi;
+package com.bhashasetu.app;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -13,7 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
-
+import com.bhashasetu.app.R;
 import java.util.ArrayList;
 import java.util.List;
 

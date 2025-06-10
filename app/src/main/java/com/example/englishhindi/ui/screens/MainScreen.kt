@@ -1,4 +1,4 @@
-package com.example.englishhindi.ui.screens
+package com.bhashasetu.app.ui.screens
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.slideInVertically
@@ -34,9 +34,9 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.example.englishhindi.ui.theme.AppLanguage
-import com.example.englishhindi.ui.theme.LocalAppLanguage
-import com.example.englishhindi.ui.theme.localizedString
+import com.bhashasetu.app.ui.theme.AppLanguage
+import com.bhashasetu.app.ui.theme.LocalAppLanguage
+import com.bhashasetu.app.ui.theme.localizedString
 
 /**
  * Main screen with bottom navigation and content area

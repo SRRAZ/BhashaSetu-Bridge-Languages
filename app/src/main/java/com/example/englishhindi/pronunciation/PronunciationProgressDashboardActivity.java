@@ -1,4 +1,4 @@
-package com.example.englishhindi.pronunciation;
+package com.bhashasetu.app.pronunciation;
 
 import android.os.Bundle;
 import android.view.View;
@@ -10,9 +10,9 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.englishhindi.R;
-import com.example.englishhindi.model.Word;
-import com.example.englishhindi.util.ChartView;
+import com.bhashasetu.app.R;
+import com.bhashasetu.app.model.Word;
+import com.bhashasetu.app.util.ChartView;
 
 import java.util.ArrayList;
 import java.util.List;

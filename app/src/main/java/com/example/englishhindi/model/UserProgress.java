@@ -1,4 +1,4 @@
-package com.example.englishhindi.model;
+package com.bhashasetu.app.model;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;

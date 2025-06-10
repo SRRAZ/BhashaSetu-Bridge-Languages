@@ -1,4 +1,4 @@
-package com.example.englishhindi.cache;
+package com.bhashasetu.app.cache;
 
 import android.content.Context;
 import android.util.Log;
@@ -7,7 +7,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.collection.LruCache;
 
-import com.example.englishhindi.util.MemoryOptimizer;
+import com.bhashasetu.app.util.MemoryOptimizer;
 
 import java.io.File;
 import java.io.FileInputStream;

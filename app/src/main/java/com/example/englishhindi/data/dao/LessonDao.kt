@@ -1,10 +1,10 @@
-package com.example.englishhindi.data.dao
+package com.bhashasetu.app.data.dao
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.example.englishhindi.data.model.Lesson
-import com.example.englishhindi.data.model.LessonWord
-import com.example.englishhindi.data.relation.LessonWithWords
+import com.bhashasetu.app.data.model.Lesson
+import com.bhashasetu.app.data.model.LessonWord
+import com.bhashasetu.app.data.relation.LessonWithWords
 import kotlinx.coroutines.flow.Flow
 
 /**

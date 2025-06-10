@@ -1,4 +1,4 @@
-package com.example.englishhindi.ui;
+package com.bhashasetu.app.ui;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
@@ -14,8 +14,8 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 
 import androidx.annotation.Nullable;
 
-import com.example.englishhindi.R;
-import com.example.englishhindi.model.DifficultyManager;
+import com.bhashasetu.app.R;
+import com.bhashasetu.app.model.DifficultyManager;
 
 /**
  * Custom view for tracking and displaying user XP and level progress.

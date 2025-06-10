@@ -1,4 +1,4 @@
-package com.example.englishhindi.model.gamification;
+package com.bhashasetu.app.model.gamification;
 
 /**
  * Enumeration of different sources of points in the app

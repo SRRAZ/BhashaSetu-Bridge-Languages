@@ -1,4 +1,4 @@
-package com.example.englishhindi;
+package com.bhashasetu.app;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -21,12 +21,12 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.preference.PreferenceManager;
 
-import com.example.englishhindi.model.PracticeSession;
-import com.example.englishhindi.model.Quiz;
-import com.example.englishhindi.model.UserProgress;
-import com.example.englishhindi.viewmodel.PracticeSessionViewModel;
-import com.example.englishhindi.viewmodel.QuizViewModel;
-import com.example.englishhindi.viewmodel.UserProgressViewModel;
+import com.bhashasetu.app.model.PracticeSession;
+import com.bhashasetu.app.model.Quiz;
+import com.bhashasetu.app.model.UserProgress;
+import com.bhashasetu.app.viewmodel.PracticeSessionViewModel;
+import com.bhashasetu.app.viewmodel.QuizViewModel;
+import com.bhashasetu.app.viewmodel.UserProgressViewModel;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.example.englishhindi.util;
+package com.bhashasetu.app.util;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -8,8 +8,8 @@ import android.util.Log;
 
 import androidx.preference.PreferenceManager;
 
-import com.example.englishhindi.R;
-import com.example.englishhindi.audio.TtsRecorder;
+import com.bhashasetu.app.R;
+import com.bhashasetu.app.audio.TtsRecorder;
 
 import java.io.File;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package com.example.englishhindi.cache;
+package com.bhashasetu.app.cache;
 
 import android.content.Context;
 import android.media.MediaMetadataRetriever;
@@ -10,9 +10,9 @@ import android.util.LruCache;
 import androidx.annotation.NonNull;
 import androidx.annotation.RawRes;
 
-import com.example.englishhindi.audio.OptimizedAudioManager;
-import com.example.englishhindi.util.MemoryOptimizer;
-import com.example.englishhindi.util.NetworkOptimizer;
+import com.bhashasetu.app.audio.OptimizedAudioManager;
+import com.bhashasetu.app.util.MemoryOptimizer;
+import com.bhashasetu.app.util.NetworkOptimizer;
 
 import java.io.BufferedInputStream;
 import java.io.File;

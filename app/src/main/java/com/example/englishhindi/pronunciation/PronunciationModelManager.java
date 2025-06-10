@@ -1,14 +1,13 @@
-package com.example.englishhindi.pronunciation;
+package com.bhashasetu.app.pronunciation;
 
 import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
-
-import com.example.englishhindi.audio.AudioAnalyzer;
-import com.example.englishhindi.cache.CacheManager;
-import com.example.englishhindi.model.Word;
+import com.bhashasetu.app.audio.AudioAnalyzer;
+import com.bhashasetu.app.cache.CacheManager;
+import com.bhashasetu.app.model.Word;
 
 import org.tensorflow.lite.support.common.FileUtil;
 

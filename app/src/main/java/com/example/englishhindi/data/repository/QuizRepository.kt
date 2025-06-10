@@ -1,10 +1,10 @@
-package com.example.englishhindi.data.repository
+package com.bhashasetu.app.data.repository
 
 import androidx.lifecycle.LiveData
-import com.example.englishhindi.data.dao.QuizDao
-import com.example.englishhindi.data.model.Quiz
-import com.example.englishhindi.data.model.QuizQuestion
-import com.example.englishhindi.data.relation.QuizWithQuestions
+import com.bhashasetu.app.data.dao.QuizDao
+import com.bhashasetu.app.data.model.Quiz
+import com.bhashasetu.app.data.model.QuizQuestion
+import com.bhashasetu.app.data.relation.QuizWithQuestions
 import kotlinx.coroutines.flow.Flow
 import java.util.Date
 

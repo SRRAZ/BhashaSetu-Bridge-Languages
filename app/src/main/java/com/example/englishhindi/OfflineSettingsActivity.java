@@ -1,4 +1,4 @@
-package com.example.englishhindi;
+package com.bhashasetu.app;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -15,13 +15,13 @@ import android.widget.Toast;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.englishhindi.cache.CacheManager;
-import com.example.englishhindi.database.RepositoryFactory;
-import com.example.englishhindi.manager.SyncManager;
-import com.example.englishhindi.service.SyncService;
-import com.example.englishhindi.ui.OfflineStatusView;
-import com.example.englishhindi.util.FileUtils;
-import com.example.englishhindi.util.NetworkUtils;
+import com.bhashasetu.app.cache.CacheManager;
+import com.bhashasetu.app.database.RepositoryFactory;
+import com.bhashasetu.app.manager.SyncManager;
+import com.bhashasetu.app.service.SyncService;
+import com.bhashasetu.app.ui.OfflineStatusView;
+import com.bhashasetu.app.util.FileUtils;
+import com.bhashasetu.app.util.NetworkUtils;
 
 /**
  * Activity for managing offline mode settings and cache management.

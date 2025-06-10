@@ -1,8 +1,8 @@
-package com.example.englishhindi.database.converters;
+package com.bhashasetu.app.database.converters;
 
 import androidx.room.TypeConverter;
 
-import com.example.englishhindi.model.gamification.PointsSource;
+import com.bhashasetu.app.model.gamification.PointsSource;
 
 /**
  * Type converter for PointsSource enum in Room database

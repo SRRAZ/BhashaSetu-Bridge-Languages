@@ -1,15 +1,15 @@
-package com.example.englishhindi.testing;
+package com.bhashasetu.app.testing;
 
 import android.content.Context;
 import android.os.Build;
 import android.util.Log;
 
-import com.example.englishhindi.BuildConfig;
-import com.example.englishhindi.cache.CacheManager;
-import com.example.englishhindi.util.AppExecutors;
-import com.example.englishhindi.util.DeviceInfo;
-import com.example.englishhindi.util.NetworkUtils;
-import com.example.englishhindi.util.PerformanceMonitor;
+import com.bhashasetu.app.BuildConfig;
+import com.bhashasetu.app.cache.CacheManager;
+import com.bhashasetu.app.util.AppExecutors;
+import com.bhashasetu.app.util.DeviceInfo;
+import com.bhashasetu.app.util.NetworkUtils;
+import com.bhashasetu.app.util.PerformanceMonitor;
 
 import java.io.File;
 import java.io.FileOutputStream;

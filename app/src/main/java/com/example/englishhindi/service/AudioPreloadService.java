@@ -1,4 +1,4 @@
-package com.example.englishhindi.service;
+package com.bhashasetu.app.service;
 
 import android.app.IntentService;
 import android.app.Notification;
@@ -12,10 +12,10 @@ import android.util.Log;
 import androidx.annotation.Nullable;
 import androidx.core.app.NotificationCompat;
 
-import com.example.englishhindi.R;
-import com.example.englishhindi.database.WordRepository;
-import com.example.englishhindi.model.Word;
-import com.example.englishhindi.util.AudioUtils;
+import com.bhashasetu.app.R;
+import com.bhashasetu.app.database.WordRepository;
+import com.bhashasetu.app.model.Word;
+import com.bhashasetu.app.util.AudioUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,9 +29,9 @@ public class AudioPreloadService extends IntentService {
     private static final String CHANNEL_ID = "audio_preload_channel";
     private static final int NOTIFICATION_ID = 1001;
     private static final int BATCH_SIZE = 10;
-    
+
     // Intent actions
-    public static final String ACTION_PRELOAD_ALL = "com.example.englishhindi.action.PRELOAD_ALL";
+ public static final String ACTION_PRELOAD_ALL = "com.bhashasetu.app.action.PRELOAD_ALL";
     public static final String ACTION_PRELOAD_CATEGORY = "com.example.englishhindi.action.PRELOAD_CATEGORY";
     public static final String ACTION_PRELOAD_FAVORITES = "com.example.englishhindi.action.PRELOAD_FAVORITES";
     
@@ -39,12 +39,12 @@ public class AudioPreloadService extends IntentService {
     public static final String EXTRA_CATEGORY = "com.example.englishhindi.extra.CATEGORY";
     
     private WordRepository wordRepository;
-    private NotificationManager notificationManager;
+ private NotificationManager notificationManager;
     
     public AudioPreloadService() {
         super("AudioPreloadService");
     }
-    
+
     @Override
     public void onCreate() {
         super.onCreate();
@@ -60,11 +60,11 @@ public class AudioPreloadService extends IntentService {
             channel.setDescription("Used for preloading audio files in the background");
             notificationManager.createNotificationChannel(channel);
         }
-        
+
         // Start as a foreground service with a notification
         startForeground(NOTIFICATION_ID, createNotification("Starting audio preload..."));
     }
-    
+
     @Override
     protected void onHandleIntent(@Nullable Intent intent) {
         if (intent == null) {
@@ -75,13 +75,13 @@ public class AudioPreloadService extends IntentService {
         if (action == null) {
             return;
         }
-        
+
         try {
             switch (action) {
                 case ACTION_PRELOAD_ALL:
                     preloadAllAudio();
                     break;
-                    
+
                 case ACTION_PRELOAD_CATEGORY:
                     String category = intent.getStringExtra(EXTRA_CATEGORY);
                     if (category != null) {
@@ -89,7 +89,7 @@ public class AudioPreloadService extends IntentService {
                     }
                     break;
                     
-                case ACTION_PRELOAD_FAVORITES:
+ case ACTION_PRELOAD_FAVORITES:
                     preloadFavoritesAudio();
                     break;
             }
@@ -102,7 +102,7 @@ public class AudioPreloadService extends IntentService {
      * Preload audio files for all words in the database.
      */
     private void preloadAllAudio() {
-        List<Word> allWords = wordRepository.getAllWordsSync();
+ List<Word> allWords = wordRepository.getAllWordsSync();
         if (allWords == null || allWords.isEmpty()) {
             return;
         }

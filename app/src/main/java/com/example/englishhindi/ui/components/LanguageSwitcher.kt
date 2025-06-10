@@ -1,4 +1,4 @@
-package com.example.englishhindi.ui.components
+package com.bhashasetu.app.ui.components
 
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -16,7 +16,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.englishhindi.ui.theme.EnglishHindiTheme
+import com.bhashasetu.app.ui.theme.EnglishHindiTheme
 
 /**
  * A component for switching between English and Hindi language.

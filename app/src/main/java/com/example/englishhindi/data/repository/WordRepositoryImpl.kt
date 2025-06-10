@@ -1,9 +1,9 @@
-package com.example.englishhindi.data.repository
+package com.bhashasetu.app.data.repository
 
-import com.example.englishhindi.data.dao.WordDao
-import com.example.englishhindi.data.model.Word
-import com.example.englishhindi.data.repository.base.BaseRepository
 import kotlinx.coroutines.Dispatchers
+import com.bhashasetu.app.data.model.Word
+import com.bhashasetu.app.data.dao.WordDao
+import com.bhashasetu.app.data.repository.base.BaseRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.withContext

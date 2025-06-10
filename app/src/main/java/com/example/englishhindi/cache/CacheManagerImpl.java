@@ -1,4 +1,4 @@
-package com.example.englishhindi.cache;
+package com.bhashasetu.app.cache;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -7,9 +7,6 @@ import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
-
-import com.example.englishhindi.util.MemoryOptimizer;
-
 import java.io.File;
 import java.io.Serializable;
 import java.util.HashMap;
@@ -22,6 +19,8 @@ import java.util.concurrent.TimeUnit;
  * Implementation of the central cache management system that coordinates all caching operations.
  * Provides a unified interface for the application to interact with different cache subsystems.
  */
+import com.bhashasetu.app.util.MemoryOptimizer;
+
 public class CacheManagerImpl {
     private static final String TAG = "CacheManagerImpl";
     

@@ -1,4 +1,4 @@
-package com.example.englishhindi.model;
+package com.bhashasetu.app.model;
 
 import android.content.Context;
 import android.util.Pair;

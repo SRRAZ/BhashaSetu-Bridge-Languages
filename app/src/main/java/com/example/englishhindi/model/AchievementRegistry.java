@@ -1,6 +1,6 @@
-package com.example.englishhindi.model;
+package com.bhashasetu.app.model;
 
-import com.example.englishhindi.R;
+import com.bhashasetu.app.R;
 import java.util.ArrayList;
 import java.util.List;
 

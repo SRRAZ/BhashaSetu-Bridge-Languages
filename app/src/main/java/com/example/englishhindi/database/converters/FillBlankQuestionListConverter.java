@@ -1,8 +1,8 @@
-package com.example.englishhindi.database.converters;
+package com.bhashasetu.app.database.converters;
 
 import androidx.room.TypeConverter;
 
-import com.example.englishhindi.model.exercise.FillBlankExercise;
+import com.bhashasetu.app.model.exercise.FillBlankExercise;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 

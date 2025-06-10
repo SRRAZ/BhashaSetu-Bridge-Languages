@@ -1,12 +1,12 @@
-package com.example.englishhindi.cache;
+package com.bhashasetu.app.cache;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Log;
 
-import com.example.englishhindi.model.Word;
-import com.example.englishhindi.util.FileUtils;
-import com.example.englishhindi.util.NetworkUtils;
+import com.bhashasetu.app.model.Word;
+import com.bhashasetu.app.util.FileUtils;
+import com.bhashasetu.app.util.NetworkUtils;
 
 import java.io.File;
 import java.io.IOException;

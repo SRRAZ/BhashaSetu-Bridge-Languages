@@ -1,13 +1,13 @@
-package com.example.englishhindi.manager;
+package com.bhashasetu.app.manager;
 
 import android.app.Activity;
 import android.content.Context;
 
-import com.example.englishhindi.database.AchievementRepository;
-import com.example.englishhindi.model.Achievement;
-import com.example.englishhindi.model.AchievementRegistry;
-import com.example.englishhindi.ui.AchievementUnlockedDialog;
-import com.example.englishhindi.viewmodel.AchievementViewModel;
+import com.bhashasetu.app.database.AchievementRepository;
+import com.bhashasetu.app.model.Achievement;
+import com.bhashasetu.app.model.AchievementRegistry;
+import com.bhashasetu.app.ui.AchievementUnlockedDialog;
+import com.bhashasetu.app.viewmodel.AchievementViewModel;
 
 /**
  * Manager class for tracking and handling achievements.

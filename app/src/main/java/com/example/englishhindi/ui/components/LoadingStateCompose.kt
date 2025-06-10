@@ -1,4 +1,4 @@
-package com.example.englishhindi.ui.components
+package com.bhashasetu.app.ui.components
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.tween
@@ -31,7 +31,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import com.example.englishhindi.ui.theme.localizedString
+import com.bhashasetu.app.ui.theme.localizedString
 
 /**
  * Loading states for UI components

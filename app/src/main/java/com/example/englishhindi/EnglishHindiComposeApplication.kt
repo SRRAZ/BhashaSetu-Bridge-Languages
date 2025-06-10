@@ -1,13 +1,13 @@
-package com.example.englishhindi
+package com.bhashasetu.app
 
 import android.app.Application
 import android.os.StrictMode
 import androidx.room.Room
-import com.example.englishhindi.data.db.AppDatabase
-import com.example.englishhindi.data.repository.WordRepository
-import com.example.englishhindi.data.repository.WordRepositoryImpl
-import com.example.englishhindi.util.LanguageManager
-import com.example.englishhindi.util.PreferenceManager
+import com.bhashasetu.app.data.db.AppDatabase
+import com.bhashasetu.app.data.repository.WordRepository
+import com.bhashasetu.app.data.repository.WordRepositoryImpl
+import com.bhashasetu.app.util.LanguageManager
+import com.bhashasetu.app.util.PreferenceManager
 import java.util.concurrent.Executors
 
 /**
@@ -103,7 +103,8 @@ class EnglishHindiComposeApplication : Application() {
     private fun seedSampleData() {
         // Basic greetings category
         val greetingsWords = listOf(
-            com.example.englishhindi.data.model.Word(
+            com.bhashasetu.app.data.model.Word(
+ com.bhashasetu.app.data.model.Word(
                 englishWord = "Hello",
                 hindiWord = "नमस्ते",
                 englishPronunciation = "huh-loh",
@@ -113,7 +114,8 @@ class EnglishHindiComposeApplication : Application() {
                 exampleSentenceEnglish = "Hello, how are you?",
                 exampleSentenceHindi = "नमस्ते, आप कैसे हैं?"
             ),
-            com.example.englishhindi.data.model.Word(
+            com.bhashasetu.app.data.model.Word(
+ com.bhashasetu.app.data.model.Word(
                 englishWord = "Good morning",
                 hindiWord = "सुप्रभात",
                 englishPronunciation = "good mor-ning",
@@ -123,7 +125,8 @@ class EnglishHindiComposeApplication : Application() {
                 exampleSentenceEnglish = "Good morning, did you sleep well?",
                 exampleSentenceHindi = "सुप्रभात, क्या आपने अच्छी नींद ली?"
             ),
-            com.example.englishhindi.data.model.Word(
+            com.bhashasetu.app.data.model.Word(
+ com.bhashasetu.app.data.model.Word(
                 englishWord = "Thank you",
                 hindiWord = "धन्यवाद",
                 englishPronunciation = "thank-yoo",
@@ -133,7 +136,8 @@ class EnglishHindiComposeApplication : Application() {
                 exampleSentenceEnglish = "Thank you for your help.",
                 exampleSentenceHindi = "आपकी मदद के लिए धन्यवाद।"
             ),
-            com.example.englishhindi.data.model.Word(
+            com.bhashasetu.app.data.model.Word(
+ com.bhashasetu.app.data.model.Word(
                 englishWord = "Goodbye",
                 hindiWord = "अलविदा",
                 englishPronunciation = "good-bye",
@@ -143,7 +147,8 @@ class EnglishHindiComposeApplication : Application() {
                 exampleSentenceEnglish = "Goodbye, see you tomorrow.",
                 exampleSentenceHindi = "अलविदा, कल मिलते हैं।"
             ),
-            com.example.englishhindi.data.model.Word(
+            com.bhashasetu.app.data.model.Word(
+ com.bhashasetu.app.data.model.Word(
                 englishWord = "Good night",
                 hindiWord = "शुभ रात्रि",
                 englishPronunciation = "good night",
@@ -157,7 +162,8 @@ class EnglishHindiComposeApplication : Application() {
         
         // Basic food category
         val foodWords = listOf(
-            com.example.englishhindi.data.model.Word(
+            com.bhashasetu.app.data.model.Word(
+ com.bhashasetu.app.data.model.Word(
                 englishWord = "Water",
                 hindiWord = "पानी",
                 englishPronunciation = "waa-ter",
@@ -167,7 +173,8 @@ class EnglishHindiComposeApplication : Application() {
                 exampleSentenceEnglish = "I would like a glass of water.",
                 exampleSentenceHindi = "मुझे एक गिलास पानी चाहिए।"
             ),
-            com.example.englishhindi.data.model.Word(
+            com.bhashasetu.app.data.model.Word(
+ com.bhashasetu.app.data.model.Word(
                 englishWord = "Bread",
                 hindiWord = "रोटी",
                 englishPronunciation = "bred",
@@ -177,7 +184,8 @@ class EnglishHindiComposeApplication : Application() {
                 exampleSentenceEnglish = "I eat bread for breakfast.",
                 exampleSentenceHindi = "मैं नाश्ते में रोटी खाता हूँ।"
             ),
-            com.example.englishhindi.data.model.Word(
+            com.bhashasetu.app.data.model.Word(
+ com.bhashasetu.app.data.model.Word(
                 englishWord = "Rice",
                 hindiWord = "चावल",
                 englishPronunciation = "rice",
@@ -187,7 +195,8 @@ class EnglishHindiComposeApplication : Application() {
                 exampleSentenceEnglish = "Rice is a staple food in many countries.",
                 exampleSentenceHindi = "चावल कई देशों का मुख्य भोजन है।"
             ),
-            com.example.englishhindi.data.model.Word(
+            com.bhashasetu.app.data.model.Word(
+ com.bhashasetu.app.data.model.Word(
                 englishWord = "Tea",
                 hindiWord = "चाय",
                 englishPronunciation = "tee",
@@ -197,7 +206,8 @@ class EnglishHindiComposeApplication : Application() {
                 exampleSentenceEnglish = "Would you like some tea?",
                 exampleSentenceHindi = "क्या आप कुछ चाय लेंगे?"
             ),
-            com.example.englishhindi.data.model.Word(
+            com.bhashasetu.app.data.model.Word(
+ com.bhashasetu.app.data.model.Word(
                 englishWord = "Fruit",
                 hindiWord = "फल",
                 englishPronunciation = "froot",
@@ -211,7 +221,8 @@ class EnglishHindiComposeApplication : Application() {
         
         // Basic numbers
         val numberWords = listOf(
-            com.example.englishhindi.data.model.Word(
+            com.bhashasetu.app.data.model.Word(
+ com.bhashasetu.app.data.model.Word(
                 englishWord = "One",
                 hindiWord = "एक",
                 englishPronunciation = "wun",
@@ -221,7 +232,8 @@ class EnglishHindiComposeApplication : Application() {
                 exampleSentenceEnglish = "I have one book.",
                 exampleSentenceHindi = "मेरे पास एक किताब है।"
             ),
-            com.example.englishhindi.data.model.Word(
+            com.bhashasetu.app.data.model.Word(
+ com.bhashasetu.app.data.model.Word(
                 englishWord = "Two",
                 hindiWord = "दो",
                 englishPronunciation = "too",
@@ -231,7 +243,8 @@ class EnglishHindiComposeApplication : Application() {
                 exampleSentenceEnglish = "I have two hands.",
                 exampleSentenceHindi = "मेरे पास दो हाथ हैं।"
             ),
-            com.example.englishhindi.data.model.Word(
+            com.bhashasetu.app.data.model.Word(
+ com.bhashasetu.app.data.model.Word(
                 englishWord = "Three",
                 hindiWord = "तीन",
                 englishPronunciation = "three",
@@ -241,7 +254,8 @@ class EnglishHindiComposeApplication : Application() {
                 exampleSentenceEnglish = "I need three tickets.",
                 exampleSentenceHindi = "मुझे तीन टिकट चाहिए।"
             ),
-            com.example.englishhindi.data.model.Word(
+            com.bhashasetu.app.data.model.Word(
+ com.bhashasetu.app.data.model.Word(
                 englishWord = "Four",
                 hindiWord = "चार",
                 englishPronunciation = "for",
@@ -251,7 +265,8 @@ class EnglishHindiComposeApplication : Application() {
                 exampleSentenceEnglish = "The table has four legs.",
                 exampleSentenceHindi = "मेज के चार पैर हैं।"
             ),
-            com.example.englishhindi.data.model.Word(
+            com.bhashasetu.app.data.model.Word(
+ com.bhashasetu.app.data.model.Word(
                 englishWord = "Five",
                 hindiWord = "पांच",
                 englishPronunciation = "five",

@@ -1,4 +1,4 @@
-package com.example.englishhindi.adapter;
+package com.bhashasetu.app.adapter;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -6,8 +6,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.example.englishhindi.fragment.LessonContentFragment;
-import com.example.englishhindi.fragment.LessonVocabularyFragment;
+import com.bhashasetu.app.fragment.LessonContentFragment;
+import com.bhashasetu.app.fragment.LessonVocabularyFragment;
 
 public class LessonPagerAdapter extends FragmentPagerAdapter {
     

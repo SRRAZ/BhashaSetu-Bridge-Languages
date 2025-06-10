@@ -1,11 +1,11 @@
-package com.example.englishhindi.data.relation
+package com.bhashasetu.app.data.relation
 
 import androidx.room.Embedded
 import androidx.room.Junction
 import androidx.room.Relation
-import com.example.englishhindi.data.model.Lesson
-import com.example.englishhindi.data.model.LessonWord
-import com.example.englishhindi.data.model.Word
+import com.bhashasetu.app.data.model.Lesson
+import com.bhashasetu.app.data.model.LessonWord
+import com.bhashasetu.app.data.model.Word
 
 /**
  * Represents a Lesson with all its associated Words.

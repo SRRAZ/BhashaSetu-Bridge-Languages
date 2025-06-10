@@ -1,4 +1,4 @@
-package com.example.englishhindi.pronunciation;
+package com.bhashasetu.app.pronunciation;
 
 import android.content.Context;
 import android.media.AudioFormat;

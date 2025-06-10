@@ -1,4 +1,4 @@
-package com.example.englishhindi.ui;
+package com.bhashasetu.app.ui;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
@@ -15,7 +15,7 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 
 import androidx.annotation.Nullable;
 
-import com.example.englishhindi.R;
+import com.bhashasetu.app.R;
 
 /**
  * Custom view for displaying skill progress with animated circular progress bars.

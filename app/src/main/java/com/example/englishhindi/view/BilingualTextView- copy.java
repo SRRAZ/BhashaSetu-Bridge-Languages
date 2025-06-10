@@ -1,4 +1,4 @@
-package com.example.englishhindi.view;
+package com.bhashasetu.app.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -10,8 +10,8 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
-import com.example.englishhindi.R;
-import com.example.englishhindi.model.AppSettings;
+import com.bhashasetu.app.R;
+import com.bhashasetu.app.model.AppSettings;
 
 /**
  * Custom view that displays text in both English and Hindi,

@@ -1,13 +1,13 @@
-package com.example.englishhindi.ui.viewmodel
+package com.bhashasetu.app.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.englishhindi.data.model.Quiz
-import com.example.englishhindi.data.model.QuizQuestion
-import com.example.englishhindi.data.model.UserProgress
-import com.example.englishhindi.data.relation.QuizWithQuestions
-import com.example.englishhindi.data.repository.QuizRepository
-import com.example.englishhindi.data.repository.UserProgressRepository
+import com.bhashasetu.app.data.model.Quiz
+import com.bhashasetu.app.data.model.QuizQuestion
+import com.bhashasetu.app.data.model.UserProgress
+import com.bhashasetu.app.data.relation.QuizWithQuestions
+import com.bhashasetu.app.data.repository.QuizRepository
+import com.bhashasetu.app.data.repository.UserProgressRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch

@@ -1,8 +1,8 @@
-package com.example.englishhindi.util
+package com.bhashasetu.app.util
 
 import android.util.Log
-import com.example.englishhindi.data.model.Achievement
-import com.example.englishhindi.data.repository.*
+import com.bhashasetu.app.data.model.Achievement
+import com.bhashasetu.app.data.repository.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.first

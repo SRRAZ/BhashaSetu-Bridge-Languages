@@ -1,15 +1,15 @@
-package com.example.englishhindi.debug;
+package com.bhashasetu.app.debug;
 
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
+import android.widget.TextView;import com.bhashasetu.app.activity.PerformanceMonitoredActivity;
 
-import com.example.englishhindi.activity.PerformanceMonitoredActivity;
-import com.example.englishhindi.monitoring.PerformanceDebugUtility;
-import com.example.englishhindi.monitoring.PerformanceMonitoringManager;
+import com.bhashasetu.app.activity.PerformanceMonitoredActivity;
+import com.bhashasetu.app.monitoring.PerformanceDebugUtility;
+import com.bhashasetu.app.monitoring.PerformanceMonitoringManager;
 
 import java.util.Locale;
 import java.util.Map;

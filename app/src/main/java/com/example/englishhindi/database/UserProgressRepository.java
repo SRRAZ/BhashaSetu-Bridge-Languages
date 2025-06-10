@@ -1,11 +1,11 @@
-package com.example.englishhindi.database;
+package com.bhashasetu.app.database;
 
 import android.content.Context;
 
 import androidx.lifecycle.LiveData;
 
-import com.example.englishhindi.model.UserProgress;
-
+import com.bhashasetu.app.model.UserProgress;
+import com.bhashasetu.app.database.AppDatabase;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 

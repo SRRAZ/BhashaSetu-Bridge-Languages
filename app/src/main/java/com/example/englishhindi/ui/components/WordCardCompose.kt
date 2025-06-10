@@ -1,4 +1,4 @@
-package com.example.englishhindi.ui.components
+package com.bhashasetu.app.ui.components
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.animateFloatAsState
@@ -53,15 +53,15 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.englishhindi.data.model.Word
-import com.example.englishhindi.ui.theme.LocalAppLanguage
-import com.example.englishhindi.ui.theme.AppLanguage
-import com.example.englishhindi.ui.theme.beginnerColor
-import com.example.englishhindi.ui.theme.englishTypography
-import com.example.englishhindi.ui.theme.highProgressColor
-import com.example.englishhindi.ui.theme.hindiTypography
-import com.example.englishhindi.ui.theme.lowProgressColor
-import com.example.englishhindi.ui.theme.mediumProgressColor
+import com.bhashasetu.app.data.model.Word
+import com.bhashasetu.app.ui.theme.LocalAppLanguage
+import com.bhashasetu.app.ui.theme.AppLanguage
+import com.bhashasetu.app.ui.theme.beginnerColor
+import com.bhashasetu.app.ui.theme.englishTypography
+import com.bhashasetu.app.ui.theme.highProgressColor
+import com.bhashasetu.app.ui.theme.hindiTypography
+import com.bhashasetu.app.ui.theme.lowProgressColor
+import com.bhashasetu.app.ui.theme.mediumProgressColor
 import java.util.Date
 
 /**

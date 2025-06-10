@@ -1,9 +1,9 @@
-package com.example.englishhindi.ui.viewmodel
+package com.bhashasetu.app.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.englishhindi.data.model.AppSettings
-import com.example.englishhindi.data.repository.AppSettingsRepository
+import com.bhashasetu.app.data.model.AppSettings
+import com.bhashasetu.app.data.repository.AppSettingsRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow

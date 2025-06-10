@@ -1,4 +1,4 @@
-package com.example.englishhindi.view;
+package com.bhashasetu.app.view;
 
 import android.app.Activity;
 import android.content.Context;
@@ -10,9 +10,9 @@ import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.example.englishhindi.R;
-import com.example.englishhindi.model.AppSettings;
-import com.example.englishhindi.util.LanguageManager;
+import com.bhashasetu.app.R;
+import com.bhashasetu.app.model.AppSettings;
+import com.bhashasetu.app.util.LanguageManager;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.button.MaterialButtonToggleGroup;
 

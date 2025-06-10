@@ -1,4 +1,4 @@
-package com.example.englishhindi.view;
+package com.bhashasetu.app.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -15,8 +15,8 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 
-import com.example.englishhindi.R;
-import com.example.englishhindi.audio.AudioManager;
+import com.bhashasetu.app.R;
+import com.bhashasetu.app.audio.AudioManager;
 
 import java.util.Locale;
 

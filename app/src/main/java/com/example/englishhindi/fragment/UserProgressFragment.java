@@ -1,4 +1,4 @@
-package com.example.englishhindi.fragment;
+package com.bhashasetu.app.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,18 +12,17 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.example.englishhindi.R;
-import com.example.englishhindi.adapter.RecommendedSkillAdapter;
-import com.example.englishhindi.adapter.RecommendedWordAdapter;
-import com.example.englishhindi.manager.UserProgressManager;
-import com.example.englishhindi.model.DifficultyManager;
-import com.example.englishhindi.model.UserProgress;
-import com.example.englishhindi.model.Word;
-import com.example.englishhindi.ui.DifficultySettingsDialog;
-import com.example.englishhindi.ui.LevelUpDialog;
-import com.example.englishhindi.ui.SkillProgressView;
-import com.example.englishhindi.ui.XpTrackerView;
+import com.bhashasetu.app.R;
+import com.bhashasetu.app.adapter.RecommendedSkillAdapter;
+import com.bhashasetu.app.adapter.RecommendedWordAdapter;
+import com.bhashasetu.app.manager.UserProgressManager;
+import com.bhashasetu.app.model.DifficultyManager;
+import com.bhashasetu.app.model.UserProgress;
+import com.bhashasetu.app.model.Word;
+import com.bhashasetu.app.ui.DifficultySettingsDialog;
+import com.bhashasetu.app.ui.LevelUpDialog;
+import com.bhashasetu.app.ui.SkillProgressView;
+import com.bhashasetu.app.ui.XpTrackerView;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.example.englishhindi.util;
+package com.bhashasetu.app.util;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -9,7 +9,7 @@ import android.os.Build;
 
 import androidx.preference.PreferenceManager;
 
-import com.example.englishhindi.model.AppSettings;
+import com.bhashasetu.app.model.AppSettings;
 
 import java.util.Locale;
 

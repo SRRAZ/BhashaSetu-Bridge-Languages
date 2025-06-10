@@ -1,4 +1,4 @@
-package com.example.englishhindi;
+package com.bhashasetu.app;
 
 import android.os.Bundle;
 import android.view.View;
@@ -10,12 +10,11 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.viewpager.widget.ViewPager;
-
-import com.example.englishhindi.adapter.LessonPagerAdapter;
-import com.example.englishhindi.model.Lesson;
-import com.example.englishhindi.model.UserProgress;
-import com.example.englishhindi.viewmodel.LessonViewModel;
-import com.example.englishhindi.viewmodel.UserProgressViewModel;
+import com.bhashasetu.app.adapter.LessonPagerAdapter;
+import com.bhashasetu.app.model.Lesson;
+import com.bhashasetu.app.model.UserProgress;
+import com.bhashasetu.app.viewmodel.LessonViewModel;
+import com.bhashasetu.app.viewmodel.UserProgressViewModel;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;

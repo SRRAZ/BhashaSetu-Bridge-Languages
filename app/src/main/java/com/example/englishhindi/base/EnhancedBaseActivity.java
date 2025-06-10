@@ -1,4 +1,4 @@
-package com.example.englishhindi.base;
+package com.bhashasetu.app.base;
 
 import android.content.IntentFilter;
 import android.net.ConnectivityManager;
@@ -12,13 +12,13 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 
-import com.example.englishhindi.R;
-import com.example.englishhindi.receiver.NetworkStateReceiver;
-import com.example.englishhindi.ui.LoadingStateView;
-import com.example.englishhindi.ui.OfflineStatusView;
-import com.example.englishhindi.util.ActivityTransitionUtil;
-import com.example.englishhindi.util.ErrorHandler;
-import com.example.englishhindi.util.NetworkConnectionHandler;
+import com.bhashasetu.app.R;
+import com.bhashasetu.app.receiver.NetworkStateReceiver;
+import com.bhashasetu.app.ui.LoadingStateView;
+import com.bhashasetu.app.ui.OfflineStatusView;
+import com.bhashasetu.app.util.ActivityTransitionUtil;
+import com.bhashasetu.app.util.ErrorHandler;
+import com.bhashasetu.app.util.NetworkConnectionHandler;
 
 /**
  * Enhanced base activity that handles common functionality across all activities.

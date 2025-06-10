@@ -1,4 +1,4 @@
-package com.example.englishhindi.model.gamification;
+package com.bhashasetu.app.model.gamification;
 
 /**
  * Types of achievements available in the app

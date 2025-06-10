@@ -1,8 +1,8 @@
-package com.example.englishhindi.data.repository
+package com.bhashasetu.app.data.repository
 
 import androidx.lifecycle.LiveData
-import com.example.englishhindi.data.dao.StudySessionDao
-import com.example.englishhindi.data.model.StudySession
+import com.bhashasetu.app.data.dao.StudySessionDao
+import com.bhashasetu.app.data.model.StudySession
 import kotlinx.coroutines.flow.Flow
 import java.util.Date
 

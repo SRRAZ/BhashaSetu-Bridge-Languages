@@ -1,4 +1,4 @@
-package com.example.englishhindi
+package com.bhashasetu.app
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -14,11 +14,11 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import com.example.englishhindi.ui.screens.MainScreen
-import com.example.englishhindi.ui.theme.AppLanguage
-import com.example.englishhindi.ui.theme.EnglishHindiTheme
-import com.example.englishhindi.ui.theme.LocalAppLanguage
-import com.example.englishhindi.util.LanguageManager
+import com.bhashasetu.app.ui.screens.MainScreen
+import com.bhashasetu.app.ui.theme.AppLanguage
+import com.bhashasetu.app.ui.theme.EnglishHindiTheme
+import com.bhashasetu.app.ui.theme.LocalAppLanguage
+import com.bhashasetu.app.util.LanguageManager
 
 /**
  * Main Activity using Jetpack Compose
@@ -31,7 +31,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         
         // Get language preferences
-        val languageManager = (application as EnglishHindiComposeApplication).languageManager
+        val languageManager = (application as BhashaSetuComposeApplication).languageManager
         val currentLanguage = languageManager.getCurrentLanguage()
         val isHindi = currentLanguage == LanguageManager.LANGUAGE_HINDI
         

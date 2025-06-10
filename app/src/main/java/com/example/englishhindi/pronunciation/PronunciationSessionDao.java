@@ -1,4 +1,4 @@
-package com.example.englishhindi.pronunciation;
+package com.bhashasetu.app.pronunciation;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
@@ -8,7 +8,7 @@ import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 import androidx.room.Update;
 
-import com.example.englishhindi.model.PronunciationSession;
+import com.bhashasetu.app.model.PronunciationSession;
 
 import java.util.List;
 

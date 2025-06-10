@@ -1,4 +1,4 @@
-package com.example.englishhindi.ui.components
+package com.bhashasetu.app.ui.components
 
 import androidx.compose.material3.LocalTextStyle
 import androidx.compose.material3.Text

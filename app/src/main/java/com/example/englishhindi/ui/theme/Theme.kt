@@ -1,4 +1,4 @@
-package com.example.englishhindi.ui.theme
+package com.bhashasetu.app.ui.theme
 
 import android.app.Activity
 import android.os.Build

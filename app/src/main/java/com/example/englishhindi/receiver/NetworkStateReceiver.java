@@ -1,13 +1,13 @@
-package com.example.englishhindi.receiver;
+package com.bhashasetu.app.receiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
-import com.example.englishhindi.repository.OfflineQueueHelper;
-import com.example.englishhindi.util.AppExecutors;
-import com.example.englishhindi.util.NetworkUtils;
+import com.bhashasetu.app.repository.OfflineQueueHelper;
+import com.bhashasetu.app.util.AppExecutors;
+import com.bhashasetu.app.util.NetworkUtils;
 
 /**
  * Broadcast receiver for handling network state changes.
@@ -31,7 +31,7 @@ public class NetworkStateReceiver extends BroadcastReceiver {
             
             // Process offline operations if network is available
             if (isConnected) {
-                AppExecutors.getInstance().diskIO().execute(() -> {
+                AppExecutors.getInstance().backgroundTask().execute(() -> {
                     try {
                         // Get the offline queue helper and process any pending operations
                         OfflineQueueHelper queueHelper = OfflineQueueHelper.getInstance(context);
@@ -45,7 +45,7 @@ public class NetworkStateReceiver extends BroadcastReceiver {
             }
         } else if (intent.getAction().equals("com.example.englishhindi.PROCESS_OFFLINE_QUEUE")) {
             // Handle explicit request to process offline queue (e.g., from user action)
-            AppExecutors.getInstance().diskIO().execute(() -> {
+            AppExecutors.getInstance().backgroundTask().execute(() -> {
                 try {
                     OfflineQueueHelper queueHelper = OfflineQueueHelper.getInstance(context);
                     queueHelper.processAllQueues();

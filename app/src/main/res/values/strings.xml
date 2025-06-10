@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">English Hindi Learning</string>
+    <string name="app_name">BhashaSetu</string>
+    <string name="app_tagline">Bridge Your Languages</string>
     <string name="welcome_message">Welcome to English-Hindi Learning App</string>
     <string name="welcome_message_hindi">अंग्रेजी-हिंदी सीखने के ऐप में आपका स्वागत है</string>
     

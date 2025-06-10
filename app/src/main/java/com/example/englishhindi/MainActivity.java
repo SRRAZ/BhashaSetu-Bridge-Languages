@@ -1,4 +1,4 @@
-package com.example.englishhindi;
+package com.bhashasetu.app;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -19,13 +19,13 @@ import androidx.preference.PreferenceManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.englishhindi.adapter.WordAdapter;
-import com.example.englishhindi.base.BaseActivity;
-import com.example.englishhindi.model.Word;
-import com.example.englishhindi.view.LanguageSwitcherView;
-import com.example.englishhindi.viewmodel.LessonViewModel;
-import com.example.englishhindi.viewmodel.UserProgressViewModel;
-import com.example.englishhindi.viewmodel.WordViewModel;
+import com.bhashasetu.app.adapter.WordAdapter;
+import com.bhashasetu.app.base.BaseActivity;
+import com.bhashasetu.app.model.Word;
+import com.bhashasetu.app.view.LanguageSwitcherView;
+import com.bhashasetu.app.viewmodel.LessonViewModel;
+import com.bhashasetu.app.viewmodel.UserProgressViewModel;
+import com.bhashasetu.app.viewmodel.WordViewModel;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 

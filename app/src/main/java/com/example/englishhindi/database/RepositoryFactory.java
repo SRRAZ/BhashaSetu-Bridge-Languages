@@ -1,8 +1,9 @@
-package com.example.englishhindi.database;
+package com.bhashasetu.app.database;
 
 import android.content.Context;
 
-import com.example.englishhindi.util.NetworkUtils;
+import com.bhashasetu.app.util.NetworkUtils;
+import com.bhashasetu.app.database.OfflineDataManager;
 
 /**
  * Factory class to provide repository instances with appropriate online/offline behavior.

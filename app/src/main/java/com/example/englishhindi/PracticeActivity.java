@@ -1,4 +1,4 @@
-package com.example.englishhindi;
+package com.bhashasetu.app;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -16,10 +16,10 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.preference.PreferenceManager;
 import androidx.viewpager.widget.ViewPager;
 
-import com.example.englishhindi.adapter.PracticePagerAdapter;
-import com.example.englishhindi.model.UserProgress;
-import com.example.englishhindi.viewmodel.UserProgressViewModel;
-import com.example.englishhindi.viewmodel.WordViewModel;
+import com.bhashasetu.app.adapter.PracticePagerAdapter;
+import com.bhashasetu.app.model.UserProgress;
+import com.bhashasetu.app.viewmodel.UserProgressViewModel;
+import com.bhashasetu.app.viewmodel.WordViewModel;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.List;

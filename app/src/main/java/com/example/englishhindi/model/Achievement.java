@@ -1,4 +1,4 @@
-package com.example.englishhindi.model;
+package com.bhashasetu.app.model;
 
 import androidx.annotation.DrawableRes;
 import androidx.room.Entity;

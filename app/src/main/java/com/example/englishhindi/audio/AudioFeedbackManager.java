@@ -1,4 +1,4 @@
-package com.example.englishhindi.audio;
+package com.bhashasetu.app.audio;
 
 import android.content.Context;
 import android.media.AudioAttributes;
@@ -8,7 +8,7 @@ import android.os.Looper;
 import android.util.Log;
 import android.util.SparseIntArray;
 
-import com.example.englishhindi.R;
+import com.bhashasetu.app.R;
 
 /**
  * Manages audio feedback sounds for the app.

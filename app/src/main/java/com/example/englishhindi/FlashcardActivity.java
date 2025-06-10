@@ -1,4 +1,4 @@
-package com.example.englishhindi;
+package com.bhashasetu.app;
 
 import android.animation.AnimatorInflater;
 import android.animation.AnimatorSet;
@@ -23,15 +23,15 @@ import androidx.cardview.widget.CardView;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.preference.PreferenceManager;
-
-import com.example.englishhindi.model.FlashcardDeck;
-import com.example.englishhindi.model.PracticeSession;
-import com.example.englishhindi.model.UserProgress;
-import com.example.englishhindi.model.Word;
-import com.example.englishhindi.viewmodel.FlashcardDeckViewModel;
-import com.example.englishhindi.viewmodel.PracticeSessionViewModel;
-import com.example.englishhindi.viewmodel.UserProgressViewModel;
-import com.example.englishhindi.viewmodel.WordViewModel;
+ 
+import com.bhashasetu.app.model.FlashcardDeck;
+import com.bhashasetu.app.model.PracticeSession;
+import com.bhashasetu.app.model.UserProgress;
+import com.bhashasetu.app.model.Word;
+import com.bhashasetu.app.viewmodel.FlashcardDeckViewModel;
+import com.bhashasetu.app.viewmodel.PracticeSessionViewModel;
+import com.bhashasetu.app.viewmodel.UserProgressViewModel;
+import com.bhashasetu.app.viewmodel.WordViewModel;
 
 import java.util.List;
 import java.util.Locale;

@@ -1,4 +1,4 @@
-package com.example.englishhindi.cache;
+package com.bhashasetu.app.cache;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -10,7 +10,7 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
+/*
  * Enhanced database helper for cache entries with additional queries
  * for optimized cache management.
  */
@@ -49,7 +49,7 @@ public class CacheDatabaseHelper extends SQLiteOpenHelper {
                 COLUMN_VALIDATED + " INTEGER DEFAULT 0" +
                 ");";
         
-        db.execSQL(createTableQuery);
+       db.execSQL(createTableQuery);
         
         // Create indexes for faster queries
         db.execSQL("CREATE INDEX idx_cache_type ON " + TABLE_CACHE + " (" + COLUMN_TYPE + ");");

@@ -1,4 +1,4 @@
-package com.example.englishhindi.ui.theme
+package com.bhashasetu.app.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

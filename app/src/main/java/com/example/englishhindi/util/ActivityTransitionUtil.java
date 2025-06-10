@@ -1,4 +1,4 @@
-package com.example.englishhindi.util;
+package com.bhashasetu.app.util;
 
 import android.app.Activity;
 import android.app.ActivityOptions;
@@ -12,7 +12,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.app.ActivityOptionsCompat;
 import androidx.core.util.Pair;
 
-import com.example.englishhindi.R;
+import com.bhashasetu.app.R;
 
 /**
  * Utility class for handling activity transitions and animations.

@@ -1,10 +1,10 @@
-package com.example.englishhindi.data.model
+package com.bhashasetu.app.data.model
 
 import androidx.room.Entity
 import androidx.room.ForeignKey
 import androidx.room.PrimaryKey
 
-/**
+/*
  * Entity representing a quiz for testing vocabulary knowledge.
  */
 @Entity(
@@ -12,13 +12,13 @@ import androidx.room.PrimaryKey
     foreignKeys = [
         ForeignKey(
             entity = Lesson::class,
-            parentColumns = ["id"],
+            parentColumns = ["id"], // Corrected parentColumns
             childColumns = ["lessonId"],
             onDelete = ForeignKey.SET_NULL
         ),
         ForeignKey(
             entity = Category::class,
-            parentColumns = ["id"],
+            parentColumns = ["id"], // Corrected parentColumns
             childColumns = ["categoryId"],
             onDelete = ForeignKey.SET_NULL
         )

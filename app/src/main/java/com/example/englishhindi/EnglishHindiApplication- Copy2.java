@@ -1,10 +1,10 @@
-package com.example.englishhindi;
+package com.bhashasetu.app;
 
 import android.app.Application;
 
-import com.example.englishhindi.database.WordDatabase;
-import com.example.englishhindi.util.LanguageManager;
-
+import com.bhashasetu.app.database.WordDatabase;
+import com.bhashasetu.app.database.WordDatabase;
+import com.bhashasetu.app.util.LanguageManager;
 public class EnglishHindiApplication extends Application {
     
     private static EnglishHindiApplication instance;

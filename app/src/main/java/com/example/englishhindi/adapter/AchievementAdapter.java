@@ -1,4 +1,4 @@
-package com.example.englishhindi.adapter;
+package com.bhashasetu.app.adapter;
 
 import android.content.Context;
 import android.graphics.ColorMatrix;
@@ -17,8 +17,8 @@ import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.englishhindi.R;
-import com.example.englishhindi.model.Achievement;
+import com.bhashasetu.app.R;
+import com.bhashasetu.app.model.Achievement;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

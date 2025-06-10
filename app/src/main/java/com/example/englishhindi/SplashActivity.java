@@ -1,12 +1,12 @@
-package com.example.englishhindi;
+package com.bhashasetu.app;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.TextView;
 
-import com.example.englishhindi.base.BaseActivity;
-import com.example.englishhindi.model.AppSettings;
+import com.bhashasetu.app.base.BaseActivity;
+import com.bhashasetu.app.model.AppSettings;
 
 public class SplashActivity extends BaseActivity {
     
@@ -31,7 +31,7 @@ public class SplashActivity extends BaseActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                // Start main activity
+                // Start main activityimport android.content.Intent;
                 Intent intent = new Intent(SplashActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();

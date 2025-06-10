@@ -1,4 +1,4 @@
-package com.example.englishhindi.adapter;
+package com.bhashasetu.app.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,10 +11,10 @@ import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.englishhindi.R;
-import com.example.englishhindi.model.AppSettings;
-import com.example.englishhindi.model.Word;
-import com.example.englishhindi.view.BilingualTextView;
+import com.bhashasetu.app.R;
+import com.bhashasetu.app.model.AppSettings;
+import com.bhashasetu.app.model.Word;
+import com.bhashasetu.app.view.BilingualTextView;
 
 public class WordAdapter extends ListAdapter<Word, WordAdapter.WordViewHolder> {
     

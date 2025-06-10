@@ -1,4 +1,4 @@
-package com.example.englishhindi.adapter;
+package com.bhashasetu.app.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,8 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.englishhindi.R;
-import com.example.englishhindi.model.GameCategory;
+import com.bhashasetu.app.R;
+import com.bhashasetu.app.model.GameCategory;
 
 import java.util.List;
 

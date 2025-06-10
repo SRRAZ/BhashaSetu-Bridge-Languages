@@ -1,4 +1,4 @@
-package com.example.englishhindi.audio;
+package com.bhashasetu.app.audio;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -17,7 +17,7 @@ import android.util.LruCache;
 
 import androidx.preference.PreferenceManager;
 
-import com.example.englishhindi.R;
+import com.bhashasetu.app.R;
 
 import java.io.File;
 import java.io.IOException;

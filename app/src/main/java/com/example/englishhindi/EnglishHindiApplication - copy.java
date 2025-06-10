@@ -1,27 +1,27 @@
-package com.example.englishhindi;
+package com.bhashasetu.app;
 
 import android.app.Application;
 import android.content.Context;
 import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
-
 import androidx.annotation.NonNull;
 import androidx.lifecycle.ProcessLifecycleOwner;
-
-import com.example.englishhindi.cache.CacheManager;
-import com.example.englishhindi.database.AppDatabase;
-import com.example.englishhindi.database.RepositoryFactory;
-import com.example.englishhindi.manager.SyncManager;
-import com.example.englishhindi.manager.UserProgressManager;
-import com.example.englishhindi.model.DifficultyManager;
-import com.example.englishhindi.service.PerformanceMonitor;
-import com.example.englishhindi.util.AppExecutors;
-import com.example.englishhindi.util.NetworkUtils;
-import com.example.englishhindi.util.PreferenceManager;
+import com.bhashasetu.app.cache.CacheManager;
+import com.bhashasetu.app.database.AppDatabase;
+import com.bhashasetu.app.database.RepositoryFactory;
+import com.bhashasetu.app.manager.SyncManager;
+import com.bhashasetu.app.manager.UserProgressManager;
+import com.bhashasetu.app.model.DifficultyManager;
+import com.bhashasetu.app.service.PerformanceMonitor;
+import com.bhashasetu.app.util.AppExecutors;
+import com.bhashasetu.app.util.NetworkUtils;
+import com.bhashasetu.app.util.PreferenceManager;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+
+import com.bhashasetu.app.AppLifecycleObserver;
 
 /**
  * Main Application class for the English-Hindi app
@@ -44,7 +44,7 @@ public class EnglishHindiApplication extends Application {
     private AppExecutors appExecutors;
     private PerformanceMonitor performanceMonitor;
     
-    // Application lifecycle tracking
+    // Application lifecycle trackingimport com.example.englishhindi.AppLifecycleObserver;
     private AppLifecycleObserver lifecycleObserver;
 
     @Override

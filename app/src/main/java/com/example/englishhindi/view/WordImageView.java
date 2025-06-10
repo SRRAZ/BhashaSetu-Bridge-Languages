@@ -1,4 +1,4 @@
-package com.example.englishhindi.view;
+package com.bhashasetu.app.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -20,7 +20,7 @@ import com.bumptech.glide.load.DataSource;
 import com.bumptech.glide.load.engine.GlideException;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
-import com.example.englishhindi.R;
+import com.bhashasetu.app.R;
 
 /**
  * Custom view for displaying an image with associated word

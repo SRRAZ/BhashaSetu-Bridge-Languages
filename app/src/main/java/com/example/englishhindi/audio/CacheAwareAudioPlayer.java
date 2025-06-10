@@ -1,13 +1,12 @@
-package com.example.englishhindi.audio;
+package com.bhashasetu.app.audio;
 
 import android.content.Context;
 import android.media.AudioAttributes;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.util.Log;
-
-import com.example.englishhindi.cache.CacheManager;
-import com.example.englishhindi.util.NetworkUtils;
+import com.bhashasetu.app.cache.CacheManager;
+import com.bhashasetu.app.util.NetworkUtils;
 
 import java.io.File;
 import java.io.IOException;

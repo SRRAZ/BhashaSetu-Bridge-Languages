@@ -1,12 +1,12 @@
-package com.example.englishhindi.database;
+package com.bhashasetu.app.database;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Log;
 
-import com.example.englishhindi.model.Category;
-import com.example.englishhindi.model.Word;
-import com.example.englishhindi.util.NetworkUtils;
+import com.bhashasetu.app.model.Category;
+import com.bhashasetu.app.model.Word;
+import com.bhashasetu.app.util.NetworkUtils;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 

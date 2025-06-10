@@ -1,4 +1,4 @@
-package com.example.englishhindi.service;
+package com.bhashasetu.app.service;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -15,12 +15,12 @@ import android.util.Log;
 import androidx.annotation.Nullable;
 import androidx.core.app.NotificationCompat;
 
-import com.example.englishhindi.R;
-import com.example.englishhindi.cache.CacheEntry;
-import com.example.englishhindi.cache.CacheManager;
-import com.example.englishhindi.database.WordRepository;
-import com.example.englishhindi.model.Word;
-import com.example.englishhindi.util.NetworkUtils;
+import com.bhashasetu.app.R;
+import com.bhashasetu.app.cache.CacheEntry;
+import com.bhashasetu.app.cache.CacheManager;
+import com.bhashasetu.app.database.WordRepository;
+import com.bhashasetu.app.model.Word;
+import com.bhashasetu.app.util.NetworkUtils;
 
 import java.util.ArrayList;
 import java.util.List;

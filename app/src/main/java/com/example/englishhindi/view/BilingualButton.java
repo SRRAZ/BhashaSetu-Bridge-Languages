@@ -1,4 +1,4 @@
-package com.example.englishhindi.view;
+package com.bhashasetu.app.view;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -8,7 +8,7 @@ import android.util.AttributeSet;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.preference.PreferenceManager;
 
-import com.example.englishhindi.R;
+import com.bhashasetu.app.R;
 
 /**
  * A custom button that displays text in either English or Hindi based on the user's preference.

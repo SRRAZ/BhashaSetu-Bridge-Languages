@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">अंग्रेजी हिंदी लर्निंग</string>
+    <string name="app_name">भाषासेतु</string>
+    <string name="tagline">भाषाओं को जोड़ें</string>
     <string name="welcome_message">अंग्रेजी-हिंदी सीखने के ऐप में आपका स्वागत है</string>
     <string name="welcome_message_hindi">Welcome to English-Hindi Learning App</string>
     

@@ -1,4 +1,4 @@
-package com.example.englishhindi.ui.components
+package com.bhashasetu.app.ui.components
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
@@ -12,8 +12,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.englishhindi.data.model.Quiz
-import com.example.englishhindi.ui.theme.EnglishHindiTheme
+import com.bhashasetu.app.data.model.Quiz
+import com.bhashasetu.app.ui.theme.EnglishHindiTheme
 import java.util.Date
 
 /**

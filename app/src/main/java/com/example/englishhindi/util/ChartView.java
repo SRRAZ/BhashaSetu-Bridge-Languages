@@ -1,4 +1,4 @@
-package com.example.englishhindi.util;
+package com.bhashasetu.app.util;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -12,7 +12,7 @@ import android.view.View;
 
 import androidx.annotation.Nullable;
 
-import com.example.englishhindi.R;
+import com.bhashasetu.app.R;
 
 import java.util.ArrayList;
 import java.util.List;

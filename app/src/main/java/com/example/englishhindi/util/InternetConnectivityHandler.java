@@ -1,4 +1,4 @@
-package com.example.englishhindi.util;
+package com.bhashasetu.app.util;
 
 import android.app.Activity;
 import android.content.Context;
@@ -14,8 +14,8 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.core.content.ContextCompat;
 import androidx.lifecycle.LifecycleOwner;
 
-import com.example.englishhindi.R;
-import com.example.englishhindi.ui.OfflineStatusView;
+import com.bhashasetu.app.R;
+import com.bhashasetu.app.ui.OfflineStatusView;
 import com.google.android.material.snackbar.Snackbar;
 
 /**

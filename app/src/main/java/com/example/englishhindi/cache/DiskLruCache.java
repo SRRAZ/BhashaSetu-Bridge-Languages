@@ -1,6 +1,8 @@
-package com.example.englishhindi.cache;
+package com.bhashasetu.app.cache;
 
 import android.util.Log;
+
+import com.bhashasetu.app.BuildConfig;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -19,6 +21,9 @@ import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.concurrent.Callable;
+import java.util.concurrent.Future;
+
+import java.util.HashSet;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
@@ -26,6 +31,8 @@ import java.util.concurrent.TimeUnit;
 /**
  * Disk-based LRU cache implementation for efficient caching of objects to disk.
  * Based on the DiskLruCache pattern, optimized for performance and reliability.
+ *
+ * @see <a href="https://github.com/JakeWharton/DiskLruCache">Original DiskLruCache by Jake Wharton</a>
  */
 public final class DiskLruCache implements Serializable {
     private static final String TAG = "DiskLruCache";

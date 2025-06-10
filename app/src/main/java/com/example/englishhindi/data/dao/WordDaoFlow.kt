@@ -1,4 +1,4 @@
-package com.example.englishhindi.data.dao
+package com.bhashasetu.app.data.dao
 
 import androidx.room.Dao
 import androidx.room.Delete
@@ -7,8 +7,8 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Transaction
 import androidx.room.Update
-import com.example.englishhindi.data.model.Word
-import com.example.englishhindi.data.relation.WordWithCategories
+import com.bhashasetu.app.data.model.Word
+import com.bhashasetu.app.data.relation.WordWithCategories
 import kotlinx.coroutines.flow.Flow
 import java.util.Date
 

@@ -1,8 +1,8 @@
-package com.example.englishhindi.database.converters;
+package com.bhashasetu.app.database.converters;
 
 import androidx.room.TypeConverter;
 
-import com.example.englishhindi.model.gamification.AchievementType;
+import com.bhashasetu.app.model.gamification.AchievementType;
 
 /**
  * Type converter for AchievementType enum in Room database

@@ -1,4 +1,4 @@
-package com.example.englishhindi.data.util
+package com.bhashasetu.app.data.util
 
 import androidx.room.TypeConverter
 import java.util.Date

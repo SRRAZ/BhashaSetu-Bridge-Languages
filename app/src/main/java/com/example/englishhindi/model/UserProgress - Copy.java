@@ -1,4 +1,4 @@
-package com.example.englishhindi.model;
+package com.bhashasetu.app.model;
 
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
@@ -6,7 +6,7 @@ import androidx.room.Index;
 import androidx.room.PrimaryKey;
 import androidx.room.TypeConverters;
 
-import com.example.englishhindi.database.Converters;
+import com.bhashasetu.app.database.Converters;
 
 import java.util.ArrayList;
 import java.util.Date;

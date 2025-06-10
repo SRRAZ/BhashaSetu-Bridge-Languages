@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  AndroidManifest.xml for English-Hindi Learning App
+  AndroidManifest.xml for BhashaSetu (Language Bridge)
   
   Main changes from GitHub version:
   - Updated permissions for Android 13+ (granular media access, notifications)
@@ -11,7 +11,8 @@
   - Added new activities, services, and receivers for enhanced functionality
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bhashasetu.app">
 
     <!-- Internet Permission - Required for network operations -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -39,7 +40,7 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
-        android:name=".EnglishHindiApplication"
+        android:name=".BhashaSetuApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"

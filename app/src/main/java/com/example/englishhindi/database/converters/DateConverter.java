@@ -1,4 +1,4 @@
-package com.example.englishhindi.database.converters;
+package com.bhashasetu.app.database.converters;
 
 import androidx.room.TypeConverter;
 

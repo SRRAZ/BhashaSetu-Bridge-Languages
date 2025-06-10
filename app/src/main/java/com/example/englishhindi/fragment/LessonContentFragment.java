@@ -1,8 +1,9 @@
-package com.example.englishhindi.fragment;
+package com.bhashasetu.app.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import com.bhashasetu.app.R;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.widget.TextView;
@@ -12,10 +13,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
-
-import com.example.englishhindi.R;
-import com.example.englishhindi.model.Lesson;
-import com.example.englishhindi.viewmodel.LessonViewModel;
+import com.bhashasetu.app.model.Lesson;
+import com.bhashasetu.app.viewmodel.LessonViewModel;
 
 public class LessonContentFragment extends Fragment {
     

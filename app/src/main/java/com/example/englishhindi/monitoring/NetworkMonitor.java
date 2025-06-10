@@ -1,4 +1,4 @@
-package com.example.englishhindi.monitoring;
+package com.bhashasetu.app.monitoring;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

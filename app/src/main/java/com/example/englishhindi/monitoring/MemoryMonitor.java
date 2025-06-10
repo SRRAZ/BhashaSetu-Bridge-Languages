@@ -1,4 +1,4 @@
-package com.example.englishhindi.monitoring;
+package com.bhashasetu.app.monitoring;
 
 import android.app.ActivityManager;
 import android.content.Context;

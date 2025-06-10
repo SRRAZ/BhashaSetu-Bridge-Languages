@@ -1,7 +1,7 @@
-package com.example.englishhindi;
+package com.bhashasetu.app;
 
 import android.content.Intent;
-import android.os.Bundle;
+import android.os.Bundle;import android.view.MenuItem;import android.view.View;import android.widget.Button;import android.widget.TextView;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -13,10 +13,10 @@ import androidx.cardview.widget.CardView;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.englishhindi.games.PictureMatchActivity;
-import com.example.englishhindi.games.WordScrambleActivity;
-import com.example.englishhindi.model.PracticeSession;
-import com.example.englishhindi.viewmodel.PracticeSessionViewModel;
+import com.bhashasetu.app.games.PictureMatchActivity;import com.bhashasetu.app.games.WordScrambleActivity;import com.bhashasetu.app.model.PracticeSession;
+import com.bhashasetu.app.games.WordScrambleActivity;
+import com.bhashasetu.app.model.PracticeSession;
+import com.bhashasetu.app.viewmodel.PracticeSessionViewModel;
 
 import java.util.List;
 

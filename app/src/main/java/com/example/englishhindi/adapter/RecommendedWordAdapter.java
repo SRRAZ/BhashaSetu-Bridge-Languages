@@ -1,4 +1,4 @@
-package com.example.englishhindi.adapter;
+package com.bhashasetu.app.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,9 +10,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.englishhindi.R;
-import com.example.englishhindi.model.DifficultyLevel;
-import com.example.englishhindi.model.Word;
+import com.bhashasetu.app.R;
+import com.bhashasetu.app.model.DifficultyLevel;
+import com.bhashasetu.app.model.Word;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.example.englishhindi.cache;
+package com.bhashasetu.app.cache;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -8,9 +8,9 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
-import com.example.englishhindi.data.model.Lesson;
-import com.example.englishhindi.data.model.Word;
-import com.example.englishhindi.util.AppExecutors;
+import com.bhashasetu.app.data.model.Lesson;
+import com.bhashasetu.app.data.model.Word;
+import com.bhashasetu.app.util.AppExecutors;
 
 import java.util.ArrayList;
 import java.util.Collections;

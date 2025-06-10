@@ -1,9 +1,9 @@
-package com.example.englishhindi.data.dao
+package com.bhashasetu.app.data.dao
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.example.englishhindi.data.model.UserProgress
-import com.example.englishhindi.data.relation.WordWithProgress
+import com.bhashasetu.app.data.model.UserProgress
+import com.bhashasetu.app.data.relation.WordWithProgress
 import kotlinx.coroutines.flow.Flow
 
 /**

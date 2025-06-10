@@ -1,4 +1,4 @@
-package com.example.englishhindi;
+package com.bhashasetu.app;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,13 +13,13 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.englishhindi.adapter.GameCategoryAdapter;
-import com.example.englishhindi.audio.AudioFeedbackManager;
-import com.example.englishhindi.games.FlashcardGameActivity;
-import com.example.englishhindi.games.PictureMatchActivity;
-import com.example.englishhindi.games.WordAssociationActivity;
-import com.example.englishhindi.games.WordScrambleActivity;
-import com.example.englishhindi.model.GameCategory;
+import com.bhashasetu.app.adapter.GameCategoryAdapter;
+import com.bhashasetu.app.audio.AudioFeedbackManager;
+import com.bhashasetu.app.games.FlashcardGameActivity;
+import com.bhashasetu.app.games.PictureMatchActivity;
+import com.bhashasetu.app.games.WordAssociationActivity;
+import com.bhashasetu.app.games.WordScrambleActivity;
+import com.bhashasetu.app.model.GameCategory;
 
 import java.util.ArrayList;
 import java.util.List;

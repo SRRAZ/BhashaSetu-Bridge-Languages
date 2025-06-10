@@ -1,8 +1,8 @@
-package com.example.englishhindi.database.converters;
+package com.bhashasetu.app.database.converters;
 
 import androidx.room.TypeConverter;
 
-import com.example.englishhindi.model.exercise.ExerciseType;
+import com.bhashasetu.app.model.exercise.ExerciseType;
 
 /**
  * Type converter for ExerciseType enum in Room database

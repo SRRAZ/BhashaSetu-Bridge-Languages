@@ -1,4 +1,4 @@
-package com.example.englishhindi.adapter;
+package com.bhashasetu.app.adapter;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -14,10 +14,10 @@ import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.englishhindi.R;
-import com.example.englishhindi.manager.UserProgressManager;
-import com.example.englishhindi.model.DifficultyManager;
-import com.example.englishhindi.model.UserProgress;
+import com.bhashasetu.app.R;
+import com.bhashasetu.app.manager.UserProgressManager;
+import com.bhashasetu.app.model.DifficultyManager;
+import com.bhashasetu.app.model.UserProgress;
 
 import java.util.List;
 import java.util.Map;

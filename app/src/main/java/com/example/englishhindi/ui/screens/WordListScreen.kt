@@ -1,4 +1,4 @@
-package com.example.englishhindi.ui.screens
+package com.bhashasetu.app.ui.screens
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.fadeIn
@@ -56,13 +56,13 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.englishhindi.R
-import com.example.englishhindi.data.model.Word
-import com.example.englishhindi.ui.components.WordCard
-import com.example.englishhindi.ui.theme.AppLanguage
-import com.example.englishhindi.ui.theme.LocalAppLanguage
-import com.example.englishhindi.ui.theme.localizedString
-import com.example.englishhindi.ui.viewmodel.WordViewModel
+import com.bhashasetu.app.R
+import com.bhashasetu.app.data.model.Word
+import com.bhashasetu.app.ui.components.WordCard
+import com.bhashasetu.app.ui.theme.AppLanguage
+import com.bhashasetu.app.ui.theme.LocalAppLanguage
+import com.bhashasetu.app.ui.theme.localizedString
+import com.bhashasetu.app.ui.viewmodel.WordViewModel
 import com.google.accompanist.flowlayout.FlowRow
 import kotlinx.coroutines.launch
 

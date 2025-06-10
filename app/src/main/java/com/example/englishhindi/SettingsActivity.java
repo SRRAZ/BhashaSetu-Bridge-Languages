@@ -1,4 +1,4 @@
-package com.example.englishhindi;
+package com.bhashasetu.app;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,9 +15,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SwitchCompat;
 import androidx.appcompat.widget.Toolbar;
 import androidx.preference.PreferenceManager;
-
-import com.example.englishhindi.model.AppSettings;
-import com.example.englishhindi.util.LanguageManager;
+import com.bhashasetu.app.model.AppSettings;
+import com.bhashasetu.app.BuildConfig;
+import com.bhashasetu.app.util.LanguageManager;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
@@ -27,7 +27,7 @@ public class SettingsActivity extends AppCompatActivity {
     private LanguageManager languageManager;
     
     private TextView titleTextView;
-    private SwitchCompat hindiInterfaceSwitch;
+    private SwitchCompat hindiInterfaceSwitch; // Changed from Switch to SwitchCompat for consistency
     private SwitchCompat dailyReminderSwitch;
     private SwitchCompat audioEnabledSwitch;
     private TimePicker reminderTimePicker;

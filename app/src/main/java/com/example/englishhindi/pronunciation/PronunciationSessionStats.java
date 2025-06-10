@@ -1,4 +1,4 @@
-package com.example.englishhindi.pronunciation;
+package com.bhashasetu.app.pronunciation;
 
 /**
  * Class containing statistics for a completed pronunciation practice session.

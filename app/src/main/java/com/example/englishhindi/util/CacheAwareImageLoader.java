@@ -1,4 +1,4 @@
-package com.example.englishhindi.util;
+package com.bhashasetu.app.util;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -8,8 +8,8 @@ import android.widget.ImageView;
 
 import androidx.annotation.DrawableRes;
 
-import com.example.englishhindi.R;
-import com.example.englishhindi.cache.CacheManager;
+import com.bhashasetu.app.R;
+import com.bhashasetu.app.cache.CacheManager;
 
 import java.io.File;
 import java.lang.ref.WeakReference;

@@ -1,4 +1,4 @@
-package com.example.englishhindi.ui.theme
+package com.bhashasetu.app.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
@@ -7,7 +7,7 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
-import com.example.englishhindi.R
+import com.bhashasetu.app.R
 
 // Create font families for both English and Hindi text
 val robotoFamily = FontFamily(

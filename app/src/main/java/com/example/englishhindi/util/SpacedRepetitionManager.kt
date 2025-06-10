@@ -1,7 +1,7 @@
-package com.example.englishhindi.util
+package com.bhashasetu.app.util
 
-import com.example.englishhindi.data.model.UserProgress
-import com.example.englishhindi.data.repository.UserProgressRepository
+import com.bhashasetu.app.data.model.UserProgress
+import com.bhashasetu.app.data.repository.UserProgressRepository
 import java.util.*
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject

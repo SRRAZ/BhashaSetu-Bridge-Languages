@@ -1,11 +1,11 @@
-package com.example.englishhindi.data.dao
+package com.bhashasetu.app.data.dao
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.example.englishhindi.data.model.Word
-import com.example.englishhindi.data.relation.WordWithCategories
-import com.example.englishhindi.data.relation.WordWithProgress
+import com.bhashasetu.app.data.model.Word
 import kotlinx.coroutines.flow.Flow
+import com.bhashasetu.app.data.relation.WordWithCategories
+import com.bhashasetu.app.data.relation.WordWithProgress
 
 /**
  * Data Access Object for the Word entity.

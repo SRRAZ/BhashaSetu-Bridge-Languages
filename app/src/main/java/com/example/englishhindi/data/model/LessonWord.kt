@@ -1,7 +1,9 @@
-package com.example.englishhindi.data.model
+package com.bhashasetu.app.data.model
 
 import androidx.room.Entity
 import androidx.room.ForeignKey
+import com.bhashasetu.app.data.model.Lesson
+import com.bhashasetu.app.data.model.Word
 
 /**
  * Junction entity creating many-to-many relationship between Lesson and Word.
@@ -28,12 +30,12 @@ import androidx.room.ForeignKey
 data class LessonWord(
     val lessonId: Long,
     val wordId: Long,
-    
+
     // Word positioning and metadata
     val orderInLesson: Int, // Position of word in the lesson
     val isKeyword: Boolean = false, // Whether it's a focus word for the lesson
     val notes: String? = null, // Additional context for this word in this lesson
-    
+
     // Content flags
     val includeInQuiz: Boolean = true, // Whether to include in lesson quiz
     val highlightInContent: Boolean = false // Whether to highlight in lesson content

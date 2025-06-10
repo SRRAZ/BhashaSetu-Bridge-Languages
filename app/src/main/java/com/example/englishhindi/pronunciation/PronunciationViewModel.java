@@ -1,4 +1,4 @@
-package com.example.englishhindi.pronunciation;
+package com.bhashasetu.app.pronunciation;
 
 import android.app.Application;
 import android.os.AsyncTask;
@@ -6,12 +6,11 @@ import android.os.AsyncTask;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
-
-import com.example.englishhindi.audio.AudioAnalyzer;
-import com.example.englishhindi.database.WordRepository;
-import com.example.englishhindi.model.PronunciationSession;
-import com.example.englishhindi.model.Word;
-import com.example.englishhindi.util.AudioUtils;
+import com.bhashasetu.app.audio.AudioAnalyzer;
+import com.bhashasetu.app.database.WordRepository;
+import com.bhashasetu.app.model.PronunciationSession;
+import com.bhashasetu.app.model.Word;
+import com.bhashasetu.app.util.AudioUtils;
 
 import java.util.ArrayList;
 import java.util.Date;

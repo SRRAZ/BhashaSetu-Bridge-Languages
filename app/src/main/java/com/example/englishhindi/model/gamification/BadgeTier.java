@@ -1,4 +1,4 @@
-package com.example.englishhindi.model.gamification;
+package com.bhashasetu.app.model.gamification;
 
 import android.graphics.Color;
 

@@ -1,20 +1,20 @@
-package com.example.englishhindi.util;
+package com.bhashasetu.app.util;
 
 import android.content.Context;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
-import com.example.englishhindi.database.WordDatabase;
-import com.example.englishhindi.model.Word;
-import com.example.englishhindi.model.exercise.Exercise;
-import com.example.englishhindi.model.gamification.Achievement;
-import com.example.englishhindi.model.gamification.AchievementType;
-import com.example.englishhindi.model.gamification.Badge;
-import com.example.englishhindi.model.gamification.BadgeTier;
-import com.example.englishhindi.model.gamification.PointsSource;
-import com.example.englishhindi.model.gamification.UserLevel;
-import com.example.englishhindi.model.gamification.UserPoints;
+import com.bhashasetu.app.database.WordDatabase;
+import com.bhashasetu.app.model.Word;
+import com.bhashasetu.app.model.exercise.Exercise;
+import com.bhashasetu.app.model.gamification.Achievement;
+import com.bhashasetu.app.model.gamification.AchievementType;
+import com.bhashasetu.app.model.gamification.Badge;
+import com.bhashasetu.app.model.gamification.BadgeTier;
+import com.bhashasetu.app.model.gamification.PointsSource;
+import com.bhashasetu.app.model.gamification.UserLevel;
+import com.bhashasetu.app.model.gamification.UserPoints;
 
 import java.util.ArrayList;
 import java.util.List;

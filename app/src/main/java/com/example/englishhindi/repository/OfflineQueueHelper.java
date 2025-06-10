@@ -1,10 +1,10 @@
-package com.example.englishhindi.repository;
+package com.bhashasetu.app.repository;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Log;
 
-import com.example.englishhindi.util.NetworkUtils;
+import com.bhashasetu.app.util.NetworkUtils;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -52,7 +52,7 @@ public class OfflineQueueHelper {
         this.networkUtils = NetworkUtils.getInstance(context);
         
         // Register for network changes to process queue when connection is restored
-        networkUtils.addNetworkStateListener((isConnected, isWifi, isMetered, connectionQuality) -> {
+ networkUtils.addNetworkStateListener((isConnected, isWifi, isMetered) -> {
             if (isConnected) {
                 processAllQueues();
             }

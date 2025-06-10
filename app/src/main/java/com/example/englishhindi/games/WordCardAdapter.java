@@ -1,4 +1,4 @@
-package com.example.englishhindi.games;
+package com.bhashasetu.app.games;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.englishhindi.R;
+import com.bhashasetu.app.R;
 
 import java.util.List;
 

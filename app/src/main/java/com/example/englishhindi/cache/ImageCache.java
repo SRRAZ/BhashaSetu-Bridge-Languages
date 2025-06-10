@@ -1,4 +1,4 @@
-package com.example.englishhindi.cache;
+package com.bhashasetu.app.cache;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -13,8 +13,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.collection.ArrayMap;
 
-import com.example.englishhindi.util.NetworkOptimizer;
-import com.example.englishhindi.util.ResourceOptimizer;
+import com.bhashasetu.app.util.NetworkOptimizer;
+import com.bhashasetu.app.util.ResourceOptimizer;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -1429,7 +1429,7 @@ public class ImageCache {
         stats.put("Memory Hit Rate", String.format("%.1f%%", memoryHitRate));
         stats.put("Disk Hit Rate", String.format("%.1f%%", diskHitRate));
         stats.put("Network Hit Rate", String.format("%.1f%%", networkHitRate));
-        stats.put("Total Downloaded", com.example.englishhindi.util.MemoryOptimizer
+        stats.put("Total Downloaded", com.bhashasetu.app.util.MemoryOptimizer
                 .formatMemorySize(totalDownloadBytes));
         
         // Calculate disk cache size
@@ -1441,7 +1441,7 @@ public class ImageCache {
             }
         }
         
-        stats.put("Disk Cache Size", com.example.englishhindi.util.MemoryOptimizer
+        stats.put("Disk Cache Size", com.bhashasetu.app.util.MemoryOptimizer
                 .formatMemorySize(diskSize));
         
         return stats;

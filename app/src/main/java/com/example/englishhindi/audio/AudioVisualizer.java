@@ -1,4 +1,4 @@
-package com.example.englishhindi.audio;
+package com.bhashasetu.app.audio;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -14,7 +14,7 @@ import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 
-import com.example.englishhindi.R;
+import com.bhashasetu.app.R;
 
 import java.util.Random;
 

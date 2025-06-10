@@ -1,11 +1,11 @@
-package com.example.englishhindi.database;
+package com.bhashasetu.app.database;
 
 import androidx.room.TypeConverter;
 
-import com.example.englishhindi.model.Word;
-import com.example.englishhindi.pronunciation.PronunciationScore;
+import com.bhashasetu.app.model.Word;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.bhashasetu.app.pronunciation.PronunciationScore;
 
 import java.lang.reflect.Type;
 import java.util.Date;

@@ -1,4 +1,4 @@
-package com.example.englishhindi;
+package com.bhashasetu.app;
 
 import android.app.Application;
 import android.content.Context;
@@ -6,21 +6,21 @@ import android.content.IntentFilter;
 import android.net.ConnectivityManager;
 import android.os.Build;
 
-import com.example.englishhindi.cache.CacheManager;
-import com.example.englishhindi.di.AppDependencies;
-import com.example.englishhindi.manager.SyncManager;
-import com.example.englishhindi.monitoring.PerformanceMonitoringManager;
-import com.example.englishhindi.receiver.NetworkStateReceiver;
-import com.example.englishhindi.util.AppExecutors;
-import com.example.englishhindi.util.ImageLoader;
-import com.example.englishhindi.util.MemoryOptimization;
-import com.example.englishhindi.util.NetworkUtils;
+import com.bhashasetu.app.cache.CacheManager;
+import com.bhashasetu.app.di.AppDependencies;
+import com.bhashasetu.app.manager.SyncManager;
+import com.bhashasetu.app.monitoring.PerformanceMonitoringManager;
+import com.bhashasetu.app.receiver.NetworkStateReceiver;
+import com.bhashasetu.app.util.AppExecutors;
+import com.bhashasetu.app.util.ImageLoader;
+import com.bhashasetu.app.util.MemoryOptimization;
+import com.bhashasetu.app.util.NetworkUtils;
 
 import android.os.StrictMode;
 import android.util.Log;
 
-import com.example.englishhindi.database.RepositoryFactory;
-import com.example.englishhindi.repository.OfflineQueueHelper;
+import com.bhashasetu.app.database.RepositoryFactory;
+import com.bhashasetu.app.repository.OfflineQueueHelper;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -332,6 +332,6 @@ public class EnglishHindiApplication extends Application {
      * @return EnglishHindiApplication instance
      */
     public static EnglishHindiApplication from(Context context) {
-        return (EnglishHindiApplication) context.getApplicationContext();
+        return (com.bhashasetu.app.EnglishHindiApplication) context.getApplicationContext();
     }
 }

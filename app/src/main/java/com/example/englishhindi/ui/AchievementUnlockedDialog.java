@@ -1,4 +1,4 @@
-package com.example.englishhindi.ui;
+package com.bhashasetu.app.ui;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -24,9 +24,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
-import com.example.englishhindi.R;
-import com.example.englishhindi.audio.AudioFeedbackManager;
-import com.example.englishhindi.model.Achievement;
+import com.bhashasetu.app.R;
+import com.bhashasetu.app.audio.AudioFeedbackManager;
+import com.bhashasetu.app.model.Achievement;
 
 import nl.dionsegijn.konfetti.KonfettiView;
 import nl.dionsegijn.konfetti.models.Shape;

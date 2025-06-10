@@ -1,4 +1,4 @@
-package com.example.englishhindi.pronunciation;
+package com.bhashasetu.app.pronunciation;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,15 +13,15 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.englishhindi.R;
-import com.example.englishhindi.audio.AudioAnalyzer;
-import com.example.englishhindi.audio.AudioFeedbackManager;
-import com.example.englishhindi.audio.AudioManager;
-import com.example.englishhindi.audio.TtsRecorder;
-import com.example.englishhindi.manager.AchievementManager;
-import com.example.englishhindi.model.PronunciationSession;
-import com.example.englishhindi.model.Word;
-import com.example.englishhindi.view.EnhancedAudioPronunciationView;
+import com.bhashasetu.app.R;
+import com.bhashasetu.app.audio.AudioAnalyzer;
+import com.bhashasetu.app.audio.AudioFeedbackManager;
+import com.bhashasetu.app.audio.AudioManager;
+import com.bhashasetu.app.audio.TtsRecorder;
+import com.bhashasetu.app.manager.AchievementManager;
+import com.bhashasetu.app.model.PronunciationSession;
+import com.bhashasetu.app.model.Word;
+import com.bhashasetu.app.view.EnhancedAudioPronunciationView;
 
 import java.io.File;
 import java.util.ArrayList;

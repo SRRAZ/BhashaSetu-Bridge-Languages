@@ -1,9 +1,9 @@
-package com.example.englishhindi.repository;
+package com.bhashasetu.app.repository;
 
 import android.content.Context;
 import android.util.Log;
 
-import com.example.englishhindi.util.NetworkUtils;
+import com.bhashasetu.app.util.NetworkUtils;
 
 import java.util.ArrayList;
 import java.util.List;

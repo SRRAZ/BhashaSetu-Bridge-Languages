@@ -1,12 +1,12 @@
-package com.example.englishhindi.ui.viewmodel
+package com.bhashasetu.app.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.englishhindi.data.model.Word
-import com.example.englishhindi.data.model.WordCategoryCrossRef
-import com.example.englishhindi.data.relation.WordWithCategories
-import com.example.englishhindi.data.repository.CategoryRepository
-import com.example.englishhindi.data.repository.WordRepository
+import com.bhashasetu.app.data.model.Word
+import com.bhashasetu.app.data.model.WordCategoryCrossRef
+import com.bhashasetu.app.data.relation.WordWithCategories
+import com.bhashasetu.app.data.repository.CategoryRepository
+import com.bhashasetu.app.data.repository.WordRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch

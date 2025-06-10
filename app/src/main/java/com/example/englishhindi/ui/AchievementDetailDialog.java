@@ -1,4 +1,4 @@
-package com.example.englishhindi.ui;
+package com.bhashasetu.app.ui;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -18,8 +18,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
-import com.example.englishhindi.R;
-import com.example.englishhindi.model.Achievement;
+import com.bhashasetu.app.R;
+import com.bhashasetu.app.model.Achievement;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

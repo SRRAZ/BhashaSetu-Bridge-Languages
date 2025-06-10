@@ -1,4 +1,4 @@
-package com.example.englishhindi.ui;
+package com.bhashasetu.app.ui;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -16,7 +16,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 
-import com.example.englishhindi.R;
+import com.bhashasetu.app.R;
 
 /**
  * Custom button component that shows loading state and handles disabling during operations.

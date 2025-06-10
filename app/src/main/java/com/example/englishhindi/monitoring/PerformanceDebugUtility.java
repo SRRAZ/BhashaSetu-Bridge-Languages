@@ -1,7 +1,7 @@
-package com.example.englishhindi.monitoring;
+package com.bhashasetu.app.monitoring;
 
 import android.content.Context;
-import android.content.Intent;
+
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
-import com.example.englishhindi.BuildConfig;
+import com.bhashasetu.app.BuildConfig;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,6 +28,7 @@ import java.util.Locale;
 import java.util.Map;
 
 /**
+ * NOTE: This class is intended for debug builds only. It provides utilities for analyzing performance issues.
  * Debug utility for performance monitoring that provides tools for analyzing
  * and debugging performance issues during development.
  * This class is only active in debug builds.
@@ -40,7 +41,7 @@ public class PerformanceDebugUtility {
     private static PerformanceDebugUtility instance;
     
     // Context
-    private final Context context;
+    private Context context;
     
     // References to monitoring components
     private final PerformanceMonitoringManager monitoringManager;
@@ -54,7 +55,7 @@ public class PerformanceDebugUtility {
      * @param context Application context
      */
     private PerformanceDebugUtility(Context context) {
-        this.context = context.getApplicationContext();
+        this.context = context;
         this.monitoringManager = PerformanceMonitoringManager.getInstance(context);
     }
     
@@ -155,7 +156,7 @@ public class PerformanceDebugUtility {
     }
     
     /**
-     * Create an intent to display performance data in a debug activity.
+     * Collects performance data and packages it into a Bundle for use in a debug activity.
      * The app should have a dedicated performance debug activity to handle this intent.
      *
      * @return Intent with performance data
@@ -165,10 +166,7 @@ public class PerformanceDebugUtility {
             return null;
         }
         
-        // Create an intent for a debug activity
-        Intent intent = new Intent();
-        intent.setAction("com.example.englishhindi.DEBUG_PERFORMANCE");
-        
+
         // Add performance data as extras
         Bundle extras = new Bundle();
         
@@ -190,8 +188,7 @@ public class PerformanceDebugUtility {
         extras.putInt("failed_requests", ((Number) networkMetrics.getOrDefault("failed_requests", 0)).intValue());
         extras.putFloat("avg_response_time", ((Number) networkMetrics.getOrDefault("avg_response_time_ms", 0)).floatValue());
         
-        intent.putExtras(extras);
-        return intent;
+        return null; // Return null as the Intent is not used internally in this class
     }
     
     /**

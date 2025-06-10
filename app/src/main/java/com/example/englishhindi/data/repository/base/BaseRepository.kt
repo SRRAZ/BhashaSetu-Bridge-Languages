@@ -1,4 +1,4 @@
-package com.example.englishhindi.data.repository.base
+package com.bhashasetu.app.data.repository.base
 
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.catch

@@ -1,4 +1,4 @@
-package com.example.englishhindi.manager;
+package com.bhashasetu.app.manager;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -8,11 +8,11 @@ import android.content.SharedPreferences;
 import android.os.IBinder;
 import android.util.Log;
 
-import com.example.englishhindi.cache.CacheManager;
-import com.example.englishhindi.database.WordRepository;
-import com.example.englishhindi.model.Word;
-import com.example.englishhindi.service.SyncService;
-import com.example.englishhindi.util.NetworkUtils;
+import com.bhashasetu.app.cache.CacheManager;
+import com.bhashasetu.app.database.WordRepository;
+import com.bhashasetu.app.model.Word;
+import com.bhashasetu.app.service.SyncService;
+import com.bhashasetu.app.util.NetworkUtils;
 
 import java.util.Date;
 import java.util.List;

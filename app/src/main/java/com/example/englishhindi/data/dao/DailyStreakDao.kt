@@ -1,8 +1,8 @@
-package com.example.englishhindi.data.dao
+package com.bhashasetu.app.data.dao
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.example.englishhindi.data.model.DailyStreak
+import com.bhashasetu.app.data.model.DailyStreak
 import kotlinx.coroutines.flow.Flow
 import java.util.Date
 

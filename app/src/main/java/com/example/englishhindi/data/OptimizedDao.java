@@ -1,4 +1,4 @@
-package com.example.englishhindi.data;
+package com.bhashasetu.app.data;
 
 import android.database.sqlite.SQLiteException;
 import android.util.Log;

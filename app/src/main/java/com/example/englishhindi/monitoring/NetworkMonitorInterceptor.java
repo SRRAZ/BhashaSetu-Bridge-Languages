@@ -1,6 +1,7 @@
-package com.example.englishhindi.monitoring;
+package com.bhashasetu.app.monitoring;
 
 import android.content.Context;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 
@@ -17,7 +18,7 @@ public class NetworkMonitorInterceptor implements okhttp3.Interceptor {
     
     // Reference to monitoring manager
     private final PerformanceMonitoringManager monitoringManager;
-    
+
     /**
      * Create a new network monitor interceptor.
      *

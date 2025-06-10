@@ -1,12 +1,11 @@
-package com.example.englishhindi.pronunciation;
+package com.bhashasetu.app.pronunciation;
 
 import android.content.Context;
 
 import androidx.lifecycle.LiveData;
 
-import com.example.englishhindi.database.AppDatabase;
-import com.example.englishhindi.model.PronunciationSession;
-
+import com.bhashasetu.app.database.AppDatabase;
+import com.bhashasetu.app.model.PronunciationSession;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

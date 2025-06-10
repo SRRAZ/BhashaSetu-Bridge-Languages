@@ -1,8 +1,8 @@
-package com.example.englishhindi.database.converters;
+package com.bhashasetu.app.database.converters;
 
 import androidx.room.TypeConverter;
 
-import com.example.englishhindi.model.gamification.BadgeTier;
+import com.bhashasetu.app.model.gamification.BadgeTier;
 
 /**
  * Type converter for BadgeTier enum in Room database

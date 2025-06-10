@@ -1,6 +1,6 @@
-package com.example.englishhindi.monitoring;
+package com.bhashasetu.app.monitoring;
 
-import android.content.Context;
+import com.bhashasetu.app.monitoring.MemoryMonitor;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;

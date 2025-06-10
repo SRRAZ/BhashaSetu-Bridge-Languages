@@ -1,9 +1,9 @@
-package com.example.englishhindi.data.relation
+package com.bhashasetu.app.data.relation
 
 import androidx.room.Embedded
 import androidx.room.Relation
-import com.example.englishhindi.data.model.UserProgress
-import com.example.englishhindi.data.model.Word
+import com.bhashasetu.app.data.model.UserProgress
+import com.bhashasetu.app.data.model.Word
 
 /**
  * Represents a Word with its associated UserProgress.

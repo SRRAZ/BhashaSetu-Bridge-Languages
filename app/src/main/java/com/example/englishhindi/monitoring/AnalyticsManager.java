@@ -1,4 +1,4 @@
-package com.example.englishhindi.monitoring;
+package com.bhashasetu.app.monitoring;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -10,6 +10,8 @@ import android.util.Log;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.bhashasetu.app.monitoring.MemoryMonitor;
+import com.bhashasetu.app.monitoring.PerformanceMonitor;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;

@@ -1,4 +1,4 @@
-package com.example.englishhindi;
+package com.bhashasetu.app;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -16,9 +16,9 @@ import androidx.preference.PreferenceManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.englishhindi.adapter.LessonAdapter;
-import com.example.englishhindi.model.Lesson;
-import com.example.englishhindi.viewmodel.LessonViewModel;
+import com.bhashasetu.app.adapter.LessonAdapter;
+import com.bhashasetu.app.model.Lesson;
+import com.bhashasetu.app.viewmodel.LessonViewModel;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
 
@@ -78,7 +78,7 @@ public class LessonsActivity extends AppCompatActivity {
         adapter.setOnItemClickListener(new LessonAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(Lesson lesson) {
-                Intent intent = new Intent(LessonsActivity.this, LessonDetailActivity.class);
+                Intent intent = new Intent(LessonsActivity.this, com.bhashasetu.app.LessonDetailActivity.class);
                 intent.putExtra("lesson_id", lesson.getId());
                 startActivity(intent);
             }
@@ -144,7 +144,7 @@ public class LessonsActivity extends AppCompatActivity {
             @Override
             public void onChanged(Lesson lesson) {
                 if (lesson != null) {
-                    Intent intent = new Intent(LessonsActivity.this, LessonDetailActivity.class);
+                    Intent intent = new Intent(LessonsActivity.this, com.bhashasetu.app.LessonDetailActivity.class);
                     intent.putExtra("lesson_id", lesson.getId());
                     startActivity(intent);
                 } else {

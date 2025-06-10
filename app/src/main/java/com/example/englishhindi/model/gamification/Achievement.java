@@ -1,11 +1,10 @@
-package com.example.englishhindi.model.gamification;
+package ccom.bhashasetu.app.model.gamification;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 import androidx.room.TypeConverters;
-
-import com.example.englishhindi.database.converters.AchievementTypeConverter;
-import com.example.englishhindi.database.converters.DateConverter;
+import com.bhashasetu.app.database.converters.AchievementTypeConverter;
+import com.bhashasetu.app.database.converters.DateConverter;
 
 import java.util.Date;
 

@@ -1,4 +1,4 @@
-package com.example.englishhindi.ui.screens
+package com.bhashasetu.app.ui.screens
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -57,13 +57,13 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.englishhindi.R
-import com.example.englishhindi.data.model.Word
-import com.example.englishhindi.ui.theme.LocalAppLanguage
-import com.example.englishhindi.ui.theme.AppLanguage
-import com.example.englishhindi.ui.theme.highProgressColor
-import com.example.englishhindi.ui.theme.localizedString
-import com.example.englishhindi.ui.viewmodel.WordViewModel
+import com.bhashasetu.app.R
+import com.bhashasetu.app.data.model.Word
+import com.bhashasetu.app.ui.theme.LocalAppLanguage
+import com.bhashasetu.app.ui.theme.AppLanguage
+import com.bhashasetu.app.ui.theme.highProgressColor
+import com.bhashasetu.app.ui.theme.localizedString
+import com.bhashasetu.app.ui.viewmodel.WordViewModel
 import java.util.Locale
 
 /**

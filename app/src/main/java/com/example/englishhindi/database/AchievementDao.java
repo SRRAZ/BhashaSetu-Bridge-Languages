@@ -1,4 +1,4 @@
-package com.example.englishhindi.database;
+package com.bhashasetu.app.database;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
@@ -7,7 +7,7 @@ import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 import androidx.room.Update;
 
-import com.example.englishhindi.model.Achievement;
+import com.bhashasetu.app.model.Achievement;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.example.englishhindi.fragment;
+package com.bhashasetu.app.fragment;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -20,12 +20,11 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.preference.PreferenceManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.example.englishhindi.QuizActivity;
-import com.example.englishhindi.R;
-import com.example.englishhindi.adapter.QuizAdapter;
-import com.example.englishhindi.model.Quiz;
-import com.example.englishhindi.viewmodel.QuizViewModel;
+import com.bhashasetu.app.QuizActivity;
+import com.bhashasetu.app.R;
+import com.bhashasetu.app.adapter.QuizAdapter;
+import com.bhashasetu.app.model.Quiz;
+import com.bhashasetu.app.viewmodel.QuizViewModel;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.example.englishhindi.database;
+package com.bhashasetu.app.database;
 
 import android.content.Context;
 
@@ -7,16 +7,16 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.room.TypeConverters;
 
-import com.example.englishhindi.model.Achievement;
-import com.example.englishhindi.model.GameScore;
-import com.example.englishhindi.model.PronunciationSession;
-import com.example.englishhindi.model.User;
-import com.example.englishhindi.model.UserProgress;
-import com.example.englishhindi.model.Word;
-import com.example.englishhindi.model.WordCategory;
-import com.example.englishhindi.pronunciation.PronunciationScore;
-import com.example.englishhindi.pronunciation.PronunciationScoreDao;
-import com.example.englishhindi.pronunciation.PronunciationSessionDao;
+import com.bhashasetu.app.model.Achievement;
+import com.bhashasetu.app.model.GameScore;
+import com.bhashasetu.app.model.PronunciationSession;
+import com.bhashasetu.app.model.User;
+import com.bhashasetu.app.model.UserProgress;
+import com.bhashasetu.app.model.Word;
+import com.bhashasetu.app.model.WordCategory;
+import com.bhashasetu.app.pronunciation.PronunciationScore;
+import com.bhashasetu.app.pronunciation.PronunciationScoreDao;
+import com.bhashasetu.app.pronunciation.PronunciationSessionDao;
 
 /**
  * Main Room database class for the application.

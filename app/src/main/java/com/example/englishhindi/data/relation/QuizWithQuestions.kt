@@ -1,9 +1,9 @@
-package com.example.englishhindi.data.relation
+package com.bhashasetu.app.data.relation
 
 import androidx.room.Embedded
 import androidx.room.Relation
-import com.example.englishhindi.data.model.Quiz
-import com.example.englishhindi.data.model.QuizQuestion
+import com.bhashasetu.app.data.model.Quiz
+import com.bhashasetu.app.data.model.QuizQuestion
 
 /**
  * Represents a Quiz with all its associated Questions.

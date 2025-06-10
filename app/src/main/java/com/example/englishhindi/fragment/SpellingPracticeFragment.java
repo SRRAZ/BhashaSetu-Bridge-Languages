@@ -1,4 +1,4 @@
-package com.example.englishhindi.fragment;
+package com.bhashasetu.app.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,14 +20,13 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.example.englishhindi.R;
-import com.example.englishhindi.PronunciationPracticeActivity;
-import com.example.englishhindi.SpellingPracticeActivity;
-import com.example.englishhindi.adapter.PracticeSessionAdapter;
-import com.example.englishhindi.model.PracticeSession;
-import com.example.englishhindi.viewmodel.PracticeSessionViewModel;
-import com.example.englishhindi.viewmodel.WordViewModel;
+import com.bhashasetu.app.R;
+import com.bhashasetu.app.PronunciationPracticeActivity;
+import com.bhashasetu.app.SpellingPracticeActivity;
+import com.bhashasetu.app.adapter.PracticeSessionAdapter;
+import com.bhashasetu.app.model.PracticeSession;
+import com.bhashasetu.app.viewmodel.PracticeSessionViewModel;
+import com.bhashasetu.app.viewmodel.WordViewModel;
 
 import java.util.List;
 

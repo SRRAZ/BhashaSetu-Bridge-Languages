@@ -1,4 +1,4 @@
-package com.example.englishhindi;
+package com.bhashasetu.app;
 
 import android.Manifest;
 import android.content.Intent;
@@ -18,12 +18,12 @@ import androidx.core.content.ContextCompat;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.englishhindi.model.UserProgress;
-import com.example.englishhindi.model.Word;
-import com.example.englishhindi.view.AudioPronunciationView;
-import com.example.englishhindi.view.PronunciationRecorderView;
-import com.example.englishhindi.viewmodel.UserProgressViewModel;
-import com.example.englishhindi.viewmodel.WordViewModel;
+import com.bhashasetu.app.model.UserProgress;
+import com.bhashasetu.app.model.Word;
+import com.bhashasetu.app.view.AudioPronunciationView;
+import com.bhashasetu.app.view.PronunciationRecorderView;
+import com.bhashasetu.app.viewmodel.UserProgressViewModel;
+import com.bhashasetu.app.viewmodel.WordViewModel;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.text.DecimalFormat;
@@ -31,7 +31,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class PronunciationComparisonActivity extends BaseActivity implements 
-        BottomNavigationView.OnNavigationItemSelectedListener,
+ BottomNavigationView.OnNavigationItemSelectedListener,
         PronunciationRecorderView.OnPronunciationComparedListener {
 
     private static final int REQUEST_RECORD_AUDIO_PERMISSION = 200;
@@ -84,8 +84,8 @@ public class PronunciationComparisonActivity extends BaseActivity implements
         textViewHindiWord = findViewById(R.id.text_view_hindi_word);
         audioPronunciationView = findViewById(R.id.audio_pronunciation_view);
         // Use the enhanced audio pronunciation view with visualization
-        if (audioPronunciationView instanceof EnhancedAudioPronunciationView) {
-            ((EnhancedAudioPronunciationView) audioPronunciationView).setVisualizerEnabled(true);
+ if (audioPronunciationView instanceof EnhancedAudioPronunciationView) {
+ ((EnhancedAudioPronunciationView) audioPronunciationView).setVisualizerEnabled(true);
         }
         pronunciationRecorderView = findViewById(R.id.pronunciation_recorder_view);
         cardViewTips = findViewById(R.id.card_view_tips);
@@ -193,7 +193,7 @@ public class PronunciationComparisonActivity extends BaseActivity implements
             public void onChanged(UserProgress progress) {
                 if (progress != null) {
                     userProgress = progress;
-                    updateProgressUI();
+ updateProgressUI();
                 } else {
                     // Create new progress entry if none exists
                     userProgress = new UserProgress(1, "word", wordId);
@@ -237,10 +237,10 @@ public class PronunciationComparisonActivity extends BaseActivity implements
      */
     private void setPronunciationTips(String word) {
         StringBuilder tips = new StringBuilder();
-        
+
         // Check for common sound patterns
         word = word.toLowerCase();
-        
+
         boolean foundTip = false;
         
         for (Map.Entry<String, String> entry : pronunciationTips.entrySet()) {
@@ -248,13 +248,14 @@ public class PronunciationComparisonActivity extends BaseActivity implements
                 tips.append("• ").append(entry.getValue()).append("\n\n");
                 foundTip = true;
             }
+ continue;
         }
-        
+
         if (!foundTip) {
             // Default tip if no specific patterns found
             tips.append(getString(R.string.tip_general_pronunciation));
         }
-        
+
         // Add a tip about listening carefully
         tips.append("• ").append(getString(R.string.tip_listen_carefully));
         
@@ -267,15 +268,15 @@ public class PronunciationComparisonActivity extends BaseActivity implements
     private void updateProgressUI() {
         if (userProgress != null) {
             int attemptCount = userProgress.getAttemptCount();
-            int correctCount = userProgress.getCorrectCount();
-            
+ int correctCount = userProgress.getCorrectCount();
+
             // Update attempts text
             String attemptsText = getResources().getQuantityString(
-                    R.plurals.pronunciation_attempts, 
-                    attemptCount, 
+ R.plurals.pronunciation_attempts,
+ attemptCount,
                     attemptCount);
             textViewProgressStats.setText(attemptsText);
-            
+
             // Calculate mastery percentage
             int masteryPercentage = 0;
             if (attemptCount > 0) {
@@ -283,11 +284,11 @@ public class PronunciationComparisonActivity extends BaseActivity implements
             }
             
             // Update progress bar
-            progressBarMastery.setProgress(masteryPercentage);
-            
+ progressBarMastery.setProgress(masteryPercentage);
+
             // Update mastery text
             DecimalFormat df = new DecimalFormat("#.#");
-            String masteryText = getString(R.string.pronunciation_mastery, 
+ String masteryText = getString(R.string.pronunciation_mastery,
                     df.format(masteryPercentage));
             textViewMasteryLevel.setText(masteryText);
         }
@@ -302,7 +303,7 @@ public class PronunciationComparisonActivity extends BaseActivity implements
     @Override
     public void onPronunciationCompared(double similarityScore, String feedback) {
         // Update user progress
-        if (userProgress != null) {
+ if (userProgress != null) {
             boolean isCorrect = similarityScore >= 70; // Consider 70% or higher as correct
             userProgress.incrementAttemptCount();
             if (isCorrect) {
@@ -324,7 +325,7 @@ public class PronunciationComparisonActivity extends BaseActivity implements
                 // Permission granted
                 Toast.makeText(this, R.string.recording_permission_granted, Toast.LENGTH_SHORT).show();
             } else {
-                // Permission denied
+ // Permission denied
                 Toast.makeText(this, R.string.recording_permission_denied, Toast.LENGTH_SHORT).show();
             }
         }
@@ -339,15 +340,15 @@ public class PronunciationComparisonActivity extends BaseActivity implements
             case R.id.navigation_home:
                 startActivity(new Intent(this, MainActivity.class));
                 finish();
-                return true;
-                
+ return true;
+
             case R.id.navigation_practice:
                 startActivity(new Intent(this, PracticeActivity.class));
                 finish();
-                return true;
-                
+ return true;
+
             case R.id.navigation_lessons:
-                startActivity(new Intent(this, LessonsActivity.class));
+ startActivity(new Intent(this, LessonsActivity.class));
                 finish();
                 return true;
         }

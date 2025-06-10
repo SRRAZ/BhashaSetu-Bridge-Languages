@@ -1,6 +1,6 @@
-package com.example.englishhindi;
+package com.bhashasetu.app;
 
-import android.content.Intent;
+import android.content.Intent; // This import doesn't need changing as it's from the Android framework
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -13,11 +13,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class AddWordActivity extends AppCompatActivity {
     
-    public static final String EXTRA_ENGLISH = "com.example.englishhindi.EXTRA_ENGLISH";
-    public static final String EXTRA_HINDI = "com.example.englishhindi.EXTRA_HINDI";
-    public static final String EXTRA_ENGLISH_PRONUNCIATION = "com.example.englishhindi.EXTRA_ENGLISH_PRONUNCIATION";
-    public static final String EXTRA_HINDI_PRONUNCIATION = "com.example.englishhindi.EXTRA_HINDI_PRONUNCIATION";
-    public static final String EXTRA_CATEGORY = "com.example.englishhindi.EXTRA_CATEGORY";
+    public static final String EXTRA_ENGLISH = "com.bhashasetu.app.EXTRA_ENGLISH";
+    public static final String EXTRA_HINDI = "com.bhashasetu.app.EXTRA_HINDI";
+    public static final String EXTRA_ENGLISH_PRONUNCIATION = "com.bhashasetu.app.EXTRA_ENGLISH_PRONUNCIATION";
+    public static final String EXTRA_HINDI_PRONUNCIATION = "com.bhashasetu.app.EXTRA_HINDI_PRONUNCIATION";
+    public static final String EXTRA_CATEGORY = "com.bhashasetu.app.EXTRA_CATEGORY";
     
     private EditText editTextEnglish;
     private EditText editTextHindi;

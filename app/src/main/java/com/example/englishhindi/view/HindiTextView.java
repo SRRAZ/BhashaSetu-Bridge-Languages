@@ -1,4 +1,4 @@
-package com.example.englishhindi.view;
+package com.bhashasetu.app.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -7,7 +7,7 @@ import android.util.TypedValue;
 
 import androidx.appcompat.widget.AppCompatTextView;
 
-import com.example.englishhindi.R;
+import com.bhashasetu.app.R;
 
 /**
  * A custom TextView that applies Hindi text styling and proper handling of Devanagari script.

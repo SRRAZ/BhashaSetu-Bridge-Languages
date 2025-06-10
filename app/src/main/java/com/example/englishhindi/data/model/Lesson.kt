@@ -1,8 +1,9 @@
-package com.example.englishhindi.data.model
+package com.bhashasetu.app.data.model
 
 import androidx.room.Entity
 import androidx.room.ForeignKey
 import androidx.room.PrimaryKey
+import com.bhashasetu.app.data.model.Category
 
 /**
  * Entity representing a learning lesson containing vocabulary words and content.

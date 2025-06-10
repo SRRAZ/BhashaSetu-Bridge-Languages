@@ -1,13 +1,13 @@
-package com.example.englishhindi.repository;
+package com.bhashasetu.app.repository;
 
 import android.app.Application;
 import android.os.AsyncTask;
 
 import androidx.lifecycle.LiveData;
 
-import com.example.englishhindi.database.QuizDao;
-import com.example.englishhindi.database.WordDatabase;
-import com.example.englishhindi.model.Quiz;
+import com.bhashasetu.app.database.QuizDao;
+import com.bhashasetu.app.database.WordDatabase;
+import com.bhashasetu.app.model.Quiz;
 
 import java.util.List;
 

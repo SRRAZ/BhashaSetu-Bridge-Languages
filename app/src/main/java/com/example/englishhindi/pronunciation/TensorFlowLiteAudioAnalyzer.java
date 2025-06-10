@@ -1,13 +1,15 @@
-package com.example.englishhindi.pronunciation;
+package com.bhashasetu.app.pronunciation;
 
 import android.content.Context;
 import android.content.res.AssetFileDescriptor;
+import android.media.AudioFormat;
+import android.media.AudioRecord;
 import android.media.MediaMetadataRetriever;
 import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
 
-import com.example.englishhindi.audio.AudioAnalyzer;
+import com.bhashasetu.app.audio.AudioAnalyzer;
 
 import org.tensorflow.lite.Interpreter;
 import org.tensorflow.lite.support.common.FileUtil;

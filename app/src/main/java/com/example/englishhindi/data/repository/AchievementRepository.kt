@@ -1,8 +1,8 @@
-package com.example.englishhindi.data.repository
+package com.bhashasetu.app.data.repository
 
 import androidx.lifecycle.LiveData
-import com.example.englishhindi.data.dao.AchievementDao
-import com.example.englishhindi.data.model.Achievement
+import com.bhashasetu.app.data.dao.AchievementDao
+import com.bhashasetu.app.data.model.Achievement
 import kotlinx.coroutines.flow.Flow
 
 class AchievementRepository(private val achievementDao: AchievementDao) {

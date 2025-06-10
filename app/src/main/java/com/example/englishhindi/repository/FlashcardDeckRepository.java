@@ -4,12 +4,12 @@ import android.app.Application;
 import android.os.AsyncTask;
 
 import androidx.lifecycle.LiveData;
+import com.bhashasetu.app.database.FlashcardDeckDao;
+import com.bhashasetu.app.database.WordDatabase;
+import com.bhashasetu.app.model.DeckWord;
+import com.bhashasetu.app.model.FlashcardDeck;
+import com.bhashasetu.app.model.Word;
 
-import com.example.englishhindi.database.FlashcardDeckDao;
-import com.example.englishhindi.database.WordDatabase;
-import com.example.englishhindi.model.DeckWord;
-import com.example.englishhindi.model.FlashcardDeck;
-import com.example.englishhindi.model.Word;
 
 import java.util.List;
 

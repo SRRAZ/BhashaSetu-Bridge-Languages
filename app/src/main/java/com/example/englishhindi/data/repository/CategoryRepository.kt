@@ -1,10 +1,10 @@
-package com.example.englishhindi.data.repository
+package com.bhashasetu.app.data.repository
 
 import androidx.lifecycle.LiveData
-import com.example.englishhindi.data.dao.CategoryDao
-import com.example.englishhindi.data.model.Category
-import com.example.englishhindi.data.model.WordCategoryCrossRef
-import com.example.englishhindi.data.relation.CategoryWithWords
+import com.bhashasetu.app.data.dao.CategoryDao
+import com.bhashasetu.app.data.model.Category
+import com.bhashasetu.app.data.model.WordCategoryCrossRef
+import com.bhashasetu.app.data.relation.CategoryWithWords
 import kotlinx.coroutines.flow.Flow
 
 class CategoryRepository(private val categoryDao: CategoryDao) {

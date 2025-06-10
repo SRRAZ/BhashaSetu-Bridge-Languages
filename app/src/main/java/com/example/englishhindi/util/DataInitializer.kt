@@ -1,9 +1,9 @@
-package com.example.englishhindi.util
+package com.bhashasetu.app.util
 
 import android.content.Context
 import android.util.Log
-import com.example.englishhindi.data.model.*
-import com.example.englishhindi.data.repository.*
+import com.bhashasetu.app.data.model.*
+import com.bhashasetu.app.data.repository.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

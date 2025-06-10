@@ -1,4 +1,4 @@
-package com.example.englishhindi.ui;
+package com.bhashasetu.app.ui;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -13,8 +13,8 @@ import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 
-import com.example.englishhindi.R;
-import com.example.englishhindi.util.NetworkUtils;
+import com.bhashasetu.app.R;
+import com.bhashasetu.app.util.NetworkUtils;
 
 /**
  * Custom view that shows the offline status and allows toggling offline mode

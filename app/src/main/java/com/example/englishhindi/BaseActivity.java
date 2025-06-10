@@ -1,4 +1,4 @@
-package com.example.englishhindi;
+package com.bhashasetu.app;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,9 +11,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.englishhindi.di.AppDependencies;
-import com.example.englishhindi.ui.OfflineStatusView;
-import com.example.englishhindi.util.NetworkUtils;
+import com.bhashasetu.app.di.AppDependencies;
+import com.bhashasetu.app.ui.OfflineStatusView;
+import com.bhashasetu.app.util.NetworkUtils;
 import com.google.android.material.snackbar.Snackbar;
 
 /**

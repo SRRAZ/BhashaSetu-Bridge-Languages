@@ -1,4 +1,4 @@
-package com.example.englishhindi.view;
+package com.bhashasetu.app.view;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import androidx.preference.PreferenceManager;
 
-import com.example.englishhindi.R;
+import com.bhashasetu.app.R;
 
 /**
  * A custom view that displays text in both English and Hindi based on the user's preference.

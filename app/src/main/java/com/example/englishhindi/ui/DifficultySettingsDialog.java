@@ -1,21 +1,20 @@
-package com.example.englishhindi.ui;
+package com.bhashasetu.app.ui;
 
 import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
+
 import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
-
-import com.example.englishhindi.R;
-import com.example.englishhindi.manager.UserProgressManager;
-import com.example.englishhindi.model.DifficultyLevel;
-import com.example.englishhindi.model.DifficultyManager;
-import com.example.englishhindi.model.UserProgress;
+import com.bhashasetu.app.R;
+import com.bhashasetu.app.manager.UserProgressManager;
+import com.bhashasetu.app.model.DifficultyLevel;
+import com.bhashasetu.app.model.DifficultyManager;
+import com.bhashasetu.app.model.UserProgress;
 
 import java.util.HashMap;
 import java.util.Map;
