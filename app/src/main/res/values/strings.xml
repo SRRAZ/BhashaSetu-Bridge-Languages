@@ -183,7 +183,7 @@
     <string name="time_up_title">Time\'s Up!</string>
     <string name="time_up_message">You\'ve run out of time, but don\'t worry! Keep practicing to improve.</string>
     <string name="your_score">Your Score:</string>
-<!--    <string name="try_again">Try Again</string>-->
+    <string name="try_again_game">Try Again</string>
     <string name="exit_game_title">Exit Game?</string>
     <string name="exit_game_message">Are you sure you want to exit? Your progress will be lost.</string>
     <string name="hint_not_available">Hint not available for this position.</string>
