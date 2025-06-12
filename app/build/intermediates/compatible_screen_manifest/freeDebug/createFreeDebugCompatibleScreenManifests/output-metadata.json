@@ -4,7 +4,7 @@
     "type": "COMPATIBLE_SCREEN_MANIFEST",
     "kind": "Directory"
   },
-  "applicationId": "com.example.englishhindi.free.debug",
+  "applicationId": "com.bhashasetu.app.free.debug",
   "variantName": "freeDebug",
   "elements": []
 }

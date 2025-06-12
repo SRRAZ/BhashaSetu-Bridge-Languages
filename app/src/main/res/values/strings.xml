@@ -137,9 +137,9 @@
     <string name="no_words_category">No words in this category</string>
     <string name="no_words_criteria">No words match the criteria</string>
     <string name="tts_not_ready">Text-to-speech is not ready yet</string>
-    <string name="playing_pronunciation">Playing pronunciation...</string>
-    <string name="playing_slow">Playing slow pronunciation...</string>
-    <string name="playing_fast">Playing fast pronunciation...</string>
+    <string name="playing_pronunciation">Playing pronunciation…</string>
+    <string name="playing_slow">Playing slow pronunciation…</string>
+    <string name="playing_fast">Playing fast pronunciation…</string>
     <string name="audio_normal">Normal</string>
     <string name="audio_slow">Slow</string>
     <string name="audio_fast">Fast</string>
@@ -214,7 +214,7 @@
     <string name="version">Version</string>
     
     <!-- Misc -->
-    <string name="loading">Loading...</string>
+    <string name="loading">Loading…</string>
     <string name="error_loading">Error loading data</string>
     <string name="try_again">Try Again</string>
     <string name="cancel">Cancel</string>

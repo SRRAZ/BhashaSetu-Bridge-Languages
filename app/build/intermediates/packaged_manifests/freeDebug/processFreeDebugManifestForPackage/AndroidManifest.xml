@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  AndroidManifest.xml for English-Hindi Learning App
+  AndroidManifest.xml for BhashaSetu (Language Bridge)
   
   Main changes from GitHub version:
   - Updated permissions for Android 13+ (granular media access, notifications)
@@ -11,7 +11,7 @@
   - Added new activities, services, and receivers for enhanced functionality
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.englishhindi.free.debug"
+    package="com.bhashasetu.app.free.debug"
     android:versionCode="2"
     android:versionName="1.1.0-free-debug" >
 
@@ -49,13 +49,13 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <permission
-        android:name="com.example.englishhindi.free.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:name="com.bhashasetu.app.free.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.example.englishhindi.free.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="com.bhashasetu.app.free.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
-        android:name="com.example.englishhindi.EnglishHindiApplication"
+        android:name="com.bhashasetu.app.BhashaSetuApplication"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -74,7 +74,7 @@
 
         <!-- Splash Activity (Entry Point) - Using dedicated splash theme -->
         <activity
-            android:name="com.example.englishhindi.SplashActivity"
+            android:name="com.bhashasetu.app.SplashActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.EnglishHindi.Splash" >
@@ -87,121 +87,121 @@
 
         <!-- Main Activity - Central hub for app navigation -->
         <activity
-            android:name="com.example.englishhindi.MainActivity"
+            android:name="com.bhashasetu.app.MainActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
 
         <!-- Lessons Activity - Shows available learning lessons -->
         <activity
-            android:name="com.example.englishhindi.LessonsActivity"
+            android:name="com.bhashasetu.app.LessonsActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
 
         <!-- Lesson Detail Activity - Shows individual lesson content -->
         <activity
-            android:name="com.example.englishhindi.LessonDetailActivity"
+            android:name="com.bhashasetu.app.LessonDetailActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
 
         <!-- Flashcard Activity - For vocabulary practice -->
         <activity
-            android:name="com.example.englishhindi.FlashcardActivity"
+            android:name="com.bhashasetu.app.FlashcardActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
 
         <!-- Games Menu Activity - New feature for gamified learning -->
         <activity
-            android:name="com.example.englishhindi.GamesMenuActivity"
+            android:name="com.bhashasetu.app.GamesMenuActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
 
         <!-- Games Activity - Interactive learning games -->
         <activity
-            android:name="com.example.englishhindi.GamesActivity"
+            android:name="com.bhashasetu.app.GamesActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
 
         <!-- Practice Activity - Hub for different practice methods -->
         <activity
-            android:name="com.example.englishhindi.PracticeActivity"
+            android:name="com.bhashasetu.app.PracticeActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
 
         <!-- Pronunciation Practice Activity - Speech practice -->
         <activity
-            android:name="com.example.englishhindi.PronunciationPracticeActivity"
+            android:name="com.bhashasetu.app.PronunciationPracticeActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
 
         <!-- Pronunciation Comparison Activity - New feature to compare user's pronunciation with correct one -->
         <activity
-            android:name="com.example.englishhindi.PronunciationComparisonActivity"
+            android:name="com.bhashasetu.app.PronunciationComparisonActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
 
         <!-- Spelling Practice Activity - For spelling exercises -->
         <activity
-            android:name="com.example.englishhindi.SpellingPracticeActivity"
+            android:name="com.bhashasetu.app.SpellingPracticeActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
 
         <!-- Quiz Activity - Multiple choice questions -->
         <activity
-            android:name="com.example.englishhindi.QuizActivity"
+            android:name="com.bhashasetu.app.QuizActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
 
         <!-- Word Detail Activity - Shows detailed word information -->
         <activity
-            android:name="com.example.englishhindi.WordDetailActivity"
+            android:name="com.bhashasetu.app.WordDetailActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
 
         <!-- Add Word Activity - For user to add custom vocabulary -->
         <activity
-            android:name="com.example.englishhindi.AddWordActivity"
+            android:name="com.bhashasetu.app.AddWordActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
 
         <!-- Achievements Activity - New gamification feature for tracking progress -->
         <activity
-            android:name="com.example.englishhindi.AchievementsActivity"
+            android:name="com.bhashasetu.app.AchievementsActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
 
         <!-- Settings Activity - App configuration -->
         <activity
-            android:name="com.example.englishhindi.SettingsActivity"
+            android:name="com.bhashasetu.app.SettingsActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
 
         <!-- Language Settings Activity - For language preferences -->
         <activity
-            android:name="com.example.englishhindi.LanguageSettingsActivity"
+            android:name="com.bhashasetu.app.LanguageSettingsActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
 
         <!-- Offline Settings Activity - New feature for configuring offline behavior -->
         <activity
-            android:name="com.example.englishhindi.OfflineSettingsActivity"
+            android:name="com.bhashasetu.app.OfflineSettingsActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
 
         <!-- Services -->
         <!-- SyncService - Handles background synchronization of content -->
         <service
-            android:name="com.example.englishhindi.service.SyncService"
+            android:name="com.bhashasetu.app.service.SyncService"
             android:exported="false" />
 
         <!-- AudioPreloadService - Preloads audio files for better performance -->
         <service
-            android:name="com.example.englishhindi.service.AudioPreloadService"
+            android:name="com.bhashasetu.app.service.AudioPreloadService"
             android:exported="false" />
 
         <!-- Receivers -->
         <!-- NetworkStateReceiver - Monitors connectivity changes for offline mode -->
         <receiver
-            android:name="com.example.englishhindi.receiver.NetworkStateReceiver"
+            android:name="com.bhashasetu.app.receiver.NetworkStateReceiver"
             android:exported="false" >
             <intent-filter>
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
@@ -219,7 +219,7 @@
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.example.englishhindi.free.debug.androidx-startup"
+            android:authorities="com.bhashasetu.app.free.debug.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"
@@ -241,7 +241,7 @@
 
         <provider
             android:name="leakcanary.internal.LeakCanaryFileProvider"
-            android:authorities="com.squareup.leakcanary.fileprovider.com.example.englishhindi.free.debug"
+            android:authorities="com.squareup.leakcanary.fileprovider.com.bhashasetu.app.free.debug"
             android:exported="false"
             android:grantUriPermissions="true" >
             <meta-data
@@ -254,7 +254,7 @@
             android:exported="true"
             android:icon="@mipmap/leak_canary_icon"
             android:label="@string/leak_canary_display_activity_label"
-            android:taskAffinity="com.squareup.leakcanary.com.example.englishhindi.free.debug"
+            android:taskAffinity="com.squareup.leakcanary.com.bhashasetu.app.free.debug"
             android:theme="@style/leak_canary_LeakCanary.Base" >
             <intent-filter android:label="@string/leak_canary_import_hprof_file" >
                 <action android:name="android.intent.action.VIEW" />
@@ -290,7 +290,7 @@
             android:icon="@mipmap/leak_canary_icon"
             android:label="@string/leak_canary_display_activity_label"
             android:targetActivity="leakcanary.internal.activity.LeakActivity"
-            android:taskAffinity="com.squareup.leakcanary.com.example.englishhindi.free.debug"
+            android:taskAffinity="com.squareup.leakcanary.com.bhashasetu.app.free.debug"
             android:theme="@style/leak_canary_LeakCanary.Base" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -306,19 +306,19 @@
             android:excludeFromRecents="true"
             android:icon="@mipmap/leak_canary_icon"
             android:label="@string/leak_canary_storage_permission_activity_label"
-            android:taskAffinity="com.squareup.leakcanary.com.example.englishhindi.free.debug"
+            android:taskAffinity="com.squareup.leakcanary.com.bhashasetu.app.free.debug"
             android:theme="@style/leak_canary_Theme.Transparent" />
 
         <receiver android:name="leakcanary.internal.NotificationReceiver" />
 
         <provider
             android:name="leakcanary.internal.MainProcessAppWatcherInstaller"
-            android:authorities="com.example.englishhindi.free.debug.leakcanary-installer"
+            android:authorities="com.bhashasetu.app.free.debug.leakcanary-installer"
             android:enabled="@bool/leak_canary_watcher_auto_install"
             android:exported="false" />
         <provider
             android:name="leakcanary.internal.PlumberInstaller"
-            android:authorities="com.example.englishhindi.free.debug.plumber-installer"
+            android:authorities="com.bhashasetu.app.free.debug.plumber-installer"
             android:enabled="@bool/leak_canary_plumber_auto_install"
             android:exported="false" />
 

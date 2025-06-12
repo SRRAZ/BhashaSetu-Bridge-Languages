@@ -1,11 +1,11 @@
 /**
  * Automatically generated file. DO NOT MODIFY
  */
-package com.example.englishhindi;
+package com.bhashasetu.app;
 
 public final class BuildConfig {
   public static final boolean DEBUG = Boolean.parseBoolean("true");
-  public static final String APPLICATION_ID = "com.example.englishhindi.free.debug";
+  public static final String APPLICATION_ID = "com.bhashasetu.app.free.debug";
   public static final String BUILD_TYPE = "debug";
   public static final String FLAVOR = "free";
   public static final int VERSION_CODE = 2;
