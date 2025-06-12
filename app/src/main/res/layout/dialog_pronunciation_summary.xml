@@ -20,10 +20,10 @@
             android:layout_marginTop="16dp"
             android:contentDescription="@string/session_complete"
             android:src="@drawable/ic_session_complete"
-            android:tint="@color/success"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/success" />
 
         <TextView
             android:id="@+id/tv_session_complete"

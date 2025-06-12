@@ -139,7 +139,7 @@
             android:background="@drawable/circle_button_bg"
             android:contentDescription="Play slow pronunciation"
             android:src="@android:drawable/ic_media_play"
-            android:tint="@android:color/white" />
+            app:tint="@android:color/white" />
 
         <ImageButton
             android:id="@+id/button_play_normal_pronunciation"
@@ -148,7 +148,7 @@
             android:background="@drawable/circle_button_bg"
             android:contentDescription="Play normal pronunciation"
             android:src="@android:drawable/ic_lock_silent_mode_off"
-            android:tint="@android:color/white" />
+            app:tint="@android:color/white" />
 
     </LinearLayout>
 

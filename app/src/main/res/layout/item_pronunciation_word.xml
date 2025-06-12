@@ -73,11 +73,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="4dp"
-            android:drawableStart="@drawable/ic_score"
             android:drawablePadding="4dp"
             android:textColor="@color/accent"
             android:textSize="12sp"
             android:visibility="gone"
+            app:drawableStartCompat="@drawable/ic_score"
             app:layout_constraintStart_toEndOf="@+id/tv_difficulty"
             app:layout_constraintTop_toBottomOf="@+id/tv_hindi_word"
             tools:text="75%"
@@ -90,10 +90,10 @@
             android:background="?attr/selectableItemBackgroundBorderless"
             android:contentDescription="@string/play_pronunciation"
             android:src="@drawable/ic_play_circle"
-            android:tint="@color/accent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/accent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

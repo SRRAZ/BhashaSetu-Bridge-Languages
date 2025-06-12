@@ -53,7 +53,7 @@
                         android:contentDescription="Normal speed pronunciation"
                         android:padding="12dp"
                         app:srcCompat="@android:drawable/ic_media_play"
-                        android:tint="@android:color/white" />
+                        app:tint="@android:color/white" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -79,7 +79,7 @@
                         android:contentDescription="Slow speed pronunciation"
                         android:padding="12dp"
                         app:srcCompat="@android:drawable/ic_media_play"
-                        android:tint="@android:color/white" />
+                        app:tint="@android:color/white" />
 
                     <TextView
                         android:layout_width="wrap_content"

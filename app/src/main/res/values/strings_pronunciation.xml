@@ -4,13 +4,11 @@
     <string name="pronunciation_practice">Pronunciation Practice</string>
     <string name="select_words_to_practice">Select words you want to practice pronouncing</string>
     <string name="start_practice_session">Start Practice Session</string>
-    <string name="next_word">Next Word</string>
-    <string name="pronunciation_instruction">Pronounce: \"%1$s\"</string>
+    <string name="pronunciation_instruction_specific">Pronounce: \"%1$s\"</string>
     <string name="pronunciation_progress_default">0/0 words</string>
     <string name="pronunciation_progress">%1$d/%2$d words</string>
     <string name="select_words_for_practice">Please select at least one word to practice</string>
-    <string name="play_pronunciation">Play pronunciation</string>
-    
+
     <!-- Difficulty Labels -->
     <string name="difficulty_easy">Easy</string>
     <string name="difficulty_medium">Medium</string>
@@ -33,7 +31,7 @@
     <string name="session_duration">%1$s</string>
     <string name="improvement_positive">%1$d%% improvement from your last session!</string>
     <string name="improvement_negative">%1$d%% below your last session. Keep practicing!</string>
-    <string name="achievement_unlocked">Achievement Unlocked</string>
+    <string name="pronunciation_achievement_unlocked">Achievement Unlocked</string>
     <string name="practice_more">Practice More</string>
     <string name="done">Done</string>
     
