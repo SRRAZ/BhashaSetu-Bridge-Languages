@@ -110,9 +110,9 @@ public class WordDetailActivity extends AppCompatActivity {
     
     private void updateFavoriteButton(Button button) {
         if (isFavorite) {
-            button.setText("Remove from Favorites");
+            button.setText(getString(R.string.remove_from_favorites));
         } else {
-            button.setText("Add to Favorites");
+            button.setText(getString(R.string.add_to_favorites));
         }
     }
 }

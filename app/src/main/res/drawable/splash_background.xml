@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Gradient Background -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="@color/splash_primary"
+                android:endColor="@color/splash_secondary"
+                android:angle="45" />
+        </shape>
+    </item>
+    
+    <!-- Optional: App logo or icon in the center -->
+    <item>
+        <bitmap android:gravity="center"
+                android:src="@drawable/ic_launcher" />
+    </item>
+
+</layer-list>

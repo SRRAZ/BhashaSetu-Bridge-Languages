@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Games English translations -->
+    <string name="word_scramble">Word Scramble</string>
+    <string name="picture_word_match">Picture Word Match</string>
+    <string name="word_association">Word Association</string>
+    <string name="study_flashcards">Study Flashcards</string>
+    <string name="flashcard_quiz">Flashcard Quiz</string>
+    <string name="spelling_challenge">Spelling Challenge</string>
+    <string name="exit_game_title">Exit Game?</string>
+    <string name="exit_game_message">Are you sure you want to exit the game? Your progress will be lost.</string>
+    <string name="exit">Exit</string>
+    <string name="score">Score:</string>
+    <string name="time">Time:</string>
+    <string name="check">Check</string>
+    <string name="flip">Flip</string>
+    <string name="i_know">I Know</string>
+    <string name="i_dont_know">I Don\'t Know</string>
+    <string name="incorrect_game">Incorrect!</string>
+    <string name="hint_not_available">No more hints available</string>
+    <string name="no_words_criteria_game">No words match the selected criteria</string>
+    <string name="no_words_available">No words available</string>
+    <string name="not_enough_words">Not enough words to play this game</string>
+    <string name="not_enough_words_with_images">Not enough words with images</string>
+    <string name="not_enough_related_words">Not enough related words</string>
+    <string name="question_number">Question %1$d / %2$d</string>
+    <string name="play_again">Play Again</string>
+    <string name="your_score">Your Score:</string>
+    <string name="game_over">Game Over</string>
+    <string name="game_complete">Game Complete!</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="excellent_job">Excellent Job!</string>
+    <string name="well_done">Well Done!</string>
+    <string name="good_effort">Good Effort!</string>
+    <string name="matches_made">Matches Made:</string>
+    <string name="whats_the_translation">What\'s the translation?</string>
+    <string name="what_is_hindi_for">What is Hindi for \"%s\"?</string>
+    <string name="what_is_english_for">What is English for \"%s\"?</string>
+    <string name="spell_the_word">Spell the word:</string>
+    <string name="spell_hindi_for">Spell the Hindi word for \"%s\":</string>
+    <string name="spell_english_for">Spell the English word for \"%s\":</string>
+    <string name="enter_spelling">Enter spelling…</string>
+    <string name="correct_answers_format">Correct: %1$d/%2$d (%3$d%%)</string>
+</resources>

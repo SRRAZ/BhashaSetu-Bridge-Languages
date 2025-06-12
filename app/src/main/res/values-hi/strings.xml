@@ -92,10 +92,6 @@
     <string name="score_label">आपका स्कोर</string>
     <string name="try_again_button">फिर से प्रयास करें</string>
     <string name="close_button">बंद करें</string>
-    <string name="excellent_feedback">उत्कृष्ट! आप बहुत अच्छा कर रहे हैं।</string>
-    <string name="very_good_feedback">बहुत अच्छा! थोड़ा और अभ्यास करें।</string>
-    <string name="good_effort_feedback">अच्छा प्रयास! और अभ्यास करें।</string>
-    <string name="keep_practicing_feedback">चिंता न करें, अभ्यास से सुधार होगा।</string>
     <string name="flashcard_complete">फ्लैशकार्ड पूरा हुआ!</string>
     <string name="quiz_complete">क्विज़ पूरा हुआ!</string>
     <string name="spelling_complete">वर्तनी अभ्यास पूरा हुआ!</string>
@@ -108,7 +104,7 @@
     <string name="no_words_category">इस श्रेणी में कोई शब्द नहीं</string>
     <string name="no_words_criteria">कोई शब्द मापदंड से मेल नहीं खाते</string>
     <string name="tts_not_ready">टेक्स्ट-टू-स्पीच तैयार नहीं है</string>
-    <string name="playing_pronunciation">उच्चारण चल रहा है...</string>
+    <string name="playing_pronunciation">उच्चारण चल रहा है…</string>
     
     <!-- Settings -->
     <string name="settings_title">सेटिंग्स</string>
@@ -124,7 +120,7 @@
     <string name="version">संस्करण</string>
     
     <!-- Misc -->
-    <string name="loading">लोड हो रहा है...</string>
+    <string name="loading">लोड हो रहा है…</string>
     <string name="error_loading">डेटा लोड करने में त्रुटि</string>
     <string name="try_again">पुनः प्रयास करें</string>
     <string name="cancel">रद्द करें</string>
@@ -137,5 +133,16 @@
     <string name="practice_tab">अभ्यास</string>
     <string name="profile_tab">प्रोफाइल</string>
     <string name="favorites_tab">पसंदीदा</string>
+
+    <!-- Pronunciation and Spelling Strings - Hindi -->
+    <string name="pronunciation_with_colon">उच्चारण: %s</string>
+    <string name="incorrect_spelling">गलत। सही वर्तनी है: %s</string>
+    <string name="score_percentage">%d%%</string>
+
+    <!-- User Feedback Strings - Hindi -->
+    <string name="excellent_feedback">उत्कृष्ट! आप बहुत अच्छा कर रहे हैं।</string>
+    <string name="very_good_feedback">बहुत अच्छा! थोड़ा और अभ्यास करें।</string>
+    <string name="good_effort_feedback">अच्छा प्रयास! और अभ्यास करें।</string>
+    <string name="keep_practicing_feedback">चिंता न करें, अभ्यास से सुधार होगा।</string>
 
 </resources>

@@ -121,10 +121,6 @@
     <string name="score_label">Your Score</string>
     <string name="try_again_button">Try Again</string>
     <string name="close_button">Close</string>
-    <string name="excellent_feedback">Excellent! You\'re doing very well.</string>
-    <string name="very_good_feedback">Very good! Keep practicing a bit more.</string>
-    <string name="good_effort_feedback">Good effort! Keep practicing.</string>
-    <string name="keep_practicing_feedback">Don\'t worry, practice will improve your skills.</string>
     <string name="flashcard_complete">Flashcard Complete!</string>
     <string name="quiz_complete">Quiz Complete!</string>
     <string name="spelling_complete">Spelling Practice Complete!</string>
@@ -293,6 +289,42 @@
     <string name="practice">Practice</string>
     <string name="games">Games</string>
     <string name="settings">Settings</string>
+
+    <!-- Navigation Tabs -->
+    <string name="home_tab">Home</string>
+    <string name="lessons_tab">Lessons</string>
+    <string name="practice_tab">Practice</string>
+    <string name="profile_tab">Profile</string>
+    <string name="favorites_tab">Favorites</string>
+    
+    <!-- Additional Missing Strings -->
+    <string name="tagline">Bridge Your Languages</string>
+    <string name="category">Category</string>
+
+    <!-- Game-related strings that might be missing from main strings.xml -->
+    <string name="time">Time:</string>
+    <string name="flip">Flip</string>
+    <string name="i_know">I Know</string>
+    <string name="i_dont_know">I Don\'t Know</string>
+    <string name="game_over">Game Over</string>
+    <string name="game_complete">Game Complete!</string>
+    <string name="incorrect_game">Incorrect!</string>
+    <string name="matches_made">Matches Made:</string>
+    <string name="no_words_criteria_game">No words match the selected criteria</string>
+    <string name="not_enough_related_words">Not enough related words</string>
+    <string name="not_enough_words">Not enough words to play this game</string>
+    <string name="spell_english_for">Spell the English word for \"%s\":</string>
+    <string name="spell_hindi_for">Spell the Hindi word for \"%s\":</string>
+    <string name="spell_the_word">Spell the word:</string>
+    <string name="spelling_challenge">Spelling Challenge</string>
+    <string name="study_flashcards">Study Flashcards</string>
+    <string name="what_is_english_for">What is English for \"%s\"?</string>
+    <string name="what_is_hindi_for">What is Hindi for \"%s\"?</string>
+    <string name="whats_the_translation">What\'s the translation?</string>
+    <string name="word_association">Word Association</string>
+    <string name="flashcard_quiz">Flashcard Quiz</string>
+    <string name="enter_spelling">Enter spelling…</string>
+    <string name="correct_answers_format">Correct: %1$d/%2$d (%3$d%%)</string>
     
     <!-- Placeholders -->
     <string name="loading_place">Loading…</string>
@@ -325,4 +357,15 @@
     <string name="success_operation_completed">Operation completed successfully</string>
     <string name="info_sync_in_progress">Synchronization in progress…</string>
     <string name="info_content_updating">Content is updating…</string>
+
+    <!-- Pronunciation and Spelling Strings -->
+    <string name="pronunciation_with_colon">Pronunciation: %s</string>
+    <string name="incorrect_spelling">Incorrect. The correct spelling is: %s</string>
+    <string name="score_percentage">%d%%</string>
+
+    <!-- User Feedback Strings -->
+    <string name="excellent_feedback">Excellent! You\'re doing very well.</string>
+    <string name="very_good_feedback">Very good! Keep practicing a bit more.</string>
+    <string name="good_effort_feedback">Good effort! Keep practicing.</string>
+    <string name="keep_practicing_feedback">Don\'t worry, practice will improve your skills.</string>
 </resources>

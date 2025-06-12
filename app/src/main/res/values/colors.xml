@@ -64,4 +64,9 @@
     <color name="wifi_status">#2196F3</color>
     <color name="cellular_status">#FF9800</color>
     <color name="metered_status">#FFC107</color>
+
+    <!-- Custom splash colors -->
+    <color name="splash_primary">#1565C0</color>
+    <color name="splash_secondary">#0D47A1</color>
+    <color name="splash_accent">#FFC107</color>
 </resources>

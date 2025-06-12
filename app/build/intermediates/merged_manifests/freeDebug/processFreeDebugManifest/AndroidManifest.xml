@@ -68,6 +68,7 @@
         android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/Theme.EnglishHindi"
         android:usesCleartextTraffic="false" >
 
@@ -76,7 +77,7 @@
             android:name="com.bhashasetu.app.SplashActivity"
             android:exported="true"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.EnglishHindi.Splash" >
+            android:theme="@style/SplashTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

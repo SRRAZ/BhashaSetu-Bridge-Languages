@@ -51,7 +51,7 @@ import java.util.concurrent.Executors;
             Quiz.class, 
             FlashcardDeck.class, 
             DeckWord.class, 
-            PracticeSession.class
+            PracticeSession.class,
             Exercise.class,
             MultipleChoiceExercise.class,
             MatchingExercise.class,

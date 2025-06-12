@@ -195,12 +195,12 @@ public class SpellingPracticeActivity extends AppCompatActivity implements TextT
             // Update progress indicator
             int currentIndex = currentSession.getCurrentIndex() + 1;
             int totalItems = currentSession.getTotalItems();
-            textViewProgress.setText("Word " + currentIndex + " of " + totalItems);
+            textViewProgress.setText(getString(R.string.word_of_total, currentIndex, totalItems));
             progressBarSpelling.setProgress((int) ((float) currentIndex / totalItems * 100));
             
             // Display the Hindi word and pronunciation
             textViewHindiWord.setText(currentWord.getHindiWord());
-            textViewHindiPronunciation.setText("Pronunciation: " + currentWord.getHindiPronunciation());
+            textViewHindiPronunciation.setText(getString(R.string.pronunciation_with_colon, currentWord.getHindiPronunciation()));
             
             // Clear previous input and result
             editTextSpelling.setText("");
@@ -256,10 +256,10 @@ public class SpellingPracticeActivity extends AppCompatActivity implements TextT
         cardViewResult.setVisibility(View.VISIBLE);
         
         if (isCorrect) {
-            textViewResult.setText("Correct!");
+            textViewResult.setText(getString(R.string.correct));
             cardViewResult.setCardBackgroundColor(getResources().getColor(R.color.colorCorrect));
         } else {
-            textViewResult.setText("Incorrect. The correct spelling is: " + currentWord.getEnglishWord());
+            textViewResult.setText(getString(R.string.incorrect_spelling, currentWord.getEnglishWord()));
             cardViewResult.setCardBackgroundColor(getResources().getColor(R.color.colorIncorrect));
         }
         
@@ -310,18 +310,18 @@ public class SpellingPracticeActivity extends AppCompatActivity implements TextT
         Button buttonRestart = dialogView.findViewById(R.id.button_restart);
         
         // Set the score
-        textViewScore.setText(score + "%");
+        textViewScore.setText(getString(R.string.score_percentage, score));
         
         // Set feedback based on score
         String feedback;
         if (score >= 90) {
-            feedback = "उत्कृष्ट! आप बहुत अच्छा कर रहे हैं।\nExcellent! You're doing very well.";
+            feedback = getString(R.string.excellent_feedback);
         } else if (score >= 70) {
-            feedback = "बहुत अच्छा! थोड़ा और अभ्यास करें।\nVery good! Keep practicing a bit more.";
+            feedback = getString(R.string.very_good_feedback);
         } else if (score >= 50) {
-            feedback = "अच्छा प्रयास! और अभ्यास करें।\nGood effort! Keep practicing.";
+            feedback = getString(R.string.good_effort_feedback);
         } else {
-            feedback = "चिंता न करें, अभ्यास से सुधार होगा।\nDon't worry, practice will improve your skills.";
+            feedback = getString(R.string.keep_practicing_feedback);
         }
         textViewFeedback.setText(feedback);
         
