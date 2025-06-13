@@ -145,4 +145,16 @@
     <string name="good_effort_feedback">अच्छा प्रयास! और अभ्यास करें।</string>
     <string name="keep_practicing_feedback">चिंता न करें, अभ्यास से सुधार होगा।</string>
 
+    <!-- Missing UI and Game Strings - Hindi -->
+    <string name="english">अंग्रेजी</string>
+    <string name="hindi">हिंदी</string>
+    <string name="select_game_to_play">खेलने के लिए एक गेम चुनें</string>
+    <string name="games_learn_having_fun">मज़े करते हुए सीखें!</string>
+    <string name="games_subtitle">अपना पसंदीदा सीखने का खेल चुनें</string>
+    <string name="words_learned_count">सीखे गए शब्द: %d</string>
+    <string name="no_sessions_yet">अभी तक कोई सत्र नहीं</string>
+    <string name="play">खेलें</string>
+    <string name="word_scramble_description">दिए गए हिंदी शब्द के लिए सही अंग्रेजी शब्द बनाने के लिए अक्षरों को व्यवस्थित करें।</string>
+    <string name="picture_match_description">चित्रों को उनके सही अंग्रेजी और हिंदी शब्दों से मिलाएं।</string>
+
 </resources>

@@ -235,7 +235,7 @@ MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\SUNIL KUMAR SHA
 	android:allowBackup
 		ADDED from D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:44:9-35
 	android:theme
-		ADDED from D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:51:9-50
+		ADDED from D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:51:9-48
 	android:dataExtractionRules
 		ADDED from D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:45:9-65
 	android:usesCleartextTraffic

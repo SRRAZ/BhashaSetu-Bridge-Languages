@@ -48,7 +48,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.EnglishHindi"
+        android:theme="@style/Theme.BhashaSetu"
         android:hardwareAccelerated="true"
         android:usesCleartextTraffic="false"
         android:largeHeap="true"
@@ -59,7 +59,7 @@
             android:name=".SplashActivity"
             android:exported="true"
             android:theme="@style/SplashTheme"
-            android:screenOrientation="portrait">
+            android:screenOrientation="fullSensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -70,103 +70,103 @@
         <activity
             android:name=".MainActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         
         <!-- Lessons Activity - Shows available learning lessons -->
         <activity
             android:name=".LessonsActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         
         <!-- Lesson Detail Activity - Shows individual lesson content -->
         <activity
             android:name=".LessonDetailActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         
         <!-- Flashcard Activity - For vocabulary practice -->
         <activity
             android:name=".FlashcardActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         
         <!-- Games Menu Activity - New feature for gamified learning -->
         <activity
             android:name=".GamesMenuActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         
         <!-- Games Activity - Interactive learning games -->
         <activity
             android:name=".GamesActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         
         <!-- Practice Activity - Hub for different practice methods -->
         <activity
             android:name=".PracticeActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         
         <!-- Pronunciation Practice Activity - Speech practice -->
         <activity
             android:name=".PronunciationPracticeActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         
         <!-- Pronunciation Comparison Activity - New feature to compare user's pronunciation with correct one -->
         <activity
             android:name=".PronunciationComparisonActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         
         <!-- Spelling Practice Activity - For spelling exercises -->
         <activity
             android:name=".SpellingPracticeActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         
         <!-- Quiz Activity - Multiple choice questions -->
         <activity
             android:name=".QuizActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         
         <!-- Word Detail Activity - Shows detailed word information -->
         <activity
             android:name=".WordDetailActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         
         <!-- Add Word Activity - For user to add custom vocabulary -->
         <activity
             android:name=".AddWordActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         
         <!-- Achievements Activity - New gamification feature for tracking progress -->
         <activity
             android:name=".AchievementsActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         
         <!-- Settings Activity - App configuration -->
         <activity
             android:name=".SettingsActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         
         <!-- Language Settings Activity - For language preferences -->
         <activity
             android:name=".LanguageSettingsActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         
         <!-- Offline Settings Activity - New feature for configuring offline behavior -->
         <activity
             android:name=".OfflineSettingsActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
             
         <!-- Services -->
         <!-- SyncService - Handles background synchronization of content -->

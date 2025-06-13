@@ -106,8 +106,8 @@
 70        android:supportsRtl="true"
 70-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:50:9-35
 71        android:testOnly="true"
-72        android:theme="@style/Theme.EnglishHindi"
-72-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:51:9-50
+72        android:theme="@style/Theme.BhashaSetu"
+72-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:51:9-48
 73        android:usesCleartextTraffic="false" >
 73-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:53:9-45
 74

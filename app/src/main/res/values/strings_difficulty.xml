@@ -2,7 +2,6 @@
 <resources>
     <!-- Level Up Dialog -->
     <string name="level_reached">Level %1$d Reached!</string>
-    <string name="congratulations">Congratulations on your progress!</string>
     <string name="level_icon">Level icon</string>
     <string name="unlocked_content">You\'ve unlocked: %1$s</string>
     <string name="confetti">Celebration confetti</string>

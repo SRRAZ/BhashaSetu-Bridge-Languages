@@ -69,7 +69,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.EnglishHindi"
+        android:theme="@style/Theme.BhashaSetu"
         android:usesCleartextTraffic="false" >
 
         <!-- Splash Activity (Entry Point) - Using dedicated splash theme -->

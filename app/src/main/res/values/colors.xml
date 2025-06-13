@@ -69,4 +69,10 @@
     <color name="splash_primary">#1565C0</color>
     <color name="splash_secondary">#0D47A1</color>
     <color name="splash_accent">#FFC107</color>
+
+    <!-- Missing Color Resources -->
+    <color name="accent">#FF4081</color>
+    <color name="background_color">#FFFFFF</color>
+    <color name="colorPrimaryLight">#BBDEFB</color>
+    <color name="white">#FFFFFF</color>
 </resources>
