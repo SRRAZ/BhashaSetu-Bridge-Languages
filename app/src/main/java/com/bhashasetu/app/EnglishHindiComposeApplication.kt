@@ -4,6 +4,7 @@ import android.app.Application
 import android.os.StrictMode
 import androidx.room.Room
 import com.bhashasetu.app.data.db.AppDatabase
+import com.bhashasetu.app.data.model.Word // Import Word to simplify usage
 import com.bhashasetu.app.data.repository.WordRepository
 import com.bhashasetu.app.data.repository.WordRepositoryImpl
 import com.bhashasetu.app.util.LanguageManager
@@ -17,27 +18,27 @@ class EnglishHindiComposeApplication : Application() {
 
     // Repositories
     lateinit var wordRepository: WordRepository
-    
+
     // Database
     lateinit var database: AppDatabase
-    
+
     // Language manager
     lateinit var languageManager: LanguageManager
-    
+
     // Preference manager
     lateinit var preferenceManager: PreferenceManager
-    
+
     // Background executor
     private val executor = Executors.newFixedThreadPool(4)
 
     override fun onCreate() {
         super.onCreate()
-        
+
         // Initialize StrictMode for debug builds
         if (BuildConfig.DEBUG) {
             initializeStrictMode()
         }
-        
+
         // Initialize database
         database = Room.databaseBuilder(
             applicationContext,
@@ -46,20 +47,20 @@ class EnglishHindiComposeApplication : Application() {
         )
             .fallbackToDestructiveMigration()
             .build()
-            
+
         // Initialize repositories
         wordRepository = WordRepositoryImpl(database.wordDao())
-        
+
         // Initialize language manager
         languageManager = LanguageManager(this)
-        
+
         // Initialize preference manager
         preferenceManager = PreferenceManager(this)
-        
+
         // Preload essential data in background
         preloadData()
     }
-    
+
     /**
      * Sets up StrictMode for catching potential issues in development
      */
@@ -72,7 +73,7 @@ class EnglishHindiComposeApplication : Application() {
                 .penaltyLog()
                 .build()
         )
-        
+
         StrictMode.setVmPolicy(
             StrictMode.VmPolicy.Builder()
                 .detectLeakedSqlLiteObjects()
@@ -81,7 +82,7 @@ class EnglishHindiComposeApplication : Application() {
                 .build()
         )
     }
-    
+
     /**
      * Preloads essential data in the background
      */
@@ -89,22 +90,21 @@ class EnglishHindiComposeApplication : Application() {
         executor.execute {
             // Check if initial data needs to be seeded
             val wordCount = database.wordDao().getWordCount()
-            
+
             if (wordCount == 0) {
                 // Seed initial data
                 seedSampleData()
             }
         }
     }
-    
+
     /**
      * Seeds some sample data for first-time users
      */
     private fun seedSampleData() {
         // Basic greetings category
         val greetingsWords = listOf(
-            com.bhashasetu.app.data.model.Word(
- com.bhashasetu.app.data.model.Word(
+            Word( // Using imported Word
                 englishWord = "Hello",
                 hindiWord = "नमस्ते",
                 englishPronunciation = "huh-loh",
@@ -114,8 +114,7 @@ class EnglishHindiComposeApplication : Application() {
                 exampleSentenceEnglish = "Hello, how are you?",
                 exampleSentenceHindi = "नमस्ते, आप कैसे हैं?"
             ),
-            com.bhashasetu.app.data.model.Word(
- com.bhashasetu.app.data.model.Word(
+            Word(
                 englishWord = "Good morning",
                 hindiWord = "सुप्रभात",
                 englishPronunciation = "good mor-ning",
@@ -125,8 +124,7 @@ class EnglishHindiComposeApplication : Application() {
                 exampleSentenceEnglish = "Good morning, did you sleep well?",
                 exampleSentenceHindi = "सुप्रभात, क्या आपने अच्छी नींद ली?"
             ),
-            com.bhashasetu.app.data.model.Word(
- com.bhashasetu.app.data.model.Word(
+            Word(
                 englishWord = "Thank you",
                 hindiWord = "धन्यवाद",
                 englishPronunciation = "thank-yoo",
@@ -136,8 +134,7 @@ class EnglishHindiComposeApplication : Application() {
                 exampleSentenceEnglish = "Thank you for your help.",
                 exampleSentenceHindi = "आपकी मदद के लिए धन्यवाद।"
             ),
-            com.bhashasetu.app.data.model.Word(
- com.bhashasetu.app.data.model.Word(
+            Word(
                 englishWord = "Goodbye",
                 hindiWord = "अलविदा",
                 englishPronunciation = "good-bye",
@@ -147,8 +144,7 @@ class EnglishHindiComposeApplication : Application() {
                 exampleSentenceEnglish = "Goodbye, see you tomorrow.",
                 exampleSentenceHindi = "अलविदा, कल मिलते हैं।"
             ),
-            com.bhashasetu.app.data.model.Word(
- com.bhashasetu.app.data.model.Word(
+            Word(
                 englishWord = "Good night",
                 hindiWord = "शुभ रात्रि",
                 englishPronunciation = "good night",
@@ -159,11 +155,10 @@ class EnglishHindiComposeApplication : Application() {
                 exampleSentenceHindi = "शुभ रात्रि, अच्छी नींद लें।"
             )
         )
-        
+
         // Basic food category
         val foodWords = listOf(
-            com.bhashasetu.app.data.model.Word(
- com.bhashasetu.app.data.model.Word(
+            Word(
                 englishWord = "Water",
                 hindiWord = "पानी",
                 englishPronunciation = "waa-ter",
@@ -173,8 +168,7 @@ class EnglishHindiComposeApplication : Application() {
                 exampleSentenceEnglish = "I would like a glass of water.",
                 exampleSentenceHindi = "मुझे एक गिलास पानी चाहिए।"
             ),
-            com.bhashasetu.app.data.model.Word(
- com.bhashasetu.app.data.model.Word(
+            Word(
                 englishWord = "Bread",
                 hindiWord = "रोटी",
                 englishPronunciation = "bred",
@@ -184,8 +178,7 @@ class EnglishHindiComposeApplication : Application() {
                 exampleSentenceEnglish = "I eat bread for breakfast.",
                 exampleSentenceHindi = "मैं नाश्ते में रोटी खाता हूँ।"
             ),
-            com.bhashasetu.app.data.model.Word(
- com.bhashasetu.app.data.model.Word(
+            Word(
                 englishWord = "Rice",
                 hindiWord = "चावल",
                 englishPronunciation = "rice",
@@ -195,8 +188,7 @@ class EnglishHindiComposeApplication : Application() {
                 exampleSentenceEnglish = "Rice is a staple food in many countries.",
                 exampleSentenceHindi = "चावल कई देशों का मुख्य भोजन है।"
             ),
-            com.bhashasetu.app.data.model.Word(
- com.bhashasetu.app.data.model.Word(
+            Word(
                 englishWord = "Tea",
                 hindiWord = "चाय",
                 englishPronunciation = "tee",
@@ -206,8 +198,7 @@ class EnglishHindiComposeApplication : Application() {
                 exampleSentenceEnglish = "Would you like some tea?",
                 exampleSentenceHindi = "क्या आप कुछ चाय लेंगे?"
             ),
-            com.bhashasetu.app.data.model.Word(
- com.bhashasetu.app.data.model.Word(
+            Word(
                 englishWord = "Fruit",
                 hindiWord = "फल",
                 englishPronunciation = "froot",
@@ -218,11 +209,10 @@ class EnglishHindiComposeApplication : Application() {
                 exampleSentenceHindi = "मैं हर दिन फल खाता हूँ।"
             )
         )
-        
+
         // Basic numbers
         val numberWords = listOf(
-            com.bhashasetu.app.data.model.Word(
- com.bhashasetu.app.data.model.Word(
+            Word(
                 englishWord = "One",
                 hindiWord = "एक",
                 englishPronunciation = "wun",
@@ -232,8 +222,7 @@ class EnglishHindiComposeApplication : Application() {
                 exampleSentenceEnglish = "I have one book.",
                 exampleSentenceHindi = "मेरे पास एक किताब है।"
             ),
-            com.bhashasetu.app.data.model.Word(
- com.bhashasetu.app.data.model.Word(
+            Word(
                 englishWord = "Two",
                 hindiWord = "दो",
                 englishPronunciation = "too",
@@ -243,8 +232,7 @@ class EnglishHindiComposeApplication : Application() {
                 exampleSentenceEnglish = "I have two hands.",
                 exampleSentenceHindi = "मेरे पास दो हाथ हैं।"
             ),
-            com.bhashasetu.app.data.model.Word(
- com.bhashasetu.app.data.model.Word(
+            Word(
                 englishWord = "Three",
                 hindiWord = "तीन",
                 englishPronunciation = "three",
@@ -254,8 +242,7 @@ class EnglishHindiComposeApplication : Application() {
                 exampleSentenceEnglish = "I need three tickets.",
                 exampleSentenceHindi = "मुझे तीन टिकट चाहिए।"
             ),
-            com.bhashasetu.app.data.model.Word(
- com.bhashasetu.app.data.model.Word(
+            Word(
                 englishWord = "Four",
                 hindiWord = "चार",
                 englishPronunciation = "for",
@@ -265,8 +252,7 @@ class EnglishHindiComposeApplication : Application() {
                 exampleSentenceEnglish = "The table has four legs.",
                 exampleSentenceHindi = "मेज के चार पैर हैं।"
             ),
-            com.bhashasetu.app.data.model.Word(
- com.bhashasetu.app.data.model.Word(
+            Word(
                 englishWord = "Five",
                 hindiWord = "पांच",
                 englishPronunciation = "five",
@@ -277,21 +263,21 @@ class EnglishHindiComposeApplication : Application() {
                 exampleSentenceHindi = "मेरे हर हाथ में पांच उंगलियां हैं।"
             )
         )
-        
+
         // Insert all words
         val allWords = greetingsWords + foodWords + numberWords
         val wordDao = database.wordDao()
-        
+
         for (word in allWords) {
             wordDao.insert(word)
         }
     }
-    
+
     override fun onTerminate() {
         super.onTerminate()
         executor.shutdown()
     }
-    
+
     companion object {
         private const val TAG = "EnglishHindiApp"
     }

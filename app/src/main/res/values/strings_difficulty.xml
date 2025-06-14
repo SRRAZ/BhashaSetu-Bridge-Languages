@@ -58,6 +58,7 @@
     <string name="recommendation_builds_vocabulary">This word will help build your vocabulary</string>
     
     <!-- Difficulty Dialog -->
+    <string name="select_difficulty">Select Difficulty</string>
     <string name="customize_difficulty_description">Adjust difficulty levels for different learning activities. Higher levels unlock more advanced content but increase challenge.</string>
     <string name="difficulty_level_format">%1$s (Level %2$d)</string>
     <string name="difficulty_note">Note: You can set individual activities below your current level for targeted practice, or above your level for an extra challenge.</string>

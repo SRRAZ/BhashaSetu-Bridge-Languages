@@ -7,6 +7,7 @@
     <string name="pronunciation_instruction_specific">Pronounce: \"%1$s\"</string>
     <string name="pronunciation_progress_default">0/0 words</string>
     <string name="pronunciation_progress">%1$d/%2$d words</string>
+    <string name="your_pronunciation_progress">Your Pronunciation Progress</string>
     <string name="select_words_for_practice">Please select at least one word to practice</string>
 
     <!-- Difficulty Labels -->

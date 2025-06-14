@@ -17,6 +17,8 @@
     <string name="hindi_word">Hindi Word</string>
     <string name="english_pronunciation">English Pronunciation</string>
     <string name="hindi_pronunciation">Hindi Pronunciation</string>
+    <string name="listen_to_pronunciation">Listen to Pronunciation</string>
+    <string name="pronunciation_tips">Pronunciation Tips</string>
     <string name="word_category">Category</string>
     <string name="add_to_favorites">Add to Favorites</string>
     <string name="remove_from_favorites">Remove from Favorites</string>
@@ -60,6 +62,7 @@
     <string name="pronunciation">Pronunciation</string>
     <string name="correct">Correct!</string>
     <string name="incorrect">Incorrect. Try again!</string>
+    <string name="repeat_the_word">Repeat the Word:</string>
     <string name="show_answer">Show Answer</string>
     <string name="next">Next</string>
     <string name="practice_complete">Practice Complete!</string>
@@ -69,6 +72,7 @@
     
     <!-- Achievement System Strings -->
     <string name="achievements_title">Achievements</string>
+    <string name="achievements">Achievements</string>
     <string name="achievement_unlocked">Achievement Unlocked!</string>
     <string name="achievement_icon_description">Achievement icon</string>
     <string name="achievement_unlocked_on">Unlocked on %1$s</string>
@@ -107,6 +111,7 @@
     <string name="play_slow">Slow Pronunciation</string>
     <string name="play_normal">Normal Pronunciation</string>
     <string name="pronunciation_instruction">Listen and practice the pronunciation:</string>
+    <string name="pronunciation_comparison">Pronunciation Comparison</string>
     <string name="current_word">Current Word:</string>
     <string name="difficulty_question">How was pronouncing this word for you?</string>
     <string name="easy">Easy</string>
@@ -266,6 +271,7 @@
     <!-- Additional Missing Strings -->
     <string name="tagline">Bridge Your Languages</string>
     <string name="category">Category</string>
+    <string name="select_category">Select Category</string>
     
     <!-- Placeholders -->
     <string name="loading_place">Loading…</string>
@@ -303,6 +309,14 @@
     <string name="pronunciation_with_colon">Pronunciation: %s</string>
     <string name="incorrect_spelling">Incorrect. The correct spelling is: %s</string>
     <string name="score_percentage">%d%%</string>
+    <string name="record_your_pronunciation">Record Your Pronunciation</string>
+    <string name="tap_mic_to_start_recording">Tap the microphone to start recording</string>
+    <string name="listen_to_reference">Listen to Reference</string>
+    <string name="record_pronunciation">Record Pronunciation</string>
+    <string name="play_your_recording">Play Your Recording</string>
+    <string name="practice_pronunciation">Practice Pronunciation</string>
+    <string name="compare_with_reference">Compare with Reference</string>
+
 
     <!-- User Feedback Strings -->
     <string name="excellent_feedback">Excellent! You\'re doing very well.</string>
@@ -313,13 +327,14 @@
     <!-- Missing UI and Game Strings -->
     <string name="english">English</string>
     <string name="hindi">Hindi</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
     <string name="select_game_to_play">Select a game to play</string>
     <string name="games_learn_having_fun">Learn while having fun!</string>
     <string name="games_subtitle">Choose your favorite learning game</string>
     <string name="words_learned_count">Words learned: %d</string>
     <string name="no_sessions_yet">No sessions yet</string>
     <string name="play">Play</string>
-    <string name="word_scramble_description">Unscramble letters to form the correct English word for the given Hindi word.</string>
-    <string name="picture_match_description">Match pictures with their correct English and Hindi words.</string>
+    <string name="game_icon">Game Icon</string>
 
 </resources>

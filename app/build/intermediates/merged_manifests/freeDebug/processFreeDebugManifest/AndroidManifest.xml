@@ -76,7 +76,7 @@
         <activity
             android:name="com.bhashasetu.app.SplashActivity"
             android:exported="true"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/SplashTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -89,103 +89,103 @@
         <activity
             android:name="com.bhashasetu.app.MainActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
 
         <!-- Lessons Activity - Shows available learning lessons -->
         <activity
             android:name="com.bhashasetu.app.LessonsActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
 
         <!-- Lesson Detail Activity - Shows individual lesson content -->
         <activity
             android:name="com.bhashasetu.app.LessonDetailActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
 
         <!-- Flashcard Activity - For vocabulary practice -->
         <activity
             android:name="com.bhashasetu.app.FlashcardActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
 
         <!-- Games Menu Activity - New feature for gamified learning -->
         <activity
             android:name="com.bhashasetu.app.GamesMenuActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
 
         <!-- Games Activity - Interactive learning games -->
         <activity
             android:name="com.bhashasetu.app.GamesActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
 
         <!-- Practice Activity - Hub for different practice methods -->
         <activity
             android:name="com.bhashasetu.app.PracticeActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
 
         <!-- Pronunciation Practice Activity - Speech practice -->
         <activity
             android:name="com.bhashasetu.app.PronunciationPracticeActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
 
         <!-- Pronunciation Comparison Activity - New feature to compare user's pronunciation with correct one -->
         <activity
             android:name="com.bhashasetu.app.PronunciationComparisonActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
 
         <!-- Spelling Practice Activity - For spelling exercises -->
         <activity
             android:name="com.bhashasetu.app.SpellingPracticeActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
 
         <!-- Quiz Activity - Multiple choice questions -->
         <activity
             android:name="com.bhashasetu.app.QuizActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
 
         <!-- Word Detail Activity - Shows detailed word information -->
         <activity
             android:name="com.bhashasetu.app.WordDetailActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
 
         <!-- Add Word Activity - For user to add custom vocabulary -->
         <activity
             android:name="com.bhashasetu.app.AddWordActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
 
         <!-- Achievements Activity - New gamification feature for tracking progress -->
         <activity
             android:name="com.bhashasetu.app.AchievementsActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
 
         <!-- Settings Activity - App configuration -->
         <activity
             android:name="com.bhashasetu.app.SettingsActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
 
         <!-- Language Settings Activity - For language preferences -->
         <activity
             android:name="com.bhashasetu.app.LanguageSettingsActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
 
         <!-- Offline Settings Activity - New feature for configuring offline behavior -->
         <activity
             android:name="com.bhashasetu.app.OfflineSettingsActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
 
         <!-- Services -->
         <!-- SyncService - Handles background synchronization of content -->
@@ -208,13 +208,11 @@
             </intent-filter>
         </receiver>
 
-        <service
-            android:name="androidx.room.MultiInstanceInvalidationService"
-            android:directBootAware="true"
-            android:exported="false" />
-
         <activity
             android:name="androidx.compose.ui.tooling.PreviewActivity"
+            android:exported="true" />
+        <activity
+            android:name="androidx.activity.ComponentActivity"
             android:exported="true" />
 
         <provider
@@ -222,10 +220,10 @@
             android:authorities="com.bhashasetu.app.free.debug.androidx-startup"
             android:exported="false" >
             <meta-data
-                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
                 android:value="androidx.startup" />
             <meta-data
-                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
                 android:value="androidx.startup" />
             <meta-data
                 android:name="androidx.profileinstaller.ProfileInstallerInitializer"
@@ -238,6 +236,11 @@
         <uses-library
             android:name="androidx.window.sidecar"
             android:required="false" />
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
 
         <provider
             android:name="leakcanary.internal.LeakCanaryFileProvider"

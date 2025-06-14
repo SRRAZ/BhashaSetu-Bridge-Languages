@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#2196F3</color>
+    <color name="primaryColor">#6200EE</color> <!-- Example: Material Design Purple, same as 'primary' example before -->
     <color name="colorPrimaryDark">#1976D2</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorBackground">#FFFFFF</color>
+    <color name="background_light">#F5F5F5</color> <!-- Replace #F5F5F5 with your desired color -->
     <color name="colorTextPrimary">#212121</color>
     <color name="colorTextSecondary">#757575</color>
     <color name="colorDivider">#BDBDBD</color>
@@ -43,7 +45,10 @@
     
     <!-- Text colors -->
     <color name="text_primary">#212121</color>
+    <color name="primaryTextColor">#212121</color> <!-- Replace #000000 with your desired color -->
     <color name="text_secondary">#757575</color>
+    <color name="text_button_secondary">#757575</color> <!-- Example: Medium Gray -->
+    <color name="secondaryTextColor">#757575</color> <!-- Replace #757575 with your desired color -->
     <color name="text_tertiary">#9E9E9E</color>
     <color name="text_disabled">#BDBDBD</color>
     <color name="text_on_primary">#FFFFFF</color>
@@ -51,11 +56,14 @@
 
     <!-- Error handling colors -->
     <color name="error_background">#F44336</color>
+    <color name="colorError">#F44336</color> <!-- Standard Material Design error color (Red) -->
     <color name="error_text">#FFFFFF</color>
     <color name="error_action_text">#FFEB3B</color>
+    <color name="warning">#FFC107</color> <!-- Example: Amber/Yellow -->
     <color name="warning_background">#FFC107</color>
     <color name="warning_text">#000000</color>
     <color name="success_background">#4CAF50</color>
+    <color name="success">#4CAF50</color> <!-- Example: Green -->
     <color name="success_text">#FFFFFF</color>
 
     <!-- Network status colors -->
@@ -73,6 +81,23 @@
     <!-- Missing Color Resources -->
     <color name="accent">#FF4081</color>
     <color name="background_color">#FFFFFF</color>
+    <color name="backgroundColor">#FFFFFF</color> <!-- Replace #FFFFFF with your desired color -->
     <color name="colorPrimaryLight">#BBDEFB</color>
     <color name="white">#FFFFFF</color>
+    <color name="background_primary">#FFFFFF</color> <!-- Example: White, or your app's main background -->
+    <color name="card_background">#FFFFFF</color> <!-- Replace #FFFFFF with your desired color -->
+    <color name="card_background_secondary">#F5F5F5</color> <!-- Example: Lighter Gray than primary card -->
+    <color name="primary">#6200EE</color> <!-- Example: Material Design primary color -->
+    <color name="divider_color">#BDBDBD</color> <!-- A common light gray for dividers -->
+    <color name="divider">#BDBDBD</color> <!-- Common light gray -->
+
+    <!-- Skill Colors -->
+    <color name="skill_vocabulary">#4CAF50</color> <!-- Example: Green -->
+    <color name="skill_pronunciation">#2196F3</color> <!-- Example: Blue -->
+    <color name="skill_grammar">#FFC107</color> <!-- Example: Amber -->
+    <color name="skill_listening">#9C27B0</color> <!-- Example: Purple -->
+    <color name="skill_reading">#FF5722</color> <!-- Example: Deep Orange -->
+    <color name="skill_writing">#009688</color> <!-- Example: Teal -->
+
+
 </resources>

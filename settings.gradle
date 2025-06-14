@@ -4,14 +4,33 @@ pluginManagement {
         mavenCentral()
         gradlePluginPortal()
     }
+    // It's good practice to define plugin versions here.
+    // This allows you to remove version numbers from the project-level build.gradle's plugins block
+    // and from module-level build.gradle's plugins blocks if they were defined there.
+    plugins {
+        id 'com.android.application' version '8.10.1' // Matches project-level build.gradle
+        id 'com.android.library' version '8.10.1'
+        // Matches project-level build.gradle (if you use library modules)
+        id 'org.jetbrains.kotlin.android' version '1.9.23' // Matches project-level build.gradle
+        // If you use other plugins project-wide, like Hilt, you can define their versions here too
+        // e.g., id 'com.google.dagger.hilt.android' version '2.48' apply false
+    }
 }
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS) // This is the default and recommended setting
+    // RepositoriesMode.FAIL_ON_PROJECT_REPOS is the default and recommended setting.
+    // It means Gradle will fail the build if a subproject declares its own repositories block
+    // that isn't defined here, encouraging centralized repository management.
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
-        // Add other repositories here if needed, like maven { url 'https://jitpack.io' }
+        // Add other repositories here if needed for your dependencies
+        // e.g., maven { url 'https://jitpack.io' }
     }
 }
-rootProject.name = "Your Project Name" // Replace with your actual project name
+rootProject.name = "BhashaSetu" // Changed from "Your Project Name" to match your app
 include ':app' // Or your actual module names
+
+// If you have other modules, include them like this:
+// include ':features:feature_x'
+// include ':core:common'

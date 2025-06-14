@@ -2,6 +2,7 @@
 <resources>
     <!-- Word Scramble Game -->
     <string name="word_scramble">Word Scramble</string>
+    <string name="word_scramble_description">Unscramble letters to form the correct English word for the given Hindi word.</string>
     <string name="score">Score:</string>
     <string name="unscramble_instructions">Tap letters to form the English word for the Hindi word shown above.</string>
     <string name="your_answer">Your Answer:</string>
@@ -24,6 +25,9 @@
 
     <!-- Picture Match Game -->
     <string name="picture_word_match">Picture Word Match</string>
+    <string name="picture_match_description">Match pictures with their correct English and Hindi words.</string>
+    <string name="matching_game">Matching Game</string>
+    <string name="matching_game_description">Match the pairs to win!</string>
     <string name="select_matching_word">Select the word that matches this picture</string>
     <string name="excellent_job">Excellent Job!</string>
     <string name="well_done">Well Done!</string>
@@ -59,5 +63,6 @@
     <string name="spell_english_for">Spell the English word for \"%s\":</string>
     <string name="enter_spelling">Enter spelling…</string>
     <string name="correct_answers_format">Correct: %1$d/%2$d (%3$d%%)</string>
+    <string name="more_games_coming_soon">More games coming soon!</string>
 
 </resources>

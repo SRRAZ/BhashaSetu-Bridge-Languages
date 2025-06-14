@@ -69,15 +69,15 @@
 49-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:40:22-68
 50
 51    <permission
-51-->[androidx.core:core:1.16.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\a0fd158e9a42ba0f20ac1eea2182a9ef\transformed\core-1.16.0\AndroidManifest.xml:22:5-24:47
+51-->[androidx.core:core:1.13.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\b9807bcac0af1b04545ea7c7296c35ca\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
 52        android:name="com.bhashasetu.app.free.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-52-->[androidx.core:core:1.16.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\a0fd158e9a42ba0f20ac1eea2182a9ef\transformed\core-1.16.0\AndroidManifest.xml:23:9-81
+52-->[androidx.core:core:1.13.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\b9807bcac0af1b04545ea7c7296c35ca\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
 53        android:protectionLevel="signature" />
-53-->[androidx.core:core:1.16.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\a0fd158e9a42ba0f20ac1eea2182a9ef\transformed\core-1.16.0\AndroidManifest.xml:24:9-44
+53-->[androidx.core:core:1.13.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\b9807bcac0af1b04545ea7c7296c35ca\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
 54
 55    <uses-permission android:name="com.bhashasetu.app.free.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-55-->[androidx.core:core:1.16.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\a0fd158e9a42ba0f20ac1eea2182a9ef\transformed\core-1.16.0\AndroidManifest.xml:26:5-97
-55-->[androidx.core:core:1.16.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\a0fd158e9a42ba0f20ac1eea2182a9ef\transformed\core-1.16.0\AndroidManifest.xml:26:22-94
+55-->[androidx.core:core:1.13.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\b9807bcac0af1b04545ea7c7296c35ca\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+55-->[androidx.core:core:1.13.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\b9807bcac0af1b04545ea7c7296c35ca\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
 56
 57    <application
 57-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:42:5-191:19
@@ -86,7 +86,7 @@
 59        android:allowBackup="true"
 59-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:44:9-35
 60        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-60-->[androidx.core:core:1.16.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\a0fd158e9a42ba0f20ac1eea2182a9ef\transformed\core-1.16.0\AndroidManifest.xml:28:18-86
+60-->[androidx.core:core:1.13.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\b9807bcac0af1b04545ea7c7296c35ca\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
 61        android:dataExtractionRules="@xml/data_extraction_rules"
 61-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:45:9-65
 62        android:debuggable="true"
@@ -118,8 +118,8 @@
 77-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:59:13-43
 78            android:exported="true"
 78-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:60:13-36
-79            android:screenOrientation="portrait"
-79-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:62:13-49
+79            android:screenOrientation="fullSensor"
+79-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:62:13-51
 80            android:theme="@style/SplashTheme" >
 80-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:61:13-47
 81            <intent-filter>
@@ -136,173 +136,173 @@
 87
 88        <!-- Main Activity - Central hub for app navigation -->
 89        <activity
-89-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:70:9-73:52
+89-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:70:9-73:54
 90            android:name="com.bhashasetu.app.MainActivity"
 90-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:71:13-41
 91            android:exported="false"
 91-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:72:13-37
-92            android:screenOrientation="portrait" />
-92-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:73:13-49
+92            android:screenOrientation="fullSensor" />
+92-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:73:13-51
 93
 94        <!-- Lessons Activity - Shows available learning lessons -->
 95        <activity
-95-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:76:9-79:52
+95-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:76:9-79:54
 96            android:name="com.bhashasetu.app.LessonsActivity"
 96-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:77:13-44
 97            android:exported="false"
 97-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:78:13-37
-98            android:screenOrientation="portrait" />
-98-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:79:13-49
+98            android:screenOrientation="fullSensor" />
+98-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:79:13-51
 99
 100        <!-- Lesson Detail Activity - Shows individual lesson content -->
 101        <activity
-101-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:82:9-85:52
+101-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:82:9-85:54
 102            android:name="com.bhashasetu.app.LessonDetailActivity"
 102-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:83:13-49
 103            android:exported="false"
 103-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:84:13-37
-104            android:screenOrientation="portrait" />
-104-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:85:13-49
+104            android:screenOrientation="fullSensor" />
+104-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:85:13-51
 105
 106        <!-- Flashcard Activity - For vocabulary practice -->
 107        <activity
-107-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:88:9-91:52
+107-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:88:9-91:54
 108            android:name="com.bhashasetu.app.FlashcardActivity"
 108-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:89:13-46
 109            android:exported="false"
 109-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:90:13-37
-110            android:screenOrientation="portrait" />
-110-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:91:13-49
+110            android:screenOrientation="fullSensor" />
+110-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:91:13-51
 111
 112        <!-- Games Menu Activity - New feature for gamified learning -->
 113        <activity
-113-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:94:9-97:52
+113-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:94:9-97:54
 114            android:name="com.bhashasetu.app.GamesMenuActivity"
 114-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:95:13-46
 115            android:exported="false"
 115-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:96:13-37
-116            android:screenOrientation="portrait" />
-116-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:97:13-49
+116            android:screenOrientation="fullSensor" />
+116-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:97:13-51
 117
 118        <!-- Games Activity - Interactive learning games -->
 119        <activity
-119-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:100:9-103:52
+119-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:100:9-103:54
 120            android:name="com.bhashasetu.app.GamesActivity"
 120-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:101:13-42
 121            android:exported="false"
 121-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:102:13-37
-122            android:screenOrientation="portrait" />
-122-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:103:13-49
+122            android:screenOrientation="fullSensor" />
+122-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:103:13-51
 123
 124        <!-- Practice Activity - Hub for different practice methods -->
 125        <activity
-125-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:106:9-109:52
+125-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:106:9-109:54
 126            android:name="com.bhashasetu.app.PracticeActivity"
 126-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:107:13-45
 127            android:exported="false"
 127-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:108:13-37
-128            android:screenOrientation="portrait" />
-128-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:109:13-49
+128            android:screenOrientation="fullSensor" />
+128-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:109:13-51
 129
 130        <!-- Pronunciation Practice Activity - Speech practice -->
 131        <activity
-131-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:112:9-115:52
+131-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:112:9-115:54
 132            android:name="com.bhashasetu.app.PronunciationPracticeActivity"
 132-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:113:13-58
 133            android:exported="false"
 133-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:114:13-37
-134            android:screenOrientation="portrait" />
-134-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:115:13-49
+134            android:screenOrientation="fullSensor" />
+134-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:115:13-51
 135
 136        <!-- Pronunciation Comparison Activity - New feature to compare user's pronunciation with correct one -->
 137        <activity
-137-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:118:9-121:52
+137-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:118:9-121:54
 138            android:name="com.bhashasetu.app.PronunciationComparisonActivity"
 138-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:119:13-60
 139            android:exported="false"
 139-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:120:13-37
-140            android:screenOrientation="portrait" />
-140-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:121:13-49
+140            android:screenOrientation="fullSensor" />
+140-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:121:13-51
 141
 142        <!-- Spelling Practice Activity - For spelling exercises -->
 143        <activity
-143-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:124:9-127:52
+143-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:124:9-127:54
 144            android:name="com.bhashasetu.app.SpellingPracticeActivity"
 144-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:125:13-53
 145            android:exported="false"
 145-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:126:13-37
-146            android:screenOrientation="portrait" />
-146-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:127:13-49
+146            android:screenOrientation="fullSensor" />
+146-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:127:13-51
 147
 148        <!-- Quiz Activity - Multiple choice questions -->
 149        <activity
-149-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:130:9-133:52
+149-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:130:9-133:54
 150            android:name="com.bhashasetu.app.QuizActivity"
 150-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:131:13-41
 151            android:exported="false"
 151-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:132:13-37
-152            android:screenOrientation="portrait" />
-152-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:133:13-49
+152            android:screenOrientation="fullSensor" />
+152-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:133:13-51
 153
 154        <!-- Word Detail Activity - Shows detailed word information -->
 155        <activity
-155-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:136:9-139:52
+155-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:136:9-139:54
 156            android:name="com.bhashasetu.app.WordDetailActivity"
 156-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:137:13-47
 157            android:exported="false"
 157-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:138:13-37
-158            android:screenOrientation="portrait" />
-158-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:139:13-49
+158            android:screenOrientation="fullSensor" />
+158-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:139:13-51
 159
 160        <!-- Add Word Activity - For user to add custom vocabulary -->
 161        <activity
-161-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:142:9-145:52
+161-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:142:9-145:54
 162            android:name="com.bhashasetu.app.AddWordActivity"
 162-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:143:13-44
 163            android:exported="false"
 163-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:144:13-37
-164            android:screenOrientation="portrait" />
-164-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:145:13-49
+164            android:screenOrientation="fullSensor" />
+164-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:145:13-51
 165
 166        <!-- Achievements Activity - New gamification feature for tracking progress -->
 167        <activity
-167-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:148:9-151:52
+167-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:148:9-151:54
 168            android:name="com.bhashasetu.app.AchievementsActivity"
 168-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:149:13-49
 169            android:exported="false"
 169-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:150:13-37
-170            android:screenOrientation="portrait" />
-170-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:151:13-49
+170            android:screenOrientation="fullSensor" />
+170-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:151:13-51
 171
 172        <!-- Settings Activity - App configuration -->
 173        <activity
-173-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:154:9-157:52
+173-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:154:9-157:54
 174            android:name="com.bhashasetu.app.SettingsActivity"
 174-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:155:13-45
 175            android:exported="false"
 175-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:156:13-37
-176            android:screenOrientation="portrait" />
-176-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:157:13-49
+176            android:screenOrientation="fullSensor" />
+176-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:157:13-51
 177
 178        <!-- Language Settings Activity - For language preferences -->
 179        <activity
-179-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:160:9-163:52
+179-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:160:9-163:54
 180            android:name="com.bhashasetu.app.LanguageSettingsActivity"
 180-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:161:13-53
 181            android:exported="false"
 181-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:162:13-37
-182            android:screenOrientation="portrait" />
-182-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:163:13-49
+182            android:screenOrientation="fullSensor" />
+182-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:163:13-51
 183
 184        <!-- Offline Settings Activity - New feature for configuring offline behavior -->
 185        <activity
-185-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:166:9-169:52
+185-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:166:9-169:54
 186            android:name="com.bhashasetu.app.OfflineSettingsActivity"
 186-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:167:13-52
 187            android:exported="false"
 187-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:168:13-37
-188            android:screenOrientation="portrait" />
-188-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:169:13-49
+188            android:screenOrientation="fullSensor" />
+188-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:169:13-51
 189
 190        <!-- Services -->
 191        <!-- SyncService - Handles background synchronization of content -->
@@ -337,255 +337,261 @@
 208            </intent-filter>
 209        </receiver>
 210
-211        <service
-211-->[androidx.room:room-runtime-android:2.7.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\45ebda3d89e4eb14158b295429ffd677\transformed\room-runtime-release\AndroidManifest.xml:24:9-28:63
-212            android:name="androidx.room.MultiInstanceInvalidationService"
-212-->[androidx.room:room-runtime-android:2.7.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\45ebda3d89e4eb14158b295429ffd677\transformed\room-runtime-release\AndroidManifest.xml:25:13-74
-213            android:directBootAware="true"
-213-->[androidx.room:room-runtime-android:2.7.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\45ebda3d89e4eb14158b295429ffd677\transformed\room-runtime-release\AndroidManifest.xml:26:13-43
-214            android:exported="false" />
-214-->[androidx.room:room-runtime-android:2.7.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\45ebda3d89e4eb14158b295429ffd677\transformed\room-runtime-release\AndroidManifest.xml:27:13-37
-215
-216        <activity
-216-->[androidx.compose.ui:ui-tooling-android:1.8.2] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\33fa3cb0a604591197655490fb9b5924\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
-217            android:name="androidx.compose.ui.tooling.PreviewActivity"
-217-->[androidx.compose.ui:ui-tooling-android:1.8.2] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\33fa3cb0a604591197655490fb9b5924\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
-218            android:exported="true" />
-218-->[androidx.compose.ui:ui-tooling-android:1.8.2] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\33fa3cb0a604591197655490fb9b5924\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
-219
-220        <provider
-220-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\67761bb427b27f00eb35a734e6d1319d\transformed\emoji2-1.4.0\AndroidManifest.xml:24:9-32:20
-221            android:name="androidx.startup.InitializationProvider"
-221-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\67761bb427b27f00eb35a734e6d1319d\transformed\emoji2-1.4.0\AndroidManifest.xml:25:13-67
-222            android:authorities="com.bhashasetu.app.free.debug.androidx-startup"
-222-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\67761bb427b27f00eb35a734e6d1319d\transformed\emoji2-1.4.0\AndroidManifest.xml:26:13-68
-223            android:exported="false" >
-223-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\67761bb427b27f00eb35a734e6d1319d\transformed\emoji2-1.4.0\AndroidManifest.xml:27:13-37
-224            <meta-data
-224-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\67761bb427b27f00eb35a734e6d1319d\transformed\emoji2-1.4.0\AndroidManifest.xml:29:13-31:52
-225                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-225-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\67761bb427b27f00eb35a734e6d1319d\transformed\emoji2-1.4.0\AndroidManifest.xml:30:17-75
-226                android:value="androidx.startup" />
-226-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\67761bb427b27f00eb35a734e6d1319d\transformed\emoji2-1.4.0\AndroidManifest.xml:31:17-49
-227            <meta-data
-227-->[androidx.lifecycle:lifecycle-process:2.9.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\a606beca20dd1750d87b7e693935541e\transformed\lifecycle-process-2.9.1\AndroidManifest.xml:29:13-31:52
-228                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-228-->[androidx.lifecycle:lifecycle-process:2.9.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\a606beca20dd1750d87b7e693935541e\transformed\lifecycle-process-2.9.1\AndroidManifest.xml:30:17-78
-229                android:value="androidx.startup" />
-229-->[androidx.lifecycle:lifecycle-process:2.9.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\a606beca20dd1750d87b7e693935541e\transformed\lifecycle-process-2.9.1\AndroidManifest.xml:31:17-49
-230            <meta-data
-230-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
-231                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-231-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
-232                android:value="androidx.startup" />
-232-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
-233        </provider>
-234
-235        <uses-library
-235-->[androidx.window:window:1.0.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\79a8cfb1fcd7eee7bd7c23dc732f4524\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-236            android:name="androidx.window.extensions"
-236-->[androidx.window:window:1.0.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\79a8cfb1fcd7eee7bd7c23dc732f4524\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-237            android:required="false" />
-237-->[androidx.window:window:1.0.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\79a8cfb1fcd7eee7bd7c23dc732f4524\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-238        <uses-library
-238-->[androidx.window:window:1.0.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\79a8cfb1fcd7eee7bd7c23dc732f4524\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-239            android:name="androidx.window.sidecar"
-239-->[androidx.window:window:1.0.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\79a8cfb1fcd7eee7bd7c23dc732f4524\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-240            android:required="false" />
-240-->[androidx.window:window:1.0.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\79a8cfb1fcd7eee7bd7c23dc732f4524\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-241
-242        <provider
-242-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:32:9-40:20
-243            android:name="leakcanary.internal.LeakCanaryFileProvider"
-243-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:33:13-70
-244            android:authorities="com.squareup.leakcanary.fileprovider.com.bhashasetu.app.free.debug"
-244-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:34:13-88
-245            android:exported="false"
-245-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:35:13-37
-246            android:grantUriPermissions="true" >
-246-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:36:13-47
-247            <meta-data
-247-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:37:13-39:66
-248                android:name="android.support.FILE_PROVIDER_PATHS"
-248-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:38:17-67
-249                android:resource="@xml/leak_canary_file_paths" />
-249-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:39:17-63
-250        </provider>
-251
-252        <activity
-252-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:42:9-73:20
-253            android:name="leakcanary.internal.activity.LeakActivity"
-253-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:43:13-69
-254            android:exported="true"
-254-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:44:13-36
-255            android:icon="@mipmap/leak_canary_icon"
-255-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:45:13-52
-256            android:label="@string/leak_canary_display_activity_label"
-256-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:46:13-71
-257            android:taskAffinity="com.squareup.leakcanary.com.bhashasetu.app.free.debug"
-257-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:47:13-76
-258            android:theme="@style/leak_canary_LeakCanary.Base" >
-258-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:48:13-63
-259            <intent-filter android:label="@string/leak_canary_import_hprof_file" >
-259-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:49:13-72:29
-259-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:49:28-81
-260                <action android:name="android.intent.action.VIEW" />
-260-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:50:17-69
-260-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:50:25-66
-261
-262                <category android:name="android.intent.category.DEFAULT" />
-262-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:52:17-76
-262-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:52:27-73
-263                <category android:name="android.intent.category.BROWSABLE" />
-263-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:53:17-78
-263-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:53:27-75
+211        <activity
+211-->[androidx.compose.ui:ui-tooling-android:1.6.8] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\eb3161b739422d9e39e13220c162666d\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+212            android:name="androidx.compose.ui.tooling.PreviewActivity"
+212-->[androidx.compose.ui:ui-tooling-android:1.6.8] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\eb3161b739422d9e39e13220c162666d\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+213            android:exported="true" />
+213-->[androidx.compose.ui:ui-tooling-android:1.6.8] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\eb3161b739422d9e39e13220c162666d\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+214        <activity
+214-->[androidx.compose.ui:ui-test-manifest:1.6.8] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\bac194ee7d54ae0e01093aab32526152\transformed\ui-test-manifest-1.6.8\AndroidManifest.xml:23:9-25:39
+215            android:name="androidx.activity.ComponentActivity"
+215-->[androidx.compose.ui:ui-test-manifest:1.6.8] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\bac194ee7d54ae0e01093aab32526152\transformed\ui-test-manifest-1.6.8\AndroidManifest.xml:24:13-63
+216            android:exported="true" />
+216-->[androidx.compose.ui:ui-test-manifest:1.6.8] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\bac194ee7d54ae0e01093aab32526152\transformed\ui-test-manifest-1.6.8\AndroidManifest.xml:25:13-36
+217
+218        <provider
+218-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\cef2b99f5b3b061687bd89449bf9b9b7\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:24:9-32:20
+219            android:name="androidx.startup.InitializationProvider"
+219-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\cef2b99f5b3b061687bd89449bf9b9b7\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:25:13-67
+220            android:authorities="com.bhashasetu.app.free.debug.androidx-startup"
+220-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\cef2b99f5b3b061687bd89449bf9b9b7\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:26:13-68
+221            android:exported="false" >
+221-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\cef2b99f5b3b061687bd89449bf9b9b7\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:27:13-37
+222            <meta-data
+222-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\cef2b99f5b3b061687bd89449bf9b9b7\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:29:13-31:52
+223                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+223-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\cef2b99f5b3b061687bd89449bf9b9b7\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:30:17-78
+224                android:value="androidx.startup" />
+224-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\cef2b99f5b3b061687bd89449bf9b9b7\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:31:17-49
+225            <meta-data
+225-->[androidx.emoji2:emoji2:1.3.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\21f43fe2bea21be7f6468187fb303789\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+226                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+226-->[androidx.emoji2:emoji2:1.3.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\21f43fe2bea21be7f6468187fb303789\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+227                android:value="androidx.startup" />
+227-->[androidx.emoji2:emoji2:1.3.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\21f43fe2bea21be7f6468187fb303789\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+228            <meta-data
+228-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\18daf84b3a4d6c6a65d98b73e63f1078\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+229                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+229-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\18daf84b3a4d6c6a65d98b73e63f1078\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+230                android:value="androidx.startup" />
+230-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\18daf84b3a4d6c6a65d98b73e63f1078\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+231        </provider>
+232
+233        <uses-library
+233-->[androidx.window:window:1.0.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\509e124aebd517b803c0d40e080d0173\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+234            android:name="androidx.window.extensions"
+234-->[androidx.window:window:1.0.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\509e124aebd517b803c0d40e080d0173\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+235            android:required="false" />
+235-->[androidx.window:window:1.0.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\509e124aebd517b803c0d40e080d0173\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+236        <uses-library
+236-->[androidx.window:window:1.0.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\509e124aebd517b803c0d40e080d0173\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+237            android:name="androidx.window.sidecar"
+237-->[androidx.window:window:1.0.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\509e124aebd517b803c0d40e080d0173\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+238            android:required="false" />
+238-->[androidx.window:window:1.0.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\509e124aebd517b803c0d40e080d0173\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+239
+240        <service
+240-->[androidx.room:room-runtime:2.6.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\4f2fa4713a4b7fd45f253861ee94ecd9\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+241            android:name="androidx.room.MultiInstanceInvalidationService"
+241-->[androidx.room:room-runtime:2.6.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\4f2fa4713a4b7fd45f253861ee94ecd9\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+242            android:directBootAware="true"
+242-->[androidx.room:room-runtime:2.6.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\4f2fa4713a4b7fd45f253861ee94ecd9\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+243            android:exported="false" />
+243-->[androidx.room:room-runtime:2.6.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\4f2fa4713a4b7fd45f253861ee94ecd9\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+244
+245        <provider
+245-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:32:9-40:20
+246            android:name="leakcanary.internal.LeakCanaryFileProvider"
+246-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:33:13-70
+247            android:authorities="com.squareup.leakcanary.fileprovider.com.bhashasetu.app.free.debug"
+247-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:34:13-88
+248            android:exported="false"
+248-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:35:13-37
+249            android:grantUriPermissions="true" >
+249-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:36:13-47
+250            <meta-data
+250-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:37:13-39:66
+251                android:name="android.support.FILE_PROVIDER_PATHS"
+251-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:38:17-67
+252                android:resource="@xml/leak_canary_file_paths" />
+252-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:39:17-63
+253        </provider>
+254
+255        <activity
+255-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:42:9-73:20
+256            android:name="leakcanary.internal.activity.LeakActivity"
+256-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:43:13-69
+257            android:exported="true"
+257-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:44:13-36
+258            android:icon="@mipmap/leak_canary_icon"
+258-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:45:13-52
+259            android:label="@string/leak_canary_display_activity_label"
+259-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:46:13-71
+260            android:taskAffinity="com.squareup.leakcanary.com.bhashasetu.app.free.debug"
+260-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:47:13-76
+261            android:theme="@style/leak_canary_LeakCanary.Base" >
+261-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:48:13-63
+262            <intent-filter android:label="@string/leak_canary_import_hprof_file" >
+262-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:49:13-72:29
+262-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:49:28-81
+263                <action android:name="android.intent.action.VIEW" />
+263-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:50:17-69
+263-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:50:25-66
 264
-265                <data android:scheme="file" />
-265-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:55:17-47
-265-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:55:23-44
-266                <data android:scheme="content" />
-266-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:55:17-47
-266-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:55:23-44
-267                <data android:mimeType="*/*" />
-267-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:55:17-47
-268                <data android:host="*" />
-268-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:55:17-47
-269                <data android:pathPattern=".*\\.hprof" />
-269-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:55:17-47
-270                <data android:pathPattern=".*\\..*\\.hprof" />
-270-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:55:17-47
-271                <data android:pathPattern=".*\\..*\\..*\\.hprof" />
-271-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:55:17-47
-272                <data android:pathPattern=".*\\..*\\..*\\..*\\.hprof" />
-272-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:55:17-47
-273                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.hprof" />
-273-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:55:17-47
-274                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\.hprof" />
-274-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:55:17-47
-275                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\.hprof" />
-275-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:55:17-47
-276                <!--
-277            Since hprof isn't a standard MIME type, we have to declare such patterns.
-278            Most file providers will generate URIs including their own package name,
-279            which contains `.` characters that must be explicitly escaped in pathPattern.
-280            @see https://stackoverflow.com/a/31028507/703646
-281                -->
-282            </intent-filter>
-283        </activity>
-284
-285        <activity-alias
-285-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:75:9-92:26
-286            android:name="leakcanary.internal.activity.LeakLauncherActivity"
-286-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:76:13-77
-287            android:banner="@drawable/leak_canary_tv_icon"
-287-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:77:13-59
-288            android:enabled="@bool/leak_canary_add_launcher_icon"
-288-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:78:13-66
-289            android:exported="true"
-289-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:79:13-36
-290            android:icon="@mipmap/leak_canary_icon"
-290-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:80:13-52
-291            android:label="@string/leak_canary_display_activity_label"
-291-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:81:13-71
-292            android:targetActivity="leakcanary.internal.activity.LeakActivity"
-292-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:82:13-79
-293            android:taskAffinity="com.squareup.leakcanary.com.bhashasetu.app.free.debug"
-293-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:83:13-76
-294            android:theme="@style/leak_canary_LeakCanary.Base" >
-294-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:84:13-63
-295            <intent-filter>
-295-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:85:13-91:29
-296                <action android:name="android.intent.action.MAIN" />
-296-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:64:17-69
-296-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:64:25-66
-297
-298                <category android:name="android.intent.category.LAUNCHER" />
-298-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:65:17-77
-298-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:65:27-74
-299                <!-- Android TV launcher intent -->
-300                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-300-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:90:17-86
-300-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:90:27-83
-301            </intent-filter>
-302        </activity-alias>
-303
-304        <activity
-304-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:94:9-100:68
-305            android:name="leakcanary.internal.RequestPermissionActivity"
-305-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:95:13-73
-306            android:excludeFromRecents="true"
-306-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:96:13-46
-307            android:icon="@mipmap/leak_canary_icon"
-307-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:97:13-52
-308            android:label="@string/leak_canary_storage_permission_activity_label"
-308-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:98:13-82
-309            android:taskAffinity="com.squareup.leakcanary.com.bhashasetu.app.free.debug"
-309-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:99:13-76
-310            android:theme="@style/leak_canary_Theme.Transparent" />
-310-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:100:13-65
-311
-312        <receiver android:name="leakcanary.internal.NotificationReceiver" />
-312-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:102:9-77
-312-->[com.squareup.leakcanary:leakcanary-android-core:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\65d79f44063d883d9817fa61df94c029\transformed\leakcanary-android-core-2.12\AndroidManifest.xml:102:19-74
-313
-314        <provider
-314-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\283e345df67ff359f4c51e8c0b242b0a\transformed\leakcanary-object-watcher-android-2.12\AndroidManifest.xml:8:9-12:40
-315            android:name="leakcanary.internal.MainProcessAppWatcherInstaller"
-315-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\283e345df67ff359f4c51e8c0b242b0a\transformed\leakcanary-object-watcher-android-2.12\AndroidManifest.xml:9:13-78
-316            android:authorities="com.bhashasetu.app.free.debug.leakcanary-installer"
-316-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\283e345df67ff359f4c51e8c0b242b0a\transformed\leakcanary-object-watcher-android-2.12\AndroidManifest.xml:10:13-72
-317            android:enabled="@bool/leak_canary_watcher_auto_install"
-317-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\283e345df67ff359f4c51e8c0b242b0a\transformed\leakcanary-object-watcher-android-2.12\AndroidManifest.xml:11:13-69
-318            android:exported="false" />
-318-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\283e345df67ff359f4c51e8c0b242b0a\transformed\leakcanary-object-watcher-android-2.12\AndroidManifest.xml:12:13-37
-319        <provider
-319-->[com.squareup.leakcanary:plumber-android:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\b5e58e9d43712139980db44891693c1b\transformed\plumber-android-2.12\AndroidManifest.xml:8:9-12:40
-320            android:name="leakcanary.internal.PlumberInstaller"
-320-->[com.squareup.leakcanary:plumber-android:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\b5e58e9d43712139980db44891693c1b\transformed\plumber-android-2.12\AndroidManifest.xml:9:13-64
-321            android:authorities="com.bhashasetu.app.free.debug.plumber-installer"
-321-->[com.squareup.leakcanary:plumber-android:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\b5e58e9d43712139980db44891693c1b\transformed\plumber-android-2.12\AndroidManifest.xml:10:13-69
-322            android:enabled="@bool/leak_canary_plumber_auto_install"
-322-->[com.squareup.leakcanary:plumber-android:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\b5e58e9d43712139980db44891693c1b\transformed\plumber-android-2.12\AndroidManifest.xml:11:13-69
-323            android:exported="false" />
-323-->[com.squareup.leakcanary:plumber-android:2.12] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\b5e58e9d43712139980db44891693c1b\transformed\plumber-android-2.12\AndroidManifest.xml:12:13-37
-324
-325        <receiver
-325-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
-326            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-326-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
-327            android:directBootAware="false"
-327-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
-328            android:enabled="true"
-328-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
-329            android:exported="true"
-329-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
-330            android:permission="android.permission.DUMP" >
-330-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
-331            <intent-filter>
-331-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
-332                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-332-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
-332-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
-333            </intent-filter>
+265                <category android:name="android.intent.category.DEFAULT" />
+265-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:52:17-76
+265-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:52:27-73
+266                <category android:name="android.intent.category.BROWSABLE" />
+266-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:53:17-78
+266-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:53:27-75
+267
+268                <data android:scheme="file" />
+268-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:55:17-47
+268-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:55:23-44
+269                <data android:scheme="content" />
+269-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:55:17-47
+269-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:55:23-44
+270                <data android:mimeType="*/*" />
+270-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:55:17-47
+271                <data android:host="*" />
+271-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:55:17-47
+272                <data android:pathPattern=".*\\.hprof" />
+272-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:55:17-47
+273                <data android:pathPattern=".*\\..*\\.hprof" />
+273-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:55:17-47
+274                <data android:pathPattern=".*\\..*\\..*\\.hprof" />
+274-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:55:17-47
+275                <data android:pathPattern=".*\\..*\\..*\\..*\\.hprof" />
+275-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:55:17-47
+276                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\.hprof" />
+276-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:55:17-47
+277                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\.hprof" />
+277-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:55:17-47
+278                <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\.hprof" />
+278-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:55:17-47
+279                <!--
+280            Since hprof isn't a standard MIME type, we have to declare such patterns.
+281            Most file providers will generate URIs including their own package name,
+282            which contains `.` characters that must be explicitly escaped in pathPattern.
+283            @see https://stackoverflow.com/a/31028507/703646
+284                -->
+285            </intent-filter>
+286        </activity>
+287
+288        <activity-alias
+288-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:75:9-92:26
+289            android:name="leakcanary.internal.activity.LeakLauncherActivity"
+289-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:76:13-77
+290            android:banner="@drawable/leak_canary_tv_icon"
+290-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:77:13-59
+291            android:enabled="@bool/leak_canary_add_launcher_icon"
+291-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:78:13-66
+292            android:exported="true"
+292-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:79:13-36
+293            android:icon="@mipmap/leak_canary_icon"
+293-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:80:13-52
+294            android:label="@string/leak_canary_display_activity_label"
+294-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:81:13-71
+295            android:targetActivity="leakcanary.internal.activity.LeakActivity"
+295-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:82:13-79
+296            android:taskAffinity="com.squareup.leakcanary.com.bhashasetu.app.free.debug"
+296-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:83:13-76
+297            android:theme="@style/leak_canary_LeakCanary.Base" >
+297-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:84:13-63
+298            <intent-filter>
+298-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:85:13-91:29
+299                <action android:name="android.intent.action.MAIN" />
+299-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:64:17-69
+299-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:64:25-66
+300
+301                <category android:name="android.intent.category.LAUNCHER" />
+301-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:65:17-77
+301-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:65:27-74
+302                <!-- Android TV launcher intent -->
+303                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+303-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:90:17-86
+303-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:90:27-83
+304            </intent-filter>
+305        </activity-alias>
+306
+307        <activity
+307-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:94:9-100:68
+308            android:name="leakcanary.internal.RequestPermissionActivity"
+308-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:95:13-73
+309            android:excludeFromRecents="true"
+309-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:96:13-46
+310            android:icon="@mipmap/leak_canary_icon"
+310-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:97:13-52
+311            android:label="@string/leak_canary_storage_permission_activity_label"
+311-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:98:13-82
+312            android:taskAffinity="com.squareup.leakcanary.com.bhashasetu.app.free.debug"
+312-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:99:13-76
+313            android:theme="@style/leak_canary_Theme.Transparent" />
+313-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:100:13-65
+314
+315        <receiver android:name="leakcanary.internal.NotificationReceiver" />
+315-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:102:9-77
+315-->[com.squareup.leakcanary:leakcanary-android-core:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6f0e43d62a375bd844d213158266a68f\transformed\leakcanary-android-core-2.14\AndroidManifest.xml:102:19-74
+316
+317        <provider
+317-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\7c5382815d76c2069f4d5b2181af618f\transformed\leakcanary-object-watcher-android-2.14\AndroidManifest.xml:8:9-12:40
+318            android:name="leakcanary.internal.MainProcessAppWatcherInstaller"
+318-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\7c5382815d76c2069f4d5b2181af618f\transformed\leakcanary-object-watcher-android-2.14\AndroidManifest.xml:9:13-78
+319            android:authorities="com.bhashasetu.app.free.debug.leakcanary-installer"
+319-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\7c5382815d76c2069f4d5b2181af618f\transformed\leakcanary-object-watcher-android-2.14\AndroidManifest.xml:10:13-72
+320            android:enabled="@bool/leak_canary_watcher_auto_install"
+320-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\7c5382815d76c2069f4d5b2181af618f\transformed\leakcanary-object-watcher-android-2.14\AndroidManifest.xml:11:13-69
+321            android:exported="false" />
+321-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\7c5382815d76c2069f4d5b2181af618f\transformed\leakcanary-object-watcher-android-2.14\AndroidManifest.xml:12:13-37
+322        <provider
+322-->[com.squareup.leakcanary:plumber-android:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6a5210a43ecf5d27de97e5f7eba39510\transformed\plumber-android-2.14\AndroidManifest.xml:8:9-12:40
+323            android:name="leakcanary.internal.PlumberInstaller"
+323-->[com.squareup.leakcanary:plumber-android:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6a5210a43ecf5d27de97e5f7eba39510\transformed\plumber-android-2.14\AndroidManifest.xml:9:13-64
+324            android:authorities="com.bhashasetu.app.free.debug.plumber-installer"
+324-->[com.squareup.leakcanary:plumber-android:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6a5210a43ecf5d27de97e5f7eba39510\transformed\plumber-android-2.14\AndroidManifest.xml:10:13-69
+325            android:enabled="@bool/leak_canary_plumber_auto_install"
+325-->[com.squareup.leakcanary:plumber-android:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6a5210a43ecf5d27de97e5f7eba39510\transformed\plumber-android-2.14\AndroidManifest.xml:11:13-69
+326            android:exported="false" />
+326-->[com.squareup.leakcanary:plumber-android:2.14] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\6a5210a43ecf5d27de97e5f7eba39510\transformed\plumber-android-2.14\AndroidManifest.xml:12:13-37
+327
+328        <receiver
+328-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\18daf84b3a4d6c6a65d98b73e63f1078\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+329            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+329-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\18daf84b3a4d6c6a65d98b73e63f1078\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+330            android:directBootAware="false"
+330-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\18daf84b3a4d6c6a65d98b73e63f1078\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+331            android:enabled="true"
+331-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\18daf84b3a4d6c6a65d98b73e63f1078\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+332            android:exported="true"
+332-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\18daf84b3a4d6c6a65d98b73e63f1078\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+333            android:permission="android.permission.DUMP" >
+333-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\18daf84b3a4d6c6a65d98b73e63f1078\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
 334            <intent-filter>
-334-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
-335                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-335-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
-335-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+334-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\18daf84b3a4d6c6a65d98b73e63f1078\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+335                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+335-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\18daf84b3a4d6c6a65d98b73e63f1078\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+335-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\18daf84b3a4d6c6a65d98b73e63f1078\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
 336            </intent-filter>
 337            <intent-filter>
-337-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
-338                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-338-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
-338-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+337-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\18daf84b3a4d6c6a65d98b73e63f1078\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+338                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+338-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\18daf84b3a4d6c6a65d98b73e63f1078\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+338-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\18daf84b3a4d6c6a65d98b73e63f1078\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
 339            </intent-filter>
 340            <intent-filter>
-340-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
-341                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-341-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
-341-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\061102c8030fd975a539dbd864c676ca\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+340-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\18daf84b3a4d6c6a65d98b73e63f1078\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+341                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+341-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\18daf84b3a4d6c6a65d98b73e63f1078\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+341-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\18daf84b3a4d6c6a65d98b73e63f1078\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
 342            </intent-filter>
-343        </receiver>
-344    </application>
-345
-346</manifest>
+343            <intent-filter>
+343-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\18daf84b3a4d6c6a65d98b73e63f1078\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+344                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+344-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\18daf84b3a4d6c6a65d98b73e63f1078\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+344-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14\transforms\18daf84b3a4d6c6a65d98b73e63f1078\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+345            </intent-filter>
+346        </receiver>
+347    </application>
+348
+349</manifest>

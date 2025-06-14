@@ -146,38 +146,45 @@ public class MainActivity extends AppCompatActivity {
         // Update UI based on language
         updateUILanguage();
     }
-    
+
     @Override
     protected void updateUILanguage() {
         // Update title and subtitle based on language
-        if (isHindiActive()) {
-            textViewTitle.setText(R.string.welcome_message);
-            textViewSubtitle.setText(R.string.welcome_message_hindi);
-        } else {
+        // This part seems to have duplicate logic, you might want to review it.
+        if (isHindiActive()) { // Assuming isHindiActive() is a method you have defined elsewhere
+            textViewTitle.setText(R.string.welcome_message); // Or welcome_message_hindi depending on your logic
+            textViewSubtitle.setText(R.string.welcome_message_hindi); // Or welcome_message depending on your logic
+        }
+        else {
             textViewTitle.setText(R.string.welcome_message);
             textViewSubtitle.setText(R.string.welcome_message_hindi);
         }
-    
+
         // Update bottom navigation titles
         Menu menu = bottomNavigation.getMenu();
         menu.findItem(R.id.action_words).setTitle(getString(R.string.home_tab));
         menu.findItem(R.id.action_lessons).setTitle(getString(R.string.lessons_tab));
         menu.findItem(R.id.action_practice).setTitle(getString(R.string.practice_tab));
         menu.findItem(R.id.action_favorites).setTitle(getString(R.string.favorites_tab));
-    }
-        
+
         // Check preferences for interface language
-        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences sharedPreferences = androidx.preference.PreferenceManager.getDefaultSharedPreferences(this);
         boolean useHindiInterface = sharedPreferences.getBoolean("use_hindi_interface", false);
-        
+
+        // This is the block that was causing the error, now moved inside the method.
+        // You'll likely want to integrate this logic with the isHindiActive() check above
+        // to avoid conflicting UI updates.
         if (useHindiInterface) {
             textViewTitle.setText(R.string.welcome_message_hindi);
             textViewSubtitle.setText(R.string.welcome_message);
-        } else {
+        }
+        else {
+            // This else might conflict with the one above if isHindiActive()
+            // and useHindiInterface have different values.
             textViewTitle.setText(R.string.welcome_message);
             textViewSubtitle.setText(R.string.welcome_message_hindi);
         }
-    }
+    } // This is the correct closing brace for the updateUILanguage method
     
     private void showAllWords() {
         showingFavorites = false;
@@ -297,8 +304,8 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_settings) {
             Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
             startActivity(intent);
-            return true;
-        } else if (id == R.id.action_categories) {
+            return true;}
+        else if (id == R.id.action_categories) {
             // Show categories dialog or menu
             // This would be implemented in a real app
             Toast.makeText(this, "Categories feature would be shown here", Toast.LENGTH_SHORT).show();
