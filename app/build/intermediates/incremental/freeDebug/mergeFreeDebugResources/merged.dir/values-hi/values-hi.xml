@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
+    <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d नई सूचनाएं</item>
+    <item quantity="other">%d नई सूचनाएं</item>
+  </plurals>
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"होम पेज पर जाएं"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"वापस जाएं"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"ज़्यादा विकल्प"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"हो गया"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"सभी देखें"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"कोई ऐप्लिकेशन चुनें"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"बंद"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"चालू"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"space"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"खोजें…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"क्‍वेरी हटाएं"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"सर्च क्वेरी"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"खोजें"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"क्वेरी सबमिट करें"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"बोलकर खोजें"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"इससे शेयर करें:"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g> से शेयर करें"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"छोटा करें"</string>
+    <string name="about">के बारे में</string>
+    <string name="action_categories">श्रेणियाँ</string>
+    <string name="action_favorites">पसंदीदा</string>
+    <string name="action_search">खोज</string>
+    <string name="action_settings">सेटिंग्स</string>
+    <string name="add_new_word">नया शब्द जोड़ें</string>
+    <string name="add_to_favorites">पसंदीदा में जोड़ें</string>
+    <string name="advanced">उन्नत</string>
+    <string name="all_categories">सभी</string>
+    <string name="app_name">भाषासेतु</string>
+    <string name="audio_enabled">ऑडियो सक्षम करें</string>
+    <string name="beginner">शुरुआती</string>
+    <string name="bottomsheet_action_collapse">बॉटम शीट को छोटा करें</string>
+    <string name="bottomsheet_action_expand">बॉटम शीट को बड़ा करें</string>
+    <string name="bottomsheet_action_expand_halfway">पूरी तरह बड़ा करें</string>
+    <string name="bottomsheet_drag_handle_clicked">खींचकर छोड़ने वाले हैंडल पर दो बार टैप किया गया</string>
+    <string name="bottomsheet_drag_handle_content_description">खींचकर छोड़ने वाला हैंडल</string>
+    <string msgid="881409763997275156" name="call_notification_answer_action">"जवाब दें"</string>
+    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"वीडियो"</string>
+    <string msgid="3229508546291798546" name="call_notification_decline_action">"अस्वीकार करें"</string>
+    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"कॉल काटें"</string>
+    <string msgid="6107532579223922871" name="call_notification_incoming_text">"आने वाला (इनकमिंग) कॉल"</string>
+    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"पहले से जारी कॉल"</string>
+    <string msgid="59049573811482460" name="call_notification_screening_text">"इनकमिंग कॉल को स्क्रीन किया जा रहा है"</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="card_of_total">कार्ड %1$d / %2$d</string>
+    <string name="category">श्रेणी</string>
+    <string name="category_animals">जानवर</string>
+    <string name="category_body_parts">शरीर के अंग</string>
+    <string name="category_clothing">कपड़े</string>
+    <string name="category_colors">रंग</string>
+    <string name="category_daily_activities">दैनिक गतिविधियाँ</string>
+    <string name="category_desc_animals">जानवर, पालतू जानवर और वन्य जीवन</string>
+    <string name="category_desc_body_parts">मानव शरीर के अंग और संबंधित शब्द</string>
+    <string name="category_desc_clothing">कपड़े और वस्त्र खरीदारी</string>
+    <string name="category_desc_colors">रंग और संबंधित वर्णनात्मक शब्द</string>
+    <string name="category_desc_daily_activities">आम दैनिक गतिविधियाँ और दिनचर्या</string>
+    <string name="category_desc_directions">दिशाएँ और स्थान-संबंधित वाक्यांश</string>
+    <string name="category_desc_emergency">आपातकालीन स्थितियों के लिए शब्द और वाक्यांश</string>
+    <string name="category_desc_emotions">भावनाओं और अनुभूतियों को व्यक्त करना</string>
+    <string name="category_desc_family">परिवार के सदस्य और रिश्ते संबंधी शब्द</string>
+    <string name="category_desc_food_drinks">भोजन, पेय और रेस्तरां वाक्यांश</string>
+    <string name="category_desc_grammar">बुनियादी व्याकरण नियम और संरचनाएँ</string>
+    <string name="category_desc_greetings">बुनियादी अभिवादन और परिचय</string>
+    <string name="category_desc_home">घरेलू वस्तुएं और घर के कमरे</string>
+    <string name="category_desc_numbers">संख्याएँ, गिनती, और बुनियादी गणित शब्द</string>
+    <string name="category_desc_phrases">अनिवार्य रोजमर्रा के वाक्यांश और अभिव्यक्तियां</string>
+    <string name="category_desc_shopping">खरीदारी और बाजार शब्दावली</string>
+    <string name="category_desc_time">समय, तारीखें, सप्ताह के दिन और महीने</string>
+    <string name="category_desc_travel">यात्रा, परिवहन और दिशाएँ</string>
+    <string name="category_desc_weather">मौसम की स्थिति और मौसमी शब्द</string>
+    <string name="category_desc_work">काम, कार्यालय और पेशेवर शब्द</string>
+    <string name="category_directions">दिशाएँ</string>
+    <string name="category_emergency">आपातकाल</string>
+    <string name="category_emotions">भावनाएँ</string>
+    <string name="category_family">परिवार</string>
+    <string name="category_food_drinks">खाना और पीना</string>
+    <string name="category_grammar">व्याकरण</string>
+    <string name="category_greetings">अभिवादन</string>
+    <string name="category_home">घर</string>
+    <string name="category_numbers">संख्याएँ</string>
+    <string name="category_phrases">आम वाक्यांश</string>
+    <string name="category_shopping">खरीदारी</string>
+    <string name="category_time">समय</string>
+    <string name="category_travel">यात्रा</string>
+    <string name="category_weather">मौसम</string>
+    <string name="category_work">काम</string>
+    <string name="character_counter_content_description">%2$d वर्णों में से %1$d वर्ण दर्ज किए गए</string>
+    <string name="character_counter_overflowed_content_description">अभी %1$d वर्ण हैं जबकि %2$d से ज़्यादा नहीं होने चाहिए</string>
+    <string name="check">जांचें</string>
+    <string name="check_answer">उत्तर जाँचें</string>
+    <string name="check_spelling">वर्तनी जाँचें</string>
+    <string name="choose_practice">अभ्यास का प्रकार चुनें</string>
+    <string name="clear_progress">प्रगति साफ़ करें</string>
+    <string name="clear_progress_confirmation">क्या आप वाकई अपनी सारी प्रगति साफ़ करना चाहते हैं?</string>
+    <string name="clear_text_end_icon_content_description">टेक्स्ट मिटाएं</string>
+    <string name="close_button">बंद करें</string>
+    <string msgid="406453423630273620" name="close_drawer">"नेविगेशन मेन्यू बंद करें"</string>
+    <string msgid="7573152094250666567" name="close_sheet">"शीट बंद करें"</string>
+    <string name="congratulations">बधाई हो!</string>
+    <string name="continue_learning">सीखना जारी रखें</string>
+    <string name="correct">सही!</string>
+    <string name="correct_answers_format">सही: %1$d/%2$d (%3$d%%)</string>
+    <string name="current_word">वर्तमान शब्द:</string>
+    <string name="daily_reminder">दैनिक रिमाइंडर</string>
+    <string name="daily_streak">दैनिक स्ट्रीक: %d</string>
+    <string name="deck_title">डेक शीर्षक</string>
+    <string msgid="8038256446254964252" name="default_error_message">"अमान्य इनपुट"</string>
+    <string msgid="6312721426453364202" name="default_popup_window_title">"पॉप-अप विंडो"</string>
+    <string name="delete">हटाएँ</string>
+    <string name="difficulty_advanced">उन्नत</string>
+    <string name="difficulty_beginner">नौसिखिया</string>
+    <string name="difficulty_intermediate">मध्यवर्ती</string>
+    <string name="difficulty_question">इस शब्द का उच्चारण आपके लिए कैसा था?</string>
+    <string name="dont_know">नहीं जानता</string>
+    <string msgid="1890207353314751437" name="dropdown_menu">"ड्रॉपडाउन मेन्यू"</string>
+    <string name="easy">आसान</string>
+    <string name="english">अंग्रेजी</string>
+    <string name="english_pronunciation">अंग्रेजी उच्चारण</string>
+    <string name="english_word">अंग्रेजी शब्द</string>
+    <string name="enter_english_spelling">अंग्रेजी वर्तनी दर्ज करें</string>
+    <string name="enter_spelling">वर्तनी दर्ज करें…</string>
+    <string name="error_a11y_label">गड़बड़ी: यह अमान्य है</string>
+    <string name="error_icon_content_description">गड़बड़ी</string>
+    <string name="error_loading">डेटा लोड करने में त्रुटि</string>
+    <string name="example_sentence">उदाहरण वाक्य</string>
+    <string name="excellent_feedback">उत्कृष्ट! आप बहुत अच्छा कर रहे हैं।</string>
+    <string name="excellent_job">उत्कृष्ट काम!</string>
+    <string name="exit">बाहर निकलें</string>
+    <string name="exit_game_message">क्या आप वाकई गेम से बाहर निकलना चाहते हैं? आपकी प्रगति खो जाएगी।</string>
+    <string name="exit_game_title">गेम से बाहर निकलें?</string>
+    <string name="exposed_dropdown_menu_content_description">ड्रॉपडाउन मेन्यू दिखाएं</string>
+    <string name="favorites_tab">पसंदीदा</string>
+    <string name="flashcard_complete">फ्लैशकार्ड पूरा हुआ!</string>
+    <string name="flashcard_quiz">फ्लैशकार्ड क्विज</string>
+    <string name="flashcards">फ्लैशकार्ड</string>
+    <string name="flip">पलटें</string>
+    <string name="flip_card">कार्ड पलटें</string>
+    <string name="game_complete">खेल पूरा हुआ!</string>
+    <string name="game_over">खेल समाप्त</string>
+    <string name="games_learn_having_fun">मज़े करते हुए सीखें!</string>
+    <string name="games_subtitle">अपना पसंदीदा सीखने का खेल चुनें</string>
+    <string name="good_effort">अच्छा प्रयास!</string>
+    <string name="good_effort_feedback">अच्छा प्रयास! और अभ्यास करें।</string>
+    <string name="grammar_content_adjectives">हिंदी विशेषण उन संज्ञाओं से पहले आते हैं जिन्हें वे संशोधित करते हैं। कई विशेषण संज्ञा के लिंग और संख्या के आधार पर अपना रूप बदलते हैं:\n\n1. आ (aa) में समाप्त होने वाले विशेषण बदलते हैं:\n   - अच्छा लड़का (accha ladka) - good boy (पुल्लिंग एकवचन)\n   - अच्छी लड़की (acchi ladki) - good girl (स्त्रीलिंग एकवचन)\n   - अच्छे लड़के (acche ladke) - good boys (पुल्लिंग बहुवचन)\n\n2. आ (aa) में समाप्त नहीं होने वाले विशेषण वही रहते हैं:\n   - लाल फूल (lal phool) - red flower (पुल्लिंग)\n   - लाल किताब (lal kitab) - red book (स्त्रीलिंग)</string>
+    <string name="grammar_content_compound_verbs">हिंदी अक्सर संयुक्त क्रियाओं का उपयोग करती है, जिसमें मुख्य क्रिया के बाद सहायक क्रिया आती है। मुख्य क्रिया अर्थ वहन करती है, जबकि सहायक क्रिया नुआंस जोड़ती है:\n\n1. जाना (jana) - to go (समापन को इंगित करता है):\n   - मैं खा गया (main kha gaya) - I ate up/finished eating (पुरुष)\n\n2. लेना (lena) - to take (किसी के अपने लाभ के लिए कार्रवाई को इंगित करता है):\n   - मैंने पढ़ लिया (maine padh liya) - I have read (अपने लिए)\n\n3. देना (dena) - to give (किसी और के लाभ के लिए कार्रवाई को इंगित करता है):\n   - मैंने लिख दिया (maine likh diya) - I wrote (किसी और के लिए)\n\nप्राकृतिक लगने वाली हिंदी के लिए संयुक्त क्रियाएँ आवश्यक हैं।</string>
+    <string name="grammar_content_ergative_construction">हिंदी पूर्ण काल में संक्रमणकारी क्रियाओं के लिए कर्ता कारक निर्माण का उपयोग करती है। विषय कर्ता कारक चिह्नक ने (ne) लेता है:\n\n1. मैं खाता हूँ (main khata hoon) - I eat (वर्तमान काल, कोई कर्ता नहीं)\n\n2. मैंने खाया (maine khaya) - I ate (पूर्ण काल, कर्ता)\n\nकर्ता कारक निर्माण के साथ, क्रिया विषय के बजाय वस्तु से सहमत होती है:\n\n- रामने रोटी खाई (Ram-ne roti khai) - Ram ate bread\n  (क्रिया khai स्त्रीलिंग roti से सहमत है, पुल्लिंग Ram से नहीं)</string>
+    <string name="grammar_content_gender">हिंदी संज्ञाओं का व्याकरणिक लिंग (पुल्लिंग या स्त्रीलिंग) होता है जो संबंधित विशेषणों और क्रियाओं के रूप को प्रभावित करता है। किसी संज्ञा के लिंग निर्धारित करने के पैटर्न हैं, लेकिन अक्सर उन्हें याद रखना पड़ता है।\n\n1. पुल्लिंग संज्ञाएँ अक्सर आ (aa) में समाप्त होती हैं\nउदाहरण: लड़का (ladka) - boy\n\n2. स्त्रीलिंग संज्ञाएँ अक्सर ई (ee) या इ (i) में समाप्त होती हैं\nउदाहरण: लड़की (ladki) - girl\n\nहालांकि, कई अपवाद मौजूद हैं, इसलिए लिंग को संज्ञा के साथ सीखना आवश्यक है।</string>
+    <string name="grammar_content_honorifics">भाषण में सम्मान दिखाने के लिए हिंदी में कई तरीके हैं:\n\n1. तुम (tum) या तू (tu) के बजाय आप (aap) का उपयोग करना\n\n2. नामों या शीर्षकों के बाद जी (ji) जोड़ना:\n   - राम जी (Ram ji) - आदरणीय राम\n   - सर जी (Sir ji) - आदरणीय सर\n\n3. एकवचन सम्मानित विषयों के लिए बहुवचन क्रियाओं का उपयोग करना:\n   - आप क्या करते हैं? (aap kya karte hain?) - What do you do? (सम्मानजनक)\n   बनाम\n   - तुम क्या करते हो? (tum kya karte ho?) - What do you do? (परिचित)</string>
+    <string name="grammar_content_negation">हिंदी में नकारात्मक वाक्य बनाने के कई तरीके हैं:\n\n1. नहीं (nahin) - not (सामान्य नकारात्मकता)\n   - मैं खाता हूँ (main khata hoon) - I eat\n   - मैं नहीं खाता हूँ (main nahin khata hoon) - I do not eat\n\n2. मत (mat) - don\'t (आदेशात्मक/आदेशों के लिए)\n   - खाओ (khao) - Eat!\n   - मत खाओ (mat khao) - Don\'t eat!\n\n3. ना (na) - no/not (अनौपचारिक नकारात्मकता)\n   - क्या तुम जा रहे हो? (kya tum ja rahe ho?) - Are you going?\n   - ना, मैं नहीं जा रहा हूँ (na, main nahin ja raha hoon) - No, I am not going</string>
+    <string name="grammar_content_participles">हिंदी क्रियाओं के विभिन्न पहलुओं को बनाने के लिए व्यापक रूप से कृदंत का उपयोग करती है:\n\n1. वर्तमान कृदंत: क्रिया के मूल में ता/ती/ते (ta/ti/te) जोड़कर बनाया गया\n   - खाता हूँ (khata hoon) - I am eating (पुरुष)\n\n2. भूतकाल कृदंत: क्रिया के मूल में या/ई/ए (ya/i/e) जोड़कर बनाया गया\n   - खाया है (khaya hai) - (वह) खाया है\n\n3. पूर्ण कृदंत: के/कर (ke/kar) के साथ निर्मित\n   - खाकर (kha-kar) - having eaten\n\nहिंदी में यौगिक काल और जटिल वाक्य बनाने के लिए कृदंत महत्वपूर्ण हैं।</string>
+    <string name="grammar_content_postpositions">हिंदी परसर्गों का उपयोग करती है जबकि अंग्रेजी पूर्वसर्गों का। अंग्रेजी में पूर्वसर्ग संज्ञाओं से पहले आते हैं (in the house), हिंदी में परसर्ग संज्ञाओं के बाद आते हैं (घर में - house in)।\n\nसामान्य परसर्ग:\n1. में (mein) - in, inside\n2. पर (par) - on, upon\n3. से (se) - from, with, by\n4. को (ko) - to\n5. का/की/के (ka/ki/ke) - of (संबंधित संज्ञा के लिंग के आधार पर रूप बदलता है)</string>
+    <string name="grammar_content_pronouns">हिंदी में इसके सर्वनामों में औपचारिकता के विभिन्न स्तर हैं:\n\n1. प्रथम पुरुष: मैं (main) - I, हम (ham) - we\n\n2. द्वितीय पुरुष: \n   - तू (tu) - you (अनौपचारिक/आत्मीय, अत्यंत सावधानी से उपयोग करें)\n   - तुम (tum) - you (अनौपचारिक, दोस्तों और परिवार के लिए)\n   - आप (aap) - you (औपचारिक, बड़ों, अजनबियों, सम्मानित व्यक्तियों के लिए)\n\n3. तृतीय पुरुष:\n   - यह (yah) - this, he, she (नजदीक)\n   - वह (vah) - that, he, she (दूर)\n   - ये (ye) - these, they (नजदीक)\n   - वे (ve) - those, they (दूर)</string>
+    <string name="grammar_content_question_formation">हिंदी प्रश्न कई तरीकों से बनाए जा सकते हैं:\n\n1. शुरुआत में क्या (kya) का उपयोग करके:\n   - तुम स्कूल जाते हो (tum school jate ho) - You go to school\n   - क्या तुम स्कूल जाते हो? (kya tum school jate ho?) - Do you go to school?\n\n2. प्रश्नवाचक शब्दों का उपयोग करके (कौन, क्या, कब, आदि):\n   - कौन (kaun) - who\n   - क्या (kya) - what\n   - कब (kab) - when\n   - कहाँ (kahan) - where\n   - कैसे (kaise) - how\n   - क्यों (kyon) - why\n\nउदाहरण: तुम कहाँ जा रहे हो? (tum kahan ja rahe ho?) - Where are you going?</string>
+    <string name="grammar_content_sentence_structure">हिंदी में वाक्य संरचना subject-object-verb (कर्ता-कर्म-क्रिया) क्रम का अनुसरण करती है, अंग्रेजी के विपरीत जो subject-verb-object (कर्ता-क्रिया-कर्म) का उपयोग करती है। उदाहरण के लिए:\n\nअंग्रेजी: I eat food. (SVO)\nहिंदी: मैं खाना खाता हूँ। (SOV) (Main khana khata hoon)\n\nहिंदी में क्रिया हमेशा वाक्य के अंत में आती है। हिंदी वाक्य बनाते समय यह याद रखने वाला सबसे महत्वपूर्ण अंतर है।</string>
+    <string name="grammar_content_tenses">हिंदी में तीन मूल काल हैं, प्रत्येक के विभिन्न रूप:\n\n1. वर्तमान काल:\n   - मैं खाता हूँ (main khata hoon) - I eat/I am eating (पुरुष)\n   - मैं खाती हूँ (main khati hoon) - I eat/I am eating (स्त्री)\n\n2. भूतकाल:\n   - मैंने खाया (maine khaya) - I ate (पुरुष)\n   - मैंने खाई (maine khai) - I ate (स्त्री)\n\n3. भविष्य काल:\n   - मैं खाऊँगा (main khaunga) - I will eat (पुरुष)\n   - मैं खाऊँगी (main khaungi) - I will eat (स्त्री)\n\nध्यान दें कि विषय के लिंग के आधार पर क्रिया का रूप कैसे बदलता है।</string>
+    <string name="grammar_content_verb_agreement">हिंदी क्रियाएँ अपना रूप बदलकर विषय के लिंग और संख्या के अनुसार सहमत होती हैं। उदाहरण के लिए:\n\n1. पुल्लिंग एकवचन: वह खाता है (vah khata hai) - He eats\n2. स्त्रीलिंग एकवचन: वह खाती है (vah khati hai) - She eats\n3. पुल्लिंग बहुवचन: वे खाते हैं (ve khate hain) - They (males) eat\n4. स्त्रीलिंग बहुवचन: वे खाती हैं (ve khati hain) - They (females) eat\n\nइन पैटर्न को सीखना व्याकरणिक रूप से सही हिंदी बोलने के लिए आवश्यक है।</string>
+    <string name="grammar_title_adjectives">हिंदी में विशेषण</string>
+    <string name="grammar_title_compound_verbs">संयुक्त क्रियाएँ</string>
+    <string name="grammar_title_ergative_construction">कर्ता कारक निर्माण</string>
+    <string name="grammar_title_gender">हिंदी में लिंग</string>
+    <string name="grammar_title_honorifics">सम्मानसूचक और सम्मान</string>
+    <string name="grammar_title_negation">हिंदी में नकारात्मकता</string>
+    <string name="grammar_title_participles">हिंदी में कृदंत</string>
+    <string name="grammar_title_postpositions">परसर्ग</string>
+    <string name="grammar_title_pronouns">हिंदी में सर्वनाम</string>
+    <string name="grammar_title_question_formation">प्रश्न निर्माण</string>
+    <string name="grammar_title_sentence_structure">हिंदी वाक्य संरचना</string>
+    <string name="grammar_title_tenses">मूल काल</string>
+    <string name="grammar_title_verb_agreement">क्रिया सहमति</string>
+    <string name="hard">कठिन</string>
+    <string name="hindi">हिंदी</string>
+    <string name="hindi_pronunciation">हिंदी उच्चारण</string>
+    <string name="hindi_word">हिंदी शब्द</string>
+    <string name="hindi_word_label">हिंदी शब्द:</string>
+    <string name="hint_not_available">कोई और संकेत उपलब्ध नहीं है</string>
+    <string name="home_tab">होम</string>
+    <string name="i_dont_know">मुझे नहीं पता</string>
+    <string name="i_know">मुझे पता है</string>
+    <string name="icon_content_description">डायलॉग का आइकॉन</string>
+    <string msgid="6827826412747255547" name="in_progress">"जारी है"</string>
+    <string name="incorrect">गलत। फिर से प्रयास करें!</string>
+    <string name="incorrect_answer">गलत। सही उत्तर है: %s</string>
+    <string name="incorrect_game">गलत!</string>
+    <string name="incorrect_spelling">गलत। सही वर्तनी है: %s</string>
+    <string msgid="7933458017204019916" name="indeterminate">"कुछ विकल्पों को चुना गया"</string>
+    <string name="intermediate">मध्यवर्ती</string>
+    <string name="item_view_role_description">टैब</string>
+    <string name="keep_practicing_feedback">चिंता न करें, अभ्यास से सुधार होगा।</string>
+    <string name="know_it">जानता हूँ</string>
+    <string name="language_preference">इंटरफेस भाषा</string>
+    <string name="lesson_completed">पाठ पूरा हुआ मार्क किया गया!</string>
+    <string name="lesson_desc_asking_questions">प्रश्न शब्द और विभिन्न प्रकार के प्रश्न कैसे पूछें, यह सीखें।</string>
+    <string name="lesson_desc_basic_greetings">हिंदी में नमस्ते और अलविदा कहने के लिए सामान्य अभिवादन सीखें।</string>
+    <string name="lesson_desc_body_parts">शरीर के अंगों और संबंधित अभिव्यक्तियों के लिए शब्दावली सीखें।</string>
+    <string name="lesson_desc_clothing">विभिन्न कपड़ों और कपड़े खरीदने के लिए शब्दावली।</string>
+    <string name="lesson_desc_colors_shapes">रंग, आकार और वर्णनात्मक शब्द सीखें।</string>
+    <string name="lesson_desc_directions">हिंदी में दिशाएँ कैसे पूछें और दें, यह सीखें।</string>
+    <string name="lesson_desc_everyday_phrases">दैनिक बातचीत में उपयोग किए जाने वाले आवश्यक वाक्यांश।</string>
+    <string name="lesson_desc_family_members">परिवार के सदस्यों और रिश्तों के लिए शब्दावली सीखें।</string>
+    <string name="lesson_desc_food_basics">भोजन शब्दावली और रेस्तरां में ऑर्डर करने के लिए वाक्यांश सीखें।</string>
+    <string name="lesson_desc_introducing_yourself">अपना परिचय कैसे दें और बुनियादी व्यक्तिगत प्रश्न कैसे पूछें, यह सीखें।</string>
+    <string name="lesson_desc_numbers_counting">हिंदी में 1-100 तक संख्याएँ और गिनती सीखें।</string>
+    <string name="lesson_desc_shopping">खरीदारी और कीमतों पर बातचीत के लिए आवश्यक शब्दावली।</string>
+    <string name="lesson_desc_time_expressions">समय बताना और समय-संबंधित अभिव्यक्तियों का उपयोग करना सीखें।</string>
+    <string name="lesson_desc_transportation">विभिन्न प्रकार के परिवहन के लिए शब्दावली।</string>
+    <string name="lesson_desc_weather">मौसम की स्थितियों और ऋतुओं के लिए शब्दावली।</string>
+    <string name="lesson_title_asking_questions">प्रश्न पूछना</string>
+    <string name="lesson_title_basic_greetings">मूल अभिवादन</string>
+    <string name="lesson_title_body_parts">शरीर के अंग</string>
+    <string name="lesson_title_clothing">कपड़े</string>
+    <string name="lesson_title_colors_shapes">रंग और आकार</string>
+    <string name="lesson_title_directions">दिशाएँ और स्थान</string>
+    <string name="lesson_title_everyday_phrases">रोज़मर्रा के वाक्यांश</string>
+    <string name="lesson_title_family_members">परिवार के सदस्य</string>
+    <string name="lesson_title_food_basics">खाना-पीना मूल बातें</string>
+    <string name="lesson_title_introducing_yourself">अपना परिचय देना</string>
+    <string name="lesson_title_numbers_counting">संख्याएँ और गिनती</string>
+    <string name="lesson_title_shopping">खरीदारी शब्दावली</string>
+    <string name="lesson_title_time_expressions">समय अभिव्यक्तियाँ</string>
+    <string name="lesson_title_transportation">परिवहन</string>
+    <string name="lesson_title_weather">मौसम और ऋतुएँ</string>
+    <string name="lessons_tab">पाठ</string>
+    <string name="lessons_title">अंग्रेजी सीखने के पाठ</string>
+    <string name="lessons_title_hindi">English Learning Lessons</string>
+    <string name="loading">लोड हो रहा है…</string>
+    <string msgid="2988463736136100848" name="m3c_bottom_sheet_collapse_description">"बॉटम शीट को छोटा करें"</string>
+    <string msgid="1555567894577437024" name="m3c_bottom_sheet_dismiss_description">"बॉटम शीट को खारिज करें"</string>
+    <string msgid="8403354765404029791" name="m3c_bottom_sheet_drag_handle_description">"खींचकर छोड़ने वाला हैंडल"</string>
+    <string msgid="6670819569745899763" name="m3c_bottom_sheet_expand_description">"बॉटम शीट को बड़ा करें"</string>
+    <string msgid="3010635850035863127" name="m3c_bottom_sheet_pane_title">"बॉटम शीट"</string>
+    <string msgid="8166741421776570875" name="m3c_date_input_headline">"डाली गई तारीख"</string>
+    <string msgid="229313757840775812" name="m3c_date_input_headline_description">"डाली गई तारीख: %1$s"</string>
+    <string msgid="6116910750161463197" name="m3c_date_input_invalid_for_pattern">"तारीख सही फ़ॉर्मैट में नहीं डाली गई है: %1$s"</string>
+    <string msgid="2521768508935305279" name="m3c_date_input_invalid_not_allowed">"यह तारीख सही नहीं है: %1$s"</string>
+    <string msgid="7052898923934555305" name="m3c_date_input_invalid_year_range">"तारीख को साल की सही रेंज में नहीं डाला गया है %1$s - %2$s"</string>
+    <string msgid="2895559812010326913" name="m3c_date_input_label">"तारीख"</string>
+    <string msgid="1237013946323089826" name="m3c_date_input_no_input_description">"कोई नहीं"</string>
+    <string msgid="7306227249789210568" name="m3c_date_input_title">"तारीख चुनें"</string>
+    <string msgid="7605002211875882969" name="m3c_date_picker_headline">"चुनी गई तारीख"</string>
+    <string msgid="3664277305226978227" name="m3c_date_picker_headline_description">"फ़िलहाल, यह तारीख चुनी गई है: %1$s"</string>
+    <string msgid="8436650776581492840" name="m3c_date_picker_navigate_to_year_description">"साल %1$s पर जाएं"</string>
+    <string msgid="5811000998184572395" name="m3c_date_picker_no_selection_description">"कोई नहीं"</string>
+    <string msgid="7813882352367152251" name="m3c_date_picker_scroll_to_earlier_years">"पिछले सालों की तारीख देखने के लिए स्क्रोल करें"</string>
+    <string msgid="5727367015496556177" name="m3c_date_picker_scroll_to_later_years">"बाद वाले सालों की तारीख देखने के लिए स्क्रोल करें"</string>
+    <string msgid="1804346892470238807" name="m3c_date_picker_switch_to_calendar_mode">"कैलेंडर इनपुट मोड पर स्विच करें"</string>
+    <string msgid="395627960681594326" name="m3c_date_picker_switch_to_day_selection">"किसी साल को चुनने के लिए स्वाइप करें या दिन को चुनने की सेटिंग पर वापस जाने के लिए टैप करें"</string>
+    <string msgid="2219746470065162704" name="m3c_date_picker_switch_to_input_mode">"टेक्स्ट इनपुट मोड पर स्विच करें"</string>
+    <string msgid="7142101321095356500" name="m3c_date_picker_switch_to_next_month">"अगले महीने पर सेट करें"</string>
+    <string msgid="228438865139394590" name="m3c_date_picker_switch_to_previous_month">"पिछले महीने पर सेट करें"</string>
+    <string msgid="791651718641787594" name="m3c_date_picker_switch_to_year_selection">"साल चुनने के लिए स्विच करें"</string>
+    <string msgid="7430790972741451689" name="m3c_date_picker_title">"तारीख चुनें"</string>
+    <string msgid="3199387177749801575" name="m3c_date_picker_today_description">"आज"</string>
+    <string msgid="2068382232816991922" name="m3c_date_picker_year_picker_pane_title">"साल चुनने का विकल्प दिख रहा है"</string>
+    <string msgid="3190049423327661366" name="m3c_date_range_input_invalid_range_input">"तारीख की दी गई सीमा गलत है"</string>
+    <string msgid="3148384720560189467" name="m3c_date_range_input_title">"तारीखें डालें"</string>
+    <string msgid="2138321128465719402" name="m3c_date_range_picker_day_in_range">"रेंज में"</string>
+    <string msgid="4947636797751277713" name="m3c_date_range_picker_end_headline">"खत्म होने की तारीख"</string>
+    <string msgid="602077859540990149" name="m3c_date_range_picker_scroll_to_next_month">"अगले महीने की तारीख देखने के लिए स्क्रोल करें"</string>
+    <string msgid="4592174524846109496" name="m3c_date_range_picker_scroll_to_previous_month">"पिछले महीने की तारीख देखने के लिए स्क्रोल करें"</string>
+    <string msgid="4665981448952749820" name="m3c_date_range_picker_start_headline">"शुरू होने की तारीख"</string>
+    <string msgid="3134165431120340385" name="m3c_date_range_picker_title">"तारीखें चुनें"</string>
+    <string msgid="7617233117134790350" name="m3c_dialog">"डायलॉग"</string>
+    <string msgid="3177828188723359358" name="m3c_dropdown_menu_collapsed">"छोटा किया गया"</string>
+    <string msgid="2360841780724299882" name="m3c_dropdown_menu_expanded">"बड़ा किया गया"</string>
+    <string msgid="6152806324422087846" name="m3c_search_bar_search">"खोजें"</string>
+    <string msgid="6152755701819882931" name="m3c_snackbar_dismiss">"खारिज करें"</string>
+    <string msgid="7655536806087401899" name="m3c_suggestions_available">"सुझाव यहां मौजूद हैं"</string>
+    <string msgid="2786685010796619560" name="m3c_time_picker_am">"AM"</string>
+    <string msgid="2349193472625211372" name="m3c_time_picker_hour">"घंटा"</string>
+    <string msgid="9179527532316922345" name="m3c_time_picker_hour_24h_suffix">"%1$d घंटे"</string>
+    <string msgid="8876759303332837035" name="m3c_time_picker_hour_selection">"घंटा चुनें"</string>
+    <string msgid="3458167507790628988" name="m3c_time_picker_hour_suffix">"%1$d बजे"</string>
+    <string msgid="6973808109666874069" name="m3c_time_picker_hour_text_field">"घंटे के लिए"</string>
+    <string msgid="4313071914266462005" name="m3c_time_picker_minute">"मिनट"</string>
+    <string msgid="4699133535056739733" name="m3c_time_picker_minute_selection">"मिनट चुनें"</string>
+    <string msgid="5064177921781937179" name="m3c_time_picker_minute_suffix">"%1$d मिनट"</string>
+    <string msgid="7661234488295443182" name="m3c_time_picker_minute_text_field">"मिनट के लिए"</string>
+    <string msgid="5865171949528594571" name="m3c_time_picker_period_toggle_description">"AM या PM चुनें"</string>
+    <string msgid="6616362054113087709" name="m3c_time_picker_pm">"PM"</string>
+    <string msgid="1805687647081129904" name="m3c_tooltip_long_press_label">"टूलटिप देखें"</string>
+    <string msgid="5460405025248574620" name="m3c_tooltip_pane_description">"टूलटिप"</string>
+    <string name="mastery_level">प्रवीणता स्तर</string>
+    <string name="matches_made">मिलान किए गए:</string>
+    <string name="matching">मिलान</string>
+    <string name="material_clock_toggle_content_description">AM या PM चुनें</string>
+    <string name="material_hour_24h_suffix">%1$s घंटे</string>
+    <string name="material_hour_selection">घंटा चुनें</string>
+    <string name="material_hour_suffix">%1$s बजे</string>
+    <string name="material_minute_selection">मिनट चुनें</string>
+    <string name="material_minute_suffix">%1$s मिनट</string>
+    <string name="material_timepicker_am">पूर्वाह्न</string>
+    <string name="material_timepicker_clock_mode_description">समय इनपुट के लिए घड़ी मोड पर जाएं.</string>
+    <string name="material_timepicker_hour">घंटा</string>
+    <string name="material_timepicker_minute">मिनट</string>
+    <string name="material_timepicker_pm">अपराह्न</string>
+    <string name="material_timepicker_select_time">समय चुनें</string>
+    <string name="material_timepicker_text_input_mode_description">समय इनपुट के लिए लेख इनपुट मोड पर जाएं.</string>
+    <string name="mtrl_badge_numberless_content_description">नई सूचना</string>
+    <string name="mtrl_checkbox_state_description_checked">सही का निशान लगाया गया</string>
+    <string name="mtrl_checkbox_state_description_indeterminate">कुछ विकल्प चुने गए</string>
+    <string name="mtrl_checkbox_state_description_unchecked">सही का निशान नहीं लगाया गया</string>
+    <string name="mtrl_chip_close_icon_content_description">%1$s हटाएं</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">%1$d से ज़्यादा नई सूचनाएं</string>
+    <string name="mtrl_picker_a11y_next_month">अगले महीने पर जाएं</string>
+    <string name="mtrl_picker_a11y_prev_month">पिछले महीने पर जाएं</string>
+    <string name="mtrl_picker_announce_current_range_selection">शुरू होने की तारीख चुनें: %1$s – खत्म होने की तारीख चुनें: %2$s</string>
+    <string name="mtrl_picker_announce_current_selection">फ़िलहाल, यह चुना गया है: %1$s</string>
+    <string name="mtrl_picker_announce_current_selection_none">कोई भी तारीख नहीं चुनी गई</string>
+    <string name="mtrl_picker_cancel">रद्द करें</string>
+    <string name="mtrl_picker_confirm">ठीक है</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">तारीख चुनें</string>
+    <string name="mtrl_picker_date_header_unselected">चुनी गई तारीख</string>
+    <string name="mtrl_picker_day_of_week_column_header">%1$s</string>
+    <string name="mtrl_picker_end_date_description">खत्म होने की तारीख %1$s</string>
+    <string name="mtrl_picker_invalid_format">गलत फ़ॉर्मैट.</string>
+    <string name="mtrl_picker_invalid_format_example">उदाहरण: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">%1$s का इस्तेमाल करें</string>
+    <string name="mtrl_picker_invalid_range">तारीखों की अमान्य सीमा.</string>
+    <string name="mtrl_picker_navigate_to_current_year_description">मौजूदा साल %1$d पर जाएं</string>
+    <string name="mtrl_picker_navigate_to_year_description">साल %1$d पर जाएं</string>
+    <string name="mtrl_picker_out_of_range">चुनी गई तारीख मान्य नहीं है: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">शुरू होने की तारीख – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – खत्म होने की तारीख</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">रेंज चुनें</string>
+    <string name="mtrl_picker_range_header_unselected">शुरू होने की तारीख – खत्म होने की तारीख</string>
+    <string name="mtrl_picker_save">सेव करें</string>
+    <string name="mtrl_picker_start_date_description">शुरू होने की तारीख %1$s</string>
+    <string name="mtrl_picker_text_input_date_hint">तारीख</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">खत्म होने की तारीख</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">शुरू होने की तारीख</string>
+    <string name="mtrl_picker_text_input_day_abbr">d</string>
+    <string name="mtrl_picker_text_input_month_abbr">m</string>
+    <string name="mtrl_picker_text_input_year_abbr">y</string>
+    <string name="mtrl_picker_today_description">आज %1$s</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">कैलेंडर के इनपुट मोड पर स्विच करें</string>
+    <string name="mtrl_picker_toggle_to_day_selection">कैलेंडर के व्यू पर स्विच करने के लिए टैप करें</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">टेक्स्ट के इनपुट मोड पर स्विच करें</string>
+    <string name="mtrl_picker_toggle_to_year_selection">साल के व्यू पर स्विच करने के लिए टैप करें</string>
+    <string name="mtrl_timepicker_cancel">रद्द करें</string>
+    <string name="mtrl_timepicker_confirm">ठीक है</string>
+    <string name="multiple_choice">बहुविकल्पी</string>
+    <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"वापस जाएं"</string>
+    <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"नेविगेशन पैनल खोलें"</string>
+    <string msgid="542007171693138492" name="navigation_menu">"नेविगेशन मेन्यू"</string>
+    <string name="next">अगला</string>
+    <string name="next_lesson">अगला पाठ</string>
+    <string name="next_word">अगला शब्द</string>
+    <string name="no_incomplete_lessons">आपने सभी उपलब्ध पाठ पूरे कर लिए हैं!</string>
+    <string name="no_sessions_yet">अभी तक कोई सत्र नहीं</string>
+    <string name="no_vocabulary_words">इस पाठ के लिए कोई शब्दावली शब्द नहीं हैं</string>
+    <string name="no_words_available">कोई शब्द उपलब्ध नहीं है</string>
+    <string name="no_words_category">इस श्रेणी में कोई शब्द नहीं</string>
+    <string name="no_words_criteria">कोई शब्द मापदंड से मेल नहीं खाते</string>
+    <string name="no_words_criteria_game">चयनित मानदंडों से मिलते शब्द नहीं हैं</string>
+    <string name="not_enough_related_words">पर्याप्त संबंधित शब्द नहीं हैं</string>
+    <string name="not_enough_words">इस गेम को खेलने के लिए पर्याप्त शब्द नहीं हैं</string>
+    <string name="not_enough_words_with_images">पर्याप्त चित्रों वाले शब्द नहीं हैं</string>
+    <string msgid="6610465462668679431" name="not_selected">"नहीं चुना गया"</string>
+    <string name="notes">नोट्स</string>
+    <string msgid="875452955155264703" name="off">"बंद है"</string>
+    <string msgid="8655164131929253426" name="on">"चालू है"</string>
+    <string name="password_toggle_content_description">पासवर्ड दिखाएं</string>
+    <string name="picture_match_description">चित्रों को उनके सही अंग्रेजी और हिंदी शब्दों से मिलाएं।</string>
+    <string name="picture_word_match">चित्र शब्द मिलान</string>
+    <string name="play">खेलें</string>
+    <string name="play_again">फिर से खेलें</string>
+    <string name="play_normal">सामान्य उच्चारण</string>
+    <string name="play_pronunciation">उच्चारण सुनें</string>
+    <string name="play_slow">धीमा उच्चारण</string>
+    <string name="playing_pronunciation">उच्चारण चल रहा है…</string>
+    <string name="practice_complete">अभ्यास पूरा हुआ!</string>
+    <string name="practice_tab">अभ्यास</string>
+    <string name="practice_title">शब्दों का अभ्यास करें</string>
+    <string name="practice_title_hindi">Practice Words</string>
+    <string name="previous">पिछला</string>
+    <string name="profile_tab">प्रोफाइल</string>
+    <string name="pronunciation">उच्चारण</string>
+    <string name="pronunciation_complete">उच्चारण अभ्यास पूरा हुआ!</string>
+    <string name="pronunciation_instruction">सुनें और उच्चारण का अभ्यास करें:</string>
+    <string name="pronunciation_with_colon">उच्चारण: %s</string>
+    <string name="question_number">प्रश्न %1$d / %2$d</string>
+    <string name="question_of_total">प्रश्न %1$d / %2$d</string>
+    <string name="quiz_complete">क्विज़ पूरा हुआ!</string>
+    <string msgid="5941395253238309765" name="range_end">"रेंज की सीमा"</string>
+    <string msgid="7097486360902471446" name="range_start">"रेंज की शुरुआत"</string>
+    <string name="reminder_time">रिमाइंडर समय</string>
+    <string name="remove_from_favorites">पसंदीदा से हटाएँ</string>
+    <string name="repeat">दोहराएँ</string>
+    <string name="review_due">समीक्षा देय</string>
+    <string name="review_soon">जल्द ही समीक्षा करें</string>
+    <string name="save">सहेजें</string>
+    <string name="score">अंक:</string>
+    <string name="score_label">आपका स्कोर</string>
+    <string name="score_percentage">%d%%</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"खोजें"</string>
+    <string name="searchview_clear_text_content_description">टेक्स्ट मिटाएं</string>
+    <string name="searchview_navigation_content_description">वापस जाएं</string>
+    <string name="select_answer">कृपया एक उत्तर चुनें</string>
+    <string name="select_game_to_play">खेलने के लिए एक गेम चुनें</string>
+    <string msgid="6043586758067023" name="selected">"चुना गया"</string>
+    <string name="settings_title">सेटिंग्स</string>
+    <string name="settings_title_hindi">Settings</string>
+    <string name="show_answer">उत्तर दिखाएँ</string>
+    <string name="side_sheet_accessibility_pane_title">साइड शीट</string>
+    <string name="spell_english_for">\"%s\" के लिए अंग्रेजी शब्द की वर्तनी लिखें:</string>
+    <string name="spell_hindi_for">\"%s\" के लिए हिंदी शब्द की वर्तनी लिखें:</string>
+    <string name="spell_instruction">इस हिंदी शब्द के लिए अंग्रेजी शब्द की वर्तनी लिखें:</string>
+    <string name="spell_the_word">शब्द की वर्तनी लिखें:</string>
+    <string name="spelling">वर्तनी</string>
+    <string name="spelling_challenge">वर्तनी चुनौती</string>
+    <string name="spelling_complete">वर्तनी अभ्यास पूरा हुआ!</string>
+    <string name="start_first_lesson">पहला पाठ शुरू करें</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="study_flashcards">फ्लैशकार्ड अध्ययन</string>
+    <string msgid="2561197295334830845" name="switch_role">"स्विच करें"</string>
+    <string msgid="1672349317127674378" name="tab">"टैब"</string>
+    <string name="tab_english">अंग्रेजी</string>
+    <string name="tab_hindi">हिंदी</string>
+    <string name="tab_practice">अभ्यास</string>
+    <string name="tab_vocabulary">शब्दावली</string>
+    <string name="tagline">भाषाओं को जोड़ें</string>
+    <string name="take_quiz">क्विज करें</string>
+    <string msgid="5946805113151406391" name="template_percent">"<ns1:g id="PERCENTAGE">%1$d</ns1:g> प्रतिशत."</string>
+    <string name="time">समय:</string>
+    <string msgid="3765533235322692011" name="tooltip_description">"टूलटिप"</string>
+    <string msgid="3124740595719787496" name="tooltip_label">"टूलटिप दिखाएं"</string>
+    <string name="try_again">पुनः प्रयास करें</string>
+    <string name="try_again_button">फिर से प्रयास करें</string>
+    <string name="tts_not_ready">टेक्स्ट-टू-स्पीच तैयार नहीं है</string>
+    <string name="use_hindi_interface">हिंदी इंटरफेस का उपयोग करें</string>
+    <string name="version">संस्करण</string>
+    <string name="very_good_feedback">बहुत अच्छा! थोड़ा और अभ्यास करें।</string>
+    <string name="welcome_message">अंग्रेजी-हिंदी सीखने के ऐप में आपका स्वागत है</string>
+    <string name="welcome_message_hindi">Welcome to English-Hindi Learning App</string>
+    <string name="well_done">शाबाश!</string>
+    <string name="well_known">अच्छी तरह से जाना जाता है</string>
+    <string name="what_is_english_for">\"%s\" के लिए अंग्रेजी शब्द क्या है?</string>
+    <string name="what_is_hindi_for">\"%s\" के लिए हिंदी शब्द क्या है?</string>
+    <string name="whats_the_translation">अनुवाद क्या है?</string>
+    <string name="word_association">शब्द संबंध</string>
+    <string name="word_deleted">शब्द हटा दिया गया</string>
+    <string name="word_of_total">शब्द %1$d / %2$d</string>
+    <string name="word_saved">शब्द सहेजा गया</string>
+    <string name="word_scramble">शब्द पहेली</string>
+    <string name="word_scramble_description">दिए गए हिंदी शब्द के लिए सही अंग्रेजी शब्द बनाने के लिए अक्षरों को व्यवस्थित करें।</string>
+    <string name="words_due_review">समीक्षा के लिए देय शब्द: %d</string>
+    <string name="words_learned_count">सीखे गए शब्द: %d</string>
+    <string name="words_mastered">शब्द मास्टर किए: %1$d/%2$d</string>
+    <string name="your_score">आपके अंक:</string>
+</resources>
