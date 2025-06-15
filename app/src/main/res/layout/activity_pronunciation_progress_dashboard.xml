@@ -316,7 +316,7 @@
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
-                    <com.example.englishhindi.util.ChartView
+                    <com.bhashasetu.app.util.ChartView
                         android:id="@+id/chart_progress"
                         android:layout_width="match_parent"
                         android:layout_height="200dp"

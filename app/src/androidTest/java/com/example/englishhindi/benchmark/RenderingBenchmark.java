@@ -1,4 +1,4 @@
-package com.example.englishhindi.benchmark;
+package com.bhashasetu.app.benchmark;
 
 import androidx.benchmark.BenchmarkState;
 import androidx.benchmark.junit4.BenchmarkRule;
@@ -35,8 +35,8 @@ public class RenderingBenchmark {
         device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation());
         
         // Start app and navigate to home screen
-        device.executeShellCommand("am force-stop com.example.englishhindi");
-        device.executeShellCommand("am start -n com.example.englishhindi/com.example.englishhindi.ui.MainActivity");
+        device.executeShellCommand("am force-stop com.bhashasetu.app");
+        device.executeShellCommand("am start -n com.bhashasetu.app/com.bhashasetu.app.ui.MainActivity_ViewBased");
         device.waitForIdle();
     }
 
@@ -48,7 +48,7 @@ public class RenderingBenchmark {
 
         BenchmarkState state = benchmarkRule.getState();
         
-        UiObject2 recyclerView = device.findObject(By.res("com.example.englishhindi:id/word_list_recycler_view"));
+        UiObject2 recyclerView = device.findObject(By.res("com.bhashasetu.app:id/word_list_recycler_view"));
         
         while (state.keepRunning()) {
             // Start timing scroll performance
@@ -100,11 +100,11 @@ public class RenderingBenchmark {
             // Trigger complex UI rendering
             
             // Open a learning module that has rich content
-            device.findObject(By.res("com.example.englishhindi:id/module_item")).click();
+            device.findObject(By.res("com.bhashasetu.app:id/module_item")).click();
             device.waitForIdle();
             
             // Interact with complex content
-            UiObject2 contentView = device.findObject(By.res("com.example.englishhindi:id/module_content"));
+            UiObject2 contentView = device.findObject(By.res("com.bhashasetu.app:id/module_content"));
             if (contentView != null) {
                 contentView.scroll(Direction.DOWN, 0.5f);
                 device.waitForIdle();
@@ -134,11 +134,11 @@ public class RenderingBenchmark {
             // Test image loading performance
             
             // Scroll through images
-            UiObject2 imageGrid = device.findObject(By.res("com.example.englishhindi:id/image_grid"));
+            UiObject2 imageGrid = device.findObject(By.res("com.bhashasetu.app:id/image_grid"));
             imageGrid.scroll(Direction.DOWN, 0.7f);
             
             // Wait for images to load (this measures image loading performance)
-            device.wait(Until.findObject(By.res("com.example.englishhindi:id/image_view")), 2000);
+            device.wait(Until.findObject(By.res("com.bhashasetu.app:id/image_view")), 2000);
             device.waitForIdle();
             
             // Scroll back up to reset

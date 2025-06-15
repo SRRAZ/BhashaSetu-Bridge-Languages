@@ -1,16 +1,19 @@
-package com.example.englishhindi.viewmodel;
+package com.bhashasetu.app.viewmodel;
 
 import android.app.Application;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
+import androidx.lifecycle.ViewModel;
+import dagger.hilt.android.lifecycle.HiltViewModel;
+import javax.inject.Inject;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MediatorLiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.Transformations;
 
-import com.example.englishhindi.database.AchievementRepository;
-import com.example.englishhindi.model.Achievement;
+import com.bhashasetu.app.database.AchievementRepository;
+import com.bhashasetu.app.model.Achievement;
 
 import java.util.ArrayList;
 import java.util.List;

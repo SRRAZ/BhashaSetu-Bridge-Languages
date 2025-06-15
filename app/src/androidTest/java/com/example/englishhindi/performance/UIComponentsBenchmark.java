@@ -1,4 +1,4 @@
-package com.example.englishhindi.performance;
+package com.bhashasetu.app.performance;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,11 +11,11 @@ import androidx.benchmark.junit4.BenchmarkRule;
 import androidx.test.core.app.ApplicationProvider;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
-import com.example.englishhindi.ui.LoadingButton;
-import com.example.englishhindi.ui.LoadingStateView;
-import com.example.englishhindi.ui.ProgressAnimationView;
-import com.example.englishhindi.util.HapticFeedbackManager;
-import com.example.englishhindi.util.ViewEffectUtil;
+import com.bhashasetu.app.ui.LoadingButton;
+import com.bhashasetu.app.ui.LoadingStateView;
+import com.bhashasetu.app.ui.ProgressAnimationView;
+import com.bhashasetu.app.util.HapticFeedbackManager;
+import com.bhashasetu.app.util.ViewEffectUtil;
 
 import org.junit.Rule;
 import org.junit.Test;

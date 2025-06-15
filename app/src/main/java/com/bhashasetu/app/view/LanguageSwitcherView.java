@@ -12,7 +12,7 @@ import androidx.annotation.Nullable;
 
 import com.bhashasetu.app.R;
 import com.bhashasetu.app.model.AppSettings;
-import com.bhashasetu.app.util.LanguageManager;
+import com.bhashasetu.app.util.LanguageManagerLegacy;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.button.MaterialButtonToggleGroup;
 
@@ -24,7 +24,7 @@ public class LanguageSwitcherView extends FrameLayout {
     private MaterialButtonToggleGroup toggleGroup;
     private MaterialButton englishButton;
     private MaterialButton hindiButton;
-    private LanguageManager languageManager;
+    private LanguageManagerLegacy languageManager;
     private LanguageSwitchListener listener;
 
     public LanguageSwitcherView(@NonNull Context context) {
@@ -47,7 +47,7 @@ public class LanguageSwitcherView extends FrameLayout {
         LayoutInflater.from(context).inflate(R.layout.view_language_switcher, this, true);
         
         // Initialize language manager
-        languageManager = new LanguageManager(context);
+        languageManager = new LanguageManagerLegacy(context);
         
         // Get view references
         toggleGroup = findViewById(R.id.language_toggle);

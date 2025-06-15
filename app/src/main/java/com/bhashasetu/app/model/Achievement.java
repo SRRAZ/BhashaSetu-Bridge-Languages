@@ -3,6 +3,8 @@ package com.bhashasetu.app.model;
 import androidx.annotation.DrawableRes;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
+import androidx.room.ForeignKey;
+import java.util.Date;
 
 /**
  * Model class for user achievements in the app.

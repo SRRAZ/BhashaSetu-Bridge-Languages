@@ -1,4 +1,4 @@
-package com.example.englishhindi.unit;
+package com.bhashasetu.app.unit;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
@@ -9,7 +9,7 @@ import android.os.Build;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.Observer;
 
-import com.example.englishhindi.util.NetworkConnectionHandler;
+import com.bhashasetu.app.util.NetworkConnectionHandler;
 
 import org.junit.Before;
 import org.junit.Test;

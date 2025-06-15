@@ -143,6 +143,6 @@ class AudioManager @Inject constructor() {
     }
     
     companion object {
-        private const val TAG = "AudioManager"
+        private const val TAG = "AppAudioManager"
     }
 }

@@ -40,8 +40,8 @@ Three specific issues were identified that were related to ProGuard optimization
 
 **Solution**: Added specific keep rules to preserve the audio focus handler classes:
 ```
--keep class com.example.englishhindi.audio.AudioFocusHandler { *; }
--keep class com.example.englishhindi.audio.AudioFocusChangeListener { *; }
+-keep class com.bhashasetu.app.audio.AudioFocusHandler { *; }
+-keep class com.bhashasetu.app.audio.AudioFocusChangeListener { *; }
 -keep class * implements android.media.AudioManager$OnAudioFocusChangeListener { *; }
 ```
 
@@ -57,8 +57,8 @@ Three specific issues were identified that were related to ProGuard optimization
 ```
 -keep class com.chatprovider.** { *; }
 -keepclassmembers class com.chatprovider.** { *; }
--keep class com.example.englishhindi.chat.** { *; }
--keep class com.example.englishhindi.messaging.** { *; }
+-keep class com.bhashasetu.app.chat.** { *; }
+-keep class com.bhashasetu.app.messaging.** { *; }
 ```
 
 **Verification**: Chat feature now functions properly without crashes across multiple sessions and devices.
@@ -71,9 +71,9 @@ Three specific issues were identified that were related to ProGuard optimization
 
 **Solution**: Expanded keep rules for model classes to include response models:
 ```
--keep class com.example.englishhindi.data.model.** { *; }
--keep class com.example.englishhindi.data.response.** { *; }
--keep class com.example.englishhindi.network.response.** { *; }
+-keep class com.bhashasetu.app.data.model.** { *; }
+-keep class com.bhashasetu.app.data.response.** { *; }
+-keep class com.bhashasetu.app.network.response.** { *; }
 ```
 
 **Verification**: JSON parsing now works correctly for all API responses, including complex nested structures.

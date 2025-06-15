@@ -6,7 +6,6 @@ import android.graphics.drawable.AnimatedVectorDrawable;
 import android.os.Build;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
@@ -16,7 +15,7 @@ import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 
 import com.bhashasetu.app.R;
-import com.bhashasetu.app.audio.AudioManager;
+import com.bhashasetu.app.audio.AppAudioManager;
 
 import java.util.Locale;
 
@@ -33,7 +32,7 @@ public class AudioPronunciationView extends LinearLayout {
     private ProgressBar progressBar;
     private TextView statusText;
 
-    private AudioManager audioManager;
+    private AppAudioManager audioManager;
     private String wordText;
     private int wordId = -1;
     private boolean isPlayingAudio = false;
@@ -61,8 +60,8 @@ public class AudioPronunciationView extends LinearLayout {
         // Inflate the layout
         LayoutInflater.from(context).inflate(R.layout.view_audio_pronunciation, this, true);
 
-        // Get the AudioManager instance
-        audioManager = AudioManager.getInstance(context);
+        // Get the AppAudioManager instance
+        audioManager = AppAudioManager.getInstance(context);
 
         // Find views
         cardContainer = findViewById(R.id.card_container);

@@ -310,7 +310,7 @@ For advanced navigation flows, the app will use the Android Navigation Component
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.englishhindi.ui.home.HomeFragment"
+        android:name="com.bhashasetu.app.ui.home.HomeFragment"
         android:label="Home">
         <action
             android:id="@+id/action_home_to_wordDetail"
@@ -319,7 +319,7 @@ For advanced navigation flows, the app will use the Android Navigation Component
 
     <fragment
         android:id="@+id/wordDetailFragment"
-        android:name="com.example.englishhindi.ui.word.WordDetailFragment"
+        android:name="com.bhashasetu.app.ui.word.WordDetailFragment"
         android:label="Word Detail">
         <argument
             android:name="wordId"

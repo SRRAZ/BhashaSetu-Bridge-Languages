@@ -7,8 +7,7 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.bhashasetu.app.BhashaSetuApplication;
-import com.bhashasetu.app.util.LanguageManager;
+import com.bhashasetu.app.util.LanguageManagerLegacy;
 
 import java.util.Locale;
 
@@ -18,12 +17,12 @@ import java.util.Locale;
  */
 public abstract class BaseActivity extends AppCompatActivity {
     
-    protected LanguageManager languageManager;
+    protected LanguageManagerLegacy languageManager;
     
     @Override
     protected void attachBaseContext(Context newBase) {
         // Apply language settings to the context before attaching it
-        languageManager = new LanguageManager(newBase);
+        languageManager = new LanguageManagerLegacy(newBase);
         
         // Get the locale based on settings
         Locale locale = new Locale(languageManager.getCurrentLanguageCode());
@@ -41,7 +40,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         
-        languageManager = new LanguageManager(this);
+        languageManager = new LanguageManagerLegacy(this);
 
     }
     

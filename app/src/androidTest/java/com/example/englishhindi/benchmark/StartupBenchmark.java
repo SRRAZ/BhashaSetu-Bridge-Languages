@@ -1,4 +1,4 @@
-package com.example.englishhindi.benchmark;
+package com.bhashasetu.app.benchmark;
 
 import androidx.benchmark.BenchmarkState;
 import androidx.benchmark.junit4.BenchmarkRule;
@@ -28,16 +28,16 @@ public class StartupBenchmark {
 
         while (state.keepRunning()) {
             // Force stop the app before each run
-            device.executeShellCommand("am force-stop com.example.englishhindi");
+            device.executeShellCommand("am force-stop com.bhashasetu.app");
             
             // Clear app data to ensure true cold start
-            device.executeShellCommand("pm clear com.example.englishhindi");
+            device.executeShellCommand("pm clear com.bhashasetu.app");
             
             // Start timing
             state.pauseTiming();
             
             // Launch the app
-            device.executeShellCommand("am start -n com.example.englishhindi/com.example.englishhindi.ui.MainActivity");
+            device.executeShellCommand("am start -n com.bhashasetu.app/com.bhashasetu.app.ui.MainActivity_ViewBased");
             
             // Resume timing - benchmark will automatically time until the app is fully loaded
             state.resumeTiming();
@@ -53,7 +53,7 @@ public class StartupBenchmark {
         UiDevice device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation());
 
         // First, launch the app to load it into memory
-        device.executeShellCommand("am start -n com.example.englishhindi/com.example.englishhindi.ui.MainActivity");
+        device.executeShellCommand("am start -n com.bhashasetu.app/com.bhashasetu.app.ui.MainActivity_ViewBased");
         device.waitForIdle();
 
         while (state.keepRunning()) {
@@ -65,7 +65,7 @@ public class StartupBenchmark {
             state.pauseTiming();
             
             // Launch the app again
-            device.executeShellCommand("am start -n com.example.englishhindi/com.example.englishhindi.ui.MainActivity");
+            device.executeShellCommand("am start -n com.bhashasetu.app/com.bhashasetu.app.ui.MainActivity_ViewBased");
             
             // Resume timing
             state.resumeTiming();
@@ -81,7 +81,7 @@ public class StartupBenchmark {
         UiDevice device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation());
 
         // First, launch the app to load it into memory
-        device.executeShellCommand("am start -n com.example.englishhindi/com.example.englishhindi.ui.MainActivity");
+        device.executeShellCommand("am start -n com.bhashasetu.app/com.bhashasetu.app.ui.MainActivity_ViewBased");
         device.waitForIdle();
 
         while (state.keepRunning()) {
@@ -100,7 +100,7 @@ public class StartupBenchmark {
             state.pauseTiming();
             
             // Launch the app again immediately
-            device.executeShellCommand("am start -n com.example.englishhindi/com.example.englishhindi.ui.MainActivity");
+            device.executeShellCommand("am start -n com.bhashasetu.app/com.bhashasetu.app.ui.MainActivity_ViewBased");
             
             // Resume timing
             state.resumeTiming();

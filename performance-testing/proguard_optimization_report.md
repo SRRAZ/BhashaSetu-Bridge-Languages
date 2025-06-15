@@ -69,8 +69,8 @@ After functionality testing, the following rules were added to address specific 
 
 1. **Audio Focus Handling**
    ```
-   -keep class com.example.englishhindi.audio.AudioFocusHandler { *; }
-   -keep class com.example.englishhindi.audio.AudioFocusChangeListener { *; }
+   -keep class com.bhashasetu.app.audio.AudioFocusHandler { *; }
+   -keep class com.bhashasetu.app.audio.AudioFocusChangeListener { *; }
    -keep class * implements android.media.AudioManager$OnAudioFocusChangeListener { *; }
    ```
    
@@ -80,17 +80,17 @@ After functionality testing, the following rules were added to address specific 
    ```
    -keep class com.chatprovider.** { *; }
    -keepclassmembers class com.chatprovider.** { *; }
-   -keep class com.example.englishhindi.chat.** { *; }
-   -keep class com.example.englishhindi.messaging.** { *; }
+   -keep class com.bhashasetu.app.chat.** { *; }
+   -keep class com.bhashasetu.app.messaging.** { *; }
    ```
    
    **Issue Resolved**: Occasional crashes when sending chat messages due to obfuscation of classes used via reflection.
 
 3. **JSON Parsing**
    ```
-   -keep class com.example.englishhindi.data.model.** { *; }
-   -keep class com.example.englishhindi.data.response.** { *; }
-   -keep class com.example.englishhindi.network.response.** { *; }
+   -keep class com.bhashasetu.app.data.model.** { *; }
+   -keep class com.bhashasetu.app.data.response.** { *; }
+   -keep class com.bhashasetu.app.network.response.** { *; }
    ```
    
    **Issue Resolved**: Occasional crash when parsing complex JSON responses with nested structures.

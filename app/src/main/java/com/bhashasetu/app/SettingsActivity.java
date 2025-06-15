@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.CompoundButton;
-import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
@@ -16,15 +15,14 @@ import androidx.appcompat.widget.SwitchCompat;
 import androidx.appcompat.widget.Toolbar;
 import androidx.preference.PreferenceManager;
 import com.bhashasetu.app.model.AppSettings;
-import com.bhashasetu.app.BuildConfig;
-import com.bhashasetu.app.util.LanguageManager;
+import com.bhashasetu.app.util.LanguageManagerLegacy;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 public class SettingsActivity extends AppCompatActivity {
 
     private AppSettings appSettings;
-    private LanguageManager languageManager;
+    private LanguageManagerLegacy languageManager;
     
     private TextView titleTextView;
     private SwitchCompat hindiInterfaceSwitch; // Changed from Switch to SwitchCompat for consistency
@@ -40,7 +38,7 @@ public class SettingsActivity extends AppCompatActivity {
         
         // Initialize settings and language manager
         appSettings = AppSettings.getInstance(this);
-        languageManager = new LanguageManager(this);
+        languageManager = new LanguageManagerLegacy(this);
         languageManager.applyLanguageSettings();
         
         setContentView(R.layout.activity_settings);

@@ -108,13 +108,13 @@ if [ -f "../../gradlew" ]; then
     cd ../../
     
     # Run startup benchmark
-    ./gradlew cAT -P android.testInstrumentationRunnerArguments.class=com.example.englishhindi.benchmark.StartupBenchmark
+    ./gradlew cAT -P android.testInstrumentationRunnerArguments.class=com.bhashasetu.app.benchmark.StartupBenchmark
     
     # Run rendering benchmark
-    ./gradlew cAT -P android.testInstrumentationRunnerArguments.class=com.example.englishhindi.benchmark.RenderingBenchmark
+    ./gradlew cAT -P android.testInstrumentationRunnerArguments.class=com.bhashasetu.app.benchmark.RenderingBenchmark
     
     # Run memory benchmark
-    ./gradlew cAT -P android.testInstrumentationRunnerArguments.class=com.example.englishhindi.benchmark.MemoryBenchmark
+    ./gradlew cAT -P android.testInstrumentationRunnerArguments.class=com.bhashasetu.app.benchmark.MemoryBenchmark
     
     cd - > /dev/null
     log "Benchmark tests completed"

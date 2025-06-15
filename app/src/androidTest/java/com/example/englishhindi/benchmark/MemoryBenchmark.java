@@ -1,4 +1,4 @@
-package com.example.englishhindi.benchmark;
+package com.bhashasetu.app.benchmark;
 
 import android.app.Instrumentation;
 import android.content.Intent;
@@ -33,8 +33,8 @@ public class MemoryBenchmark {
     public BenchmarkRule benchmarkRule = new BenchmarkRule();
 
     private UiDevice device;
-    private static final String PACKAGE_NAME = "com.example.englishhindi";
-    private static final String MAIN_ACTIVITY = ".ui.MainActivity";
+    private static final String PACKAGE_NAME = "com.bhashasetu.app";
+    private static final String MAIN_ACTIVITY = ".ui.MainActivity_ViewBased";
 
     @Before
     public void setUp() throws IOException {

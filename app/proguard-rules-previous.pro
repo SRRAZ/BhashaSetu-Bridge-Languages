@@ -69,8 +69,8 @@
 -dontwarn androidx.room.paging.**
 
 # Entity classes
--keep class com.example.englishhindi.data.model.** { *; }
--keep class com.example.englishhindi.data.relation.** { *; }
+-keep class com.bhashasetu.app.data.model.** { *; }
+-keep class com.bhashasetu.app.data.relation.** { *; }
 
 # Enum classes
 -keepclassmembers enum * {
@@ -132,17 +132,17 @@
 }
 
 # Keep Room Database classes
--keep class com.example.englishhindi.data.db.AppDatabase
--keep class com.example.englishhindi.data.dao.** { *; }
+-keep class com.bhashasetu.app.data.db.AppDatabase
+-keep class com.bhashasetu.app.data.dao.** { *; }
 
 # Keep Entity classes and their fields
--keep class com.example.englishhindi.data.model.** { *; }
--keepclassmembers class com.example.englishhindi.data.model.** { *; }
+-keep class com.bhashasetu.app.data.model.** { *; }
+-keepclassmembers class com.bhashasetu.app.data.model.** { *; }
 
 # Keep AudioPlayer components
--keep class com.example.englishhindi.audio.AudioPlayer { *; }
--keep class com.example.englishhindi.audio.AudioPlayerListener { *; }
+-keep class com.bhashasetu.app.audio.AudioPlayer { *; }
+-keep class com.bhashasetu.app.audio.AudioPlayerListener { *; }
 
 # Keep custom views
--keep class com.example.englishhindi.view.** { *; }
--keep class com.example.englishhindi.ui.components.** { *; }
+-keep class com.bhashasetu.app.view.** { *; }
+-keep class com.bhashasetu.app.ui.components.** { *; }

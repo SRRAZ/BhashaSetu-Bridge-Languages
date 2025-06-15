@@ -1,4 +1,4 @@
-package com.example.englishhindi.ui;
+package com.bhashasetu.app.ui;
 
 import android.content.Context;
 import android.view.View;
@@ -8,7 +8,7 @@ import android.widget.TextView;
 import androidx.test.core.app.ApplicationProvider;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
-import com.example.englishhindi.R;
+import com.bhashasetu.app.R;
 
 import org.junit.Before;
 import org.junit.Test;

@@ -2,8 +2,6 @@ package com.bhashasetu.app.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.graphics.drawable.AnimatedVectorDrawable;
-import android.os.Build;
 import android.os.Handler;
 import android.os.Looper;
 import android.util.AttributeSet;
@@ -15,10 +13,9 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
-import androidx.appcompat.content.res.AppCompatResources;
 
 import com.bhashasetu.app.R;
-import com.bhashasetu.app.audio.AudioManager;
+import com.bhashasetu.app.audio.AppAudioManager;
 import com.bhashasetu.app.audio.AudioVisualizer;
 
 /**
@@ -35,7 +32,7 @@ public class EnhancedAudioPronunciationView extends LinearLayout {
     private TextView textStatus;
     private AudioVisualizer audioVisualizer;
 
-    private AudioManager audioManager;
+    private AppAudioManager audioManager;
     private int wordId = -1;
     private String wordText = "";
     private Handler handler = new Handler(Looper.getMainLooper());
@@ -74,7 +71,7 @@ public class EnhancedAudioPronunciationView extends LinearLayout {
         audioVisualizer = findViewById(R.id.audio_visualizer);
 
         // Get audio manager
-        audioManager = AudioManager.getInstance(context);
+        audioManager = AppAudioManager.getInstance(context);
 
         // Set up visualizer
         if (audioVisualizer != null) {
@@ -177,7 +174,7 @@ public class EnhancedAudioPronunciationView extends LinearLayout {
         // Play the pronunciation
         if (wordId != -1) {
             // Try to play recorded audio first
-            audioManager.playWordAudio(wordId, new AudioManager.OnPlaybackCompletedListener() {
+            audioManager.playWordAudio(wordId, new AppAudioManager.OnPlaybackCompletedListener() {
                 @Override
                 public void onPlaybackCompleted() {
                     resetPlaybackState();
@@ -185,7 +182,7 @@ public class EnhancedAudioPronunciationView extends LinearLayout {
             });
         } else if (wordText != null && !wordText.isEmpty()) {
             // Fall back to TTS
-            audioManager.speakWordWithTts(wordText, new AudioManager.OnPlaybackCompletedListener() {
+            audioManager.speakWordWithTts(wordText, new AppAudioManager.OnPlaybackCompletedListener() {
                 @Override
                 public void onPlaybackCompleted() {
                     resetPlaybackState();

@@ -9,7 +9,7 @@ This document provides an index of all files included in the release package for
 - **Version**: 1.1.0
 - **Build Number**: 2
 - **Release Date**: May 21, 2025
-- **Package Name**: com.example.englishhindi
+- **Package Name**: com.bhashasetu.app
 
 This release focuses on significant performance optimizations and features a 41.8% faster startup time, 19.8% reduced memory usage, and 30.2% smaller app size.
 

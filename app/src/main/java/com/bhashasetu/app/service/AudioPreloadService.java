@@ -32,11 +32,11 @@ public class AudioPreloadService extends IntentService {
 
     // Intent actions
  public static final String ACTION_PRELOAD_ALL = "com.bhashasetu.app.action.PRELOAD_ALL";
-    public static final String ACTION_PRELOAD_CATEGORY = "com.example.englishhindi.action.PRELOAD_CATEGORY";
-    public static final String ACTION_PRELOAD_FAVORITES = "com.example.englishhindi.action.PRELOAD_FAVORITES";
+    public static final String ACTION_PRELOAD_CATEGORY = "com.bhashasetu.app.action.PRELOAD_CATEGORY";
+    public static final String ACTION_PRELOAD_FAVORITES = "com.bhashasetu.app.action.PRELOAD_FAVORITES";
     
     // Intent extras
-    public static final String EXTRA_CATEGORY = "com.example.englishhindi.extra.CATEGORY";
+    public static final String EXTRA_CATEGORY = "com.bhashasetu.app.extra.CATEGORY";
     
     private WordRepository wordRepository;
  private NotificationManager notificationManager;

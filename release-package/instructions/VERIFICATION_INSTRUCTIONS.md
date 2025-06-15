@@ -17,8 +17,8 @@ This document provides step-by-step instructions for verifying the release build
 
 1. **Uninstall Previous Versions**
    ```bash
-   adb uninstall com.example.englishhindi.free
-   adb uninstall com.example.englishhindi.premium
+   adb uninstall com.bhashasetu.app.free
+   adb uninstall com.bhashasetu.app.premium
    ```
 
 2. **Install Release APK**
@@ -116,9 +116,9 @@ This document provides step-by-step instructions for verifying the release build
 
 1. **Cold Start Measurement**
    ```bash
-   adb shell am force-stop com.example.englishhindi.free
-   adb shell pm clear com.example.englishhindi.free
-   time adb shell am start-activity -W com.example.englishhindi.free/com.example.englishhindi.ui.MainActivity
+   adb shell am force-stop com.bhashasetu.app.free
+   adb shell pm clear com.bhashasetu.app.free
+   time adb shell am start-activity -W com.bhashasetu.app.free/com.bhashasetu.app.ui.MainActivity
    ```
    - Expected result: Total time should be < 2000ms
 
@@ -126,7 +126,7 @@ This document provides step-by-step instructions for verifying the release build
    ```bash
    adb shell input keyevent KEYCODE_HOME
    sleep 2
-   time adb shell am start-activity -W com.example.englishhindi.free/com.example.englishhindi.ui.MainActivity
+   time adb shell am start-activity -W com.bhashasetu.app.free/com.bhashasetu.app.ui.MainActivity
    ```
    - Expected result: Total time should be < 1000ms
 
@@ -134,7 +134,7 @@ This document provides step-by-step instructions for verifying the release build
    ```bash
    adb shell input keyevent KEYCODE_HOME
    sleep 1
-   time adb shell am start-activity -W com.example.englishhindi.free/com.example.englishhindi.ui.MainActivity
+   time adb shell am start-activity -W com.bhashasetu.app.free/com.bhashasetu.app.ui.MainActivity
    ```
    - Expected result: Total time should be < 500ms
 
@@ -142,7 +142,7 @@ This document provides step-by-step instructions for verifying the release build
 
 1. **Memory Profile Measurement**
    ```bash
-   adb shell dumpsys meminfo com.example.englishhindi.free
+   adb shell dumpsys meminfo com.bhashasetu.app.free
    ```
    - Check "TOTAL:" value
    - Expected result: < 70MB in normal usage
@@ -171,7 +171,7 @@ This document provides step-by-step instructions for verifying the release build
 
 1. **Background Battery Check**
    ```bash
-   adb shell dumpsys batterystats --charged com.example.englishhindi.free
+   adb shell dumpsys batterystats --charged com.bhashasetu.app.free
    ```
    - Check computed power use
    - Expected result: < 2% per hour in background

@@ -1,5 +1,6 @@
 package com.bhashasetu.app.data.repository
 
+import com.bhashasetu.app.repository.WordRepository
 import kotlinx.coroutines.Dispatchers
 import com.bhashasetu.app.data.model.Word
 import com.bhashasetu.app.data.dao.WordDao
@@ -17,8 +18,7 @@ import javax.inject.Singleton
 @Singleton
 class WordRepositoryImpl @Inject constructor(
     private val wordDao: WordDao
-) : WordRepository {
-
+) : com.bhashasetu.app.repository.WordRepository() {  // Fully qualified interface name
     override fun getAllWords(): Flow<List<Word>> {
         return wordDao.getAllWords().flowOn(Dispatchers.IO)
     }

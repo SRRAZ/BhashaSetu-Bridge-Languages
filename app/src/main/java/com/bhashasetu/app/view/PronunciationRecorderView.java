@@ -3,8 +3,6 @@ package com.bhashasetu.app.view;
 import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.pm.PackageManager;
-import android.graphics.drawable.AnimatedVectorDrawable;
-import android.os.Build;
 import android.os.Handler;
 import android.os.Looper;
 import android.util.AttributeSet;
@@ -18,15 +16,13 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
-import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import com.bhashasetu.app.R;
+import com.bhashasetu.app.audio.AppAudioManager;
 import com.bhashasetu.app.audio.AudioAnalyzer;
-import com.bhashasetu.app.audio.AudioManager;
 import com.bhashasetu.app.audio.AudioRecorder;
 import com.bhashasetu.app.audio.TtsRecorder;
 
@@ -66,7 +62,7 @@ public class PronunciationRecorderView extends LinearLayout {
     private Runnable visualizerUpdateRunnable;
 
     // Audio components
-    private AudioManager audioManager;
+    private AppAudioManager audioManager;
     private AudioRecorder audioRecorder;
     private AudioAnalyzer audioAnalyzer;
 
@@ -103,7 +99,7 @@ public class PronunciationRecorderView extends LinearLayout {
         LayoutInflater.from(context).inflate(R.layout.view_pronunciation_recorder, this, true);
 
         // Get audio components
-        audioManager = AudioManager.getInstance(context);
+        audioManager = AppAudioManager.getInstance(context);
         audioRecorder = new AudioRecorder(context);
         audioAnalyzer = new AudioAnalyzer(context);
 

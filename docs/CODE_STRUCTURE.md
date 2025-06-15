@@ -78,7 +78,7 @@ This separation of concerns ensures:
 The application code is organized into the following package structure:
 
 ```
-com.example.englishhindi/
+com.bhashasetu.app/
 ├── activity/          # Activities and activity-related classes
 ├── adapter/           # RecyclerView and other adapters
 ├── audio/             # Audio playback and processing

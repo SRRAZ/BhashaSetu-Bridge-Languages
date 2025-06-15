@@ -3,8 +3,8 @@
 # Measures battery consumption during active and background usage
 
 # Configuration
-PACKAGE_NAME="com.example.englishhindi"
-MAIN_ACTIVITY="com.example.englishhindi.ui.MainActivity"
+PACKAGE_NAME="com.bhashasetu.app"
+MAIN_ACTIVITY="com.bhashasetu.app.ui.MainActivity"
 ACTIVE_DURATION=1800  # 30 minutes
 BACKGROUND_DURATION=3600  # 60 minutes
 INTERVAL=300  # 5 minutes

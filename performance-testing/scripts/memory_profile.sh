@@ -3,8 +3,8 @@
 # Tracks memory usage across different app states
 
 # Configuration
-PACKAGE_NAME="com.example.englishhindi"
-MAIN_ACTIVITY="com.example.englishhindi.ui.MainActivity"
+PACKAGE_NAME="com.bhashasetu.app"
+MAIN_ACTIVITY="com.bhashasetu.app.ui.MainActivity"
 DURATION=300  # 5 minutes
 INTERVAL=10   # 10 seconds
 OUTPUT_FILE="../results/memory_profile_$(date +%Y%m%d_%H%M%S).csv"

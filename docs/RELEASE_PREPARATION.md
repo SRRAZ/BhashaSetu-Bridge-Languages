@@ -83,7 +83,7 @@ The `versionCode` is an integer value that represents the version of the applica
 ```gradle
 android {
     defaultConfig {
-        applicationId "com.example.englishhindi"
+        applicationId "com.bhashasetu.app"
         minSdk 21
         targetSdk 33
         
@@ -307,8 +307,8 @@ android {
 -dontwarn androidx.room.paging.**
 
 # Entity classes
--keep class com.example.englishhindi.data.model.** { *; }
--keep class com.example.englishhindi.data.relation.** { *; }
+-keep class com.bhashasetu.app.data.model.** { *; }
+-keep class com.bhashasetu.app.data.relation.** { *; }
 
 # Enum classes
 -keepclassmembers enum * {
@@ -378,28 +378,28 @@ For specific app components that need custom ProGuard rules:
 
 ```
 # Keep Room Database classes
--keep class com.example.englishhindi.data.db.AppDatabase
--keep class com.example.englishhindi.data.dao.** { *; }
+-keep class com.bhashasetu.app.data.db.AppDatabase
+-keep class com.bhashasetu.app.data.dao.** { *; }
 
 # Keep Entity classes and their fields
--keep class com.example.englishhindi.data.model.** { *; }
--keepclassmembers class com.example.englishhindi.data.model.** { *; }
+-keep class com.bhashasetu.app.data.model.** { *; }
+-keepclassmembers class com.bhashasetu.app.data.model.** { *; }
 ```
 
 #### AudioPlayer
 
 ```
 # Keep AudioPlayer components
--keep class com.example.englishhindi.audio.AudioPlayer { *; }
--keep class com.example.englishhindi.audio.AudioPlayerListener { *; }
+-keep class com.bhashasetu.app.audio.AudioPlayer { *; }
+-keep class com.bhashasetu.app.audio.AudioPlayerListener { *; }
 ```
 
 #### Custom Views
 
 ```
 # Keep custom views
--keep class com.example.englishhindi.view.** { *; }
--keep class com.example.englishhindi.ui.components.** { *; }
+-keep class com.bhashasetu.app.view.** { *; }
+-keep class com.bhashasetu.app.ui.components.** { *; }
 ```
 
 ### Testing ProGuard Configuration
@@ -543,7 +543,7 @@ dependencies {
 ```xml
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
-    package="com.example.englishhindi.pronunciation">
+    package="com.bhashasetu.app.pronunciation">
 
     <dist:module
         dist:instant="false"
@@ -893,7 +893,7 @@ jobs:
       uses: r0adkll/upload-google-play@v1
       with:
         serviceAccountJsonPlainText: ${{ secrets.PLAY_STORE_CONFIG_JSON }}
-        packageName: com.example.englishhindi
+        packageName: com.bhashasetu.app
         releaseFiles: app/build/outputs/bundle/release/app-release.aab
         track: internal  # Or "alpha", "beta", "production"
         status: draft    # Or "inProgress", "halted", "completed"

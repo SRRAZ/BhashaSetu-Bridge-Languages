@@ -3,8 +3,8 @@
 # Measures app size, database growth, and cache size
 
 # Configuration
-PACKAGE_NAME="com.example.englishhindi"
-MAIN_ACTIVITY="com.example.englishhindi.ui.MainActivity"
+PACKAGE_NAME="com.bhashasetu.app"
+MAIN_ACTIVITY="com.bhashasetu.app.ui.MainActivity"
 DAYS=5  # Simulate 5 days of usage
 OUTPUT_FILE="../results/storage_impact_$(date +%Y%m%d_%H%M%S).csv"
 

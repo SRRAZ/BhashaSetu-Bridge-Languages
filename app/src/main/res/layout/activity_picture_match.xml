@@ -83,7 +83,7 @@
             tools:src="@drawable/placeholder_image" />
     </androidx.cardview.widget.CardView>
 
-    <com.example.englishhindi.view.AudioPronunciationView
+    <com.bhashasetu.app.view.AudioPronunciationView
         android:id="@+id/audio_pronunciation"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

@@ -217,7 +217,7 @@ Use start/end attributes instead of left/right in layouts:
 Hindi text often requires more vertical space than equivalent English text. We'll implement dynamic text sizing:
 
 ```xml
-<com.example.englishhindi.view.BilingualTextView
+<com.bhashasetu.app.view.BilingualTextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:englishText="@string/english_example"

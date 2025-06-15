@@ -1,9 +1,9 @@
-package com.example.englishhindi.unit;
+package com.bhashasetu.app.unit;
 
 import android.content.Context;
 
-import com.example.englishhindi.R;
-import com.example.englishhindi.util.ErrorHandler;
+import com.bhashasetu.app.R;
+import com.bhashasetu.app.util.ErrorHandler;
 
 import org.junit.Before;
 import org.junit.Test;

@@ -13,7 +13,7 @@ A custom view that handles different loading states with smooth transitions:
 
 **Usage**:
 ```xml
-<com.example.englishhindi.ui.LoadingStateView
+<com.bhashasetu.app.ui.LoadingStateView
     android:id="@+id/loading_state_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent" />
@@ -47,7 +47,7 @@ A custom button that shows loading state and handles debounce protection:
 
 **Usage**:
 ```xml
-<com.example.englishhindi.ui.LoadingButton
+<com.bhashasetu.app.ui.LoadingButton
     android:id="@+id/loading_button"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -77,7 +77,7 @@ A circular progress indicator with smooth animations:
 
 **Usage**:
 ```xml
-<com.example.englishhindi.ui.ProgressAnimationView
+<com.bhashasetu.app.ui.ProgressAnimationView
     android:id="@+id/progress_animation"
     android:layout_width="48dp"
     android:layout_height="48dp"
@@ -360,7 +360,7 @@ public class YourActivity extends EnhancedBaseActivity {
 
 1. Add LoadingStateView to your layout:
    ```xml
-   <com.example.englishhindi.ui.LoadingStateView
+   <com.bhashasetu.app.ui.LoadingStateView
        android:id="@+id/loading_state_view"
        android:layout_width="match_parent"
        android:layout_height="match_parent">
@@ -372,7 +372,7 @@ public class YourActivity extends EnhancedBaseActivity {
            <!-- Content views -->
        </FrameLayout>
        
-   </com.example.englishhindi.ui.LoadingStateView>
+   </com.bhashasetu.app.ui.LoadingStateView>
    ```
 
 2. Extend EnhancedBaseActivity instead of AppCompatActivity:

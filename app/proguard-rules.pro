@@ -69,8 +69,8 @@
 -dontwarn androidx.room.paging.**
 
 # Entity classes
--keep class com.example.englishhindi.data.model.** { *; }
--keep class com.example.englishhindi.data.relation.** { *; }
+-keep class com.bhashasetu.app.data.model.** { *; }
+-keep class com.bhashasetu.app.data.relation.** { *; }
 
 # Enum classes
 -keepclassmembers enum * {
@@ -132,38 +132,38 @@
 }
 
 # Keep Room Database classes
--keep class com.example.englishhindi.data.db.AppDatabase
--keep class com.example.englishhindi.data.dao.** { *; }
+-keep class com.bhashasetu.app.data.db.AppDatabase
+-keep class com.bhashasetu.app.data.dao.** { *; }
 
 # Keep Entity classes and their fields
--keep class com.example.englishhindi.data.model.** { *; }
--keepclassmembers class com.example.englishhindi.data.model.** { *; }
+-keep class com.bhashasetu.app.data.model.** { *; }
+-keepclassmembers class com.bhashasetu.app.data.model.** { *; }
 
 # Keep AudioPlayer components
--keep class com.example.englishhindi.audio.AudioPlayer { *; }
--keep class com.example.englishhindi.audio.AudioPlayerListener { *; }
+-keep class com.bhashasetu.app.audio.AudioPlayer { *; }
+-keep class com.bhashasetu.app.audio.AudioPlayerListener { *; }
 
 # Keep custom views
--keep class com.example.englishhindi.view.** { *; }
--keep class com.example.englishhindi.ui.components.** { *; }
+-keep class com.bhashasetu.app.view.** { *; }
+-keep class com.bhashasetu.app.ui.components.** { *; }
 
 # FIXES BASED ON FUNCTIONALITY TESTING
 
 # Audio focus handling - Fix for audio resumption issues
--keep class com.example.englishhindi.audio.AudioFocusHandler { *; }
--keep class com.example.englishhindi.audio.AudioFocusChangeListener { *; }
+-keep class com.bhashasetu.app.audio.AudioFocusHandler { *; }
+-keep class com.bhashasetu.app.audio.AudioFocusChangeListener { *; }
 -keep class * implements android.media.AudioManager$OnAudioFocusChangeListener { *; }
 
 # Chat functionality - Fix for chat crashes
 -keep class com.chatprovider.** { *; }
 -keepclassmembers class com.chatprovider.** { *; }
--keep class com.example.englishhindi.chat.** { *; }
--keep class com.example.englishhindi.messaging.** { *; }
+-keep class com.bhashasetu.app.chat.** { *; }
+-keep class com.bhashasetu.app.messaging.** { *; }
 
 # JSON Models with complex nesting - Fix for JSON parsing issues
--keep class com.example.englishhindi.data.model.** { *; }
--keep class com.example.englishhindi.data.response.** { *; }
--keep class com.example.englishhindi.network.response.** { *; }
+-keep class com.bhashasetu.app.data.model.** { *; }
+-keep class com.bhashasetu.app.data.response.** { *; }
+-keep class com.bhashasetu.app.network.response.** { *; }
 
 # Additional rules for third-party libraries often used in chat features
 -keepattributes EnclosingMethod
@@ -178,5 +178,5 @@
 }
 
 # Additional rules for dynamic feature loading
--keep class com.example.englishhindi.dynamicfeature.** { *; }
--keep class com.example.englishhindi.module.** { *; }
+-keep class com.bhashasetu.app.dynamicfeature.** { *; }
+-keep class com.bhashasetu.app.module.** { *; }

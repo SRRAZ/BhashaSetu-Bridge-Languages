@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".FlashcardActivity">
 
-    <com.example.englishhindi.view.HindiTextView
+    <com.bhashasetu.app.view.HindiTextView
         android:id="@+id/text_view_deck_title_hindi"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -20,7 +20,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.example.englishhindi.view.HindiTextView
+    <com.bhashasetu.app.view.HindiTextView
         android:id="@+id/text_view_progress_hindi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -51,7 +51,7 @@
             android:layout_height="match_parent"
             android:padding="16dp">
 
-            <com.example.englishhindi.view.HindiTextView
+            <com.bhashasetu.app.view.HindiTextView
                 android:id="@+id/text_view_flashcard_front_hindi"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -63,7 +63,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <com.example.englishhindi.view.HindiTextView
+            <com.bhashasetu.app.view.HindiTextView
                 android:id="@+id/text_view_flashcard_back_hindi"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -76,7 +76,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <com.example.englishhindi.view.HindiTextView
+            <com.bhashasetu.app.view.HindiTextView
                 android:id="@+id/text_view_pronunciation_hindi"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -89,7 +89,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
-            <com.example.englishhindi.view.HindiTextView
+            <com.bhashasetu.app.view.HindiTextView
                 android:id="@+id/text_view_hint_tap_hindi"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -116,7 +116,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <com.example.englishhindi.view.BilingualButton
+    <com.bhashasetu.app.view.BilingualButton
         android:id="@+id/button_previous"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -130,7 +130,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <com.example.englishhindi.view.BilingualButton
+    <com.bhashasetu.app.view.BilingualButton
         android:id="@+id/button_flip"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -143,7 +143,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/button_previous" />
 
-    <com.example.englishhindi.view.BilingualButton
+    <com.bhashasetu.app.view.BilingualButton
         android:id="@+id/button_next"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -156,7 +156,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/button_flip" />
 
-    <com.example.englishhindi.view.BilingualButton
+    <com.bhashasetu.app.view.BilingualButton
         android:id="@+id/button_dont_know"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -170,7 +170,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <com.example.englishhindi.view.BilingualButton
+    <com.bhashasetu.app.view.BilingualButton
         android:id="@+id/button_know"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

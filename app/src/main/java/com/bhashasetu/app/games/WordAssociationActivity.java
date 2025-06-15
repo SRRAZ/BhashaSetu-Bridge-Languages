@@ -25,7 +25,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bhashasetu.app.R;
 import com.bhashasetu.app.audio.AudioFeedbackManager;
-import com.bhashasetu.app.audio.AudioManager;
+import com.bhashasetu.app.audio.AppAudioManager;
 import com.bhashasetu.app.model.PracticeSession;
 import com.bhashasetu.app.model.UserProgress;
 import com.bhashasetu.app.model.Word;
@@ -92,7 +92,7 @@ public class WordAssociationActivity extends AppCompatActivity implements WordCa
     private PracticeSession gameSession;
 
     // Audio
-    private AudioManager audioManager;
+    private AppAudioManager audioManager;
     private AudioFeedbackManager audioFeedbackManager;
 
     @Override
@@ -112,7 +112,7 @@ public class WordAssociationActivity extends AppCompatActivity implements WordCa
         sessionViewModel = new ViewModelProvider(this).get(PracticeSessionViewModel.class);
 
         // Initialize audio
-        audioManager = AudioManager.getInstance(this);
+        audioManager = AppAudioManager.getInstance(this);
         audioFeedbackManager = AudioFeedbackManager.getInstance(this);
 
         // Find UI components

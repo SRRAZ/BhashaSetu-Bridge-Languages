@@ -1,6 +1,7 @@
 package com.bhashasetu.app
 
 import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
 import android.os.StrictMode
 import androidx.room.Room
 import com.bhashasetu.app.data.db.AppDatabase
@@ -10,10 +11,15 @@ import com.bhashasetu.app.data.repository.WordRepositoryImpl
 import com.bhashasetu.app.util.LanguageManager
 import com.bhashasetu.app.util.PreferenceManager
 import java.util.concurrent.Executors
+import com.bhashasetu.app.BuildConfig
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 /**
  * Application class with Compose implementation
  */
+@HiltAndroidApp
 class EnglishHindiComposeApplication : Application() {
 
     // Repositories
@@ -30,6 +36,9 @@ class EnglishHindiComposeApplication : Application() {
 
     // Background executor
     private val executor = Executors.newFixedThreadPool(4)
+
+    // Coroutine scope for database operations
+    private val applicationScope = CoroutineScope(Dispatchers.IO)
 
     override fun onCreate() {
         super.onCreate()
@@ -87,11 +96,11 @@ class EnglishHindiComposeApplication : Application() {
      * Preloads essential data in the background
      */
     private fun preloadData() {
-        executor.execute {
+        applicationScope.launch {
             // Check if initial data needs to be seeded
-            val wordCount = database.wordDao().getWordCount()
+            val allWords = database.wordDao().getAllWords()
 
-            if (wordCount == 0) {
+            if (allWords.isEmpty()) {
                 // Seed initial data
                 seedSampleData()
             }
@@ -101,7 +110,7 @@ class EnglishHindiComposeApplication : Application() {
     /**
      * Seeds some sample data for first-time users
      */
-    private fun seedSampleData() {
+    private suspend fun seedSampleData() {
         // Basic greetings category
         val greetingsWords = listOf(
             Word( // Using imported Word
@@ -269,7 +278,12 @@ class EnglishHindiComposeApplication : Application() {
         val wordDao = database.wordDao()
 
         for (word in allWords) {
-            wordDao.insert(word)
+            try {
+                wordDao.insert(word)
+            } catch (e: Exception) {
+            // Log error but continue with other words
+            e.printStackTrace()
+            }
         }
     }
 

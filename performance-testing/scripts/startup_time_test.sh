@@ -3,8 +3,8 @@
 # Measures cold, warm, and hot start times
 
 # Configuration
-PACKAGE_NAME="com.example.englishhindi"
-MAIN_ACTIVITY="com.example.englishhindi.ui.MainActivity"
+PACKAGE_NAME="com.bhashasetu.app"
+MAIN_ACTIVITY="com.bhashasetu.app.ui.MainActivity"
 ITERATIONS=5
 OUTPUT_FILE="../results/startup_times_$(date +%Y%m%d_%H%M%S).csv"
 

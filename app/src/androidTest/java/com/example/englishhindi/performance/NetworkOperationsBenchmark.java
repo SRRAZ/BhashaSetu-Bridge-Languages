@@ -1,12 +1,12 @@
-package com.example.englishhindi.performance;
+package com.bhashasetu.app.performance;
 
 import androidx.benchmark.BenchmarkState;
 import androidx.benchmark.junit4.BenchmarkRule;
 import androidx.test.core.app.ApplicationProvider;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
-import com.example.englishhindi.util.ErrorHandler;
-import com.example.englishhindi.util.NetworkConnectionHandler;
+import com.bhashasetu.app.util.ErrorHandler;
+import com.bhashasetu.app.util.NetworkConnectionHandler;
 
 import org.junit.Rule;
 import org.junit.Test;

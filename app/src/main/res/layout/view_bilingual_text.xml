@@ -13,7 +13,7 @@
         android:text="English Text"
         tools:visibility="visible" />
 
-    <com.example.englishhindi.view.HindiTextView
+    <com.bhashasetu.app.view.HindiTextView
         android:id="@+id/text_view_hindi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

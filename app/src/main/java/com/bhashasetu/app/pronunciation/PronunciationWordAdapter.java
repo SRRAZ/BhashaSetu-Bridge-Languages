@@ -12,8 +12,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.englishhindi.R;
-import com.example.englishhindi.model.Word;
+import com.bhashasetu.app.R;
+import com.bhashasetu.app.model.Word;
 
 import java.util.ArrayList;
 import java.util.List;

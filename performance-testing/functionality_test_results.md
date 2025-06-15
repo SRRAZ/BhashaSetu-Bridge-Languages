@@ -199,17 +199,17 @@ The following rules were added to the ProGuard configuration to address the issu
 
 ```
 # Audio focus handling
--keep class com.example.englishhindi.audio.AudioFocusHandler { *; }
--keep class com.example.englishhindi.audio.AudioFocusChangeListener { *; }
+-keep class com.bhashasetu.app.audio.AudioFocusHandler { *; }
+-keep class com.bhashasetu.app.audio.AudioFocusChangeListener { *; }
 
 # Chat functionality
 -keep class com.chatprovider.** { *; }
 -keepclassmembers class com.chatprovider.** { *; }
--keep class com.example.englishhindi.chat.** { *; }
+-keep class com.bhashasetu.app.chat.** { *; }
 
 # JSON Models with complex nesting
--keep class com.example.englishhindi.data.model.** { *; }
--keep class com.example.englishhindi.data.response.** { *; }
+-keep class com.bhashasetu.app.data.model.** { *; }
+-keep class com.bhashasetu.app.data.response.** { *; }
 
 # Ensure enums are kept properly
 -keepclassmembers enum * {

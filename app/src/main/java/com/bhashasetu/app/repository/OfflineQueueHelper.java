@@ -157,7 +157,7 @@ public class OfflineQueueHelper {
             
             // Notify all repositories to process their queues
             // This is just a notification mechanism - actual processing is done by the repositories
-            context.sendBroadcast(new android.content.Intent("com.example.englishhindi.PROCESS_OFFLINE_QUEUE"));
+            context.sendBroadcast(new android.content.Intent("com.bhashasetu.app.PROCESS_OFFLINE_QUEUE"));
             
             Log.d(TAG, "Notified repositories to process offline queues");
         });

@@ -1,4 +1,4 @@
-package com.example.englishhindi.viewmodel;
+package com.bhashasetu.app.viewmodel;
 
 import android.app.Application;
 
@@ -6,8 +6,8 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
-import com.example.englishhindi.model.UserProgress;
-import com.example.englishhindi.repository.UserProgressRepository;
+import com.bhashasetu.app.model.UserProgress;
+import com.bhashasetu.app.repository.UserProgressRepository;
 
 import java.util.List;
 

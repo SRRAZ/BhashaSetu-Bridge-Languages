@@ -2,6 +2,7 @@ package com.bhashasetu.app
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
+import dagger.hilt.android.AndroidEntryPoint
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
@@ -23,6 +24,7 @@ import com.bhashasetu.app.util.LanguageManager
 /**
  * Main Activity using Jetpack Compose
  */
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         // Install splash screen
@@ -31,7 +33,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         
         // Get language preferences
-        val languageManager = (application as BhashaSetuComposeApplication).languageManager
+        val languageManager = (application as EnglishHindiComposeApplication).languageManager
         val currentLanguage = languageManager.getCurrentLanguage()
         val isHindi = currentLanguage == LanguageManager.LANGUAGE_HINDI
         

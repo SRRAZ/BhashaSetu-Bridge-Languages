@@ -100,7 +100,7 @@
                     android:textStyle="bold"
                     android:gravity="center" />
 
-                <com.example.englishhindi.view.AudioPronunciationView
+                <com.bhashasetu.app.view.AudioPronunciationView
                     android:id="@+id/audio_pronunciation"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

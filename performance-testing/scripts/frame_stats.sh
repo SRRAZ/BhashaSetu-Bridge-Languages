@@ -3,8 +3,8 @@
 # Measures rendering performance and jank
 
 # Configuration
-PACKAGE_NAME="com.example.englishhindi"
-MAIN_ACTIVITY="com.example.englishhindi.ui.MainActivity"
+PACKAGE_NAME="com.bhashasetu.app"
+MAIN_ACTIVITY="com.bhashasetu.app.ui.MainActivity"
 DURATION=60  # 60 seconds
 OUTPUT_FILE="../results/frame_stats_$(date +%Y%m%d_%H%M%S).csv"
 

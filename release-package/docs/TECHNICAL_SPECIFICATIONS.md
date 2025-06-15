@@ -5,45 +5,45 @@ This document provides detailed technical specifications for the English-Hindi L
 
 ## Application Details
 
-| Property | Value |
-|----------|-------|
-| Application Name | English-Hindi Learning |
-| Package Name | com.example.englishhindi |
-| Version Name | 1.1.0 |
-| Version Code | 2 |
+| Property | Value                     |
+|----------|---------------------------|
+| Application Name | English-Hindi Learning    |
+| Package Name | com.bhashasetu.app        |
+| Version Name | 1.1.0                     |
+| Version Code | 2                         |
 | Minimum SDK | 21 (Android 5.0 Lollipop) |
-| Target SDK | 33 (Android 13) |
-| Build Tools Version | 30.0.3 |
-| Gradle Version | 7.4.2 |
-| Kotlin Version | 1.8.0 |
-| NDK Version | 25.1.8937393 |
-| Compile SDK | 33 |
+| Target SDK | 33 (Android 13)           |
+| Build Tools Version | 30.0.3                    |
+| Gradle Version | 7.4.2                     |
+| Kotlin Version | 1.8.0                     |
+| NDK Version | 25.1.8937393              |
+| Compile SDK | 33                        |
 
 ## Build Configuration
 
 ### Free Variant
 
-| Property | Value |
-|----------|-------|
-| Application ID | com.example.englishhindi.free |
-| Debuggable | false |
-| Minify Enabled | true |
-| Shrink Resources | true |
-| Obfuscated | true |
-| Split APKs | true |
-| ProGuard Enabled | true |
+| Property | Value                   |
+|----------|-------------------------|
+| Application ID | com.bhashasetu.app.free |
+| Debuggable | false                   |
+| Minify Enabled | true                    |
+| Shrink Resources | true                    |
+| Obfuscated | true                    |
+| Split APKs | true                    |
+| ProGuard Enabled | true                    |
 
 ### Premium Variant
 
-| Property | Value |
-|----------|-------|
-| Application ID | com.example.englishhindi.premium |
-| Debuggable | false |
-| Minify Enabled | true |
-| Shrink Resources | true |
-| Obfuscated | true |
-| Split APKs | true |
-| ProGuard Enabled | true |
+| Property | Value                      |
+|----------|----------------------------|
+| Application ID | com.bhashasetu.app.premium |
+| Debuggable | false                      |
+| Minify Enabled | true                       |
+| Shrink Resources | true                       |
+| Obfuscated | true                       |
+| Split APKs | true                       |
+| ProGuard Enabled | true                       |
 
 ## Resource Specifications
 

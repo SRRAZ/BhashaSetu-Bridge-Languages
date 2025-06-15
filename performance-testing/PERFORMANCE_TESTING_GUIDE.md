@@ -70,9 +70,9 @@ Run the JVM-based benchmark tests for core functionality:
 
 ```bash
 # From Android Studio or command line
-./gradlew cAT -P android.testInstrumentationRunnerArguments.class=com.example.englishhindi.benchmark.StartupBenchmark
-./gradlew cAT -P android.testInstrumentationRunnerArguments.class=com.example.englishhindi.benchmark.RenderingBenchmark
-./gradlew cAT -P android.testInstrumentationRunnerArguments.class=com.example.englishhindi.benchmark.MemoryBenchmark
+./gradlew cAT -P android.testInstrumentationRunnerArguments.class=com.bhashasetu.app.benchmark.StartupBenchmark
+./gradlew cAT -P android.testInstrumentationRunnerArguments.class=com.bhashasetu.app.benchmark.RenderingBenchmark
+./gradlew cAT -P android.testInstrumentationRunnerArguments.class=com.bhashasetu.app.benchmark.MemoryBenchmark
 ```
 
 ### 3. Build Variant Comparison
@@ -162,13 +162,13 @@ public void wordListScrolling() {
 ### ADB Commands
 ```bash
 # Memory stats
-adb shell dumpsys meminfo com.example.englishhindi
+adb shell dumpsys meminfo com.bhashasetu.app
 
 # Battery stats
-adb shell dumpsys batterystats com.example.englishhindi
+adb shell dumpsys batterystats com.bhashasetu.app
 
 # GPU rendering stats
-adb shell dumpsys gfxinfo com.example.englishhindi
+adb shell dumpsys gfxinfo com.bhashasetu.app
 ```
 
 ### Android Profiler

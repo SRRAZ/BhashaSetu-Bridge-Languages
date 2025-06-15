@@ -1,4 +1,4 @@
-package com.example.englishhindi.ui;
+package com.bhashasetu.app.ui;
 
 import android.content.Context;
 import android.graphics.Color;

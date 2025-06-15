@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Build;
-import android.util.Pair;
 import android.view.View;
 
 import androidx.annotation.NonNull;

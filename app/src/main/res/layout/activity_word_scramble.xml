@@ -84,7 +84,7 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <com.example.englishhindi.view.HindiTextView
+            <com.bhashasetu.app.view.HindiTextView
                 android:id="@+id/text_view_hindi_word"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -92,7 +92,7 @@
                 android:textSize="28sp"
                 app:hindiTextSize="title" />
 
-            <com.example.englishhindi.view.AudioPronunciationView
+            <com.bhashasetu.app.view.AudioPronunciationView
                 android:id="@+id/audio_pronunciation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

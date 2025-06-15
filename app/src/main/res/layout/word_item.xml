@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:padding="8dp">
         
-        <com.example.englishhindi.view.BilingualTextView
+        <com.bhashasetu.app.view.BilingualTextView
             android:id="@+id/bilingual_text_view"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

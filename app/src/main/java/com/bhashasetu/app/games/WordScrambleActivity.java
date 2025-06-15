@@ -22,17 +22,15 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.bhashasetu.app.R;
+import com.bhashasetu.app.audio.AppAudioManager;
 import com.bhashasetu.app.audio.AudioFeedbackManager;
-import com.bhashasetu.app.audio.AudioManager;
 import com.bhashasetu.app.model.PracticeSession;
 import com.bhashasetu.app.model.UserProgress;
 import com.bhashasetu.app.model.Word;
 import com.bhashasetu.app.view.AudioPronunciationView;
-import com.bhashasetu.app.view.BilingualTextView;
 import com.bhashasetu.app.view.HindiTextView;
 import com.bhashasetu.app.viewmodel.PracticeSessionViewModel;
 import com.bhashasetu.app.viewmodel.UserProgressViewModel;
@@ -42,7 +40,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
-import java.util.Random;
 
 /**
  * Activity for the Word Scramble game.
@@ -91,7 +88,7 @@ public class WordScrambleActivity extends AppCompatActivity {
     private PracticeSessionViewModel sessionViewModel;
     
     // Audio
-    private AudioManager audioManager;
+    private AppAudioManager audioManager;
     private AudioFeedbackManager audioFeedbackManager;
     
     // Game session
@@ -113,8 +110,8 @@ public class WordScrambleActivity extends AppCompatActivity {
         userProgressViewModel = new ViewModelProvider(this).get(UserProgressViewModel.class);
         sessionViewModel = new ViewModelProvider(this).get(PracticeSessionViewModel.class);
         
-        // Get AudioManager instance
-        audioManager = AudioManager.getInstance(this);
+        // Get AppAudioManager instance
+        audioManager = AppAudioManager.getInstance(this);
         audioFeedbackManager = AudioFeedbackManager.getInstance(this);
         
         // Initialize UI components

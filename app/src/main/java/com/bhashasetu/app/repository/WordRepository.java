@@ -8,7 +8,6 @@ import androidx.lifecycle.LiveData;
 import com.bhashasetu.app.database.WordDao;
 import com.bhashasetu.app.database.WordDatabase;
 import com.bhashasetu.app.model.Word;
-
 import java.util.List;
 
 public class WordRepository {

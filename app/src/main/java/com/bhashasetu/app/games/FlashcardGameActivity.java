@@ -20,18 +20,15 @@ import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.lifecycle.ViewModelProvider;
 import com.bhashasetu.app.R;
+import com.bhashasetu.app.audio.AppAudioManager;
 import com.bhashasetu.app.audio.AudioFeedbackManager;
-import com.bhashasetu.app.audio.AudioManager;
 import com.bhashasetu.app.model.PracticeSession;
 import com.bhashasetu.app.model.UserProgress;
 import com.bhashasetu.app.model.Word;
 import com.bhashasetu.app.view.AudioPronunciationView;
-import com.bhashasetu.app.view.BilingualTextView;
 import com.bhashasetu.app.viewmodel.PracticeSessionViewModel;
 import com.bhashasetu.app.viewmodel.UserProgressViewModel;
 import com.bhashasetu.app.viewmodel.WordViewModel;
-
-import com.bhashasetu.app.FlashcardActivity;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -109,7 +106,7 @@ public class FlashcardGameActivity extends AppCompatActivity {
     private PracticeSession gameSession;
 
     // Audio
-    private AudioManager audioManager;
+    private AppAudioManager audioManager;
     private AudioFeedbackManager audioFeedbackManager;
 
     @Override
@@ -129,7 +126,7 @@ public class FlashcardGameActivity extends AppCompatActivity {
         sessionViewModel = new ViewModelProvider(this).get(PracticeSessionViewModel.class);
 
         // Initialize audio managers
-        audioManager = AudioManager.getInstance(this);
+        audioManager = AppAudioManager.getInstance(this);
         audioFeedbackManager = AudioFeedbackManager.getInstance(this);
 
         // Find views

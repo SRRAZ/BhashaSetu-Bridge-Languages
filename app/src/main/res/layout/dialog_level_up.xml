@@ -13,7 +13,7 @@
         android:layout_height="wrap_content">
 
         <!-- Starburst background -->
-        <com.example.englishhindi.ui.StarburstView
+        <com.bhashasetu.app.ui.StarburstView
             android:id="@+id/starburst_view"
             android:layout_width="match_parent"
             android:layout_height="0dp"

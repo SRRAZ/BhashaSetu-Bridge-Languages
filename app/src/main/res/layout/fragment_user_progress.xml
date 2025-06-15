@@ -38,7 +38,7 @@
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
-                <com.example.englishhindi.ui.XpTrackerView
+                <com.bhashasetu.app.ui.XpTrackerView
                     android:id="@+id/xp_tracker"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
@@ -158,7 +158,7 @@
                     android:layout_marginTop="16dp"
                     android:orientation="horizontal">
 
-                    <com.example.englishhindi.ui.SkillProgressView
+                    <com.bhashasetu.app.ui.SkillProgressView
                         android:id="@+id/skill_vocabulary"
                         android:layout_width="0dp"
                         android:layout_height="120dp"
@@ -166,7 +166,7 @@
                         app:skillName="@string/vocabulary"
                         app:skillProgressColor="@color/skill_vocabulary" />
 
-                    <com.example.englishhindi.ui.SkillProgressView
+                    <com.bhashasetu.app.ui.SkillProgressView
                         android:id="@+id/skill_pronunciation"
                         android:layout_width="0dp"
                         android:layout_height="120dp"
@@ -174,7 +174,7 @@
                         app:skillName="@string/pronunciation"
                         app:skillProgressColor="@color/skill_pronunciation" />
 
-                    <com.example.englishhindi.ui.SkillProgressView
+                    <com.bhashasetu.app.ui.SkillProgressView
                         android:id="@+id/skill_grammar"
                         android:layout_width="0dp"
                         android:layout_height="120dp"
@@ -189,7 +189,7 @@
                     android:layout_marginTop="16dp"
                     android:orientation="horizontal">
 
-                    <com.example.englishhindi.ui.SkillProgressView
+                    <com.bhashasetu.app.ui.SkillProgressView
                         android:id="@+id/skill_listening"
                         android:layout_width="0dp"
                         android:layout_height="120dp"
@@ -197,7 +197,7 @@
                         app:skillName="@string/listening"
                         app:skillProgressColor="@color/skill_listening" />
 
-                    <com.example.englishhindi.ui.SkillProgressView
+                    <com.bhashasetu.app.ui.SkillProgressView
                         android:id="@+id/skill_reading"
                         android:layout_width="0dp"
                         android:layout_height="120dp"
@@ -205,7 +205,7 @@
                         app:skillName="@string/reading"
                         app:skillProgressColor="@color/skill_reading" />
 
-                    <com.example.englishhindi.ui.SkillProgressView
+                    <com.bhashasetu.app.ui.SkillProgressView
                         android:id="@+id/skill_writing"
                         android:layout_width="0dp"
                         android:layout_height="120dp"

@@ -10,7 +10,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 import androidx.core.app.ActivityCompat;
@@ -338,7 +337,7 @@ public class PronunciationComparisonActivity extends BaseActivity implements
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.navigation_home:
-                startActivity(new Intent(this, MainActivity.class));
+                startActivity(new Intent(this, MainActivity_ViewBased.class));
                 finish();
  return true;
 

@@ -11,6 +11,7 @@ buildscript {
         // Ensure this version matches what you might have in settings.gradle if you use the plugins block there for AGP.
         classpath 'com.android.tools.build:gradle:8.10.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.google.dagger:hilt-android-gradle-plugin:2.48'
 
         // Add the Google services Gradle plugin (if needed) - Keep if you use Firebase/GMS
         // classpath 'com.google.gms:google-services:4.4.0' // Check for latest version if you use it

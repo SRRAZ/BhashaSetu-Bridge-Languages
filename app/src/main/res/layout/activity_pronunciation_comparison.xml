@@ -85,7 +85,7 @@
                         android:textColor="@color/secondaryTextColor"
                         tools:text="सेब" />
 
-                    <com.example.englishhindi.view.AudioPronunciationView
+                    <com.bhashasetu.app.view.AudioPronunciationView
                         android:id="@+id/audio_pronunciation_view"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -98,7 +98,7 @@
             </androidx.cardview.widget.CardView>
 
             <!-- Pronunciation recorder -->
-            <com.example.englishhindi.view.PronunciationRecorderView
+            <com.bhashasetu.app.view.PronunciationRecorderView
                 android:id="@+id/pronunciation_recorder_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />

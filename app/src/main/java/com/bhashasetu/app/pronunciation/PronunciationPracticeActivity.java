@@ -1,6 +1,5 @@
 package com.bhashasetu.app.pronunciation;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,9 +13,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bhashasetu.app.R;
+import com.bhashasetu.app.audio.AppAudioManager;
 import com.bhashasetu.app.audio.AudioAnalyzer;
 import com.bhashasetu.app.audio.AudioFeedbackManager;
-import com.bhashasetu.app.audio.AudioManager;
 import com.bhashasetu.app.audio.TtsRecorder;
 import com.bhashasetu.app.manager.AchievementManager;
 import com.bhashasetu.app.model.PronunciationSession;
@@ -41,7 +40,7 @@ public class PronunciationPracticeActivity extends AppCompatActivity implements 
     private View feedbackPanel;
     private TextView tvFeedback;
     
-    private AudioManager audioManager;
+    private AppAudioManager audioManager;
     private AudioAnalyzer audioAnalyzer;
     private TtsRecorder ttsRecorder;
     private AudioFeedbackManager audioFeedbackManager;
@@ -60,7 +59,7 @@ public class PronunciationPracticeActivity extends AppCompatActivity implements 
         viewModel = new ViewModelProvider(this).get(PronunciationViewModel.class);
         
         // Initialize audio components
-        audioManager = new AudioManager(this);
+        audioManager = new AppAudioManager(this);
         audioAnalyzer = new AudioAnalyzer();
         ttsRecorder = new TtsRecorder(this);
         audioFeedbackManager = new AudioFeedbackManager(this);

@@ -43,7 +43,7 @@ public class NetworkStateReceiver extends BroadcastReceiver {
                     }
                 });
             }
-        } else if (intent.getAction().equals("com.example.englishhindi.PROCESS_OFFLINE_QUEUE")) {
+        } else if (intent.getAction().equals("com.bhashasetu.app.PROCESS_OFFLINE_QUEUE")) {
             // Handle explicit request to process offline queue (e.g., from user action)
             AppExecutors.getInstance().backgroundTask().execute(() -> {
                 try {

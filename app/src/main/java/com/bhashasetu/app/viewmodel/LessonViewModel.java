@@ -1,4 +1,4 @@
-package com.example.englishhindi.viewmodel;
+package com.bhashasetu.app.viewmodel;
 
 import android.app.Application;
 
@@ -6,8 +6,8 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
-import com.example.englishhindi.model.Lesson;
-import com.example.englishhindi.repository.LessonRepository;
+import com.bhashasetu.app.model.Lesson;
+import com.bhashasetu.app.repository.LessonRepository;
 
 import java.util.List;
 
