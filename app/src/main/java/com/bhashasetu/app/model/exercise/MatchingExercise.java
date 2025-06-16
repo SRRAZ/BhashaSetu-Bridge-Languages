@@ -25,15 +25,7 @@ public class MatchingExercise extends Exercise {
     private List<MatchingItem> hindiItems;
     private Map<Integer, Integer> userMatches;  // Maps english item index to hindi item index
     private Map<Integer, Integer> correctMatches;  // Maps english item index to hindi item index
-    
-    public MatchingExercise() {
-        super();
-        this.setType(ExerciseType.MATCHING);
-        this.englishItems = new ArrayList<>();
-        this.hindiItems = new ArrayList<>();
-        this.userMatches = new HashMap<>();
-        this.correctMatches = new HashMap<>();
-    }
+
     
     public MatchingExercise(String title, int difficulty, int points) {
         super(title, ExerciseType.MATCHING, difficulty, 0, points);

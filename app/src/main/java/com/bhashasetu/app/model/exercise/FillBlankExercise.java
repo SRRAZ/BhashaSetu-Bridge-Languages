@@ -22,15 +22,7 @@ public class FillBlankExercise extends Exercise {
     private List<FillBlankQuestion> questions;
     private int currentQuestionIndex;
     private boolean showHindiSentence;
-    
-    public FillBlankExercise() {
-        super();
-        this.setType(ExerciseType.FILL_BLANK);
-        this.questions = new ArrayList<>();
-        this.currentQuestionIndex = 0;
-        this.showHindiSentence = false;
-    }
-    
+
     public FillBlankExercise(String title, int difficulty, int points, boolean showHindiSentence) {
         super(title, ExerciseType.FILL_BLANK, difficulty, 0, points);
         this.questions = new ArrayList<>();
