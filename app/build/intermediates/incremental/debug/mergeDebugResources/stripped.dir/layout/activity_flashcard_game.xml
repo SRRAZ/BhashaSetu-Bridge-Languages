@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".games.FlashcardGameActivity">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/text_view_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="@string/flashcards"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Score -->
+    <TextView
+        android:id="@+id/text_view_score_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/score"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/text_view_title"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="0"
+        app:layout_constraintTop_toTopOf="@id/text_view_score_label"
+        app:layout_constraintStart_toEndOf="@id/text_view_score_label"
+        app:layout_constraintBottom_toBottomOf="@id/text_view_score_label" />
+
+    <!-- Progress -->
+    <TextView
+        android:id="@+id/text_view_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="1/10"
+        app:layout_constraintTop_toTopOf="@id/text_view_score_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/text_view_score_label" />
+
+    <!-- Card Container -->
+    <FrameLayout
+        android:id="@+id/card_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toBottomOf="@id/text_view_score_label"
+        app:layout_constraintBottom_toTopOf="@id/layout_controls"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Front Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_front"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/text_view_front_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/english"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:id="@+id/text_view_front_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Word"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+
+                <com.bhashasetu.app.view.AudioPronunciationView
+                    android:id="@+id/audio_pronunciation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Back Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/text_view_back_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hindi"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:id="@+id/text_view_back_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="शब्द"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+    <!-- Controls for Study Mode -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/button_flip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/flip"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/button_know" />
+
+        <Button
+            android:id="@+id/button_know"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/i_know"
+            android:backgroundTint="@color/colorCorrect"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/button_flip"
+            app:layout_constraintEnd_toStartOf="@id/button_dont_know" />
+
+        <Button
+            android:id="@+id/button_dont_know"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/i_dont_know"
+            android:backgroundTint="@color/colorIncorrect"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/button_know"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/next"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/button_flip"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Quiz Mode Controls -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_quiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/text_view_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/whats_the_translation"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/button_answer_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Option 1"
+            app:layout_constraintTop_toBottomOf="@id/text_view_question"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/button_answer_2" />
+
+        <Button
+            android:id="@+id/button_answer_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Option 2"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintTop_toTopOf="@id/button_answer_1"
+            app:layout_constraintStart_toEndOf="@id/button_answer_1"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/button_answer_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Option 3"
+            app:layout_constraintTop_toBottomOf="@id/button_answer_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/button_answer_4" />
+
+        <Button
+            android:id="@+id/button_answer_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Option 4"
+            app:layout_constraintTop_toTopOf="@id/button_answer_3"
+            app:layout_constraintStart_toEndOf="@id/button_answer_3"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Spelling Mode Controls -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_spelling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/text_view_spelling_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/spell_the_word"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/text_view_spelling_answer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:hint="@string/enter_spelling"
+            android:inputType="text"
+            app:layout_constraintTop_toBottomOf="@id/text_view_spelling_question"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/button_check" />
+
+        <Button
+            android:id="@+id/button_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/check"
+            app:layout_constraintTop_toTopOf="@id/text_view_spelling_answer"
+            app:layout_constraintBottom_toBottomOf="@id/text_view_spelling_answer"
+            app:layout_constraintStart_toEndOf="@id/text_view_spelling_answer"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Game Over Overlay -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_game_over"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/text_view_game_over_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="@string/game_complete" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="@string/your_score"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/text_view_final_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:gravity="center"
+                android:text="0"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/text_view_correct_answers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="Correct: 0/0 (0%)"
+                android:layout_marginTop="16dp" />
+
+            <Button
+                android:id="@+id/button_play_again"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/play_again"
+                android:layout_marginTop="24dp" />
+
+            <Button
+                android:id="@+id/button_exit"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/exit"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

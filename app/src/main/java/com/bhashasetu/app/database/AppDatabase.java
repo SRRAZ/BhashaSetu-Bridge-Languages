@@ -7,7 +7,7 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.room.TypeConverters;
 
-import com.bhashasetu.app.data.model.Achievement as ModernAchievement;
+//import com.bhashasetu.app.data.model.Achievement as ModernAchievement;
 import com.bhashasetu.app.model.Achievement;
 import com.bhashasetu.app.model.GameScore;
 import com.bhashasetu.app.model.PronunciationSession;

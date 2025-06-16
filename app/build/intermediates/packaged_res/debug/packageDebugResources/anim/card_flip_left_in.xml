@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Before rotating, the card needs to be invisible -->
+    <alpha
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0"
+        android:duration="0" />
+
+    <!-- Rotate the card -->
+    <rotate
+        android:fromDegrees="-90"
+        android:toDegrees="0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:duration="300" />
+
+    <!-- Make the card visible -->
+    <alpha
+        android:fromAlpha="0.1"
+        android:toAlpha="1.0"
+        android:startOffset="150"
+        android:duration="150" />
+</set>

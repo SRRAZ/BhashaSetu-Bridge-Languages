@@ -1,0 +1,237 @@
+{
+  "category": "Food & Drinks",
+  "categoryHindi": "खाना और पीना",
+  "description": "Food, drinks, and restaurant phrases",
+  "descriptionHindi": "भोजन, पेय और रेस्तरां वाक्यांश",
+  "difficulty": 1,
+  "words": [
+    {
+      "id": 1,
+      "englishWord": "Water",
+      "hindiWord": "पानी",
+      "englishPronunciation": "wah-ter",
+      "hindiPronunciation": "paa-nee",
+      "exampleSentenceEnglish": "Can I have a glass of water, please?",
+      "exampleSentenceHindi": "क्या मुझे एक गिलास पानी मिल सकता है, कृपया?"
+    },
+    {
+      "id": 2,
+      "englishWord": "Tea",
+      "hindiWord": "चाय",
+      "englishPronunciation": "tee",
+      "hindiPronunciation": "chaay",
+      "exampleSentenceEnglish": "Would you like some tea?",
+      "exampleSentenceHindi": "क्या आप कुछ चाय लेंगे?",
+      "notes": "Tea is an extremely popular drink in India, often prepared with milk and spices."
+    },
+    {
+      "id": 3,
+      "englishWord": "Coffee",
+      "hindiWord": "कॉफी",
+      "englishPronunciation": "kaw-fee",
+      "hindiPronunciation": "ko-fee",
+      "exampleSentenceEnglish": "I drink coffee every morning.",
+      "exampleSentenceHindi": "मैं हर सुबह कॉफी पीता हूँ।"
+    },
+    {
+      "id": 4,
+      "englishWord": "Milk",
+      "hindiWord": "दूध",
+      "englishPronunciation": "milk",
+      "hindiPronunciation": "doodh",
+      "exampleSentenceEnglish": "Children should drink milk every day.",
+      "exampleSentenceHindi": "बच्चों को हर दिन दूध पीना चाहिए।"
+    },
+    {
+      "id": 5,
+      "englishWord": "Bread",
+      "hindiWord": "रोटी",
+      "englishPronunciation": "bred",
+      "hindiPronunciation": "ro-tee",
+      "exampleSentenceEnglish": "I eat bread for breakfast.",
+      "exampleSentenceHindi": "मैं नाश्ते में रोटी खाता हूँ।",
+      "notes": "Roti is a round flatbread, while western-style bread is sometimes called 'double roti'"
+    },
+    {
+      "id": 6,
+      "englishWord": "Rice",
+      "hindiWord": "चावल",
+      "englishPronunciation": "rice",
+      "hindiPronunciation": "chaa-val",
+      "exampleSentenceEnglish": "Rice is a staple food in many countries.",
+      "exampleSentenceHindi": "चावल कई देशों का मुख्य भोजन है।"
+    },
+    {
+      "id": 7,
+      "englishWord": "Vegetable",
+      "hindiWord": "सब्जी",
+      "englishPronunciation": "vej-tuh-bul",
+      "hindiPronunciation": "sub-jee",
+      "exampleSentenceEnglish": "You should eat more vegetables.",
+      "exampleSentenceHindi": "आपको अधिक सब्जियाँ खानी चाहिए।"
+    },
+    {
+      "id": 8,
+      "englishWord": "Fruit",
+      "hindiWord": "फल",
+      "englishPronunciation": "froot",
+      "hindiPronunciation": "phal",
+      "exampleSentenceEnglish": "Fruits are good for your health.",
+      "exampleSentenceHindi": "फल आपके स्वास्थ्य के लिए अच्छे हैं।"
+    },
+    {
+      "id": 9,
+      "englishWord": "Meat",
+      "hindiWord": "मांस",
+      "englishPronunciation": "meet",
+      "hindiPronunciation": "maans",
+      "exampleSentenceEnglish": "Many people eat meat every day.",
+      "exampleSentenceHindi": "कई लोग हर दिन मांस खाते हैं।"
+    },
+    {
+      "id": 10,
+      "englishWord": "Fish",
+      "hindiWord": "मछली",
+      "englishPronunciation": "fish",
+      "hindiPronunciation": "much-lee",
+      "exampleSentenceEnglish": "I like to eat fish.",
+      "exampleSentenceHindi": "मुझे मछली खाना पसंद है।"
+    },
+    {
+      "id": 11,
+      "englishWord": "Chicken",
+      "hindiWord": "मुर्गा",
+      "englishPronunciation": "chik-en",
+      "hindiPronunciation": "mur-gaa",
+      "exampleSentenceEnglish": "Let's cook chicken for dinner.",
+      "exampleSentenceHindi": "चलिए रात के खाने के लिए मुर्गा पकाते हैं।"
+    },
+    {
+      "id": 12,
+      "englishWord": "Egg",
+      "hindiWord": "अंडा",
+      "englishPronunciation": "eg",
+      "hindiPronunciation": "un-daa",
+      "exampleSentenceEnglish": "I eat two eggs for breakfast.",
+      "exampleSentenceHindi": "मैं नाश्ते में दो अंडे खाता हूँ।"
+    },
+    {
+      "id": 13,
+      "englishWord": "Salt",
+      "hindiWord": "नमक",
+      "englishPronunciation": "salt",
+      "hindiPronunciation": "nuh-muk",
+      "exampleSentenceEnglish": "Add a little salt to the dish.",
+      "exampleSentenceHindi": "व्यंजन में थोड़ा नमक डालें।"
+    },
+    {
+      "id": 14,
+      "englishWord": "Sugar",
+      "hindiWord": "चीनी",
+      "englishPronunciation": "shoog-er",
+      "hindiPronunciation": "chee-nee",
+      "exampleSentenceEnglish": "Would you like sugar in your tea?",
+      "exampleSentenceHindi": "क्या आप अपनी चाय में चीनी लेंगे?"
+    },
+    {
+      "id": 15,
+      "englishWord": "Spicy",
+      "hindiWord": "मसालेदार",
+      "englishPronunciation": "spy-see",
+      "hindiPronunciation": "muh-saa-lay-daar",
+      "exampleSentenceEnglish": "Indian food can be very spicy.",
+      "exampleSentenceHindi": "भारतीय खाना बहुत मसालेदार हो सकता है।"
+    },
+    {
+      "id": 16,
+      "englishWord": "Sweet",
+      "hindiWord": "मीठा",
+      "englishPronunciation": "sweet",
+      "hindiPronunciation": "mee-thaa",
+      "exampleSentenceEnglish": "I like sweet desserts.",
+      "exampleSentenceHindi": "मुझे मीठे मिठाई पसंद हैं।"
+    },
+    {
+      "id": 17,
+      "englishWord": "Restaurant",
+      "hindiWord": "रेस्तरां",
+      "englishPronunciation": "rest-er-ont",
+      "hindiPronunciation": "res-ta-raan",
+      "exampleSentenceEnglish": "Let's go to a restaurant for dinner.",
+      "exampleSentenceHindi": "चलिए रात के खाने के लिए रेस्तरां चलते हैं।"
+    },
+    {
+      "id": 18,
+      "englishWord": "Menu",
+      "hindiWord": "मेन्यू",
+      "englishPronunciation": "men-yoo",
+      "hindiPronunciation": "men-yoo",
+      "exampleSentenceEnglish": "Can I see the menu, please?",
+      "exampleSentenceHindi": "क्या मैं मेन्यू देख सकता हूँ, कृपया?"
+    },
+    {
+      "id": 19,
+      "englishWord": "Breakfast",
+      "hindiWord": "नाश्ता",
+      "englishPronunciation": "brek-fust",
+      "hindiPronunciation": "naash-taa",
+      "exampleSentenceEnglish": "Breakfast is the most important meal of the day.",
+      "exampleSentenceHindi": "नाश्ता दिन का सबसे महत्वपूर्ण भोजन है।"
+    },
+    {
+      "id": 20,
+      "englishWord": "Lunch",
+      "hindiWord": "दोपहर का खाना",
+      "englishPronunciation": "lunch",
+      "hindiPronunciation": "do-pa-har kaa khaa-naa",
+      "exampleSentenceEnglish": "What would you like for lunch?",
+      "exampleSentenceHindi": "आप दोपहर के खाने में क्या लेना चाहेंगे?"
+    },
+    {
+      "id": 21,
+      "englishWord": "Dinner",
+      "hindiWord": "रात का खाना",
+      "englishPronunciation": "din-er",
+      "hindiPronunciation": "raat kaa khaa-naa",
+      "exampleSentenceEnglish": "We usually eat dinner at 8 PM.",
+      "exampleSentenceHindi": "हम आमतौर पर रात 8 बजे खाना खाते हैं।"
+    },
+    {
+      "id": 22,
+      "englishWord": "Bill",
+      "hindiWord": "बिल",
+      "englishPronunciation": "bill",
+      "hindiPronunciation": "bill",
+      "exampleSentenceEnglish": "Can we have the bill, please?",
+      "exampleSentenceHindi": "क्या हमें बिल मिल सकता है, कृपया?"
+    },
+    {
+      "id": 23,
+      "englishWord": "Waiter",
+      "hindiWord": "वेटर",
+      "englishPronunciation": "way-ter",
+      "hindiPronunciation": "vay-tur",
+      "exampleSentenceEnglish": "Excuse me, waiter!",
+      "exampleSentenceHindi": "माफ कीजिए, वेटर!"
+    },
+    {
+      "id": 24,
+      "englishWord": "Delicious",
+      "hindiWord": "स्वादिष्ट",
+      "englishPronunciation": "duh-lish-us",
+      "hindiPronunciation": "svaa-disht",
+      "exampleSentenceEnglish": "The food is delicious!",
+      "exampleSentenceHindi": "खाना स्वादिष्ट है!"
+    },
+    {
+      "id": 25,
+      "englishWord": "Hungry",
+      "hindiWord": "भूखा",
+      "englishPronunciation": "hung-gree",
+      "hindiPronunciation": "bhoo-khaa",
+      "exampleSentenceEnglish": "I am hungry.",
+      "exampleSentenceHindi": "मैं भूखा हूँ।",
+      "notes": "Use 'bhookhaa' for males and 'bhookhee' for females."
+    }
+  ]
+}

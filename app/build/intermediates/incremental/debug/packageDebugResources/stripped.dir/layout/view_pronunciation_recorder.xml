@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view_recorder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/text_view_recorder_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/record_your_pronunciation"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_recorder_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/tap_mic_to_start_recording"
+            android:textAppearance="?attr/textAppearanceBody2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/button_listen_reference"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/circle_button_bg"
+                android:contentDescription="@string/listen_to_reference"
+                android:padding="12dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/vd_play"
+                app:tint="@color/primaryColor" />
+
+            <ImageButton
+                android:id="@+id/button_record"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circle_button_bg"
+                android:contentDescription="@string/record_pronunciation"
+                android:padding="16dp"
+                android:scaleType="fitCenter"
+                android:src="@android:drawable/ic_btn_speak_now"
+                app:tint="@color/colorError" />
+
+            <ImageButton
+                android:id="@+id/button_play_recording"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/circle_button_bg"
+                android:contentDescription="@string/play_your_recording"
+                android:enabled="false"
+                android:padding="12dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/vd_play"
+                app:tint="@color/primaryColor" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:id="@+id/layout_recording_visualizer"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <!-- Visualizer bars for recording animation -->
+                <View
+                    android:id="@+id/visualizer_bar_1"
+                    android:layout_width="12dp"
+                    android:layout_height="20dp"
+                    android:layout_marginHorizontal="3dp"
+                    android:background="@color/colorAccent" />
+
+                <View
+                    android:id="@+id/visualizer_bar_2"
+                    android:layout_width="12dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="3dp"
+                    android:background="@color/colorAccent" />
+
+                <View
+                    android:id="@+id/visualizer_bar_3"
+                    android:layout_width="12dp"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="3dp"
+                    android:background="@color/colorAccent" />
+
+                <View
+                    android:id="@+id/visualizer_bar_4"
+                    android:layout_width="12dp"
+                    android:layout_height="70dp"
+                    android:layout_marginHorizontal="3dp"
+                    android:background="@color/colorAccent" />
+
+                <View
+                    android:id="@+id/visualizer_bar_5"
+                    android:layout_width="12dp"
+                    android:layout_height="60dp"
+                    android:layout_marginHorizontal="3dp"
+                    android:background="@color/colorAccent" />
+
+                <View
+                    android:id="@+id/visualizer_bar_6"
+                    android:layout_width="12dp"
+                    android:layout_height="40dp"
+                    android:layout_marginHorizontal="3dp"
+                    android:background="@color/colorAccent" />
+
+                <View
+                    android:id="@+id/visualizer_bar_7"
+                    android:layout_width="12dp"
+                    android:layout_height="25dp"
+                    android:layout_marginHorizontal="3dp"
+                    android:background="@color/colorAccent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_comparison_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/text_view_comparison_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:textAppearance="?attr/textAppearanceHeadline5"
+                    android:textColor="@color/primaryColor"
+                    android:textStyle="bold"
+                    tools:text="85%" />
+
+                <TextView
+                    android:id="@+id/text_view_comparison_feedback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    tools:text="Good pronunciation, keep practicing!" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_recorder_default"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/practice_pronunciation"
+                    android:textAppearance="?attr/textAppearanceBody1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="@string/compare_with_reference"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="?android:attr/textColorSecondary" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_recording_controls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/button_cancel_recording"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="@string/cancel" />
+
+            <Button
+                android:id="@+id/button_stop_recording"
+                style="?attr/materialButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="@color/colorError"
+                android:text="@string/stop" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_compare"
+            style="?attr/materialButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:enabled="false"
+            android:text="@string/compare_pronunciation"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
