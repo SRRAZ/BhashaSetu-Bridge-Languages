@@ -34,7 +34,6 @@ import kotlinx.coroutines.launch
 )
 @TypeConverters(DateConverter::class)
 abstract class AppDatabase : RoomDatabase() {
-
     abstract fun wordDao(): WordDao
     abstract fun categoryDao(): CategoryDao
     abstract fun userProgressDao(): UserProgressDao

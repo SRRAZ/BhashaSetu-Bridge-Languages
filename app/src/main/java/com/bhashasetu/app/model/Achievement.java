@@ -6,6 +6,7 @@ import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 import androidx.room.ForeignKey;
 import java.util.Date;
+import androidx.room.Ignore;
 
 /**
  * Model class for user achievements in the app.
@@ -21,7 +22,7 @@ public class Achievement {
     public static final String TYPE_GAME = "game";
     public static final String TYPE_MASTERY = "mastery";
     
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     @NonNull //Added this annotation to make the field non-null
     private String id;
     

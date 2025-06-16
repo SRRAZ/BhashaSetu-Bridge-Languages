@@ -2,7 +2,7 @@ pluginManagement {
     repositories {
         google()
         mavenCentral()
-        gradlePluginPortal()
+        gradlePluginPortal() //Important for finding plugins by ID
     }
     // It's good practice to define plugin versions here.
     // This allows you to remove version numbers from the project-level build.gradle's plugins block
@@ -11,7 +11,10 @@ pluginManagement {
         id 'com.android.application' version '8.10.1' // Matches project-level build.gradle
         id 'com.android.library' version '8.10.1'
         // Matches project-level build.gradle (if you use library modules)
-        id 'org.jetbrains.kotlin.android' version '1.9.23' // Matches project-level build.gradle
+        id 'org.jetbrains.kotlin.android' version '2.1.21' apply false
+        id 'kotlin-kapt' version '2.1.21' apply false
+        id 'org.jetbrains.kotlin.plugin.compose' version '2.1.21'
+// Matches project-level build.gradle
         // If you use other plugins project-wide, like Hilt, you can define their versions here too
         // e.g., id 'com.google.dagger.hilt.android' version '2.48' apply false
     }

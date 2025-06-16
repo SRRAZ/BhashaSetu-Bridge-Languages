@@ -1,6 +1,6 @@
-# English-Hindi Learning App
+# BhashaSetu - An English Learning App
 
-A comprehensive mobile application for learning Hindi language, designed for English speakers. The app provides vocabulary learning, lessons, quizzes, flashcards, and progress tracking to make language learning engaging and effective.
+A comprehensive mobile application for learning English language, designed for Hindi speakers. The app provides vocabulary learning, lessons, quizzes, flashcards, and progress tracking to make language learning engaging and effective.
 
 ## Features
 
@@ -104,11 +104,11 @@ A comprehensive mobile application for learning Hindi language, designed for Eng
 ## Technical Details
 
 - Minimum SDK: API 21 (Android 5.0 Lollipop)
-- Target SDK: API 34 (Android 14)
+- Target SDK: API 35 (Android 15)
 - Built with Java and Android SDK
 - Uses Room Database for local storage
 
 ## Project Structure
-- `app/src/main/java/com/example/englishhindi` - Contains all Java code
+- `app/src/main/java/com/bhashasetu/app` - Contains all Java code
 - `app/src/main/res` - Contains resources like layouts, strings, etc.
 - `app/src/main/AndroidManifest.xml` - App configuration file

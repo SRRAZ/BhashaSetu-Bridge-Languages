@@ -47,7 +47,7 @@ The repository contains a standard Android project structure with:
 - Using com.android.tools.build:gradle:8.10.0
 
 ## Kotlin Plugin Version
-- Using org.jetbrains.kotlin.android version 1.9.0
+- Using org.jetbrains.kotlin.android version 2.1.21
 
 ## Compilation Settings
 - Java compatibility version: 17

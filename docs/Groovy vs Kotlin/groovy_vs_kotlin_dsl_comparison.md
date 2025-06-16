@@ -101,7 +101,7 @@ plugins {
 **Groovy DSL:**
 ```groovy
 dependencies {
-    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.core:core-ktx:2.1.21'
     testImplementation 'junit:junit:4.13.2'
 }
 ```
@@ -109,7 +109,7 @@ dependencies {
 **Kotlin DSL:**
 ```kotlin
 dependencies {
-    implementation("androidx.core:core-ktx:1.9.0")
+    implementation("androidx.core:core-ktx:2.1.21")
     testImplementation("junit:junit:4.13.2")
 }
 ```
