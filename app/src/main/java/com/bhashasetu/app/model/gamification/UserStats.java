@@ -7,6 +7,7 @@ import androidx.room.TypeConverters;
 import com.bhashasetu.app.database.converters.DateConverter;
 
 import java.util.Date;
+import androidx.room.Ignore;
 
 /**
  * Entity representing user statistics
@@ -44,7 +45,8 @@ public class UserStats {
         this.achievementsUnlocked = 0;
         this.badgesEarned = 0;
     }
-    
+
+    @Ignore
     public UserStats(int userId) {
         this.userId = userId;
         this.wordsLearned = 0;

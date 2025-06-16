@@ -94,6 +94,7 @@ public abstract class WordDatabase extends RoomDatabase {
     public abstract PracticeSessionDao practiceSessionDao();
     public abstract ExerciseDao exerciseDao();
     public abstract AchievementDao achievementDao();
+    public abstract GamificationAchievementDao gamificationAchievementDao();
     public abstract BadgeDao badgeDao();
     public abstract UserPointsDao userPointsDao();
     public abstract UserLevelDao userLevelDao();

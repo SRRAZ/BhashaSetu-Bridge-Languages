@@ -6,6 +6,7 @@ import androidx.room.TypeConverters;
 import com.bhashasetu.app.database.converters.AchievementTypeConverter;
 import com.bhashasetu.app.database.converters.DateConverter;
 import java.util.Date;
+import androidx.room.Ignore;
 
 /**
  * Entity representing a user achievement
@@ -30,7 +31,8 @@ public class Achievement {
     public Achievement() {
         this.unlocked = false;
     }
-    
+
+    @Ignore
     public Achievement(String title, String description, AchievementType type, 
                       int threshold, int pointsAwarded, String badgeImagePath) {
         this.title = title;

@@ -8,6 +8,7 @@ import com.bhashasetu.app.database.converters.BadgeTierConverter;
 import com.bhashasetu.app.database.converters.DateConverter;
 
 import java.util.Date;
+import androidx.room.Ignore;
 
 /**
  * Entity representing a user badge (visual representation of achievements)
@@ -30,7 +31,8 @@ public class Badge {
     public Badge() {
         this.earned = false;
     }
-    
+
+    @Ignore
     public Badge(String name, String description, BadgeTier tier, String imagePath, int achievementId) {
         this.name = name;
         this.description = description;

@@ -8,6 +8,7 @@ import com.bhashasetu.app.database.converters.DateConverter;
 import com.bhashasetu.app.database.converters.PointsSourceConverter;
 
 import java.util.Date;
+import androidx.room.Ignore;
 
 /**
  * Entity representing points earned by a user
@@ -29,7 +30,8 @@ public class UserPoints {
     public UserPoints() {
         this.earnedAt = new Date();
     }
-    
+
+    @Ignore
     public UserPoints(int userId, int points, String description, PointsSource source, int sourceId) {
         this.userId = userId;
         this.points = points;

@@ -4,6 +4,7 @@ import androidx.room.Entity
 import androidx.room.ForeignKey
 import androidx.room.PrimaryKey
 import androidx.room.Index
+import androidx.room.Ignore
 import com.bhashasetu.app.data.model.Category
 
 /**
@@ -35,14 +36,14 @@ data class UserGoal(
     // Target metrics
     val targetValue: Int, // Number to reach (words, minutes, etc.)
     val currentValue: Int = 0, // Current progress
-    val progress: Int = 0, // Alternative name for currentValue (DAO compatibility)
+    @Ignore val progress: Int = 0, // Alternative name for currentValue (DAO compatibility)
     val categoryId: Long? = null, // If goal is specific to a category
     
     // Time period
     val periodType: String, // "daily", "weekly", "monthly", "total"
     val startDate: Long = System.currentTimeMillis(),
     val endDate: Long? = null, // Set for time-bound goals
-    val targetDate: Long? = null, // Alternative name for endDate (DAO compatibility)
+    @Ignore val targetDate: Long? = null, // Alternative name for endDate (DAO compatibility)
     val repeatDaily: Boolean = false, // Whether goal resets daily
     
     // Reminders
@@ -50,10 +51,10 @@ data class UserGoal(
     val reminderTime: String? = null, // HH:mm format
     
     // Status
-    val isCompleted: Boolean = false,
+    @Ignore val isCompleted: Boolean = false,
     val completed: Boolean = false, // Alternative name for isCompleted (DAO compatibility)
     val completedAt: Long? = null,
-    val completedDate: Long? = null, // Alternative name for completedAt (DAO compatibility)
+    @Ignore val completedDate: Long? = null, // Alternative name for completedAt (DAO compatibility)
     val isActive: Boolean = true,
     
     // Creation metadata

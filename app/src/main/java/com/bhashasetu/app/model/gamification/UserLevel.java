@@ -2,6 +2,7 @@ package com.bhashasetu.app.model.gamification;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
+import androidx.room.Ignore;
 
 /**
  * Entity representing a user's level in the app
@@ -26,7 +27,8 @@ public class UserLevel {
         this.totalExp = 0;
         this.title = "Beginner";
     }
-    
+
+    @Ignore
     public UserLevel(int userId) {
         this.userId = userId;
         this.level = 1;

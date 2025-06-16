@@ -2,7 +2,7 @@
   "formatVersion": 1,
   "database": {
     "version": 2,
-    "identityHash": "4e7efe1791c1312e5163b7452ccd96f1",
+    "identityHash": "1a36a8f9b370cd3d14d30c3d00d62225",
     "entities": [
       {
         "tableName": "words",
@@ -1325,7 +1325,7 @@
       },
       {
         "tableName": "user_goals",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `title` TEXT NOT NULL, `description` TEXT, `goalType` TEXT NOT NULL, `targetValue` INTEGER NOT NULL, `currentValue` INTEGER NOT NULL, `progress` INTEGER NOT NULL, `categoryId` INTEGER, `periodType` TEXT NOT NULL, `startDate` INTEGER NOT NULL, `endDate` INTEGER, `targetDate` INTEGER, `repeatDaily` INTEGER NOT NULL, `reminderEnabled` INTEGER NOT NULL, `reminderTime` TEXT, `isCompleted` INTEGER NOT NULL, `completed` INTEGER NOT NULL, `completedAt` INTEGER, `completedDate` INTEGER, `isActive` INTEGER NOT NULL, `createdAt` INTEGER NOT NULL, `lastUpdatedAt` INTEGER NOT NULL, FOREIGN KEY(`categoryId`) REFERENCES `categories`(`id`) ON UPDATE NO ACTION ON DELETE SET NULL )",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `title` TEXT NOT NULL, `description` TEXT, `goalType` TEXT NOT NULL, `targetValue` INTEGER NOT NULL, `currentValue` INTEGER NOT NULL, `categoryId` INTEGER, `periodType` TEXT NOT NULL, `startDate` INTEGER NOT NULL, `endDate` INTEGER, `repeatDaily` INTEGER NOT NULL, `reminderEnabled` INTEGER NOT NULL, `reminderTime` TEXT, `completed` INTEGER NOT NULL, `completedAt` INTEGER, `isActive` INTEGER NOT NULL, `createdAt` INTEGER NOT NULL, `lastUpdatedAt` INTEGER NOT NULL, FOREIGN KEY(`categoryId`) REFERENCES `categories`(`id`) ON UPDATE NO ACTION ON DELETE SET NULL )",
         "fields": [
           {
             "fieldPath": "id",
@@ -1363,12 +1363,6 @@
             "notNull": true
           },
           {
-            "fieldPath": "progress",
-            "columnName": "progress",
-            "affinity": "INTEGER",
-            "notNull": true
-          },
-          {
             "fieldPath": "categoryId",
             "columnName": "categoryId",
             "affinity": "INTEGER"
@@ -1391,11 +1385,6 @@
             "affinity": "INTEGER"
           },
           {
-            "fieldPath": "targetDate",
-            "columnName": "targetDate",
-            "affinity": "INTEGER"
-          },
-          {
             "fieldPath": "repeatDaily",
             "columnName": "repeatDaily",
             "affinity": "INTEGER",
@@ -1413,12 +1402,6 @@
             "affinity": "TEXT"
           },
           {
-            "fieldPath": "isCompleted",
-            "columnName": "isCompleted",
-            "affinity": "INTEGER",
-            "notNull": true
-          },
-          {
             "fieldPath": "completed",
             "columnName": "completed",
             "affinity": "INTEGER",
@@ -1427,11 +1410,6 @@
           {
             "fieldPath": "completedAt",
             "columnName": "completedAt",
-            "affinity": "INTEGER"
-          },
-          {
-            "fieldPath": "completedDate",
-            "columnName": "completedDate",
             "affinity": "INTEGER"
           },
           {
@@ -1575,7 +1553,7 @@
     ],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '4e7efe1791c1312e5163b7452ccd96f1')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '1a36a8f9b370cd3d14d30c3d00d62225')"
     ]
   }
 }

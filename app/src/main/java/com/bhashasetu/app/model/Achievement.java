@@ -23,8 +23,8 @@ public class Achievement {
     public static final String TYPE_MASTERY = "mastery";
     
     @PrimaryKey(autoGenerate = true)
-    @NonNull //Added this annotation to make the field non-null
-    private String id;
+//    @NonNull //Added this annotation to make the field non-null
+    private long id;
     
     private String title;
     private String description;
@@ -41,22 +41,23 @@ public class Achievement {
      * Default constructor for Room.
      */
     public Achievement() {
-        // If you have a default constructor, ensure 'id' is initialized
-        // to a non-null value if objects are created this way.
-        // However, Room typically uses the constructor with arguments.
-        // If you are generating IDs, this might be where you do it,
-        // or ensure your setters/constructors always provide a valid ID.
-        this.id = ""; // Or generate a unique ID
+        // Room will handle id generation.
+        // No need to initialize id here if autoGenerate is true.
+//        this.id = ""; // Or generate a unique ID
     }
-    
+
     /**
-     * Constructor for all fields.
+     * Constructor for all fields (excluding id if auto-generated).
+     * If you want to allow setting the id manually sometimes,
+     * you might need another constructor or a setter.
+     * For auto-generated IDs, Room typically doesn't expect you to set it.
      */
-    public Achievement(@NonNull String id, String title, String description, String type,
+    @Ignore
+    public Achievement(String id, String title, String description, String type,
                       int iconResId, int pointsValue, boolean unlocked, 
                       long dateUnlocked, int progressCurrent, int progressTarget, 
                       boolean secret) {
-        this.id = id;
+//        this.id = id; //Removed this because id is auto-generated
         this.title = title;
         this.description = description;
         this.type = type;
@@ -72,7 +73,8 @@ public class Achievement {
     /**
      * Constructor for locked achievements.
      */
-    public Achievement(@NonNull String id, String title, String description, String type,
+    @Ignore
+    public Achievement(String id, String title, String description, String type,
                       int iconResId, int pointsValue, int progressTarget, boolean secret) {
         this(id, title, description, type, iconResId, pointsValue, false, 
              0, 0, progressTarget, secret);
@@ -82,14 +84,17 @@ public class Achievement {
      * Get the achievement ID.
      */
     @NonNull
-    public String getId() {
+    public long getId() {
         return id;
     }
-    
+
     /**
      * Set the achievement ID.
+     * Generally, you don't set an auto-generated ID manually.
+     * Room handles this. If you need to set it for specific cases (e.g., testing, updates),
+     * you can keep this, but be cautious.
      */
-    public void setId(@NonNull String id) {
+    public void setId(long id) {
         this.id = id;
     }
     

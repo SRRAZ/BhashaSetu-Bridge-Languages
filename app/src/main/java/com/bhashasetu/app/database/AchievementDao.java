@@ -46,7 +46,7 @@ public interface AchievementDao {
      * 
      * @return LiveData list of all achievements
      */
-    @Query("SELECT * FROM achievements ORDER BY type, progressTarget")
+    @Query("SELECT * FROM legacy_achievements ORDER BY type, progressTarget")
     LiveData<List<Achievement>> getAllAchievements();
     
     /**
@@ -54,7 +54,7 @@ public interface AchievementDao {
      * 
      * @return LiveData list of unlocked achievements
      */
-    @Query("SELECT * FROM achievements WHERE unlocked = 1 ORDER BY dateUnlocked DESC")
+    @Query("SELECT * FROM legacy_achievements WHERE unlocked = 1 ORDER BY dateUnlocked DESC")
     LiveData<List<Achievement>> getUnlockedAchievements();
     
     /**
@@ -63,7 +63,7 @@ public interface AchievementDao {
      * @param type The achievement type
      * @return LiveData list of achievements of the specified type
      */
-    @Query("SELECT * FROM achievements WHERE type = :type ORDER BY progressTarget")
+    @Query("SELECT * FROM legacy_achievements WHERE type = :type ORDER BY progressTarget")
     LiveData<List<Achievement>> getAchievementsByType(String type);
     
     /**
@@ -72,7 +72,7 @@ public interface AchievementDao {
      * @param id The achievement ID
      * @return LiveData with the achievement
      */
-    @Query("SELECT * FROM achievements WHERE id = :id")
+    @Query("SELECT * FROM legacy_achievements WHERE id = :id")
     LiveData<Achievement> getAchievementById(String id);
     
     /**
@@ -81,7 +81,7 @@ public interface AchievementDao {
      * @param id The achievement ID
      * @return The achievement
      */
-    @Query("SELECT * FROM achievements WHERE id = :id")
+    @Query("SELECT * FROM legacy_achievements WHERE id = :id")
     Achievement getAchievementByIdSync(String id);
     
     /**
@@ -89,7 +89,7 @@ public interface AchievementDao {
      * 
      * @return LiveData with the total points
      */
-    @Query("SELECT SUM(pointsValue) FROM achievements WHERE unlocked = 1")
+    @Query("SELECT SUM(pointsValue) FROM legacy_achievements WHERE unlocked = 1")
     LiveData<Integer> getTotalPoints();
     
     /**
@@ -97,7 +97,7 @@ public interface AchievementDao {
      * 
      * @return LiveData with the count of unlocked achievements
      */
-    @Query("SELECT COUNT(*) FROM achievements WHERE unlocked = 1")
+    @Query("SELECT COUNT(*) FROM legacy_achievements WHERE unlocked = 1")
     LiveData<Integer> getUnlockedCount();
     
     /**
@@ -105,12 +105,12 @@ public interface AchievementDao {
      * 
      * @return LiveData with the total count of achievements
      */
-    @Query("SELECT COUNT(*) FROM achievements")
+    @Query("SELECT COUNT(*) FROM legacy_achievements")
     LiveData<Integer> getTotalCount();
     
     /**
      * Delete all achievements.
      */
-    @Query("DELETE FROM achievements")
+    @Query("DELETE FROM legacy_achievements")
     void deleteAll();
 }
