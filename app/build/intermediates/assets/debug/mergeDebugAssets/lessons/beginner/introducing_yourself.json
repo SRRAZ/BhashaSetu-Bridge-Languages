@@ -1,0 +1,196 @@
+{
+  "id": 2,
+  "title": "Introducing Yourself",
+  "titleHindi": "अपना परिचय देना",
+  "level": "beginner",
+  "category": "Greetings",
+  "description": "Learn how to introduce yourself and ask basic personal questions in Hindi.",
+  "descriptionHindi": "हिंदी में अपना परिचय देना और बुनियादी व्यक्तिगत प्रश्न पूछना सीखें।",
+  "estimatedTimeMinutes": 20,
+  "sections": [
+    {
+      "id": 1,
+      "title": "Introduction",
+      "titleHindi": "परिचय",
+      "content": "After greeting someone, the next step is often to introduce yourself. In this lesson, you'll learn how to share basic information about yourself and ask others about themselves in Hindi.",
+      "contentHindi": "किसी को अभिवादन करने के बाद, अगला कदम अक्सर अपना परिचय देना होता है। इस पाठ में, आप हिंदी में अपने बारे में बुनियादी जानकारी साझा करना और दूसरों से उनके बारे में पूछना सीखेंगे।"
+    },
+    {
+      "id": 2,
+      "title": "My Name Is...",
+      "titleHindi": "मेरा नाम है...",
+      "content": "The most basic introduction is telling someone your name. In Hindi, you can say:\n\n1. My name is... (Formal): 'Mera naam ... hai' (मेरा नाम ... है) - Pronunciation: may-raa naam ... hai\n\nExample: 'Mera naam Raj hai' (My name is Raj)\n\n2. I am... (Informal): 'Main ... hoon' (मैं ... हूँ) - Pronunciation: main ... hoon\n\nExample: 'Main Raj hoon' (I am Raj)",
+      "contentHindi": "सबसे बुनियादी परिचय किसी को अपना नाम बताना है। हिंदी में, आप कह सकते हैं:\n\n1. मेरा नाम ... है (औपचारिक) - उच्चारण: मे-रा नाम ... है\n\nउदाहरण: 'मेरा नाम राज है'\n\n2. मैं ... हूँ (अनौपचारिक) - उच्चारण: मैं ... हूँ\n\nउदाहरण: 'मैं राज हूँ'"
+    },
+    {
+      "id": 3,
+      "title": "Asking Someone's Name",
+      "titleHindi": "किसी का नाम पूछना",
+      "content": "To ask someone their name, you can say:\n\n1. What is your name? (Formal): 'Aapka naam kya hai?' (आपका नाम क्या है?) - Pronunciation: aap-kaa naam kyaa hai\n\n2. What is your name? (Informal): 'Tumhara naam kya hai?' (तुम्हारा नाम क्या है?) - Pronunciation: toom-haa-raa naam kyaa hai\n\nRemember to use the formal version with people you've just met, elders, or in professional settings.",
+      "contentHindi": "किसी से उनका नाम पूछने के लिए, आप कह सकते हैं:\n\n1. आपका नाम क्या है? (औपचारिक) - उच्चारण: आप-का नाम क्या है\n\n2. तुम्हारा नाम क्या है? (अनौपचारिक) - उच्चारण: तुम्-हा-रा नाम क्या है\n\nयाद रखें कि जिन लोगों से आप अभी-अभी मिले हैं, बड़ों, या पेशेवर स्थितियों में औपचारिक संस्करण का उपयोग करें।"
+    },
+    {
+      "id": 4,
+      "title": "Where Are You From?",
+      "titleHindi": "आप कहाँ से हैं?",
+      "content": "Asking about someone's origin is a common conversation starter:\n\n1. Where are you from? (Formal): 'Aap kahan se hain?' (आप कहाँ से हैं?) - Pronunciation: aap kuh-haan say hain\n\n2. Where are you from? (Informal): 'Tum kahan se ho?' (तुम कहाँ से हो?) - Pronunciation: toom kuh-haan say ho\n\nTo respond, you can say:\n\n1. I am from... (Formal): 'Main ... se hoon' (मैं ... से हूँ) - Pronunciation: main ... say hoon\n\nExample: 'Main America se hoon' (I am from America)\n\n2. I am from... (Mentioning city): 'Main ... ka/ki hoon' (मैं ... का/की हूँ) - Pronunciation: main ... kaa/kee hoon\n\nExample: 'Main Delhi ka hoon' (I am from Delhi) - for males\nExample: 'Main Delhi ki hoon' (I am from Delhi) - for females",
+      "contentHindi": "किसी के मूल के बारे में पूछना एक सामान्य बातचीत शुरुआत है:\n\n1. आप कहाँ से हैं? (औपचारिक) - उच्चारण: आप क-हाँ से हैं\n\n2. तुम कहाँ से हो? (अनौपचारिक) - उच्चारण: तुम क-हाँ से हो\n\nजवाब देने के लिए, आप कह सकते हैं:\n\n1. मैं ... से हूँ - उच्चारण: मैं ... से हूँ\n\nउदाहरण: 'मैं अमेरिका से हूँ'\n\n2. मैं ... का/की हूँ (शहर का उल्लेख करते हुए) - उच्चारण: मैं ... का/की हूँ\n\nउदाहरण: 'मैं दिल्ली का हूँ' (पुरुषों के लिए)\nउदाहरण: 'मैं दिल्ली की हूँ' (महिलाओं के लिए)"
+    },
+    {
+      "id": 5,
+      "title": "What Do You Do?",
+      "titleHindi": "आप क्या करते हैं?",
+      "content": "Asking about someone's profession:\n\n1. What do you do? (Formal): 'Aap kya karte hain?' (आप क्या करते हैं?) - Pronunciation: aap kyaa kur-tay hain\n\n2. What do you do? (Informal): 'Tum kya karte ho?' (तुम क्या करते हो?) - Pronunciation: toom kyaa kur-tay ho\n\nTo respond about your profession, you can say:\n\n1. I am a... (Male): 'Main ek ... hoon' (मैं एक ... हूँ) - Pronunciation: main ayk ... hoon\n\nExample: 'Main ek adhyapak hoon' (I am a teacher) - for males\n\n2. I am a... (Female): 'Main ek ... hoon' (मैं एक ... हूँ) - Pronunciation: main ayk ... hoon\n\nExample: 'Main ek adhyapika hoon' (I am a teacher) - for females",
+      "contentHindi": "किसी के पेशे के बारे में पूछना:\n\n1. आप क्या करते हैं? (औपचारिक) - उच्चारण: आप क्या कर-ते हैं\n\n2. तुम क्या करते हो? (अनौपचारिक) - उच्चारण: तुम क्या कर-ते हो\n\nअपने पेशे के बारे में बताने के लिए, आप कह सकते हैं:\n\n1. मैं एक ... हूँ (पुरुष) - उच्चारण: मैं एक ... हूँ\n\nउदाहरण: 'मैं एक अध्यापक हूँ' (पुरुषों के लिए)\n\n2. मैं एक ... हूँ (महिला) - उच्चारण: मैं एक ... हूँ\n\nउदाहरण: 'मैं एक अध्यापिका हूँ' (महिलाओं के लिए)"
+    },
+    {
+      "id": 6,
+      "title": "How Old Are You?",
+      "titleHindi": "आपकी उम्र क्या है?",
+      "content": "Asking about age (note that this is considered more acceptable in Indian culture than in some Western cultures):\n\n1. How old are you? (Formal): 'Aapki umar kya hai?' (आपकी उम्र क्या है?) - Pronunciation: aap-kee oo-mur kyaa hai\n\n2. How old are you? (Informal): 'Tumhari umar kya hai?' (तुम्हारी उम्र क्या है?) - Pronunciation: toom-haa-ree oo-mur kyaa hai\n\nTo respond, you can say:\n\n'Meri umar ... saal hai' (मेरी उम्र ... साल है) - Pronunciation: may-ree oo-mur ... saal hai\n\nExample: 'Meri umar bees saal hai' (I am twenty years old)",
+      "contentHindi": "उम्र के बारे में पूछना (ध्यान दें कि यह कुछ पश्चिमी संस्कृतियों की तुलना में भारतीय संस्कृति में अधिक स्वीकार्य माना जाता है):\n\n1. आपकी उम्र क्या है? (औपचारिक) - उच्चारण: आप-की उम्-र क्या है\n\n2. तुम्हारी उम्र क्या है? (अनौपचारिक) - उच्चारण: तुम्-हा-री उम्-र क्या है\n\nजवाब देने के लिए, आप कह सकते हैं:\n\n'मेरी उम्र ... साल है' - उच्चारण: मे-री उम्-र ... साल है\n\nउदाहरण: 'मेरी उम्र बीस साल है' (मैं बीस साल का हूँ)"
+    },
+    {
+      "id": 7,
+      "title": "Asking About Languages",
+      "titleHindi": "भाषाओं के बारे में पूछना",
+      "content": "In a language learning context, asking about languages is common:\n\n1. Do you speak Hindi? (Formal): 'Kya aap Hindi bolte hain?' (क्या आप हिंदी बोलते हैं?) - Pronunciation: kyaa aap hin-dee bol-tay hain\n\n2. Do you speak Hindi? (Informal): 'Kya tum Hindi bolte ho?' (क्या तुम हिंदी बोलते हो?) - Pronunciation: kyaa toom hin-dee bol-tay ho\n\nTo respond, you can say:\n\n1. Yes, I speak Hindi: 'Haan, main Hindi bolta/bolti hoon' (हाँ, मैं हिंदी बोलता/बोलती हूँ) - Pronunciation: haan, main hin-dee bol-taa/bol-tee hoon\n\n2. I speak a little Hindi: 'Main thodi Hindi bolta/bolti hoon' (मैं थोड़ी हिंदी बोलता/बोलती हूँ) - Pronunciation: main tho-dee hin-dee bol-taa/bol-tee hoon\n\n3. I don't speak Hindi: 'Main Hindi nahi bolta/bolti' (मैं हिंदी नहीं बोलता/बोलती) - Pronunciation: main hin-dee nuh-hee bol-taa/bol-tee\n\nNote: Use 'bolta' if you're male and 'bolti' if you're female.",
+      "contentHindi": "भाषा सीखने के संदर्भ में, भाषाओं के बारे में पूछना आम है:\n\n1. क्या आप हिंदी बोलते हैं? (औपचारिक) - उच्चारण: क्या आप हिं-दी बोल-ते हैं\n\n2. क्या तुम हिंदी बोलते हो? (अनौपचारिक) - उच्चारण: क्या तुम हिं-दी बोल-ते हो\n\nजवाब देने के लिए, आप कह सकते हैं:\n\n1. हाँ, मैं हिंदी बोलता/बोलती हूँ - उच्चारण: हाँ, मैं हिं-दी बोल-ता/बोल-ती हूँ\n\n2. मैं थोड़ी हिंदी बोलता/बोलती हूँ - उच्चारण: मैं थो-ड़ी हिं-दी बोल-ता/बोल-ती हूँ\n\n3. मैं हिंदी नहीं बोलता/बोलती - उच्चारण: मैं हिं-दी न-हीं बोल-ता/बोल-ती\n\nनोट: अगर आप पुरुष हैं तो 'बोलता' और अगर आप महिला हैं तो 'बोलती' का उपयोग करें।"
+    }
+  ],
+  "vocabulary": [
+    {
+      "english": "My name is",
+      "hindi": "मेरा नाम है",
+      "pronunciation": "may-raa naam hai"
+    },
+    {
+      "english": "I am",
+      "hindi": "मैं हूँ",
+      "pronunciation": "main hoon"
+    },
+    {
+      "english": "What is your name? (formal)",
+      "hindi": "आपका नाम क्या है?",
+      "pronunciation": "aap-kaa naam kyaa hai"
+    },
+    {
+      "english": "What is your name? (informal)",
+      "hindi": "तुम्हारा नाम क्या है?",
+      "pronunciation": "toom-haa-raa naam kyaa hai"
+    },
+    {
+      "english": "Where are you from? (formal)",
+      "hindi": "आप कहाँ से हैं?",
+      "pronunciation": "aap kuh-haan say hain"
+    },
+    {
+      "english": "I am from",
+      "hindi": "मैं से हूँ",
+      "pronunciation": "main say hoon"
+    },
+    {
+      "english": "What do you do? (formal)",
+      "hindi": "आप क्या करते हैं?",
+      "pronunciation": "aap kyaa kur-tay hain"
+    },
+    {
+      "english": "I am a (profession)",
+      "hindi": "मैं एक हूँ",
+      "pronunciation": "main ayk hoon"
+    },
+    {
+      "english": "How old are you? (formal)",
+      "hindi": "आपकी उम्र क्या है?",
+      "pronunciation": "aap-kee oo-mur kyaa hai"
+    },
+    {
+      "english": "I am years old",
+      "hindi": "मेरी उम्र साल है",
+      "pronunciation": "may-ree oo-mur saal hai"
+    },
+    {
+      "english": "Do you speak Hindi? (formal)",
+      "hindi": "क्या आप हिंदी बोलते हैं?",
+      "pronunciation": "kyaa aap hin-dee bol-tay hain"
+    },
+    {
+      "english": "Yes, I speak Hindi (male)",
+      "hindi": "हाँ, मैं हिंदी बोलता हूँ",
+      "pronunciation": "haan, main hin-dee bol-taa hoon"
+    },
+    {
+      "english": "Yes, I speak Hindi (female)",
+      "hindi": "हाँ, मैं हिंदी बोलती हूँ",
+      "pronunciation": "haan, main hin-dee bol-tee hoon"
+    },
+    {
+      "english": "No, I don't speak Hindi (male)",
+      "hindi": "नहीं, मैं हिंदी नहीं बोलता",
+      "pronunciation": "nuh-hee, main hin-dee nuh-hee bol-taa"
+    },
+    {
+      "english": "Teacher (male)",
+      "hindi": "अध्यापक",
+      "pronunciation": "adh-yaa-puk"
+    },
+    {
+      "english": "Teacher (female)",
+      "hindi": "अध्यापिका",
+      "pronunciation": "adh-yaa-pi-kaa"
+    }
+  ],
+  "practiceExercises": [
+    {
+      "type": "multiple_choice",
+      "question": "How do you say 'My name is John' in Hindi?",
+      "questionHindi": "हिंदी में 'My name is John' कैसे कहेंगे?",
+      "options": ["मेरा नाम John है", "मैं John का हूँ", "John मेरा नाम है", "मैं नाम John है"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which is the formal way to ask 'What is your name?' in Hindi?",
+      "questionHindi": "हिंदी में 'What is your name?' पूछने का औपचारिक तरीका कौन सा है?",
+      "options": ["तुम्हारा नाम क्या है?", "आपका नाम क्या है?", "तुम कौन हो?", "आप कौन हैं?"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "type": "fill_blank",
+      "question": "To ask someone where they are from formally, you say '_______'.",
+      "questionHindi": "किसी से औपचारिक रूप से पूछने के लिए कि वे कहां से हैं, आप कहते हैं '_______'।",
+      "correctAnswer": "आप कहाँ से हैं"
+    },
+    {
+      "type": "true_false",
+      "question": "In Hindi, 'Main Delhi ka hoon' is used by females to say they are from Delhi.",
+      "questionHindi": "हिंदी में, 'मैं दिल्ली का हूँ' का उपयोग महिलाओं द्वारा यह कहने के लिए किया जाता है कि वे दिल्ली से हैं।",
+      "correctAnswer": false
+    },
+    {
+      "type": "match_pairs",
+      "pairs": [
+        {"left": "मेरा नाम है", "right": "My name is"},
+        {"left": "आप कहाँ से हैं?", "right": "Where are you from? (formal)"},
+        {"left": "मैं हिंदी बोलता हूँ", "right": "I speak Hindi (male)"},
+        {"left": "मेरी उम्र बीस साल है", "right": "I am twenty years old"}
+      ]
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Formal vs. Informal Speech",
+      "titleHindi": "औपचारिक बनाम अनौपचारिक भाषण",
+      "content": "Hindi has different levels of formality that go beyond just vocabulary. The verb forms change depending on whether you're speaking formally or informally. In general, use the formal 'Aap' with strangers, elders, teachers, and in professional settings. Use the informal 'Tum' with friends, family members of similar age, and children.",
+      "contentHindi": "हिंदी में औपचारिकता के विभिन्न स्तर हैं जो केवल शब्दावली से परे जाते हैं। क्रिया रूप बदलते हैं, यह इस बात पर निर्भर करता है कि आप औपचारिक रूप से बोल रहे हैं या अनौपचारिक रूप से। सामान्य तौर पर, अजनबियों, बड़ों, शिक्षकों और पेशेवर स्थितियों में औपचारिक 'आप' का उपयोग करें। दोस्तों, समान आयु के परिवार के सदस्यों और बच्चों के साथ अनौपचारिक 'तुम' का उपयोग करें।"
+    },
+    {
+      "title": "Gender in Hindi Language",
+      "titleHindi": "हिंदी भाषा में लिंग",
+      "content": "Hindi is a gendered language, meaning that verbs change form based on the gender of the speaker. For example, males say 'Main Hindi bolta hoon' while females say 'Main Hindi bolti hoon'. This gender distinction is important to observe for natural-sounding Hindi.",
+      "contentHindi": "हिंदी एक लिंग-आधारित भाषा है, जिसका अर्थ है कि क्रियाएँ वक्ता के लिंग के आधार पर अपना रूप बदलती हैं। उदाहरण के लिए, पुरुष कहते हैं 'मैं हिंदी बोलता हूँ' जबकि महिलाएँ कहती हैं 'मैं हिंदी बोलती हूँ'। प्राकृतिक लगने वाली हिंदी के लिए इस लिंग भेद का पालन करना महत्वपूर्ण है।"
+    }
+  ],
+  "relatedLessons": [1, 4],
+  "nextLessonId": 3
+}

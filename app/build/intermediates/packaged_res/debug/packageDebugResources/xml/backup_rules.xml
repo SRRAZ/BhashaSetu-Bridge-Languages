@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Backup user preferences -->
+    <include domain="sharedpref" path="app_preferences.xml"/>
+    
+    <!-- Backup app database -->
+    <include domain="database" path="englishhindi.db"/>
+    
+    <!-- Exclude cached files -->
+    <exclude domain="file" path="cache/"/>
+    <exclude domain="file" path="image_cache/"/>
+    <exclude domain="file" path="audio_cache/"/>
+    
+    <!-- Exclude temporary files -->
+    <exclude domain="file" path="temp/"/>
+    
+    <!-- Exclude analytics data -->
+    <exclude domain="sharedpref" path="analytics_preferences.xml"/>
+</full-backup-content>

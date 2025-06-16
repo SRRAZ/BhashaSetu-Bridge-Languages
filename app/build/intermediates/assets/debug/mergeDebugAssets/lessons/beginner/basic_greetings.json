@@ -1,0 +1,169 @@
+{
+  "id": 1,
+  "title": "Basic Greetings",
+  "titleHindi": "मूल अभिवादन",
+  "level": "beginner",
+  "category": "Greetings",
+  "description": "Learn common greetings and how to say hello and goodbye in Hindi.",
+  "descriptionHindi": "हिंदी में नमस्ते और अलविदा कहने के लिए सामान्य अभिवादन सीखें।",
+  "estimatedTimeMinutes": 15,
+  "sections": [
+    {
+      "id": 1,
+      "title": "Introduction",
+      "titleHindi": "परिचय",
+      "content": "Greetings are an essential part of any language. In Hindi, greetings can vary based on the time of day and the level of formality. Learning these basic greetings will help you start conversations and make a good impression.",
+      "contentHindi": "अभिवादन किसी भी भाषा का एक अनिवार्य हिस्सा है। हिंदी में, अभिवादन दिन के समय और औपचारिकता के स्तर के आधार पर भिन्न हो सकते हैं। इन बुनियादी अभिवादनों को सीखने से आपको बातचीत शुरू करने और अच्छी छाप छोड़ने में मदद मिलेगी।"
+    },
+    {
+      "id": 2,
+      "title": "Hello and Namaste",
+      "titleHindi": "हैलो और नमस्ते",
+      "content": "The most common greeting in Hindi is 'Namaste' (नमस्ते). It is used regardless of the time of day and can be used in both formal and informal situations. When saying Namaste, it is common to bring your palms together in front of your chest and slightly bow your head.\n\nPronunciation: nuh-muhs-tay",
+      "contentHindi": "हिंदी में सबसे आम अभिवादन 'नमस्ते' है। यह दिन के समय के बावजूद उपयोग किया जाता है और औपचारिक और अनौपचारिक दोनों स्थितियों में इस्तेमाल किया जा सकता है। नमस्ते कहते समय, अपनी हथेलियों को अपने सीने के सामने एक साथ लाना और अपना सिर थोड़ा झुकाना आम बात है।\n\nउच्चारण: नम-स्ते"
+    },
+    {
+      "id": 3,
+      "title": "Time-specific Greetings",
+      "titleHindi": "समय-विशिष्ट अभिवादन",
+      "content": "Hindi also has time-specific greetings:\n\n1. Good morning: 'Suprabhat' (सुप्रभात) - Pronunciation: soo-pruh-bhaat\n2. Good afternoon: 'Namaskar' (नमस्कार) - Pronunciation: nuh-muhs-kaar\n3. Good evening: 'Shubh sandhya' (शुभ संध्या) - Pronunciation: shoobh suhn-dhyaa\n4. Good night: 'Shubh ratri' (शुभ रात्रि) - Pronunciation: shoobh raa-tree",
+      "contentHindi": "हिंदी में समय-विशिष्ट अभिवादन भी हैं:\n\n1. सुप्रभात (Good morning) - उच्चारण: सु-प्र-भात\n2. नमस्कार (Good afternoon) - उच्चारण: नम-स्कार\n3. शुभ संध्या (Good evening) - उच्चारण: शुभ संध्-या\n4. शुभ रात्रि (Good night) - उच्चारण: शुभ रात्-री"
+    },
+    {
+      "id": 4,
+      "title": "How are you?",
+      "titleHindi": "आप कैसे हैं?",
+      "content": "After greeting someone, it's common to ask how they are doing:\n\n1. How are you? (Formal): 'Aap kaise hain?' (आप कैसे हैं?) - Pronunciation: aap kai-say hain\n2. How are you? (Informal): 'Tum kaise ho?' (तुम कैसे हो?) - Pronunciation: toom kai-say ho\n\nCommon responses:\n1. I am fine: 'Main theek hoon' (मैं ठीक हूँ) - Pronunciation: main theek hoon\n2. I am very well: 'Main bahut achchha hoon' (मैं बहुत अच्छा हूँ) - Pronunciation: main buh-hoot uh-chaa hoon",
+      "contentHindi": "किसी को अभिवादन करने के बाद, यह पूछना आम है कि वे कैसे हैं:\n\n1. आप कैसे हैं? (औपचारिक) - उच्चारण: आप कै-से हैं\n2. तुम कैसे हो? (अनौपचारिक) - उच्चारण: तुम कै-से हो\n\nसामान्य प्रतिक्रियाएँ:\n1. मैं ठीक हूँ - उच्चारण: मैं ठीक हूँ\n2. मैं बहुत अच्छा हूँ - उच्चारण: मैं ब-हुत अच्-छा हूँ"
+    },
+    {
+      "id": 5,
+      "title": "Saying Goodbye",
+      "titleHindi": "अलविदा कहना",
+      "content": "When parting ways, you can use the following expressions:\n\n1. Goodbye (Formal): 'Namaste' (नमस्ते) or 'Phir milenge' (फिर मिलेंगे) - Pronunciation: fir mi-len-gay\n2. Goodbye (Informal): 'Alvida' (अलविदा) - Pronunciation: ul-vee-daa\n3. See you later: 'Baad mein milte hain' (बाद में मिलते हैं) - Pronunciation: baad mein mil-tay hain\n4. See you tomorrow: 'Kal milte hain' (कल मिलते हैं) - Pronunciation: kuhl mil-tay hain",
+      "contentHindi": "जब अलग हो रहे हों, तो आप निम्न अभिव्यक्तियों का उपयोग कर सकते हैं:\n\n1. नमस्ते या फिर मिलेंगे (औपचारिक) - उच्चारण: फिर मि-लें-गे\n2. अलविदा (अनौपचारिक) - उच्चारण: अल-वि-दा\n3. बाद में मिलते हैं - उच्चारण: बाद में मिल-ते हैं\n4. कल मिलते हैं - उच्चारण: कल मिल-ते हैं"
+    },
+    {
+      "id": 6,
+      "title": "Thank You and Please",
+      "titleHindi": "धन्यवाद और कृपया",
+      "content": "Being polite is important in any language. Here are essential polite expressions:\n\n1. Thank you: 'Dhanyavaad' (धन्यवाद) - Pronunciation: dhun-yuh-vaad\n2. Please: 'Kripya' (कृपया) - Pronunciation: krip-yaa\n3. You're welcome: 'Aapka swaagat hai' (आपका स्वागत है) - Pronunciation: aap-kaa swaa-gut hai",
+      "contentHindi": "किसी भी भाषा में विनम्र होना महत्वपूर्ण है। यहां आवश्यक विनम्र अभिव्यक्तियां हैं:\n\n1. धन्यवाद - उच्चारण: धन्-य-वाद\n2. कृपया - उच्चारण: कृप-या\n3. आपका स्वागत है - उच्चारण: आप-का स्वा-गत है"
+    }
+  ],
+  "vocabulary": [
+    {
+      "english": "Hello",
+      "hindi": "नमस्ते",
+      "pronunciation": "nuh-muhs-tay"
+    },
+    {
+      "english": "Good morning",
+      "hindi": "सुप्रभात",
+      "pronunciation": "soo-pruh-bhaat"
+    },
+    {
+      "english": "Good afternoon",
+      "hindi": "नमस्कार",
+      "pronunciation": "nuh-muhs-kaar"
+    },
+    {
+      "english": "Good evening",
+      "hindi": "शुभ संध्या",
+      "pronunciation": "shoobh suhn-dhyaa"
+    },
+    {
+      "english": "Good night",
+      "hindi": "शुभ रात्रि",
+      "pronunciation": "shoobh raa-tree"
+    },
+    {
+      "english": "How are you? (formal)",
+      "hindi": "आप कैसे हैं?",
+      "pronunciation": "aap kai-say hain"
+    },
+    {
+      "english": "How are you? (informal)",
+      "hindi": "तुम कैसे हो?",
+      "pronunciation": "toom kai-say ho"
+    },
+    {
+      "english": "I am fine",
+      "hindi": "मैं ठीक हूँ",
+      "pronunciation": "main theek hoon"
+    },
+    {
+      "english": "Goodbye",
+      "hindi": "अलविदा",
+      "pronunciation": "ul-vee-daa"
+    },
+    {
+      "english": "See you later",
+      "hindi": "बाद में मिलते हैं",
+      "pronunciation": "baad mein mil-tay hain"
+    },
+    {
+      "english": "Thank you",
+      "hindi": "धन्यवाद",
+      "pronunciation": "dhun-yuh-vaad"
+    },
+    {
+      "english": "Please",
+      "hindi": "कृपया",
+      "pronunciation": "krip-yaa"
+    }
+  ],
+  "practiceExercises": [
+    {
+      "type": "multiple_choice",
+      "question": "How do you say 'Hello' in Hindi?",
+      "questionHindi": "हिंदी में 'Hello' कैसे कहते हैं?",
+      "options": ["नमस्ते", "धन्यवाद", "अलविदा", "कृपया"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which greeting is appropriate for morning?",
+      "questionHindi": "सुबह के लिए कौन सा अभिवादन उपयुक्त है?",
+      "options": ["शुभ रात्रि", "सुप्रभात", "शुभ संध्या", "अलविदा"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "type": "fill_blank",
+      "question": "The formal way to ask 'How are you?' in Hindi is _______.",
+      "questionHindi": "हिंदी में 'How are you?' पूछने का औपचारिक तरीका _______ है।",
+      "correctAnswer": "आप कैसे हैं"
+    },
+    {
+      "type": "true_false",
+      "question": "'धन्यवाद' (Dhanyavaad) means 'Thank you' in Hindi.",
+      "questionHindi": "'धन्यवाद' का अर्थ हिंदी में 'Thank you' होता है।",
+      "correctAnswer": true
+    },
+    {
+      "type": "match_pairs",
+      "pairs": [
+        {"left": "नमस्ते", "right": "Hello"},
+        {"left": "धन्यवाद", "right": "Thank you"},
+        {"left": "कृपया", "right": "Please"},
+        {"left": "अलविदा", "right": "Goodbye"}
+      ]
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Namaste Gesture",
+      "titleHindi": "नमस्ते भाव",
+      "content": "The Namaste gesture (joining palms in front of the chest) is a traditional Indian greeting that shows respect. It's a non-contact greeting that has become particularly relevant in modern times.",
+      "contentHindi": "नमस्ते भाव (छाती के सामने हथेलियों को जोड़ना) एक पारंपरिक भारतीय अभिवादन है जो सम्मान दिखाता है। यह एक गैर-संपर्क अभिवादन है जो आधुनिक समय में विशेष रूप से प्रासंगिक हो गया है।"
+    },
+    {
+      "title": "Formal vs. Informal",
+      "titleHindi": "औपचारिक बनाम अनौपचारिक",
+      "content": "Hindi has different levels of formality, reflected in pronouns and verb forms. 'Aap' (आप) is formal, while 'Tum' (तुम) is informal. Use 'Aap' with elders, strangers, and in professional settings.",
+      "contentHindi": "हिंदी में औपचारिकता के विभिन्न स्तर हैं, जो सर्वनाम और क्रिया रूपों में परिलक्षित होते हैं। 'आप' औपचारिक है, जबकि 'तुम' अनौपचारिक है। बड़ों, अजनबियों और पेशेवर स्थितियों में 'आप' का उपयोग करें।"
+    }
+  ],
+  "relatedLessons": [2, 4],
+  "nextLessonId": 2
+}
