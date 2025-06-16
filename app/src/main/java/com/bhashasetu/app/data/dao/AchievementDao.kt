@@ -20,17 +20,17 @@ interface AchievementDao {
     fun getAllAchievements(): Flow<List<Achievement>>
 
     @Query("SELECT * FROM achievements WHERE id = :id")
-    fun getAchievementById(id: Int): Flow<Achievement>
+    fun getAchievementById(id: String): Flow<Achievement>
 
-    @Query("SELECT * FROM achievements WHERE unlocked = 1")
+    @Query("SELECT * FROM achievements WHERE isUnlocked = 1")
     fun getUnlockedAchievements(): Flow<List<Achievement>>
 
-    @Query("SELECT * FROM achievements WHERE unlocked = 0")
+    @Query("SELECT * FROM achievements WHERE isUnlocked = 0")
     fun getLockedAchievements(): Flow<List<Achievement>>
 
-    @Query("UPDATE achievements SET unlocked = 1, unlockedDate = :timestamp WHERE id = :achievementId")
-    suspend fun unlockAchievement(achievementId: Int, timestamp: Long)
+    @Query("UPDATE achievements SET isUnlocked = 1, unlockedAt = :timestamp WHERE id = :achievementId")
+    suspend fun unlockAchievement(achievementId: String, timestamp: Long)
 
-    @Query("SELECT COUNT(*) FROM achievements WHERE unlocked = 1")
+    @Query("SELECT COUNT(*) FROM achievements WHERE isUnlocked = 1")
     fun getUnlockedAchievementCount(): Flow<Int>
 }

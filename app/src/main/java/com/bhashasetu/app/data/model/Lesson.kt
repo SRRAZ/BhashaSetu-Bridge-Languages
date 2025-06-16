@@ -3,6 +3,7 @@ package com.bhashasetu.app.data.model
 import androidx.room.Entity
 import androidx.room.ForeignKey
 import androidx.room.PrimaryKey
+import androidx.room.Index
 import com.bhashasetu.app.data.model.Category
 
 /**
@@ -10,6 +11,9 @@ import com.bhashasetu.app.data.model.Category
  */
 @Entity(
     tableName = "lessons",
+    indices = [
+        Index(value = ["categoryId"])
+    ],
     foreignKeys = [
         ForeignKey(
             entity = Category::class,

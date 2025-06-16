@@ -3,12 +3,17 @@ package com.bhashasetu.app.data.model
 import androidx.room.Entity
 import androidx.room.ForeignKey
 import androidx.room.PrimaryKey
+import androidx.room.Index
 
 /**
  * Entity representing a study session with tracking for analytics.
  */
 @Entity(
     tableName = "study_sessions",
+    indices = [
+        Index(value = ["categoryId"]),
+        Index(value = ["lessonId"])
+    ],
     foreignKeys = [
         ForeignKey(
             entity = Category::class,
@@ -37,6 +42,7 @@ data class StudySession(
     val startTime: Long = System.currentTimeMillis(),
     val endTime: Long? = null,
     val durationMs: Long? = null, // Calculated duration
+    val durationMinutes: Int? = null, //Duration in minutes for easier querying
     
     // Performance metrics
     val itemCount: Int = 0, // Number of words/questions studied

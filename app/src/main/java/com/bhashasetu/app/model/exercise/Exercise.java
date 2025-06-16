@@ -34,28 +34,35 @@ public class Exercise {
     private String lessonId;
     private String category;
     
-    public Exercise() {
-        this.createdAt = new Date();
-        this.isCompleted = false;
-    }
-    
-    public Exercise(String title, ExerciseType type, int difficulty, int wordCount, int points) {
+
+    public Exercise(String title, String description, ExerciseType type, int difficulty,
+                    int wordCount, int points, boolean isCompleted, Date createdAt,
+                    Date completedAt, int correctAnswers, int totalQuestions,
+                    String lessonId, String category) {
         this.title = title;
+        this.description = description;
         this.type = type;
         this.difficulty = difficulty;
         this.wordCount = wordCount;
         this.points = points;
-        this.createdAt = new Date();
-        this.isCompleted = false;
-        this.correctAnswers = 0;
-        this.totalQuestions = 0;
+        this.isCompleted = isCompleted;
+        this.createdAt = createdAt;
+        this.completedAt = completedAt;
+        this.correctAnswers = correctAnswers;
+        this.totalQuestions = totalQuestions;
+        this.lessonId = lessonId;
+        this.category = category;
     }
-    
+
+    // --- GETTERS AND SETTERS ---
+    // (It's good practice to have getters for all fields Room needs to read,
+    // and setters if you need to modify them after creation or if Room needs them)
+
     public int getId() {
         return id;
     }
     
-    public void setId(int id) {
+    public void setId(int id) { // Setter for id is needed if Room is to set it (though autoGenerate handles new ones)
         this.id = id;
     }
     
@@ -114,7 +121,13 @@ public class Exercise {
     public void setCompleted(boolean completed) {
         isCompleted = completed;
         if (completed) {
-            this.completedAt = new Date();
+            // Consider if completedAt should only be set here if it's null
+            // If it's passed in the constructor, this might overwrite it.
+            // If the constructor always provides a completedAt (even if null),
+            // then this logic might only be for when setCompleted is called post-construction.
+            if (this.completedAt == null) {
+                this.completedAt = new Date();
+            }
         }
     }
     
@@ -165,7 +178,9 @@ public class Exercise {
     public void setCategory(String category) {
         this.category = category;
     }
-    
+
+    // --- Other methods from your original class ---
+
     /**
      * Calculate score as a percentage
      * @return percentage score (0-100)

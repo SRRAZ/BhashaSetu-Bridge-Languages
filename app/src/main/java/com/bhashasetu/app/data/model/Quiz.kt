@@ -3,12 +3,17 @@ package com.bhashasetu.app.data.model
 import androidx.room.Entity
 import androidx.room.ForeignKey
 import androidx.room.PrimaryKey
+import androidx.room.Index
 
 /*
  * Entity representing a quiz for testing vocabulary knowledge.
  */
 @Entity(
     tableName = "quizzes",
+    indices = [
+        Index(value = ["lessonId"]),
+        Index(value = ["categoryId"])
+    ],
     foreignKeys = [
         ForeignKey(
             entity = Lesson::class,

@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey
 /**
  * Entity representing the user's daily streak for continuous learning.
  */
-@Entity(tableName = "daily_streak")
+@Entity(tableName = "daily_streaks")
 data class DailyStreak(
     @PrimaryKey
     val id: Int = 1, // Singleton instance ID

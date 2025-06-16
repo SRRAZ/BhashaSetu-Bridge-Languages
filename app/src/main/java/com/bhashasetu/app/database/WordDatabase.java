@@ -10,6 +10,7 @@ import androidx.room.TypeConverters;
 import androidx.room.Room;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
+import com.bhashasetu.app.model.Achievement;
 import com.bhashasetu.app.model.DeckWord;
 import com.bhashasetu.app.model.FlashcardDeck;
 import com.bhashasetu.app.model.Lesson;
@@ -30,7 +31,7 @@ import com.bhashasetu.app.model.exercise.Exercise;
 import com.bhashasetu.app.model.exercise.FillBlankExercise;
 import com.bhashasetu.app.model.exercise.MatchingExercise;
 import com.bhashasetu.app.model.exercise.MultipleChoiceExercise;
-import com.bhashasetu.app.model.gamification.Achievement;
+//import com.bhashasetu.app.model.gamification.Achievement;
 import com.bhashasetu.app.model.gamification.Badge;
 import com.bhashasetu.app.model.gamification.UserLevel;
 import com.bhashasetu.app.model.gamification.UserPoints;

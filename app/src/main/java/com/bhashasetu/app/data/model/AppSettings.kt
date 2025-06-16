@@ -33,6 +33,8 @@ data class AppSettings(
     val autoPlayPronunciation: Boolean = true,
     val pronunciationSpeed: Float = 1.0f,
     val autoRecordEnabled: Boolean = false,
+    val soundEnabled: Boolean = true, // Sound effects and audio feedback
+    val vibrationEnabled: Boolean = true, // Haptic feedback
     
     // Exercise settings
     val flashcardSessionSize: Int = 20, // Number of cards per session

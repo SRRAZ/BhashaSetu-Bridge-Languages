@@ -9,6 +9,7 @@ import com.bhashasetu.app.database.converters.QuestionListConverter;
 import com.bhashasetu.app.model.Word;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Collections;
 import java.util.List;
 
@@ -23,16 +24,9 @@ public class MultipleChoiceExercise extends Exercise {
     private int currentQuestionIndex;
     private boolean showHindiFirst;
     
-    public MultipleChoiceExercise() {
-        super();
-        this.setType(ExerciseType.MULTIPLE_CHOICE);
-        this.questions = new ArrayList<>();
-        this.currentQuestionIndex = 0;
-        this.showHindiFirst = false;
-    }
-    
-    public MultipleChoiceExercise(String title, int difficulty, int points, boolean showHindiFirst) {
-        super(title, ExerciseType.MULTIPLE_CHOICE, difficulty, 0, points);
+    public MultipleChoiceExercise(String title, String description,int difficulty, int points,
+                                  boolean showHindiFirst, String lessonId, String category) {
+        super(title, description, ExerciseType.MULTIPLE_CHOICE, difficulty, 0, points, false, new Date(),null, 0,0, lessonId, category);
         this.questions = new ArrayList<>();
         this.currentQuestionIndex = 0;
         this.showHindiFirst = showHindiFirst;

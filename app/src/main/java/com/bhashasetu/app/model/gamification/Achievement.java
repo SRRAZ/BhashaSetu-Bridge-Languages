@@ -1,17 +1,16 @@
-package ccom.bhashasetu.app.model.gamification;
+package com.bhashasetu.app.model.gamification;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 import androidx.room.TypeConverters;
 import com.bhashasetu.app.database.converters.AchievementTypeConverter;
 import com.bhashasetu.app.database.converters.DateConverter;
-
 import java.util.Date;
 
 /**
  * Entity representing a user achievement
  */
-@Entity(tableName = "achievements")
+@Entity(tableName = "user_achievements")
 @TypeConverters({DateConverter.class, AchievementTypeConverter.class})
 public class Achievement {
     

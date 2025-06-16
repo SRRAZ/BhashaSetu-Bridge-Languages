@@ -33,6 +33,8 @@ plugins {
     id 'com.android.library' version '8.10.1' apply false
     // Sync with classpath in buildscript, if you have library modules
     id 'org.jetbrains.kotlin.android' version '1.9.23' apply false // Sync with ext.kotlin_version
+    id 'com.google.dagger.hilt.android' version '2.48' apply false
+    id 'androidx.room' version '2.7.1' apply false
 }
 
 // 'allprojects' can often be removed if repositories are declared in settings.gradle or managed by newer Gradle versions.

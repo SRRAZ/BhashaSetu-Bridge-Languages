@@ -1,6 +1,7 @@
 package com.bhashasetu.app.model;
 
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 /**
@@ -41,7 +42,8 @@ public class Word {
     private int totalAttempts;
     private long lastPracticed;
     private long nextReviewDue;
-    
+
+    @Ignore //Added @Ignore to this constructor
     public Word(String englishWord, String hindiWord, String englishPronunciation, 
                String hindiPronunciation, String category) {
         this.englishWord = englishWord;

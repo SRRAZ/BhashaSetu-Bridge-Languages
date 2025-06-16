@@ -29,7 +29,7 @@ import kotlinx.coroutines.launch
         UserGoal::class,
         DailyStreak::class
     ],
-    version = 1,
+    version = 2,
     exportSchema = true
 )
 @TypeConverters(DateConverter::class)

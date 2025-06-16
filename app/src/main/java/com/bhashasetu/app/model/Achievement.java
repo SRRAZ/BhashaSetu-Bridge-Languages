@@ -1,6 +1,7 @@
 package com.bhashasetu.app.model;
 
 import androidx.annotation.DrawableRes;
+import androidx.annotation.NonNull;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 import androidx.room.ForeignKey;
@@ -10,7 +11,7 @@ import java.util.Date;
  * Model class for user achievements in the app.
  * Achievements are awarded for various learning milestones.
  */
-@Entity(tableName = "achievements")
+@Entity(tableName = "legacy_achievements")
 public class Achievement {
 
     // Achievement types
@@ -21,6 +22,7 @@ public class Achievement {
     public static final String TYPE_MASTERY = "mastery";
     
     @PrimaryKey
+    @NonNull //Added this annotation to make the field non-null
     private String id;
     
     private String title;
@@ -38,12 +40,18 @@ public class Achievement {
      * Default constructor for Room.
      */
     public Achievement() {
+        // If you have a default constructor, ensure 'id' is initialized
+        // to a non-null value if objects are created this way.
+        // However, Room typically uses the constructor with arguments.
+        // If you are generating IDs, this might be where you do it,
+        // or ensure your setters/constructors always provide a valid ID.
+        this.id = ""; // Or generate a unique ID
     }
     
     /**
      * Constructor for all fields.
      */
-    public Achievement(String id, String title, String description, String type, 
+    public Achievement(@NonNull String id, String title, String description, String type,
                       int iconResId, int pointsValue, boolean unlocked, 
                       long dateUnlocked, int progressCurrent, int progressTarget, 
                       boolean secret) {
@@ -63,7 +71,7 @@ public class Achievement {
     /**
      * Constructor for locked achievements.
      */
-    public Achievement(String id, String title, String description, String type, 
+    public Achievement(@NonNull String id, String title, String description, String type,
                       int iconResId, int pointsValue, int progressTarget, boolean secret) {
         this(id, title, description, type, iconResId, pointsValue, false, 
              0, 0, progressTarget, secret);
@@ -72,6 +80,7 @@ public class Achievement {
     /**
      * Get the achievement ID.
      */
+    @NonNull
     public String getId() {
         return id;
     }
@@ -79,7 +88,7 @@ public class Achievement {
     /**
      * Set the achievement ID.
      */
-    public void setId(String id) {
+    public void setId(@NonNull String id) {
         this.id = id;
     }
     

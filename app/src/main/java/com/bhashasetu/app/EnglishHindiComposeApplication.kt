@@ -58,7 +58,7 @@ class EnglishHindiComposeApplication : Application() {
             .build()
 
         // Initialize repositories
-        wordRepository = WordRepositoryImpl(database.wordDao())
+        wordRepository = WordRepository(database.wordDao())
 
         // Initialize language manager
         languageManager = LanguageManager(this)

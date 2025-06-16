@@ -2,6 +2,7 @@ package com.bhashasetu.app.data.model
 
 import androidx.room.Entity
 import androidx.room.ForeignKey
+import androidx.room.Index
 import com.bhashasetu.app.data.model.Lesson
 import com.bhashasetu.app.data.model.Word
 
@@ -12,6 +13,10 @@ import com.bhashasetu.app.data.model.Word
 @Entity(
     tableName = "lesson_words",
     primaryKeys = ["lessonId", "wordId"],
+    indices = [
+        Index(value = ["lessonId"]),
+        Index(value = ["wordId"])
+    ],
     foreignKeys = [
         ForeignKey(
             entity = Lesson::class,

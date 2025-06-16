@@ -2,6 +2,8 @@ package com.bhashasetu.app.data.model
 
 import androidx.room.Entity
 import androidx.room.ForeignKey
+import androidx.room.PrimaryKey
+import androidx.room.Index
 import com.bhashasetu.app.data.model.Word
 
 /**
@@ -9,6 +11,10 @@ import com.bhashasetu.app.data.model.Word
  */
 @Entity(
     tableName = "quiz_questions",
+    indices = [
+        Index(value = ["quizId"]),
+        Index(value = ["wordId"])
+    ],
     foreignKeys = [
         ForeignKey(
             entity = Quiz::class,
