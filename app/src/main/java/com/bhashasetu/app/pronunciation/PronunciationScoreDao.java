@@ -1,6 +1,5 @@
 package com.bhashasetu.app.pronunciation;
 
-
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
@@ -13,6 +12,7 @@ import java.util.List;
 
 /**
  * Data Access Object for PronunciationScore entities.
+ * ✅ ROOM ERROR FIX: Fixed query return type mismatch
  */
 @Dao
 public interface PronunciationScoreDao {
@@ -54,8 +54,9 @@ public interface PronunciationScoreDao {
      * Get a list of words that need more practice based on low scores
      * @param threshold The score threshold below which words need practice
      * @return LiveData list of word IDs
+     * ✅ ROOM ERROR FIX: Cast word column to INTEGER to match Long return type
      */
-    @Query("SELECT DISTINCT word FROM pronunciation_scores " +
-           "GROUP BY word HAVING AVG(accuracyScore) < :threshold")
+    @Query("SELECT DISTINCT CAST(word AS INTEGER) FROM pronunciation_scores " +
+            "GROUP BY word HAVING AVG(accuracyScore) < :threshold")
     LiveData<List<Long>> getWordsThatNeedPractice(int threshold);
 }

@@ -103,6 +103,14 @@ public class Badge {
     public void setEarnedAt(Date earnedAt) {
         this.earnedAt = earnedAt;
     }
+
+    public int getPointsRequired() {
+        return pointsRequired;
+    }
+
+    public void setPointsRequired(int pointsRequired) {
+        this.pointsRequired = pointsRequired;
+    }
     
     public int getAchievementId() {
         return achievementId;

@@ -2,7 +2,7 @@ package com.bhashasetu.app.data.repository
 
 import androidx.lifecycle.LiveData
 import com.bhashasetu.app.database.AppDatabase
-import com.bhashasetu.app.data.dao.AchievementDao as LegacyAchievementDao
+import com.bhashasetu.app.database.AchievementDao as LegacyAchievementDao
 import com.bhashasetu.app.database.ModernAchievementDao
 import com.bhashasetu.app.model.Achievement as LegacyAchievement
 import com.bhashasetu.app.data.model.Achievement as ModernAchievement
