@@ -1,0 +1,275 @@
+{
+  "id": 18,
+  "title": "Family Relationships",
+  "titleHindi": "पारिवारिक संबंध",
+  "description": "Words for family members and relationships in Hindi",
+  "descriptionHindi": "हिंदी में परिवार के सदस्यों और रिश्तों के लिए शब्द",
+  "category": "Family",
+  "level": "beginner",
+  "words": [
+    {
+      "english": "Father",
+      "hindi": "पिता",
+      "transliteration": "pitaa",
+      "usage": "My father works in a bank.",
+      "usageHindi": "मेरे पिता बैंक में काम करते हैं।",
+      "image": "images/vocabulary/family/father.png"
+    },
+    {
+      "english": "Mother",
+      "hindi": "माता",
+      "transliteration": "maataa",
+      "usage": "My mother is a teacher.",
+      "usageHindi": "मेरी माता एक शिक्षिका हैं।",
+      "image": "images/vocabulary/family/mother.png"
+    },
+    {
+      "english": "Father (informal)",
+      "hindi": "पापा",
+      "transliteration": "paapaa",
+      "usage": "Papa, can you help me?",
+      "usageHindi": "पापा, क्या आप मेरी मदद कर सकते हैं?",
+      "image": "images/vocabulary/family/father_informal.png"
+    },
+    {
+      "english": "Mother (informal)",
+      "hindi": "माँ",
+      "transliteration": "maan",
+      "usage": "Mom, what's for dinner?",
+      "usageHindi": "माँ, खाने में क्या है?",
+      "image": "images/vocabulary/family/mother_informal.png"
+    },
+    {
+      "english": "Brother",
+      "hindi": "भाई",
+      "transliteration": "bhaee",
+      "usage": "I have one brother.",
+      "usageHindi": "मेरा एक भाई है।",
+      "image": "images/vocabulary/family/brother.png"
+    },
+    {
+      "english": "Sister",
+      "hindi": "बहन",
+      "transliteration": "bahan",
+      "usage": "My sister is studying medicine.",
+      "usageHindi": "मेरी बहन चिकित्सा की पढ़ाई कर रही है।",
+      "image": "images/vocabulary/family/sister.png"
+    },
+    {
+      "english": "Son",
+      "hindi": "बेटा",
+      "transliteration": "betaa",
+      "usage": "Their son is five years old.",
+      "usageHindi": "उनका बेटा पाँच साल का है।",
+      "image": "images/vocabulary/family/son.png"
+    },
+    {
+      "english": "Daughter",
+      "hindi": "बेटी",
+      "transliteration": "betee",
+      "usage": "My daughter likes to draw.",
+      "usageHindi": "मेरी बेटी को चित्र बनाना पसंद है।",
+      "image": "images/vocabulary/family/daughter.png"
+    },
+    {
+      "english": "Husband",
+      "hindi": "पति",
+      "transliteration": "pati",
+      "usage": "My husband is an engineer.",
+      "usageHindi": "मेरे पति एक इंजीनियर हैं।",
+      "image": "images/vocabulary/family/husband.png"
+    },
+    {
+      "english": "Wife",
+      "hindi": "पत्नी",
+      "transliteration": "patnee",
+      "usage": "His wife works at a hospital.",
+      "usageHindi": "उनकी पत्नी अस्पताल में काम करती हैं।",
+      "image": "images/vocabulary/family/wife.png"
+    },
+    {
+      "english": "Grandfather (paternal)",
+      "hindi": "दादा",
+      "transliteration": "daadaa",
+      "usage": "My grandfather tells interesting stories.",
+      "usageHindi": "मेरे दादा दिलचस्प कहानियाँ सुनाते हैं।",
+      "image": "images/vocabulary/family/grandfather_paternal.png"
+    },
+    {
+      "english": "Grandmother (paternal)",
+      "hindi": "दादी",
+      "transliteration": "daadee",
+      "usage": "My grandmother makes delicious food.",
+      "usageHindi": "मेरी दादी स्वादिष्ट खाना बनाती हैं।",
+      "image": "images/vocabulary/family/grandmother_paternal.png"
+    },
+    {
+      "english": "Grandfather (maternal)",
+      "hindi": "नाना",
+      "transliteration": "naanaa",
+      "usage": "I visit my maternal grandfather every summer.",
+      "usageHindi": "मैं हर गर्मियों में अपने नाना से मिलने जाता/जाती हूँ।",
+      "image": "images/vocabulary/family/grandfather_maternal.png"
+    },
+    {
+      "english": "Grandmother (maternal)",
+      "hindi": "नानी",
+      "transliteration": "naanee",
+      "usage": "My maternal grandmother lives in Delhi.",
+      "usageHindi": "मेरी नानी दिल्ली में रहती हैं।",
+      "image": "images/vocabulary/family/grandmother_maternal.png"
+    },
+    {
+      "english": "Grandson (son's son)",
+      "hindi": "पोता",
+      "transliteration": "potaa",
+      "usage": "My grandson is starting school this year.",
+      "usageHindi": "मेरा पोता इस साल स्कूल जाना शुरू कर रहा है।",
+      "image": "images/vocabulary/family/grandson_sons.png"
+    },
+    {
+      "english": "Granddaughter (son's daughter)",
+      "hindi": "पोती",
+      "transliteration": "potee",
+      "usage": "My granddaughter likes to sing.",
+      "usageHindi": "मेरी पोती को गाना पसंद है।",
+      "image": "images/vocabulary/family/granddaughter_sons.png"
+    },
+    {
+      "english": "Grandson (daughter's son)",
+      "hindi": "नाती",
+      "transliteration": "naatee",
+      "usage": "My daughter's son is three years old.",
+      "usageHindi": "मेरी बेटी का बेटा तीन साल का है।",
+      "image": "images/vocabulary/family/grandson_daughters.png"
+    },
+    {
+      "english": "Granddaughter (daughter's daughter)",
+      "hindi": "नातिन",
+      "transliteration": "naatin",
+      "usage": "My daughter's daughter has started walking.",
+      "usageHindi": "मेरी बेटी की बेटी चलना शुरू कर दी है।",
+      "image": "images/vocabulary/family/granddaughter_daughters.png"
+    },
+    {
+      "english": "Uncle (father's younger brother)",
+      "hindi": "चाचा",
+      "transliteration": "chaachaa",
+      "usage": "My uncle lives in Mumbai.",
+      "usageHindi": "मेरे चाचा मुंबई में रहते हैं।",
+      "image": "images/vocabulary/family/uncle_fathers_younger.png"
+    },
+    {
+      "english": "Uncle (father's elder brother)",
+      "hindi": "ताऊ",
+      "transliteration": "taaoo",
+      "usage": "I respect my father's elder brother.",
+      "usageHindi": "मैं अपने ताऊ का सम्मान करता/करती हूँ।",
+      "image": "images/vocabulary/family/uncle_fathers_elder.png"
+    },
+    {
+      "english": "Aunt (father's brother's wife)",
+      "hindi": "चाची/ताई",
+      "transliteration": "chaachee/taaee",
+      "usage": "My aunt makes amazing sweets.",
+      "usageHindi": "मेरी चाची/ताई बहुत अच्छी मिठाइयाँ बनाती हैं।",
+      "image": "images/vocabulary/family/aunt_fathers_brothers_wife.png"
+    },
+    {
+      "english": "Uncle (mother's brother)",
+      "hindi": "मामा",
+      "transliteration": "maamaa",
+      "usage": "My maternal uncle bought me a gift.",
+      "usageHindi": "मेरे मामा ने मुझे एक उपहार दिया।",
+      "image": "images/vocabulary/family/uncle_mothers_brother.png"
+    },
+    {
+      "english": "Aunt (mother's brother's wife)",
+      "hindi": "मामी",
+      "transliteration": "maamee",
+      "usage": "I'm going to visit my aunt next week.",
+      "usageHindi": "मैं अगले हफ्ते अपनी मामी से मिलने जाऊँगा/जाऊँगी।",
+      "image": "images/vocabulary/family/aunt_mothers_brothers_wife.png"
+    },
+    {
+      "english": "Aunt (father's sister)",
+      "hindi": "बुआ",
+      "transliteration": "buaa",
+      "usage": "My father's sister lives abroad.",
+      "usageHindi": "मेरी बुआ विदेश में रहती हैं।",
+      "image": "images/vocabulary/family/aunt_fathers_sister.png"
+    },
+    {
+      "english": "Aunt (mother's sister)",
+      "hindi": "मौसी",
+      "transliteration": "mausee",
+      "usage": "My mother's sister is visiting us today.",
+      "usageHindi": "मेरी मौसी आज हमारे यहाँ आ रही हैं।",
+      "image": "images/vocabulary/family/aunt_mothers_sister.png"
+    },
+    {
+      "english": "Cousin (father's brother's child)",
+      "hindi": "चचेरा भाई/बहन",
+      "transliteration": "chacheraa bhaee/bahan",
+      "usage": "My cousin is coming to stay with us.",
+      "usageHindi": "मेरा चचेरा भाई/बहन हमारे साथ रहने आ रहा/रही है।",
+      "image": "images/vocabulary/family/cousin_fathers_brothers.png"
+    },
+    {
+      "english": "Cousin (mother's brother's child)",
+      "hindi": "ममेरा भाई/बहन",
+      "transliteration": "mameraa bhaee/bahan",
+      "usage": "I'm going to play with my cousin.",
+      "usageHindi": "मैं अपने ममेरे भाई/बहन के साथ खेलने जा रहा/रही हूँ।",
+      "image": "images/vocabulary/family/cousin_mothers_brothers.png"
+    },
+    {
+      "english": "Cousin (father's sister's child)",
+      "hindi": "फुफेरा भाई/बहन",
+      "transliteration": "phupheraa bhaee/bahan",
+      "usage": "My cousin from my father's sister is very smart.",
+      "usageHindi": "मेरा फुफेरा भाई/बहन बहुत होशियार है।",
+      "image": "images/vocabulary/family/cousin_fathers_sisters.png"
+    },
+    {
+      "english": "Cousin (mother's sister's child)",
+      "hindi": "मौसेरा भाई/बहन",
+      "transliteration": "mauseraa bhaee/bahan",
+      "usage": "I'm the same age as my cousin.",
+      "usageHindi": "मैं और मेरा मौसेरा भाई/बहन एक ही उम्र के हैं।",
+      "image": "images/vocabulary/family/cousin_mothers_sisters.png"
+    },
+    {
+      "english": "Parents",
+      "hindi": "माता-पिता",
+      "transliteration": "maataa-pitaa",
+      "usage": "My parents are coming to visit me.",
+      "usageHindi": "मेरे माता-पिता मुझसे मिलने आ रहे हैं।",
+      "image": "images/vocabulary/family/parents.png"
+    },
+    {
+      "english": "Siblings",
+      "hindi": "भाई-बहन",
+      "transliteration": "bhaee-bahan",
+      "usage": "How many siblings do you have?",
+      "usageHindi": "आपके कितने भाई-बहन हैं?",
+      "image": "images/vocabulary/family/siblings.png"
+    },
+    {
+      "english": "Children",
+      "hindi": "बच्चे",
+      "transliteration": "bachche",
+      "usage": "They have three children.",
+      "usageHindi": "उनके तीन बच्चे हैं।",
+      "image": "images/vocabulary/family/children.png"
+    },
+    {
+      "english": "Family",
+      "hindi": "परिवार",
+      "transliteration": "parivaar",
+      "usage": "I love my family.",
+      "usageHindi": "मैं अपने परिवार से प्यार करता/करती हूँ।",
+      "image": "images/vocabulary/family/family.png"
+    }
+  ]
+}

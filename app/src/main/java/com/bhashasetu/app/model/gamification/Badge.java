@@ -14,7 +14,7 @@ import androidx.room.Ignore;
  * Entity representing a user badge (visual representation of achievements)
  */
 @Entity(tableName = "badges")
-@TypeConverters({DateConverter.class, BadgeTierConverter.class})
+@TypeConverters({DateConverter.class})
 public class Badge {
     
     @PrimaryKey(autoGenerate = true)
@@ -26,12 +26,14 @@ public class Badge {
     private String imagePath;
     private boolean earned;
     private Date earnedAt;
+    private int pointsRequired;
     private int achievementId;  // Link to the achievement that unlocked this badge
-    
+
+    // ✅ DEFAULT CONSTRUCTOR (Room uses this)
     public Badge() {
-        this.earned = false;
     }
 
+    // ✅ PARAMETERIZED CONSTRUCTOR (Add @Ignore)
     @Ignore
     public Badge(String name, String description, BadgeTier tier, String imagePath, int achievementId) {
         this.name = name;
@@ -39,6 +41,7 @@ public class Badge {
         this.tier = tier;
         this.imagePath = imagePath;
         this.earned = false;
+        this.pointsRequired = pointsRequired;
         this.achievementId = achievementId;
     }
     

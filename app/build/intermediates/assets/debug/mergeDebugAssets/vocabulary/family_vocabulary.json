@@ -1,0 +1,142 @@
+{
+  "category": {
+    "id": 4,
+    "name": "Family",
+    "nameHindi": "परिवार",
+    "description": "Family members and relationships vocabulary",
+    "descriptionHindi": "परिवार के सदस्य और रिश्तों की शब्दावली",
+    "level": 1
+  },
+  "words": [
+    {
+      "englishWord": "Mother",
+      "hindiWord": "माँ",
+      "pronunciation": "maa",
+      "englishDefinition": "A female parent in relation to her child or children.",
+      "hindiDefinition": "अपने बच्चे या बच्चों के संबंध में एक महिला अभिभावक।",
+      "englishExample": "My mother makes delicious food.",
+      "hindiExample": "मेरी माँ स्वादिष्ट भोजन बनाती है।",
+      "difficulty": 1,
+      "partsOfSpeech": "noun",
+      "synonyms": "mom, mama, mum",
+      "audioFileName": "mother.mp3"
+    },
+    {
+      "englishWord": "Father",
+      "hindiWord": "पिता",
+      "pronunciation": "pita",
+      "englishDefinition": "A male parent in relation to his child or children.",
+      "hindiDefinition": "अपने बच्चे या बच्चों के संबंध में एक पुरुष अभिभावक।",
+      "englishExample": "My father taught me how to ride a bicycle.",
+      "hindiExample": "मेरे पिता ने मुझे साइकिल चलाना सिखाया।",
+      "difficulty": 1,
+      "partsOfSpeech": "noun",
+      "synonyms": "dad, papa",
+      "audioFileName": "father.mp3"
+    },
+    {
+      "englishWord": "Brother",
+      "hindiWord": "भाई",
+      "pronunciation": "bhai",
+      "englishDefinition": "A male sibling in relation to another person.",
+      "hindiDefinition": "दूसरे व्यक्ति के संबंध में एक पुरुष भाई-बहन।",
+      "englishExample": "My brother is older than me by two years.",
+      "hindiExample": "मेरा भाई मुझसे दो साल बड़ा है।",
+      "difficulty": 1,
+      "partsOfSpeech": "noun",
+      "synonyms": "sibling, bro",
+      "audioFileName": "brother.mp3"
+    },
+    {
+      "englishWord": "Sister",
+      "hindiWord": "बहन",
+      "pronunciation": "bahan",
+      "englishDefinition": "A female sibling in relation to another person.",
+      "hindiDefinition": "दूसरे व्यक्ति के संबंध में एक महिला भाई-बहन।",
+      "englishExample": "I have two sisters and one brother.",
+      "hindiExample": "मेरी दो बहनें और एक भाई हैं।",
+      "difficulty": 1,
+      "partsOfSpeech": "noun",
+      "synonyms": "sibling, sis",
+      "audioFileName": "sister.mp3"
+    },
+    {
+      "englishWord": "Son",
+      "hindiWord": "बेटा",
+      "pronunciation": "beta",
+      "englishDefinition": "A male child in relation to his parents.",
+      "hindiDefinition": "अपने माता-पिता के संबंध में एक पुरुष बच्चा।",
+      "englishExample": "Their son is studying medicine.",
+      "hindiExample": "उनका बेटा चिकित्सा की पढ़ाई कर रहा है।",
+      "difficulty": 1,
+      "partsOfSpeech": "noun",
+      "synonyms": "male child, boy",
+      "audioFileName": "son.mp3"
+    },
+    {
+      "englishWord": "Daughter",
+      "hindiWord": "बेटी",
+      "pronunciation": "beti",
+      "englishDefinition": "A female child in relation to her parents.",
+      "hindiDefinition": "अपने माता-पिता के संबंध में एक महिला बच्ची।",
+      "englishExample": "Their daughter is a talented musician.",
+      "hindiExample": "उनकी बेटी एक प्रतिभाशाली संगीतकार है।",
+      "difficulty": 1,
+      "partsOfSpeech": "noun",
+      "synonyms": "female child, girl",
+      "audioFileName": "daughter.mp3"
+    },
+    {
+      "englishWord": "Grandfather",
+      "hindiWord": "दादा",
+      "pronunciation": "dada",
+      "englishDefinition": "The father of one's father or mother.",
+      "hindiDefinition": "किसी के पिता या माता के पिता।",
+      "englishExample": "My grandfather tells me stories about his childhood.",
+      "hindiExample": "मेरे दादा मुझे अपने बचपन की कहानियां सुनाते हैं।",
+      "difficulty": 1,
+      "partsOfSpeech": "noun",
+      "synonyms": "grandpa, granddad",
+      "audioFileName": "grandfather.mp3"
+    },
+    {
+      "englishWord": "Grandmother",
+      "hindiWord": "दादी",
+      "pronunciation": "dadi",
+      "englishDefinition": "The mother of one's father or mother.",
+      "hindiDefinition": "किसी के पिता या माता की माता।",
+      "englishExample": "My grandmother taught me how to knit.",
+      "hindiExample": "मेरी दादी ने मुझे बुनाई करना सिखाया।",
+      "difficulty": 1,
+      "partsOfSpeech": "noun",
+      "synonyms": "grandma, granny",
+      "audioFileName": "grandmother.mp3"
+    },
+    {
+      "englishWord": "Uncle",
+      "hindiWord": "चाचा",
+      "pronunciation": "chacha",
+      "englishDefinition": "The brother of one's parent or the husband of one's aunt.",
+      "hindiDefinition": "किसी के माता-पिता का भाई या किसी की चाची का पति।",
+      "englishExample": "My uncle lives in New York.",
+      "hindiExample": "मेरे चाचा न्यूयॉर्क में रहते हैं।",
+      "difficulty": 1,
+      "partsOfSpeech": "noun",
+      "synonyms": "parent's brother",
+      "audioFileName": "uncle.mp3"
+    },
+    {
+      "englishWord": "Aunt",
+      "hindiWord": "चाची",
+      "pronunciation": "chachi",
+      "englishDefinition": "The sister of one's parent or the wife of one's uncle.",
+      "hindiDefinition": "किसी के माता-पिता की बहन या किसी के चाचा की पत्नी।",
+      "englishExample": "My aunt is a doctor.",
+      "hindiExample": "मेरी चाची एक डॉक्टर हैं।",
+      "difficulty": 1,
+      "partsOfSpeech": "noun",
+      "synonyms": "parent's sister",
+      "audioFileName": "aunt.mp3"
+    }
+  ]
+}
