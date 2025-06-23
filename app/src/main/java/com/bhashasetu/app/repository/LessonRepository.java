@@ -4,11 +4,15 @@ import android.app.Application;
 import android.os.AsyncTask;
 
 import androidx.lifecycle.LiveData;
-
 import com.bhashasetu.app.database.LessonDao;
-import com.bhashasetu.app.database.WordDatabase;
+import com.bhashasetu.app.database.WordDao;
+import com.bhashasetu.app.data.relation.LessonWithWords;
 import com.bhashasetu.app.model.Lesson;
+import com.bhashasetu.app.model.Word;
 import com.bhashasetu.app.model.LessonWord;
+import javax.inject.Inject;
+import javax.inject.Singleton;
+import com.bhashasetu.app.database.WordDatabase;
 
 import java.util.List;
 

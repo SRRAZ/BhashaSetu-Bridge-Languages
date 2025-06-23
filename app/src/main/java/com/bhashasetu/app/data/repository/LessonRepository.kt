@@ -2,12 +2,46 @@ package com.bhashasetu.app.data.repository
 
 import androidx.lifecycle.LiveData
 import com.bhashasetu.app.data.dao.LessonDao
-import com.bhashasetu.app.data.model.Lesson
-import com.bhashasetu.app.data.model.LessonWord
+import com.bhashasetu.app.data.dao.WordDao
 import com.bhashasetu.app.data.relation.LessonWithWords
+import com.bhashasetu.app.model.Lesson
+import com.bhashasetu.app.model.Word
+import com.bhashasetu.app.data.model.LessonWord
+import javax.inject.Inject
+import javax.inject.Singleton
 import kotlinx.coroutines.flow.Flow
 
-class LessonRepository(private val lessonDao: LessonDao) {
+@Singleton
+class LessonRepository @Inject constructor(
+    private val lessonDao: LessonDao,
+    private val wordDao: WordDao
+) {
+    fun getLessonWithWords(lessonId: Long): LiveData<LessonWithWords> {
+        return lessonDao.getLessonWithWords(lessonId)
+    }
+
+    fun getAllLessonsWithWords(): LiveData<List<LessonWithWords>> {
+        return lessonDao.getAllLessonsWithWords()
+    }
+
+    suspend fun addWordToLesson(lessonId: Long, wordId: Long, order: Int = 0, isKeyword: Boolean = false, includeInQuiz: Boolean = true) {
+        val lessonWord = LessonWord(
+            lessonId = lessonId,
+            wordId = wordId,
+            orderInLesson = order,
+            isKeyword = isKeyword,
+            includeInQuiz = includeInQuiz
+        )
+        lessonDao.insertLessonWord(lessonWord)
+    }
+
+    suspend fun removeWordFromLesson(lessonId: Long, wordId: Long) {
+        lessonDao.deleteLessonWord(lessonId, wordId)
+    }
+
+    suspend fun updateWordOrderInLesson(lessonId: Long, wordId: Long, newOrder: Int) {
+        lessonDao.updateWordOrder(lessonId, wordId, newOrder)
+    }
 
     val allLessons: Flow<List<Lesson>> = lessonDao.getAllLessons()
     
@@ -18,10 +52,7 @@ class LessonRepository(private val lessonDao: LessonDao) {
     suspend fun update(lesson: Lesson) {
         lessonDao.update(lesson)
     }
-    
-    suspend fun delete(lesson: Lesson) {
-        lessonDao.delete(lesson)
-    }
+
     
     fun getLessonById(id: Long): Flow<Lesson> {
         return lessonDao.getLessonById(id)
@@ -37,22 +68,6 @@ class LessonRepository(private val lessonDao: LessonDao) {
     
     fun getPendingLessons(): Flow<List<Lesson>> {
         return lessonDao.getPendingLessons()
-    }
-    
-    fun getLessonWithWords(lessonId: Long): Flow<LessonWithWords> {
-        return lessonDao.getLessonWithWords(lessonId)
-    }
-    
-    fun getAllLessonsWithWords(): Flow<List<LessonWithWords>> {
-        return lessonDao.getAllLessonsWithWords()
-    }
-    
-    suspend fun addWordToLesson(lessonWord: LessonWord) {
-        lessonDao.insertLessonWord(lessonWord)
-    }
-    
-    suspend fun removeWordFromLesson(lessonId: Long, wordId: Long) {
-        lessonDao.deleteLessonWord(lessonId, wordId)
     }
     
     suspend fun markLessonAsCompleted(lessonId: Long) {

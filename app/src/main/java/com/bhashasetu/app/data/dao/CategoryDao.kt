@@ -99,7 +99,7 @@ interface CategoryDao {
     @Query("""
         SELECT COUNT(DISTINCT c.id) FROM categories c
         INNER JOIN word_category_cross_refs wc ON c.id = wc.categoryId
-        INNER JOIN user_progress up ON wc.wordId = up.wordId
+        INNER JOIN user_learning_progress up ON wc.wordId = up.wordId
         WHERE up.totalAttempts > 0
     """)
     fun getStartedCategoryCount(): Flow<Int>

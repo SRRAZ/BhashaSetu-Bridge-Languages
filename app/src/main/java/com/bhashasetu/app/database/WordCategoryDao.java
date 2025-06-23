@@ -9,7 +9,6 @@ import androidx.room.Update;
 import androidx.room.Delete;
 
 import com.bhashasetu.app.model.WordCategory;
-
 import java.util.List;
 
 /**
@@ -19,25 +18,28 @@ import java.util.List;
 public interface WordCategoryDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    void insert(WordCategory wordCategory);
+    long insertCategory(WordCategory category);
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    void insertAll(List<WordCategory> wordCategories);
+    void insertAll(List<WordCategory> categories);
 
     @Update
-    void update(WordCategory wordCategory);
+    void updateCategory(WordCategory category);
 
     @Delete
-    void delete(WordCategory wordCategory);
+    void deleteCategory(WordCategory category);
 
-    @Query("SELECT * FROM word_categories ORDER BY name")
+    @Query("SELECT * FROM word_categories ORDER BY 'order' ASC")
     LiveData<List<WordCategory>> getAllCategories();
 
-    @Query("SELECT * FROM word_categories WHERE isActive = 1 ORDER BY name")
-    LiveData<List<WordCategory>> getActiveCategories();
+    @Query("SELECT * FROM word_categories WHERE isActive = 1 ORDER BY 'order' ASC")
+    LiveData<List<WordCategory>> getAllActiveCategories();
 
-    @Query("SELECT * FROM word_categories WHERE id = :id")
-    LiveData<WordCategory> getCategoryById(int id);
+    @Query("SELECT * FROM word_categories WHERE id = :categoryId")
+    LiveData<WordCategory> getCategoryById(long categoryId);
+
+    @Query("UPDATE word_categories SET `order` = :newOrder WHERE id = :categoryId")
+    void updateCategoryOrder(long categoryId, int newOrder);
 
     @Query("SELECT * FROM word_categories WHERE id = :id")
     WordCategory getCategoryByIdSync(int id);

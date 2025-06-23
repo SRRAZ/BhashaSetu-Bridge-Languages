@@ -1,136 +1,150 @@
 package com.bhashasetu.app.data.dao
 
 import androidx.lifecycle.LiveData
-import androidx.room.*
-import com.bhashasetu.app.data.model.Lesson
-import com.bhashasetu.app.data.model.LessonWord
+import androidx.room.Dao
+import androidx.room.Delete
+import androidx.room.Insert
+import androidx.room.OnConflictStrategy
+import androidx.room.Query
+import androidx.room.Transaction
+import androidx.room.Update
+import com.bhashasetu.app.model.Lesson
 import com.bhashasetu.app.data.relation.LessonWithWords
-import kotlinx.coroutines.flow.Flow
+import com.bhashasetu.app.data.model.LessonWord
 
-/**
- * Data Access Object for the Lesson entity.
- */
 @Dao
 interface LessonDao {
-    // Basic CRUD operations
-    
+
+    // ✅ Basic Lesson operations
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insert(lesson: Lesson): Long
-    
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertAll(lessons: List<Lesson>): List<Long>
-    
+    suspend fun insertLesson(lesson: Lesson): Long
+
     @Update
-    suspend fun update(lesson: Lesson)
-    
+    suspend fun updateLesson(lesson: Lesson)
+
     @Delete
-    suspend fun delete(lesson: Lesson)
-    
-    // LessonWord junction operations
-    
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun addWordToLesson(lessonWord: LessonWord)
-    
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun addWordsToLesson(lessonWords: List<LessonWord>)
-    
-    @Delete
-    suspend fun removeWordFromLesson(lessonWord: LessonWord)
-    
-    @Query("DELETE FROM lesson_words WHERE lessonId = :lessonId AND wordId = :wordId")
-    suspend fun removeWordFromLessonById(lessonId: Long, wordId: Long)
-    
-    @Query("DELETE FROM lesson_words WHERE lessonId = :lessonId")
-    suspend fun removeAllWordsFromLesson(lessonId: Long)
-    
-    @Query("UPDATE lesson_words SET orderInLesson = :newOrder WHERE lessonId = :lessonId AND wordId = :wordId")
-    suspend fun updateWordOrder(lessonId: Long, wordId: Long, newOrder: Int)
-    
-    // Queries
-    
+    suspend fun deleteLesson(lesson: Lesson)
+
     @Query("SELECT * FROM lessons WHERE id = :lessonId")
-    suspend fun getLessonById(lessonId: Long): Lesson?
-    
-    @Query("SELECT * FROM lessons WHERE id = :lessonId")
-    fun getLessonByIdLiveData(lessonId: Long): LiveData<Lesson?>
-    
-    @Query("SELECT * FROM lessons WHERE id = :lessonId")
-    fun getLessonByIdFlow(lessonId: Long): Flow<Lesson?>
-    
-    @Query("SELECT * FROM lessons ORDER BY difficulty ASC, orderInCategory ASC, titleEnglish ASC")
-    fun getAllLessons(): Flow<List<Lesson>>
-    
-    @Query("SELECT * FROM lessons ORDER BY difficulty ASC, orderInCategory ASC, titleEnglish ASC")
-    fun getAllLessonsLiveData(): LiveData<List<Lesson>>
-    
-    @Query("SELECT * FROM lessons WHERE categoryId = :categoryId ORDER BY orderInCategory ASC, titleEnglish ASC")
-    fun getLessonsByCategory(categoryId: Long): Flow<List<Lesson>>
-    
-    @Query("SELECT * FROM lessons WHERE difficulty = :difficulty ORDER BY orderInCategory ASC, titleEnglish ASC")
-    fun getLessonsByDifficulty(difficulty: Int): Flow<List<Lesson>>
-    
-    @Query("SELECT * FROM lessons WHERE isCompleted = :isCompleted ORDER BY difficulty ASC, orderInCategory ASC")
-    fun getLessonsByCompletionStatus(isCompleted: Boolean): Flow<List<Lesson>>
-    
-    @Query("SELECT * FROM lessons WHERE titleEnglish LIKE '%' || :query || '%' OR titleHindi LIKE '%' || :query || '%'")
-    fun searchLessons(query: String): Flow<List<Lesson>>
-    
-    // Advanced queries with relationships
-    
+    fun getLessonById(lessonId: Long): LiveData<Lesson>
+
+    @Query("SELECT * FROM lessons WHERE isActive = 1 ORDER BY `order` ASC")
+    fun getAllActiveLessons(): LiveData<List<Lesson>>
+
+    @Query("SELECT * FROM lessons WHERE categoryId = :categoryId AND isActive = 1 ORDER BY `order` ASC")
+    fun getLessonsByCategory(categoryId: Long): LiveData<List<Lesson>>
+
+    // ✅ FIXED: LessonWithWords queries using correct entity references
+
+    /**
+     * Get lesson with words - FIXED to use correct Word entity
+     */
     @Transaction
     @Query("SELECT * FROM lessons WHERE id = :lessonId")
-    suspend fun getLessonWithWords(lessonId: Long): LessonWithWords?
-    
+    fun getLessonWithWords(lessonId: Long): LiveData<LessonWithWords>
+
+    /**
+     * Get all lessons with their words - FIXED column references
+     */
     @Transaction
-    @Query("SELECT * FROM lessons WHERE id = :lessonId")
-    fun getLessonWithWordsFlow(lessonId: Long): Flow<LessonWithWords?>
-    
+    @Query("SELECT * FROM lessons WHERE isActive = 1 ORDER BY `order` ASC")
+    fun getAllLessonsWithWords(): LiveData<List<LessonWithWords>>
+
+    /**
+     * Get lessons by category with words - FIXED entity references
+     */
     @Transaction
-    @Query("SELECT * FROM lessons")
-    fun getAllLessonsWithWords(): Flow<List<LessonWithWords>>
-    
+    @Query("SELECT * FROM lessons WHERE categoryId = :categoryId AND isActive = 1 ORDER BY `order` ASC")
+    fun getLessonsByCategoryWithWords(categoryId: Long): LiveData<List<LessonWithWords>>
+
+    /**
+     * ✅ FIXED: Complex query joining lessons and words with correct column names
+     */
     @Transaction
-    @Query("SELECT * FROM lessons WHERE categoryId = :categoryId ORDER BY orderInCategory ASC")
-    fun getLessonsWithWordsByCategory(categoryId: Long): Flow<List<LessonWithWords>>
-    
     @Query("""
         SELECT l.* FROM lessons l
         INNER JOIN lesson_words lw ON l.id = lw.lessonId
-        WHERE lw.wordId = :wordId
-        ORDER BY l.difficulty ASC, l.orderInCategory ASC
+        INNER JOIN vocabulary_words w ON lw.wordId = w.id
+        WHERE w.difficulty = :difficulty 
+        AND l.isActive = 1 
+        AND w.isActive = 1
+        GROUP BY l.id
+        ORDER BY l.`order` ASC
     """)
-    fun getLessonsContainingWord(wordId: Long): Flow<List<Lesson>>
-    
-    // Progress tracking
-    
-    @Query("UPDATE lessons SET isCompleted = :isCompleted, completedAt = :completedAt WHERE id = :lessonId")
-    suspend fun updateLessonCompletion(lessonId: Long, isCompleted: Boolean, completedAt: Long?)
-    
-    @Query("UPDATE lessons SET lastAccessedAt = :accessedAt WHERE id = :lessonId")
-    suspend fun updateLessonLastAccessed(lessonId: Long, accessedAt: Long)
-    
-    // Statistics queries
-    
-    @Query("SELECT COUNT(*) FROM lessons")
-    fun getLessonCount(): Flow<Int>
-    
-    @Query("SELECT COUNT(*) FROM lessons WHERE isCompleted = 1")
-    fun getCompletedLessonCount(): Flow<Int>
-    
-    @Query("SELECT COUNT(*) FROM lessons WHERE categoryId = :categoryId")
-    fun getLessonCountByCategory(categoryId: Long): Flow<Int>
-    
-    @Query("SELECT COUNT(*) FROM lessons WHERE categoryId = :categoryId AND isCompleted = 1")
-    fun getCompletedLessonCountByCategory(categoryId: Long): Flow<Int>
-    
-    // Utility queries
-    
-    @Query("SELECT EXISTS(SELECT 1 FROM lessons WHERE titleEnglish = :titleEnglish LIMIT 1)")
-    suspend fun lessonExistsByTitle(titleEnglish: String): Boolean
-    
-    @Query("SELECT EXISTS(SELECT 1 FROM lesson_words WHERE lessonId = :lessonId AND wordId = :wordId LIMIT 1)")
-    suspend fun isWordInLesson(lessonId: Long, wordId: Long): Boolean
-    
-    @Query("SELECT MAX(orderInCategory) + 1 FROM lessons WHERE categoryId = :categoryId")
-    suspend fun getNextOrderInCategory(categoryId: Long): Int
+    fun getLessonsWithWordsByDifficulty(difficulty: Int): LiveData<List<LessonWithWords>>
+
+    /**
+     * ✅ FIXED: Get lessons containing specific English word
+     */
+    @Transaction
+    @Query("""
+        SELECT l.* FROM lessons l
+        INNER JOIN lesson_words lw ON l.id = lw.lessonId
+        INNER JOIN vocabulary_words w ON lw.wordId = w.id
+        WHERE w.englishWord LIKE '%' || :englishWord || '%'
+        AND l.isActive = 1 
+        AND w.isActive = 1
+        GROUP BY l.id
+        ORDER BY l.`order` ASC
+    """)
+    fun getLessonsContainingEnglishWord(englishWord: String): LiveData<List<LessonWithWords>>
+
+    /**
+     * ✅ FIXED: Get lessons containing specific Hindi word
+     */
+    @Transaction
+    @Query("""
+        SELECT l.* FROM lessons l
+        INNER JOIN lesson_words lw ON l.id = lw.lessonId
+        INNER JOIN vocabulary_words w ON lw.wordId = w.id
+        WHERE w.hindiWord LIKE '%' || :hindiWord || '%'
+        AND l.isActive = 1 
+        AND w.isActive = 1
+        GROUP BY l.id
+        ORDER BY l.`order` ASC
+    """)
+    fun getLessonsContainingHindiWord(hindiWord: String): LiveData<List<LessonWithWords>>
+
+    /**
+     * ✅ NEW: Get lessons with quiz words only
+     */
+    @Transaction
+    @Query("""
+        SELECT l.* FROM lessons l
+        INNER JOIN lesson_words lw ON l.id = lw.lessonId
+        WHERE lw.includeInQuiz = 1
+        AND l.isActive = 1
+        GROUP BY l.id
+        HAVING COUNT(lw.wordId) > 0
+        ORDER BY l.`order` ASC
+    """)
+    fun getLessonsWithQuizWords(): LiveData<List<LessonWithWords>>
+
+    // ✅ LessonWord junction table operations
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertLessonWord(lessonWord: LessonWord): Long
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertLessonWords(lessonWords: List<LessonWord>)
+
+    @Update
+    suspend fun updateLessonWord(lessonWord: LessonWord)
+
+    @Delete
+    suspend fun deleteLessonWord(lessonWord: LessonWord)
+
+    @Query("DELETE FROM lesson_words WHERE lessonId = :lessonId AND wordId = :wordId")
+    suspend fun removeLessonWord(lessonId: Long, wordId: Long)
+
+    @Query("SELECT * FROM lesson_words WHERE lessonId = :lessonId ORDER BY orderInLesson ASC")
+    fun getLessonWords(lessonId: Long): LiveData<List<LessonWord>>
+
+    @Query("UPDATE lesson_words SET orderInLesson = :order WHERE lessonId = :lessonId AND wordId = :wordId")
+    suspend fun updateWordOrder(lessonId: Long, wordId: Long, order: Int)
+
+    @Query("UPDATE lesson_words SET isKeyword = :isKeyword WHERE lessonId = :lessonId AND wordId = :wordId")
+    suspend fun updateKeywordStatus(lessonId: Long, wordId: Long, isKeyword: Boolean)
+
+    @Query("UPDATE lesson_words SET includeInQuiz = :includeInQuiz WHERE lessonId = :lessonId AND wordId = :wordId")
+    suspend fun updateQuizInclusion(lessonId: Long, wordId: Long, includeInQuiz: Boolean)
 }

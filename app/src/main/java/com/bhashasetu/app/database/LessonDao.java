@@ -4,38 +4,49 @@ import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
+import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 import androidx.room.Transaction;
 import androidx.room.Update;
 
 import com.bhashasetu.app.model.Lesson;
+import com.bhashasetu.app.data.relation.LessonWithWords;
 import com.bhashasetu.app.model.LessonWord;
-
 import java.util.List;
 
 @Dao
 public interface LessonDao {
-    
-    @Insert
-    long insert(Lesson lesson);
+
+    // ✅ Basic Lesson operations
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    long insertLesson(Lesson lesson);
     
     @Update
-    void update(Lesson lesson);
+    void updateLesson(Lesson lesson);
     
     @Delete
-    void delete(Lesson lesson);
+    void deleteLesson(Lesson lesson);
     
     @Query("SELECT * FROM lessons ORDER BY category, orderInCategory ASC")
     LiveData<List<Lesson>> getAllLessons();
+
+    @Query("SELECT * FROM lessons WHERE id = :lessonId")
+    LiveData<Lesson> getLessonById(long lessonId);
     
-    @Query("SELECT * FROM lessons WHERE category = :category ORDER BY orderInCategory ASC")
-    LiveData<List<Lesson>> getLessonsByCategory(String category);
+    @Query("SELECT * FROM lessons WHERE categoryId = :categoryId AND isActive = 1 ORDER BY 'order' ASC")
+    LiveData<List<Lesson>> getLessonsByCategory(long categoryId);
+
+    @Query("SELECT * FROM lessons WHERE difficultyLevel = :level AND isActive = 1 ORDER BY `order` ASC")
+    LiveData<List<Lesson>> getLessonsByDifficulty(int level);
+
+    @Query("SELECT * FROM lessons WHERE isActive = 1 ORDER BY `order` ASC")
+    LiveData<List<Lesson>> getAllActiveLessons();
+
+    @Query("UPDATE lessons SET totalWords = :wordCount WHERE id = :lessonId")
+    void updateLessonWordCount(long lessonId, int wordCount);
     
     @Query("SELECT * FROM lessons WHERE level = :level ORDER BY category, orderInCategory ASC")
     LiveData<List<Lesson>> getLessonsByLevel(String level);
-    
-    @Query("SELECT * FROM lessons WHERE id = :id")
-    LiveData<Lesson> getLessonById(int id);
     
     @Query("SELECT * FROM lessons WHERE hasCompleted = 0 ORDER BY level, orderInCategory ASC LIMIT 1")
     LiveData<Lesson> getNextIncompleteLesson();

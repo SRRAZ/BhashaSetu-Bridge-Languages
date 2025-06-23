@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey
 /**
  * Entity representing a vocabulary word with translations in both English and Hindi.
  */
-@Entity(tableName = "words")
+@Entity(tableName = "data_words")
 data class Word(
     @PrimaryKey(autoGenerate = true) 
     val id: Long = 0,
