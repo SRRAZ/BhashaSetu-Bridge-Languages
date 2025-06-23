@@ -6,111 +6,118 @@ import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 import androidx.room.Update;
+import androidx.room.Delete;
 
 import com.bhashasetu.app.model.Achievement;
 
 import java.util.List;
 
 /**
- * Data Access Object for Achievement entities.
+ * Data Access Object for Legacy Achievement entities.
+ * Handles operations for the legacy_achievements table (backward compatibility).
+ * Note: This DAO maintains the existing API for backward compatibility
+ * while new features should use ModernAchievementDao.
  */
 @Dao
 public interface AchievementDao {
 
-    /**
-     * Insert a new achievement.
-     * 
-     * @param achievement The achievement to insert
-     */
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insert(Achievement achievement);
-    
-    /**
-     * Insert multiple achievements.
-     * 
-     * @param achievements The achievements to insert
-     */
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insertAll(List<Achievement> achievements);
-    
-    /**
-     * Update an achievement.
-     * 
-     * @param achievement The achievement to update
-     */
+
     @Update
     void update(Achievement achievement);
-    
+
+    @Delete
+    void delete(Achievement achievement);
+
+    // ✅ FIXED: All queries now use "legacy_achievements" table
+
     /**
-     * Get all achievements.
-     * 
-     * @return LiveData list of all achievements
+     * Get all achievements ordered by type and progress target
      */
     @Query("SELECT * FROM legacy_achievements ORDER BY type, progressTarget")
     LiveData<List<Achievement>> getAllAchievements();
-    
+
     /**
-     * Get all unlocked achievements.
-     * 
-     * @return LiveData list of unlocked achievements
+     * Get all unlocked achievements ordered by unlock date (most recent first)
      */
     @Query("SELECT * FROM legacy_achievements WHERE unlocked = 1 ORDER BY dateUnlocked DESC")
     LiveData<List<Achievement>> getUnlockedAchievements();
-    
+
     /**
-     * Get achievements by type.
-     * 
-     * @param type The achievement type
-     * @return LiveData list of achievements of the specified type
+     * Get achievements filtered by type
      */
     @Query("SELECT * FROM legacy_achievements WHERE type = :type ORDER BY progressTarget")
     LiveData<List<Achievement>> getAchievementsByType(String type);
-    
+
     /**
-     * Get an achievement by ID.
-     * 
-     * @param id The achievement ID
-     * @return LiveData with the achievement
+     * Get achievement by ID (observable)
      */
     @Query("SELECT * FROM legacy_achievements WHERE id = :id")
-    LiveData<Achievement> getAchievementById(String id);
-    
+    LiveData<Achievement> getAchievementById(long id);
+
     /**
-     * Get an achievement by ID (non-LiveData).
-     * 
-     * @param id The achievement ID
-     * @return The achievement
+     * Get achievement by ID (synchronous)
      */
     @Query("SELECT * FROM legacy_achievements WHERE id = :id")
-    Achievement getAchievementByIdSync(String id);
-    
+    Achievement getAchievementByIdSync(long id);
+
     /**
-     * Get the total number of achievement points earned.
-     * 
-     * @return LiveData with the total points
+     * Get total points from unlocked achievements
      */
     @Query("SELECT SUM(pointsValue) FROM legacy_achievements WHERE unlocked = 1")
     LiveData<Integer> getTotalPoints();
-    
+
     /**
-     * Get the total number of unlocked achievements.
-     * 
-     * @return LiveData with the count of unlocked achievements
+     * Get count of unlocked achievements
      */
     @Query("SELECT COUNT(*) FROM legacy_achievements WHERE unlocked = 1")
     LiveData<Integer> getUnlockedCount();
-    
+
     /**
-     * Get the total number of achievements.
-     * 
-     * @return LiveData with the total count of achievements
+     * Get total achievement count
      */
     @Query("SELECT COUNT(*) FROM legacy_achievements")
     LiveData<Integer> getTotalCount();
-    
+
     /**
-     * Delete all achievements.
+     * Delete all achievements (for testing/reset)
      */
     @Query("DELETE FROM legacy_achievements")
     void deleteAll();
+
+    // Additional helpful queries for legacy system
+
+    /**
+     * Get achievements by unlock status
+     */
+    @Query("SELECT * FROM legacy_achievements WHERE unlocked = :unlocked ORDER BY type, progressTarget")
+    LiveData<List<Achievement>> getAchievementsByUnlockStatus(boolean unlocked);
+
+    /**
+     * Get achievements with progress above threshold
+     */
+    @Query("SELECT * FROM legacy_achievements WHERE currentProgress >= :minProgress ORDER BY currentProgress DESC")
+    LiveData<List<Achievement>> getAchievementsWithMinProgress(int minProgress);
+
+    /**
+     * Update achievement progress
+     */
+    @Query("UPDATE legacy_achievements SET currentProgress = :progress WHERE id = :id")
+    void updateProgress(long id, int progress);
+
+    /**
+     * Unlock achievement
+     */
+    @Query("UPDATE legacy_achievements SET unlocked = 1, dateUnlocked = :dateUnlocked WHERE id = :id")
+    void unlockAchievement(long id, long dateUnlocked);
+
+    /**
+     * Get recently unlocked achievements
+     */
+    @Query("SELECT * FROM legacy_achievements WHERE unlocked = 1 AND dateUnlocked > :since ORDER BY dateUnlocked DESC LIMIT :limit")
+    LiveData<List<Achievement>> getRecentlyUnlocked(long since, int limit);
 }

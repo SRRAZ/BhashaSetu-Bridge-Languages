@@ -105,340 +105,341 @@
 69-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:49:9-54
 70        android:supportsRtl="true"
 70-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:50:9-35
-71        android:theme="@style/Theme.BhashaSetu"
-71-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:51:9-48
-72        android:usesCleartextTraffic="false" >
-72-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:53:9-45
-73
-74        <!-- Splash Activity (Entry Point) - Using dedicated splash theme -->
-75        <activity
-75-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:58:9-67:20
-76            android:name="com.bhashasetu.app.SplashActivity"
-76-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:59:13-43
-77            android:exported="true"
-77-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:60:13-36
-78            android:screenOrientation="fullSensor"
-78-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:62:13-51
-79            android:theme="@style/SplashTheme" >
-79-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:61:13-47
-80            <intent-filter>
-80-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:63:13-66:29
-81                <action android:name="android.intent.action.MAIN" />
-81-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:64:17-69
-81-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:64:25-66
-82
-83                <category android:name="android.intent.category.LAUNCHER" />
-83-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:65:17-77
-83-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:65:27-74
-84            </intent-filter>
-85        </activity>
-86
-87        <!-- Main Activity - Central hub for app navigation -->
-88        <activity
-88-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:70:9-73:54
-89            android:name="com.bhashasetu.app.MainActivity_ViewBased"
-89-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:71:13-51
-90            android:exported="false"
-90-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:72:13-37
-91            android:screenOrientation="fullSensor" />
-91-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:73:13-51
-92
-93        <!-- Lessons Activity - Shows available learning lessons -->
-94        <activity
-94-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:76:9-79:54
-95            android:name="com.bhashasetu.app.LessonsActivity"
-95-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:77:13-44
-96            android:exported="false"
-96-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:78:13-37
-97            android:screenOrientation="fullSensor" />
-97-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:79:13-51
-98
-99        <!-- Lesson Detail Activity - Shows individual lesson content -->
-100        <activity
-100-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:82:9-85:54
-101            android:name="com.bhashasetu.app.LessonDetailActivity"
-101-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:83:13-49
-102            android:exported="false"
-102-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:84:13-37
-103            android:screenOrientation="fullSensor" />
-103-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:85:13-51
-104
-105        <!-- Flashcard Activity - For vocabulary practice -->
-106        <activity
-106-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:88:9-91:54
-107            android:name="com.bhashasetu.app.FlashcardActivity"
-107-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:89:13-46
-108            android:exported="false"
-108-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:90:13-37
-109            android:screenOrientation="fullSensor" />
-109-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:91:13-51
-110
-111        <!-- Games Menu Activity - New feature for gamified learning -->
-112        <activity
-112-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:94:9-97:54
-113            android:name="com.bhashasetu.app.GamesMenuActivity"
-113-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:95:13-46
-114            android:exported="false"
-114-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:96:13-37
-115            android:screenOrientation="fullSensor" />
-115-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:97:13-51
-116
-117        <!-- Games Activity - Interactive learning games -->
-118        <activity
-118-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:100:9-103:54
-119            android:name="com.bhashasetu.app.GamesActivity"
-119-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:101:13-42
-120            android:exported="false"
-120-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:102:13-37
-121            android:screenOrientation="fullSensor" />
-121-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:103:13-51
-122
-123        <!-- Practice Activity - Hub for different practice methods -->
-124        <activity
-124-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:106:9-109:54
-125            android:name="com.bhashasetu.app.PracticeActivity"
-125-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:107:13-45
-126            android:exported="false"
-126-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:108:13-37
-127            android:screenOrientation="fullSensor" />
-127-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:109:13-51
-128
-129        <!-- Pronunciation Practice Activity - Speech practice -->
-130        <activity
-130-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:112:9-115:54
-131            android:name="com.bhashasetu.app.PronunciationPracticeActivity"
-131-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:113:13-58
-132            android:exported="false"
-132-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:114:13-37
-133            android:screenOrientation="fullSensor" />
-133-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:115:13-51
-134
-135        <!-- Pronunciation Comparison Activity - New feature to compare user's pronunciation with correct one -->
-136        <activity
-136-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:118:9-121:54
-137            android:name="com.bhashasetu.app.PronunciationComparisonActivity"
-137-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:119:13-60
-138            android:exported="false"
-138-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:120:13-37
-139            android:screenOrientation="fullSensor" />
-139-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:121:13-51
-140
-141        <!-- Spelling Practice Activity - For spelling exercises -->
-142        <activity
-142-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:124:9-127:54
-143            android:name="com.bhashasetu.app.SpellingPracticeActivity"
-143-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:125:13-53
-144            android:exported="false"
-144-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:126:13-37
-145            android:screenOrientation="fullSensor" />
-145-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:127:13-51
-146
-147        <!-- Quiz Activity - Multiple choice questions -->
-148        <activity
-148-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:130:9-133:54
-149            android:name="com.bhashasetu.app.QuizActivity"
-149-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:131:13-41
-150            android:exported="false"
-150-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:132:13-37
-151            android:screenOrientation="fullSensor" />
-151-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:133:13-51
-152
-153        <!-- Word Detail Activity - Shows detailed word information -->
-154        <activity
-154-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:136:9-139:54
-155            android:name="com.bhashasetu.app.WordDetailActivity"
-155-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:137:13-47
-156            android:exported="false"
-156-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:138:13-37
-157            android:screenOrientation="fullSensor" />
-157-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:139:13-51
-158
-159        <!-- Add Word Activity - For user to add custom vocabulary -->
-160        <activity
-160-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:142:9-145:54
-161            android:name="com.bhashasetu.app.AddWordActivity"
-161-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:143:13-44
-162            android:exported="false"
-162-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:144:13-37
-163            android:screenOrientation="fullSensor" />
-163-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:145:13-51
-164
-165        <!-- Achievements Activity - New gamification feature for tracking progress -->
-166        <activity
-166-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:148:9-151:54
-167            android:name="com.bhashasetu.app.AchievementsActivity"
-167-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:149:13-49
-168            android:exported="false"
-168-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:150:13-37
-169            android:screenOrientation="fullSensor" />
-169-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:151:13-51
-170
-171        <!-- Settings Activity - App configuration -->
-172        <activity
-172-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:154:9-157:54
-173            android:name="com.bhashasetu.app.SettingsActivity"
-173-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:155:13-45
-174            android:exported="false"
-174-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:156:13-37
-175            android:screenOrientation="fullSensor" />
-175-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:157:13-51
-176
-177        <!-- Language Settings Activity - For language preferences -->
-178        <activity
-178-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:160:9-163:54
-179            android:name="com.bhashasetu.app.LanguageSettingsActivity"
-179-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:161:13-53
-180            android:exported="false"
-180-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:162:13-37
-181            android:screenOrientation="fullSensor" />
-181-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:163:13-51
-182
-183        <!-- Offline Settings Activity - New feature for configuring offline behavior -->
-184        <activity
-184-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:166:9-169:54
-185            android:name="com.bhashasetu.app.OfflineSettingsActivity"
-185-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:167:13-52
-186            android:exported="false"
-186-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:168:13-37
-187            android:screenOrientation="fullSensor" />
-187-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:169:13-51
-188
-189        <!-- Services -->
-190        <!-- SyncService - Handles background synchronization of content -->
-191        <service
-191-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:173:9-175:40
-192            android:name="com.bhashasetu.app.service.SyncService"
-192-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:174:13-48
-193            android:exported="false" />
-193-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:175:13-37
-194
-195        <!-- AudioPreloadService - Preloads audio files for better performance -->
-196        <service
-196-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:178:9-180:40
-197            android:name="com.bhashasetu.app.service.AudioPreloadService"
-197-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:179:13-56
-198            android:exported="false" />
-198-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:180:13-37
-199
-200        <!-- Receivers -->
-201        <!-- NetworkStateReceiver - Monitors connectivity changes for offline mode -->
-202        <receiver
-202-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:184:9-189:20
-203            android:name="com.bhashasetu.app.receiver.NetworkStateReceiver"
-203-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:184:19-64
-204            android:exported="false" >
-204-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:185:13-37
-205            <intent-filter>
-205-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:186:13-188:29
-206                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-206-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:187:17-79
-206-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:187:25-76
-207            </intent-filter>
-208        </receiver>
-209
-210        <activity
-210-->[androidx.compose.ui:ui-tooling-android:1.8.2] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\caae364284837c7622b10903451a94d1\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
-211            android:name="androidx.compose.ui.tooling.PreviewActivity"
-211-->[androidx.compose.ui:ui-tooling-android:1.8.2] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\caae364284837c7622b10903451a94d1\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
-212            android:exported="true" />
-212-->[androidx.compose.ui:ui-tooling-android:1.8.2] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\caae364284837c7622b10903451a94d1\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
-213
-214        <provider
-214-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\bc3fef794c3c13d36de1f56f6b623826\transformed\emoji2-1.4.0\AndroidManifest.xml:24:9-32:20
-215            android:name="androidx.startup.InitializationProvider"
-215-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\bc3fef794c3c13d36de1f56f6b623826\transformed\emoji2-1.4.0\AndroidManifest.xml:25:13-67
-216            android:authorities="com.bhashasetu.app.androidx-startup"
-216-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\bc3fef794c3c13d36de1f56f6b623826\transformed\emoji2-1.4.0\AndroidManifest.xml:26:13-68
-217            android:exported="false" >
-217-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\bc3fef794c3c13d36de1f56f6b623826\transformed\emoji2-1.4.0\AndroidManifest.xml:27:13-37
-218            <meta-data
-218-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\bc3fef794c3c13d36de1f56f6b623826\transformed\emoji2-1.4.0\AndroidManifest.xml:29:13-31:52
-219                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-219-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\bc3fef794c3c13d36de1f56f6b623826\transformed\emoji2-1.4.0\AndroidManifest.xml:30:17-75
-220                android:value="androidx.startup" />
-220-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\bc3fef794c3c13d36de1f56f6b623826\transformed\emoji2-1.4.0\AndroidManifest.xml:31:17-49
-221            <meta-data
-221-->[androidx.lifecycle:lifecycle-process:2.9.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\4ec2c2c5f6a445dce44ed65f890e00dd\transformed\lifecycle-process-2.9.1\AndroidManifest.xml:29:13-31:52
-222                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-222-->[androidx.lifecycle:lifecycle-process:2.9.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\4ec2c2c5f6a445dce44ed65f890e00dd\transformed\lifecycle-process-2.9.1\AndroidManifest.xml:30:17-78
-223                android:value="androidx.startup" />
-223-->[androidx.lifecycle:lifecycle-process:2.9.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\4ec2c2c5f6a445dce44ed65f890e00dd\transformed\lifecycle-process-2.9.1\AndroidManifest.xml:31:17-49
-224            <meta-data
-224-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
-225                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-225-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
-226                android:value="androidx.startup" />
-226-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
-227        </provider>
-228
-229        <uses-library
-229-->[androidx.window:window:1.0.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\68df9151290c8e3745e7ca773cb5d6c3\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-230            android:name="androidx.window.extensions"
-230-->[androidx.window:window:1.0.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\68df9151290c8e3745e7ca773cb5d6c3\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-231            android:required="false" />
-231-->[androidx.window:window:1.0.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\68df9151290c8e3745e7ca773cb5d6c3\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-232        <uses-library
-232-->[androidx.window:window:1.0.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\68df9151290c8e3745e7ca773cb5d6c3\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-233            android:name="androidx.window.sidecar"
-233-->[androidx.window:window:1.0.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\68df9151290c8e3745e7ca773cb5d6c3\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-234            android:required="false" />
-234-->[androidx.window:window:1.0.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\68df9151290c8e3745e7ca773cb5d6c3\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-235
-236        <activity
-236-->[androidx.compose.ui:ui-test-manifest:1.8.2] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\3d034f33909395807468f01d37b21be3\transformed\ui-test-manifest-1.8.2\AndroidManifest.xml:23:9-26:79
-237            android:name="androidx.activity.ComponentActivity"
-237-->[androidx.compose.ui:ui-test-manifest:1.8.2] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\3d034f33909395807468f01d37b21be3\transformed\ui-test-manifest-1.8.2\AndroidManifest.xml:24:13-63
-238            android:exported="true"
-238-->[androidx.compose.ui:ui-test-manifest:1.8.2] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\3d034f33909395807468f01d37b21be3\transformed\ui-test-manifest-1.8.2\AndroidManifest.xml:25:13-36
-239            android:theme="@android:style/Theme.Material.Light.NoActionBar" />
-239-->[androidx.compose.ui:ui-test-manifest:1.8.2] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\3d034f33909395807468f01d37b21be3\transformed\ui-test-manifest-1.8.2\AndroidManifest.xml:26:13-76
-240
-241        <receiver
-241-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
-242            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-242-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
-243            android:directBootAware="false"
-243-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
-244            android:enabled="true"
-244-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
-245            android:exported="true"
-245-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
-246            android:permission="android.permission.DUMP" >
-246-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
-247            <intent-filter>
-247-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
-248                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-248-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
-248-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
-249            </intent-filter>
-250            <intent-filter>
-250-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
-251                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-251-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
-251-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
-252            </intent-filter>
-253            <intent-filter>
-253-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
-254                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-254-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
-254-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
-255            </intent-filter>
-256            <intent-filter>
-256-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
-257                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-257-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
-257-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
-258            </intent-filter>
-259        </receiver>
-260
-261        <service
-261-->[androidx.room:room-runtime-android:2.7.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\b784e58edd69b86fc176263660e470bf\transformed\room-runtime-release\AndroidManifest.xml:24:9-28:63
-262            android:name="androidx.room.MultiInstanceInvalidationService"
-262-->[androidx.room:room-runtime-android:2.7.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\b784e58edd69b86fc176263660e470bf\transformed\room-runtime-release\AndroidManifest.xml:25:13-74
-263            android:directBootAware="true"
-263-->[androidx.room:room-runtime-android:2.7.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\b784e58edd69b86fc176263660e470bf\transformed\room-runtime-release\AndroidManifest.xml:26:13-43
-264            android:exported="false" />
-264-->[androidx.room:room-runtime-android:2.7.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\b784e58edd69b86fc176263660e470bf\transformed\room-runtime-release\AndroidManifest.xml:27:13-37
-265    </application>
-266
-267</manifest>
+71        android:testOnly="true"
+72        android:theme="@style/Theme.BhashaSetu"
+72-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:51:9-48
+73        android:usesCleartextTraffic="false" >
+73-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:53:9-45
+74
+75        <!-- Splash Activity (Entry Point) - Using dedicated splash theme -->
+76        <activity
+76-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:58:9-67:20
+77            android:name="com.bhashasetu.app.SplashActivity"
+77-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:59:13-43
+78            android:exported="true"
+78-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:60:13-36
+79            android:screenOrientation="fullSensor"
+79-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:62:13-51
+80            android:theme="@style/SplashTheme" >
+80-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:61:13-47
+81            <intent-filter>
+81-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:63:13-66:29
+82                <action android:name="android.intent.action.MAIN" />
+82-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:64:17-69
+82-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:64:25-66
+83
+84                <category android:name="android.intent.category.LAUNCHER" />
+84-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:65:17-77
+84-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:65:27-74
+85            </intent-filter>
+86        </activity>
+87
+88        <!-- Main Activity - Central hub for app navigation -->
+89        <activity
+89-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:70:9-73:54
+90            android:name="com.bhashasetu.app.MainActivity_ViewBased"
+90-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:71:13-51
+91            android:exported="false"
+91-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:72:13-37
+92            android:screenOrientation="fullSensor" />
+92-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:73:13-51
+93
+94        <!-- Lessons Activity - Shows available learning lessons -->
+95        <activity
+95-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:76:9-79:54
+96            android:name="com.bhashasetu.app.LessonsActivity"
+96-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:77:13-44
+97            android:exported="false"
+97-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:78:13-37
+98            android:screenOrientation="fullSensor" />
+98-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:79:13-51
+99
+100        <!-- Lesson Detail Activity - Shows individual lesson content -->
+101        <activity
+101-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:82:9-85:54
+102            android:name="com.bhashasetu.app.LessonDetailActivity"
+102-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:83:13-49
+103            android:exported="false"
+103-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:84:13-37
+104            android:screenOrientation="fullSensor" />
+104-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:85:13-51
+105
+106        <!-- Flashcard Activity - For vocabulary practice -->
+107        <activity
+107-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:88:9-91:54
+108            android:name="com.bhashasetu.app.FlashcardActivity"
+108-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:89:13-46
+109            android:exported="false"
+109-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:90:13-37
+110            android:screenOrientation="fullSensor" />
+110-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:91:13-51
+111
+112        <!-- Games Menu Activity - New feature for gamified learning -->
+113        <activity
+113-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:94:9-97:54
+114            android:name="com.bhashasetu.app.GamesMenuActivity"
+114-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:95:13-46
+115            android:exported="false"
+115-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:96:13-37
+116            android:screenOrientation="fullSensor" />
+116-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:97:13-51
+117
+118        <!-- Games Activity - Interactive learning games -->
+119        <activity
+119-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:100:9-103:54
+120            android:name="com.bhashasetu.app.GamesActivity"
+120-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:101:13-42
+121            android:exported="false"
+121-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:102:13-37
+122            android:screenOrientation="fullSensor" />
+122-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:103:13-51
+123
+124        <!-- Practice Activity - Hub for different practice methods -->
+125        <activity
+125-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:106:9-109:54
+126            android:name="com.bhashasetu.app.PracticeActivity"
+126-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:107:13-45
+127            android:exported="false"
+127-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:108:13-37
+128            android:screenOrientation="fullSensor" />
+128-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:109:13-51
+129
+130        <!-- Pronunciation Practice Activity - Speech practice -->
+131        <activity
+131-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:112:9-115:54
+132            android:name="com.bhashasetu.app.PronunciationPracticeActivity"
+132-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:113:13-58
+133            android:exported="false"
+133-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:114:13-37
+134            android:screenOrientation="fullSensor" />
+134-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:115:13-51
+135
+136        <!-- Pronunciation Comparison Activity - New feature to compare user's pronunciation with correct one -->
+137        <activity
+137-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:118:9-121:54
+138            android:name="com.bhashasetu.app.PronunciationComparisonActivity"
+138-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:119:13-60
+139            android:exported="false"
+139-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:120:13-37
+140            android:screenOrientation="fullSensor" />
+140-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:121:13-51
+141
+142        <!-- Spelling Practice Activity - For spelling exercises -->
+143        <activity
+143-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:124:9-127:54
+144            android:name="com.bhashasetu.app.SpellingPracticeActivity"
+144-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:125:13-53
+145            android:exported="false"
+145-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:126:13-37
+146            android:screenOrientation="fullSensor" />
+146-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:127:13-51
+147
+148        <!-- Quiz Activity - Multiple choice questions -->
+149        <activity
+149-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:130:9-133:54
+150            android:name="com.bhashasetu.app.QuizActivity"
+150-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:131:13-41
+151            android:exported="false"
+151-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:132:13-37
+152            android:screenOrientation="fullSensor" />
+152-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:133:13-51
+153
+154        <!-- Word Detail Activity - Shows detailed word information -->
+155        <activity
+155-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:136:9-139:54
+156            android:name="com.bhashasetu.app.WordDetailActivity"
+156-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:137:13-47
+157            android:exported="false"
+157-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:138:13-37
+158            android:screenOrientation="fullSensor" />
+158-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:139:13-51
+159
+160        <!-- Add Word Activity - For user to add custom vocabulary -->
+161        <activity
+161-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:142:9-145:54
+162            android:name="com.bhashasetu.app.AddWordActivity"
+162-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:143:13-44
+163            android:exported="false"
+163-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:144:13-37
+164            android:screenOrientation="fullSensor" />
+164-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:145:13-51
+165
+166        <!-- Achievements Activity - New gamification feature for tracking progress -->
+167        <activity
+167-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:148:9-151:54
+168            android:name="com.bhashasetu.app.AchievementsActivity"
+168-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:149:13-49
+169            android:exported="false"
+169-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:150:13-37
+170            android:screenOrientation="fullSensor" />
+170-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:151:13-51
+171
+172        <!-- Settings Activity - App configuration -->
+173        <activity
+173-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:154:9-157:54
+174            android:name="com.bhashasetu.app.SettingsActivity"
+174-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:155:13-45
+175            android:exported="false"
+175-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:156:13-37
+176            android:screenOrientation="fullSensor" />
+176-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:157:13-51
+177
+178        <!-- Language Settings Activity - For language preferences -->
+179        <activity
+179-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:160:9-163:54
+180            android:name="com.bhashasetu.app.LanguageSettingsActivity"
+180-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:161:13-53
+181            android:exported="false"
+181-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:162:13-37
+182            android:screenOrientation="fullSensor" />
+182-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:163:13-51
+183
+184        <!-- Offline Settings Activity - New feature for configuring offline behavior -->
+185        <activity
+185-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:166:9-169:54
+186            android:name="com.bhashasetu.app.OfflineSettingsActivity"
+186-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:167:13-52
+187            android:exported="false"
+187-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:168:13-37
+188            android:screenOrientation="fullSensor" />
+188-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:169:13-51
+189
+190        <!-- Services -->
+191        <!-- SyncService - Handles background synchronization of content -->
+192        <service
+192-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:173:9-175:40
+193            android:name="com.bhashasetu.app.service.SyncService"
+193-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:174:13-48
+194            android:exported="false" />
+194-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:175:13-37
+195
+196        <!-- AudioPreloadService - Preloads audio files for better performance -->
+197        <service
+197-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:178:9-180:40
+198            android:name="com.bhashasetu.app.service.AudioPreloadService"
+198-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:179:13-56
+199            android:exported="false" />
+199-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:180:13-37
+200
+201        <!-- Receivers -->
+202        <!-- NetworkStateReceiver - Monitors connectivity changes for offline mode -->
+203        <receiver
+203-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:184:9-189:20
+204            android:name="com.bhashasetu.app.receiver.NetworkStateReceiver"
+204-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:184:19-64
+205            android:exported="false" >
+205-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:185:13-37
+206            <intent-filter>
+206-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:186:13-188:29
+207                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+207-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:187:17-79
+207-->D:\Android APP\BhashaSetu\app\src\main\AndroidManifest.xml:187:25-76
+208            </intent-filter>
+209        </receiver>
+210
+211        <activity
+211-->[androidx.compose.ui:ui-tooling-android:1.8.2] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\caae364284837c7622b10903451a94d1\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+212            android:name="androidx.compose.ui.tooling.PreviewActivity"
+212-->[androidx.compose.ui:ui-tooling-android:1.8.2] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\caae364284837c7622b10903451a94d1\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+213            android:exported="true" />
+213-->[androidx.compose.ui:ui-tooling-android:1.8.2] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\caae364284837c7622b10903451a94d1\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+214
+215        <provider
+215-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\bc3fef794c3c13d36de1f56f6b623826\transformed\emoji2-1.4.0\AndroidManifest.xml:24:9-32:20
+216            android:name="androidx.startup.InitializationProvider"
+216-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\bc3fef794c3c13d36de1f56f6b623826\transformed\emoji2-1.4.0\AndroidManifest.xml:25:13-67
+217            android:authorities="com.bhashasetu.app.androidx-startup"
+217-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\bc3fef794c3c13d36de1f56f6b623826\transformed\emoji2-1.4.0\AndroidManifest.xml:26:13-68
+218            android:exported="false" >
+218-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\bc3fef794c3c13d36de1f56f6b623826\transformed\emoji2-1.4.0\AndroidManifest.xml:27:13-37
+219            <meta-data
+219-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\bc3fef794c3c13d36de1f56f6b623826\transformed\emoji2-1.4.0\AndroidManifest.xml:29:13-31:52
+220                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+220-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\bc3fef794c3c13d36de1f56f6b623826\transformed\emoji2-1.4.0\AndroidManifest.xml:30:17-75
+221                android:value="androidx.startup" />
+221-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\bc3fef794c3c13d36de1f56f6b623826\transformed\emoji2-1.4.0\AndroidManifest.xml:31:17-49
+222            <meta-data
+222-->[androidx.lifecycle:lifecycle-process:2.9.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\4ec2c2c5f6a445dce44ed65f890e00dd\transformed\lifecycle-process-2.9.1\AndroidManifest.xml:29:13-31:52
+223                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+223-->[androidx.lifecycle:lifecycle-process:2.9.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\4ec2c2c5f6a445dce44ed65f890e00dd\transformed\lifecycle-process-2.9.1\AndroidManifest.xml:30:17-78
+224                android:value="androidx.startup" />
+224-->[androidx.lifecycle:lifecycle-process:2.9.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\4ec2c2c5f6a445dce44ed65f890e00dd\transformed\lifecycle-process-2.9.1\AndroidManifest.xml:31:17-49
+225            <meta-data
+225-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+226                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+226-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+227                android:value="androidx.startup" />
+227-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+228        </provider>
+229
+230        <uses-library
+230-->[androidx.window:window:1.0.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\68df9151290c8e3745e7ca773cb5d6c3\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+231            android:name="androidx.window.extensions"
+231-->[androidx.window:window:1.0.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\68df9151290c8e3745e7ca773cb5d6c3\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+232            android:required="false" />
+232-->[androidx.window:window:1.0.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\68df9151290c8e3745e7ca773cb5d6c3\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+233        <uses-library
+233-->[androidx.window:window:1.0.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\68df9151290c8e3745e7ca773cb5d6c3\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+234            android:name="androidx.window.sidecar"
+234-->[androidx.window:window:1.0.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\68df9151290c8e3745e7ca773cb5d6c3\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+235            android:required="false" />
+235-->[androidx.window:window:1.0.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\68df9151290c8e3745e7ca773cb5d6c3\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+236
+237        <activity
+237-->[androidx.compose.ui:ui-test-manifest:1.8.2] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\3d034f33909395807468f01d37b21be3\transformed\ui-test-manifest-1.8.2\AndroidManifest.xml:23:9-26:79
+238            android:name="androidx.activity.ComponentActivity"
+238-->[androidx.compose.ui:ui-test-manifest:1.8.2] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\3d034f33909395807468f01d37b21be3\transformed\ui-test-manifest-1.8.2\AndroidManifest.xml:24:13-63
+239            android:exported="true"
+239-->[androidx.compose.ui:ui-test-manifest:1.8.2] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\3d034f33909395807468f01d37b21be3\transformed\ui-test-manifest-1.8.2\AndroidManifest.xml:25:13-36
+240            android:theme="@android:style/Theme.Material.Light.NoActionBar" />
+240-->[androidx.compose.ui:ui-test-manifest:1.8.2] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\3d034f33909395807468f01d37b21be3\transformed\ui-test-manifest-1.8.2\AndroidManifest.xml:26:13-76
+241
+242        <receiver
+242-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+243            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+243-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+244            android:directBootAware="false"
+244-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+245            android:enabled="true"
+245-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+246            android:exported="true"
+246-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+247            android:permission="android.permission.DUMP" >
+247-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+248            <intent-filter>
+248-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+249                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+249-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+249-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+250            </intent-filter>
+251            <intent-filter>
+251-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+252                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+252-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+252-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+253            </intent-filter>
+254            <intent-filter>
+254-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+255                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+255-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+255-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+256            </intent-filter>
+257            <intent-filter>
+257-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+258                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+258-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+258-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\e35ca0e23491a1da5758f220197a1680\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+259            </intent-filter>
+260        </receiver>
+261
+262        <service
+262-->[androidx.room:room-runtime-android:2.7.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\b784e58edd69b86fc176263660e470bf\transformed\room-runtime-release\AndroidManifest.xml:24:9-28:63
+263            android:name="androidx.room.MultiInstanceInvalidationService"
+263-->[androidx.room:room-runtime-android:2.7.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\b784e58edd69b86fc176263660e470bf\transformed\room-runtime-release\AndroidManifest.xml:25:13-74
+264            android:directBootAware="true"
+264-->[androidx.room:room-runtime-android:2.7.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\b784e58edd69b86fc176263660e470bf\transformed\room-runtime-release\AndroidManifest.xml:26:13-43
+265            android:exported="false" />
+265-->[androidx.room:room-runtime-android:2.7.1] C:\Users\SUNIL KUMAR SHAH\.gradle\caches\8.14.2\transforms\b784e58edd69b86fc176263660e470bf\transformed\room-runtime-release\AndroidManifest.xml:27:13-37
+266    </application>
+267
+268</manifest>
