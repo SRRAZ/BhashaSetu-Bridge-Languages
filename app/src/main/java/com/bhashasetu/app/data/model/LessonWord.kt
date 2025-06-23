@@ -4,11 +4,10 @@ import androidx.room.Entity
 import androidx.room.ForeignKey
 import androidx.room.Index
 import com.bhashasetu.app.data.model.Lesson
-import com.bhashasetu.app.data.model.Word
 
 /**
  * Junction entity creating many-to-many relationship between Lesson and Word.
- * Includes additional metadata about the word's position in the lesson.
+ * ✅ ROOM ERROR FIX: Updated Word foreign key to use Java Word entity
  */
 @Entity(
     tableName = "lesson_words",
@@ -25,7 +24,7 @@ import com.bhashasetu.app.data.model.Word
             onDelete = ForeignKey.CASCADE
         ),
         ForeignKey(
-            entity = Word::class,
+            entity = com.bhashasetu.app.model.Word::class, // ✅ Fixed: Use Java Word entity
             parentColumns = ["id"],
             childColumns = ["wordId"],
             onDelete = ForeignKey.CASCADE
@@ -34,14 +33,14 @@ import com.bhashasetu.app.data.model.Word
 )
 data class LessonWord(
     val lessonId: Long,
-    val wordId: Long,
+    val wordId: Int, // ✅ Fixed: Changed to Int to match Java Word entity
 
     // Word positioning and metadata
     val orderInLesson: Int, // Position of word in the lesson
-    val isKeyword: Boolean = false, // Whether it's a focus word for the lesson
-    val notes: String? = null, // Additional context for this word in this lesson
+    val isKeyword: Boolean = false,
+    val notes: String? = null,
 
     // Content flags
-    val includeInQuiz: Boolean = true, // Whether to include in lesson quiz
-    val highlightInContent: Boolean = false // Whether to highlight in lesson content
+    val includeInQuiz: Boolean = true,
+    val highlightInContent: Boolean = false
 )
