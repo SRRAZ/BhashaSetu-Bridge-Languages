@@ -233,80 +233,18 @@ public class CacheManager {
     public void cacheDataFile(String url, String filename, int priority, CacheCallback callback) {
         cacheFile(url, new File(getDataCacheDir(), filename), CacheEntry.TYPE_DATA, priority, callback);
     }
-    
+
     /**
      * Generic method to cache a file from a URL with improved queueing and resilience
-     * @param url URL to download from
+     *
+     * @param url      URL to download from
      * @param destFile Destination file
-     * @param type Type of content (audio, image, data)
+     * @param type     Type of content (audio, image, data)
      * @param priority Priority level
      * @param callback Callback for completion status
      */
     private void cacheFile(String url, File destFile, String type, int priority, CacheCallback callback) {
-        // Check if already cached with quick in-memory lookup
-        String cachedPath = getCachedFilePath(url);
-        if (cachedPath != null) {
-            // Valid cached file
-            if (callback != null) {
-                callback.onCacheComplete(true, cachedPath);
-            }
-            
-            // Verify cache in background if it hasn't been verified recently
-            // (This adds resilience without slowing down the immediate response)
-            CacheEntry entry = dbHelper.getCacheEntry(url);
-            if (entry != null && (System.currentTimeMillis() - entry.getTimestamp()) > VALIDATION_INTERVAL) {
-                maintenanceExecutor.execute(() -> validateCacheEntry(entry));
-            }
-            
-            return;
-        }
-        
-        // If there's a temporary file, check if we can use it
-        File tempFile = getTempFile(destFile);
-        if (tempFile.exists() && tempFile.length() > 0) {
-            try {
-                // Complete the interrupted download by moving temp file to destination
-                Files.move(tempFile.toPath(), destFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
-                CacheEntry entry = new CacheEntry(url, destFile.getAbsolutePath(), type, 
-                        System.currentTimeMillis(), priority);
-                dbHelper.insertOrUpdateCacheEntry(entry);
-                
-                if (callback != null) {
-                    callback.onCacheComplete(true, destFile.getAbsolutePath());
-                }
-                return;
-            } catch (IOException e) {
-                Log.e(TAG, "Failed to move temp file: " + e.getMessage());
-                // Continue with normal download
-            }
-        }
-        
-        // Add callback to pending list
-        synchronized (pendingCallbacks) {
-            List<CacheCallback> callbacks = pendingCallbacks.get(url);
-            if (callbacks == null) {
-                callbacks = new ArrayList<>();
-                pendingCallbacks.put(url, callbacks);
-            }
-            if (callback != null) {
-                callbacks.add(callback);
-            }
-        }
-        
-        // Check if already downloading
-        synchronized (currentDownloads) {
-            if (currentDownloads.contains(url)) {
-                // Already downloading, callback will be called when done
-                return;
-            }
-        }
-        
-        // Create download request and add to queue
-        CacheRequest request = new CacheRequest(url, destFile, type, priority);
-        downloadQueue.put(url, request);
-        
-        // Process queue
-        processDownloadQueue();
+
     }
     
     /**
@@ -902,7 +840,10 @@ public class CacheManager {
         // Schedule maintenance to check if we need to free space
         maintenanceExecutor.schedule(this::performCacheMaintenance, 1, TimeUnit.SECONDS);
     }
-    
+
+    public void clearLowPriorityCache(int i, int i1) {
+    }
+
     /**
      * Cache request class to encapsulate download information
      */

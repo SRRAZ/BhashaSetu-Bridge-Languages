@@ -493,7 +493,7 @@ public class AnalyticsManager {
      * @param eventName Event name
      * @param metrics Performance metrics
      */
-    private void logPerformanceEvent(String eventName, Map<String, Object> metrics) {
+    public void logPerformanceEvent(String eventName, Map<String, Object> metrics) {
         // Don't log if opted out
         if (isOptedOut()) {
             return;

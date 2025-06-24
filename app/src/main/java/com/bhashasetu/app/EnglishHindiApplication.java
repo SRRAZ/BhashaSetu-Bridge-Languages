@@ -28,7 +28,7 @@ import java.util.Map;
 /**
  * Main Application class responsible for initializing app-wide components
  * and managing their lifecycle.
- * 
+
  * Key improvements over GitHub version:
  * 1. Implements dependency injection pattern via AppDependencies
  * 2. Performs background initialization for better startup performance
@@ -120,7 +120,6 @@ public class EnglishHindiApplication extends Application {
     
     /**
      * Initialize core components with performance optimizations
-     * 
      * Performance improvements:
      * - Components are initialized in dependency order
      * - Non-UI blocking operations run on background threads
@@ -239,7 +238,6 @@ public class EnglishHindiApplication extends Application {
     /**
      * Called by system when memory is getting low
      * Implements graduated memory cleanup based on trim level
-     *
      * This is a significant improvement over the GitHub version
      * which had no memory pressure handling
      * 
@@ -301,7 +299,6 @@ public class EnglishHindiApplication extends Application {
     /**
      * Called when the application is being terminated
      * Cleans up resources and unregisters receivers
-     * 
      * Note: Not guaranteed to be called on all devices
      */
     @Override

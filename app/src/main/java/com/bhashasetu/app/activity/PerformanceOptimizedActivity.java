@@ -13,7 +13,7 @@ import android.view.Window;
 import androidx.annotation.LayoutRes;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import com.bhashasetu.app.BhashaSetuApplication;
+import com.bhashasetu.app.EnglishHindiApplication;
 import com.bhashasetu.app.util.MemoryOptimizer;
 import com.bhashasetu.app.util.UIPerformanceOptimizer;
 
@@ -281,7 +281,7 @@ public abstract class PerformanceOptimizedActivity extends AppCompatActivity {
      * @return AppDependencies instance
      */
     protected com.bhashasetu.app.di.AppDependencies getDependencies() {
-        return BhashaSetuApplication.from(this).getDependencies();
+        return EnglishHindiApplication.from(this).getDependencies();
     }
     
     /**
