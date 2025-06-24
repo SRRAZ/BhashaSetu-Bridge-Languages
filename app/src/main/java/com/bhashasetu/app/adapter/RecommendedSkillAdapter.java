@@ -28,10 +28,10 @@ import java.util.Map;
  */
 public class RecommendedSkillAdapter extends RecyclerView.Adapter<RecommendedSkillAdapter.SkillViewHolder> {
 
-    private Context context;
+    private final Context context;
     private List<Pair<String, Double>> skills;
-    private UserProgressManager progressManager;
-    private UserProgress userProgress;
+    private final UserProgressManager progressManager;
+    private final UserProgress userProgress;
     
     private OnSkillClickListener listener;
 

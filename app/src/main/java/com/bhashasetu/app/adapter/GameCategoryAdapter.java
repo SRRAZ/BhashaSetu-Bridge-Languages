@@ -21,9 +21,9 @@ import java.util.List;
  */
 public class GameCategoryAdapter extends RecyclerView.Adapter<GameCategoryAdapter.GameViewHolder> {
 
-    private Context context;
-    private List<GameCategory> gameCategories;
-    private OnGameSelectedListener listener;
+    private final Context context;
+    private final List<GameCategory> gameCategories;
+    private final OnGameSelectedListener listener;
 
     public GameCategoryAdapter(Context context, List<GameCategory> gameCategories, OnGameSelectedListener listener) {
         this.context = context;

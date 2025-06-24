@@ -138,6 +138,7 @@ public abstract class AppDatabase extends RoomDatabase {
     // ✅ MODERN SYSTEM DAOs
     public abstract UserGoalDao userGoalDao();
     public abstract LessonDao lessonDao();
+    public abstract appSettingsDao appSettingsDao();
 
     /**
      * Get singleton instance of the database with achievement consolidation migrations.

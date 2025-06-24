@@ -110,14 +110,14 @@ public class FlashcardDeckAdapter extends ListAdapter<FlashcardDeck, FlashcardDe
     }
     
     class FlashcardDeckHolder extends RecyclerView.ViewHolder {
-        private TextView textViewTitle;
-        private TextView textViewTitleSecondary;
-        private TextView textViewDescription;
-        private TextView textViewCategory;
-        private TextView textViewCardCount;
-        private TextView textViewLastPracticed;
-        private ImageButton buttonFavorite;
-        private ProgressBar progressBarMastery;
+        private final TextView textViewTitle;
+        private final TextView textViewTitleSecondary;
+        private final TextView textViewDescription;
+        private final TextView textViewCategory;
+        private final TextView textViewCardCount;
+        private final TextView textViewLastPracticed;
+        private final ImageButton buttonFavorite;
+        private final ProgressBar progressBarMastery;
         
         public FlashcardDeckHolder(@NonNull View itemView) {
             super(itemView);

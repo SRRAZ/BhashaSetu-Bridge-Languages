@@ -8,6 +8,7 @@ import com.bhashasetu.app.database.ModernAchievementDao
 import com.bhashasetu.app.model.Achievement as LegacyAchievement
 import com.bhashasetu.app.data.model.Achievement as ModernAchievement
 import kotlinx.coroutines.flow.Flow
+import jakarta.inject.Singleton
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.map
 
@@ -23,6 +24,7 @@ import kotlinx.coroutines.flow.map
  * - Use Modern methods for new features (bilingual, categories, analytics)
  * - Use Unified methods when you need to work with both systems together
  */
+@Singleton
 class AchievementRepository {
 
     private val legacyDao: LegacyAchievementDao

@@ -91,10 +91,10 @@ public class WordAdapter extends ListAdapter<Word, WordAdapter.WordViewHolder> {
     }
     
     class WordViewHolder extends RecyclerView.ViewHolder {
-        private BilingualTextView bilingualTextView;
-        private TextView textViewCategory;
-        private TextView textViewMastery;
-        private ImageView imageViewFavorite;
+        private final BilingualTextView bilingualTextView;
+        private final TextView textViewCategory;
+        private final TextView textViewMastery;
+        private final ImageView imageViewFavorite;
         
         public WordViewHolder(@NonNull View itemView) {
             super(itemView);

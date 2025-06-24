@@ -44,6 +44,7 @@ abstract class AppDatabase : RoomDatabase() {
     abstract fun studySessionDao(): StudySessionDao
     abstract fun userGoalDao(): UserGoalDao
     abstract fun dailyStreakDao(): DailyStreakDao
+    abstract fun appSettingsDao(): AppSettingsDao
 
     companion object {
         @Volatile

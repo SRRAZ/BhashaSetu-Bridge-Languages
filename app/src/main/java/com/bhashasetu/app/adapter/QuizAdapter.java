@@ -78,10 +78,10 @@ public class QuizAdapter extends ListAdapter<Quiz, QuizAdapter.QuizHolder> {
     }
     
     class QuizHolder extends RecyclerView.ViewHolder {
-        private TextView textViewQuestion;
-        private TextView textViewQuestionSecondary;
-        private TextView textViewQuizType;
-        private TextView textViewDifficulty;
+        private final TextView textViewQuestion;
+        private final TextView textViewQuestionSecondary;
+        private final TextView textViewQuizType;
+        private final TextView textViewDifficulty;
         
         public QuizHolder(@NonNull View itemView) {
             super(itemView);

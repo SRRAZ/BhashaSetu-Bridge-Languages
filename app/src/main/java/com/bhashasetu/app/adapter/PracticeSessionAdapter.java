@@ -99,11 +99,11 @@ public class PracticeSessionAdapter extends ListAdapter<PracticeSession, Practic
     }
     
     class PracticeSessionHolder extends RecyclerView.ViewHolder {
-        private TextView textViewSessionDate;
-        private TextView textViewSessionType;
-        private TextView textViewSessionStats;
-        private TextView textViewSessionDuration;
-        private TextView textViewSessionStatus;
+        private final TextView textViewSessionDate;
+        private final TextView textViewSessionType;
+        private final TextView textViewSessionStats;
+        private final TextView textViewSessionDuration;
+        private final TextView textViewSessionStatus;
         
         public PracticeSessionHolder(@NonNull View itemView) {
             super(itemView);

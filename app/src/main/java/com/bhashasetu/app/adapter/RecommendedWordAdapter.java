@@ -22,7 +22,7 @@ import java.util.List;
  */
 public class RecommendedWordAdapter extends RecyclerView.Adapter<RecommendedWordAdapter.WordViewHolder> {
 
-    private Context context;
+    private final Context context;
     private List<Word> words;
     private OnWordClickListener listener;
 

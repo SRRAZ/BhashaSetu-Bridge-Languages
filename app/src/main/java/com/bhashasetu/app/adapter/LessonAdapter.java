@@ -89,12 +89,12 @@ public class LessonAdapter extends ListAdapter<Lesson, LessonAdapter.LessonHolde
     }
     
     class LessonHolder extends RecyclerView.ViewHolder {
-        private TextView textViewTitle;
-        private TextView textViewTitleSecondary;
-        private TextView textViewDescription;
-        private TextView textViewCategory;
-        private TextView textViewLevel;
-        private ImageView imageViewCompletionStatus;
+        private final TextView textViewTitle;
+        private final TextView textViewTitleSecondary;
+        private final TextView textViewDescription;
+        private final TextView textViewCategory;
+        private final TextView textViewLevel;
+        private final ImageView imageViewCompletionStatus;
         
         public LessonHolder(@NonNull View itemView) {
             super(itemView);

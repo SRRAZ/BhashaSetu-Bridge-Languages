@@ -11,7 +11,7 @@ import com.bhashasetu.app.fragment.LessonVocabularyFragment;
 
 public class LessonPagerAdapter extends FragmentPagerAdapter {
     
-    private int lessonId;
+    private final int lessonId;
     
     public LessonPagerAdapter(@NonNull FragmentManager fm, int lessonId) {
         super(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);

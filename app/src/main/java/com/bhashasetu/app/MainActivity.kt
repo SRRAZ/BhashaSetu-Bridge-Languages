@@ -29,7 +29,6 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         // Install splash screen
         installSplashScreen()
-        
         super.onCreate(savedInstanceState)
         
         // Get language preferences
@@ -42,7 +41,6 @@ class MainActivity : ComponentActivity() {
             var appLanguage by remember { 
                 mutableStateOf(if (isHindi) AppLanguage.HINDI else AppLanguage.ENGLISH) 
             }
-            
             // Apply theme with language settings
             EnglishHindiTheme(
                 language = appLanguage,
