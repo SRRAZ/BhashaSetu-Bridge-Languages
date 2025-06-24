@@ -8,7 +8,7 @@ Flavor: Premium
 This mapping file contains the relationship between the original and obfuscated class names, methods, and fields for the premium version of the English-Hindi Learning app. It should be preserved for crash deobfuscation.
 
 # Example mapping content (abbreviated):
-com.bhashasetu.app.MainActivity_ViewBased -> a.a.a:
+com.bhashasetu.app.MainActivity -> a.a.a:
     void onCreate(android.os.Bundle) -> a
 com.bhashasetu.app.data.model.Word -> a.a.b.a:
     java.lang.String word -> a

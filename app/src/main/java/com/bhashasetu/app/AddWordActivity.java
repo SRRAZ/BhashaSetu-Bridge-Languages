@@ -69,7 +69,7 @@ public class AddWordActivity extends AppCompatActivity {
             return;
         }
         
-        // Return data to MainActivity_ViewBased
+        // Return data to MainActivity
         Intent data = new Intent();
         data.putExtra(EXTRA_ENGLISH, english);
         data.putExtra(EXTRA_HINDI, hindi);

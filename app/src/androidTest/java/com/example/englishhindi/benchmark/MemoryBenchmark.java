@@ -34,7 +34,7 @@ public class MemoryBenchmark {
 
     private UiDevice device;
     private static final String PACKAGE_NAME = "com.bhashasetu.app";
-    private static final String MAIN_ACTIVITY = ".ui.MainActivity_ViewBased";
+    private static final String MAIN_ACTIVITY = ".ui.MainActivity";
 
     @Before
     public void setUp() throws IOException {

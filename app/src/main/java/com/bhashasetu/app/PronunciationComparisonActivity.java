@@ -337,7 +337,7 @@ public class PronunciationComparisonActivity extends BaseActivity implements
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.navigation_home:
-                startActivity(new Intent(this, MainActivity_ViewBased.class));
+                startActivity(new Intent(this, MainActivity.class));
                 finish();
  return true;
 

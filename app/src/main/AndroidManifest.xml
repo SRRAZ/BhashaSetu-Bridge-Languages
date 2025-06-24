@@ -74,10 +74,10 @@
             android:exported="true"
             android:theme="@style/Theme.BhashaSetu"
             android:screenOrientation="fullSensor" />
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         
         <!-- Lessons Activity - Shows available learning lessons -->
         <activity

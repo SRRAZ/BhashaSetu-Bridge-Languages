@@ -36,7 +36,7 @@ public class RenderingBenchmark {
         
         // Start app and navigate to home screen
         device.executeShellCommand("am force-stop com.bhashasetu.app");
-        device.executeShellCommand("am start -n com.bhashasetu.app/com.bhashasetu.app.ui.MainActivity_ViewBased");
+        device.executeShellCommand("am start -n com.bhashasetu.app/com.bhashasetu.app.ui.MainActivity");
         device.waitForIdle();
     }
 

@@ -37,7 +37,7 @@ public class StartupBenchmark {
             state.pauseTiming();
             
             // Launch the app
-            device.executeShellCommand("am start -n com.bhashasetu.app/com.bhashasetu.app.ui.MainActivity_ViewBased");
+            device.executeShellCommand("am start -n com.bhashasetu.app/com.bhashasetu.app.ui.MainActivity");
             
             // Resume timing - benchmark will automatically time until the app is fully loaded
             state.resumeTiming();
@@ -53,7 +53,7 @@ public class StartupBenchmark {
         UiDevice device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation());
 
         // First, launch the app to load it into memory
-        device.executeShellCommand("am start -n com.bhashasetu.app/com.bhashasetu.app.ui.MainActivity_ViewBased");
+        device.executeShellCommand("am start -n com.bhashasetu.app/com.bhashasetu.app.ui.MainActivity");
         device.waitForIdle();
 
         while (state.keepRunning()) {
@@ -65,7 +65,7 @@ public class StartupBenchmark {
             state.pauseTiming();
             
             // Launch the app again
-            device.executeShellCommand("am start -n com.bhashasetu.app/com.bhashasetu.app.ui.MainActivity_ViewBased");
+            device.executeShellCommand("am start -n com.bhashasetu.app/com.bhashasetu.app.ui.MainActivity");
             
             // Resume timing
             state.resumeTiming();
@@ -81,7 +81,7 @@ public class StartupBenchmark {
         UiDevice device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation());
 
         // First, launch the app to load it into memory
-        device.executeShellCommand("am start -n com.bhashasetu.app/com.bhashasetu.app.ui.MainActivity_ViewBased");
+        device.executeShellCommand("am start -n com.bhashasetu.app/com.bhashasetu.app.ui.MainActivity");
         device.waitForIdle();
 
         while (state.keepRunning()) {
@@ -100,7 +100,7 @@ public class StartupBenchmark {
             state.pauseTiming();
             
             // Launch the app again immediately
-            device.executeShellCommand("am start -n com.bhashasetu.app/com.bhashasetu.app.ui.MainActivity_ViewBased");
+            device.executeShellCommand("am start -n com.bhashasetu.app/com.bhashasetu.app.ui.MainActivity");
             
             // Resume timing
             state.resumeTiming();

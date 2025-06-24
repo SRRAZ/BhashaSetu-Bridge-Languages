@@ -2,6 +2,9 @@ package com.bhashasetu.app.data.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import com.bhashasetu.app.ui.viewmodel.LearningSettings
+import com.bhashasetu.app.ui.viewmodel.NotificationSettings
+import com.bhashasetu.app.ui.viewmodel.PrivacySettings
 
 @Entity(tableName = "app_settings")
 data class AppSettings(

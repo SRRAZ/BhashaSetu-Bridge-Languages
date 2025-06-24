@@ -31,7 +31,7 @@ public class SplashActivity extends BaseActivity {
             @Override
             public void run() {
                 // Start main activityimport android.content.Intent;
-                Intent intent = new Intent(SplashActivity.this, MainActivity_ViewBased.class);
+                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();
             }
